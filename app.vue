@@ -2,7 +2,7 @@
   <NuxtPage />
 </template>
 
-<style>
+<!-- <style>
   .page-enter-active,
   .page-leave-active {
     transition: all 0.4s;
@@ -12,4 +12,4 @@
     filter: blur(1rem);
     transform: rotate3d(1, 1, 1, 15deg);
   }
-</style>
+</style> -->

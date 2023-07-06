@@ -29,10 +29,10 @@
     </section>
 </template>
 
-<script setup lang="ts">
+<!-- <script setup lang="ts">
     definePageMeta({
         pageTransition: {
             name: 'rotate'
         }
     })
-</script>
+</script> -->
