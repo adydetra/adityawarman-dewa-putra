@@ -1,6 +1,6 @@
 <template>
-    <div class="bg-gradient-to-r from-gray-900 to-gray-700 mx-auto h-screen relative w-screen px-12 2xl:px-24 py-8 2xl:py-16 bg-[url('/assets/pattern-hero-left.png')] bg-contain bg-center">
-            <h1 class="text-gray-300 text-center text-3xl 2xl:text-4xl font-bold leading-snug mb-16">
+    <div class="mx-auto h-screen relative w-screen px-12 2xl:px-24 py-8 2xl:py-16 bg-[url('/assets/pattern-hero-left.png')] bg-contain bg-center">
+            <h1 class="text-gray-300 text-center text-3xl 2xl:text-4xl font-bold leading-snug 2xl:leading-snug mb-16">
                 Software I use, gadgets I love, and<br/>and the tech stack that I use.
             </h1>
 
