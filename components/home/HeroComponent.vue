@@ -19,7 +19,7 @@
                     </div>
                 </div>
                 <div class="col-span-3 flex justify-center items-center bg-yellow-200 py-40 bg-[url('/assets/img/pattern-hero-right.png')] bg-contain bg-center">
-                    <img src="~/assets/img/hero.png" alt="Photo" class="xl:w-64 2xl:w-96 rotate-3 rounded-[2rem] shadow-xl shadow-gray-500/40" />
+                    <img src="~/assets/img/hero.png" alt="" class="xl:w-64 2xl:w-96 rotate-3 rounded-[2rem] shadow-xl shadow-gray-500/40" />
                 </div>
             </section>
         </div>

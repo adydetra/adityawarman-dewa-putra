@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "@nuxtjs/color-mode": "^3.3.0",
-    "@nuxtjs/google-fonts": "^3.0.1"
+    "@nuxtjs/google-fonts": "^3.0.1",
+    "nuxt-lazy-load": "^3.0.4"
   }
 }
