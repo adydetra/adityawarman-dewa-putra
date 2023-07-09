@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-[url('/assets/img/pattern-hero-left.png')] bg-contain bg-center mx-auto relative w-screen pt-12">
+    <div class="bg-[url('/assets/img/pattern-hero-left.png')] bg-contain bg-center mx-auto relative w-screen pt-12 pb-20">
 
             <section class="flex flex-wrap justify-center items-center h-full">
                 <div class="py-8 px-4">
@@ -24,10 +24,19 @@
                 </div>
             </section>
 
-            <section class="flex relative gap-8 -ml-16 mt-10">
-                <img src="~/assets/img/hero.jpg" alt="Photo" class="w-36 object-cover rounded-md -rotate-3 shadow-2xl shadow-yellow-200/10" />
+            <section class="flex justify-center gap-6 overflow-hidden pt-4 pb-12">
+                <div class="relative aspect-[10/10] w-44 flex-none overflow-hidden rounded-xl -rotate-3 shadow-2xl shadow-yellow-200/10">
+                    <img src="~/assets/img/hero.jpg" alt="Photo" class="absolute h-full w-full object-cover" />
+                </div>
+                <div class="relative aspect-[10/10] w-32 flex-none overflow-hidden rounded-xl">
+                    <img src="~/assets/img/mobile-3.jpg" alt="Photo" class="absolute h-full w-full object-scale-down" />
+                </div>
+                <div class="relative aspect-[10/10] w-44 flex-none overflow-hidden rounded-xl rotate-3 shadow-2xl shadow-yellow-200/10">
+                    <img src="~/assets/img/mobile-2.jpg" alt="Photo" class="absolute h-full w-full object-cover" />
+                </div>
+                <!-- <img src="~/assets/img/hero.jpg" alt="Photo" class="w-36 object-cover rounded-md -rotate-3 shadow-2xl shadow-yellow-200/10" />
                 <img src="~/assets/img/mobile-3.jpg" alt="Photo" class="w-36 object-scale-down rounded-md rotate-3" />
-                <img src="~/assets/img/mobile-2.jpg" alt="Photo" class="w-36 object-cover rounded-md rotate-3 shadow-2xl shadow-yellow-200/20" />
+                <img src="~/assets/img/mobile-2.jpg" alt="Photo" class="w-36 object-cover rounded-md rotate-3 shadow-2xl shadow-yellow-200/20" /> -->
             </section>
 
     </div>
