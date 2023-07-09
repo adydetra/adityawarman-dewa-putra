@@ -1,9 +1,9 @@
 <template>
-    <div class="bg-[url('/assets/pattern-hero-left.png')] bg-contain bg-center mx-auto relative w-screen">
+    <div class="bg-[url('/assets/img/pattern-hero-left.png')] bg-contain bg-center mx-auto relative w-screen">
             <section class="flex flex-wrap justify-center items-center h-full">
                 <div class="py-8 px-6">
                     <div class="flex justify-center items-center bg-yellow-200 p-1.5 w-48 rotate-3 rounded-[2.1rem]">
-                        <img src="~/assets/hero.png" alt="Photo" class="w-48  rounded-[2rem] shadow-lg shadow-gray-500/40" />
+                        <img src="~/assets/img/hero.png" alt="Photo" class="w-48 rounded-[2rem] shadow-lg shadow-gray-500/40" />
                     </div>
                     <div class="space-y-6 mt-8">
                         <p class="text-gray-300 text-xl font-bold leading-snug">
@@ -19,12 +19,12 @@
                                 </NuxtLink>
                             </li>
                             <li>
-                                <NuxtLink to="" class="cursor-pointer ease-in-out duration-300 hover:text-yellow-200">
+                                <NuxtLink to="https://www.instagram.com/741_dewa/" class="cursor-pointer ease-in-out duration-300 hover:text-yellow-200">
                                     <Icon name="uim:instagram" class="w-4 h-4 lg:w-6 lg:h-6"/>
                                 </NuxtLink>
                             </li>
                             <li>
-                                <NuxtLink to="" class="cursor-pointer ease-in-out duration-300 hover:text-yellow-200">
+                                <NuxtLink to="https://web.facebook.com/adityawarman.dewa.putra/" class="cursor-pointer ease-in-out duration-300 hover:text-yellow-200">
                                     <Icon name="uim:facebook-f" class="w-4 h-4 lg:w-6 lg:h-6"/>
                                 </NuxtLink>
                             </li>
@@ -38,4 +38,10 @@
                 </div>
             </section>
     </div>
+
+    <section class="flex gap-8 -ml-10 mt-10">
+        <img src="~/assets/img/hero.png" alt="Photo" class="w-32 rounded-[2rem] -rotate-6" />
+        <img src="~/assets/img/hero.png" alt="Photo" class="w-32 rounded-[2rem] rotate-3" />
+        <img src="~/assets/img/hero.png" alt="Photo" class="w-32 rounded-[2rem] -rotate-12" />
+    </section>
 </template>
