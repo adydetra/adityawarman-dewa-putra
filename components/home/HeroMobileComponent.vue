@@ -1,5 +1,6 @@
 <template>
-    <div class="bg-[url('/assets/img/pattern-hero-left.png')] bg-contain bg-center mx-auto relative w-screen">
+    <div class="bg-[url('/assets/img/pattern-hero-left.png')] bg-contain bg-center mx-auto relative w-screen pt-12">
+
             <section class="flex flex-wrap justify-center items-center h-full">
                 <div class="py-8 px-4">
                     <div class="flex justify-center items-center bg-yellow-200 p-0.5 w-16 rotate-3 rounded-full">
@@ -22,13 +23,14 @@
                     </div>
                 </div>
             </section>
-    </div>
 
-    <section class="flex gap-8 -ml-10 mt-10">
-        <img src="~/assets/img/hero.jpg" alt="Photo" class="w-full object-cover rounded-md -rotate-3" />
-        <img src="~/assets/img/hero.jpg" alt="Photo" class="w-full object-cover rounded-md aspect-[9/10] rotate-3" />
-        <img src="~/assets/img/hero.jpg" alt="Photo" class="w-full object-cover rounded-md rotate-3" />
-    </section>
+            <section class="flex relative gap-8 -ml-16 mt-10">
+                <img src="~/assets/img/hero.jpg" alt="Photo" class="w-36 object-cover rounded-md -rotate-3 shadow-2xl shadow-yellow-200/10" />
+                <img src="~/assets/img/mobile-3.jpg" alt="Photo" class="w-36 object-scale-down rounded-md rotate-3" />
+                <img src="~/assets/img/mobile-2.jpg" alt="Photo" class="w-36 object-cover rounded-md rotate-3 shadow-2xl shadow-yellow-200/20" />
+            </section>
+
+    </div>
 </template>
 
 <script>
