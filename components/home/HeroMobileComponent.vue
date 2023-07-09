@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-[url('/assets/img/pattern-hero-left.png')] bg-contain bg-center mx-auto relative w-screen pt-12 pb-20">
+    <div class="bg-[url('/assets/img/pattern-hero-left.png')] bg-contain bg-center mx-auto relative w-screen pt-12 pb-16">
 
             <section class="flex flex-wrap justify-center items-center h-full">
                 <div class="py-8 px-4">
