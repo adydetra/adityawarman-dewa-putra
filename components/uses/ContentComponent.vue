@@ -11,7 +11,7 @@
                         <h2 class="text-gray-400 text-lg font-semibold mb-4 flex justify-center">Workstation</h2>
                         <ul class="flex justify-center text-gray-400 gap-6">
                             <li v-for="workstation in workstations" :key="workstation.id">
-                                <NuxtLink :to="workstation.to" target="_blank" title="workstation.title" class="cursor-pointer ease-in-out duration-300 hover:text-yellow-200">
+                                <NuxtLink :to="workstation.to" target="_blank" :title="workstation.title" class="cursor-pointer ease-in-out duration-300 hover:text-yellow-200">
                                     <Icon :name="workstation.name" class="w-4 h-4 lg:w-6 lg:h-6"/>
                                 </NuxtLink>
                             </li>
@@ -24,7 +24,7 @@
                         <h2 class="text-gray-400 text-lg font-semibold mb-4 flex justify-center">Operating System</h2>
                         <ul class="flex justify-center text-gray-400 gap-6">
                             <li v-for="operating in operatings" :key="operating.id">
-                                <NuxtLink :to="operating.to" target="_blank" title="operating.title" class="cursor-pointer ease-in-out duration-300 hover:text-yellow-200">
+                                <NuxtLink :to="operating.to" target="_blank" :title="operating.title" class="cursor-pointer ease-in-out duration-300 hover:text-yellow-200">
                                     <Icon :name="operating.name" class="w-4 h-4 lg:w-6 lg:h-6"/>
                                 </NuxtLink>
                             </li>
@@ -37,7 +37,7 @@
                         <h2 class="text-gray-400 text-lg font-semibold mb-4 flex justify-center">Database</h2>
                         <ul class="flex justify-center text-gray-400 gap-6">
                             <li v-for="database in databases" :key="database.id">
-                                <NuxtLink :to="database.to" target="_blank" title="database.title" class="cursor-pointer ease-in-out duration-300 hover:text-yellow-200">
+                                <NuxtLink :to="database.to" target="_blank" :title="database.title" class="cursor-pointer ease-in-out duration-300 hover:text-yellow-200">
                                     <Icon :name="database.name" class="w-4 h-4 lg:w-6 lg:h-6"/>
                                 </NuxtLink>
                             </li>
@@ -55,7 +55,7 @@
                         <h2 class="text-gray-400 text-lg font-semibold mb-6 flex justify-center">Development tools</h2>
                         <ul class="flex justify-center text-gray-400 gap-6">
                             <li v-for="development in developments" :key="development.id">
-                                <NuxtLink :to="development.to" target="_blank" title="development.title" class="cursor-pointer ease-in-out duration-300 hover:text-yellow-200">
+                                <NuxtLink :to="development.to" target="_blank" :title="development.title" class="cursor-pointer ease-in-out duration-300 hover:text-yellow-200">
                                     <Icon :name="development.name" class="w-4 h-4 lg:w-6 lg:h-6"/>
                                 </NuxtLink>
                             </li>
@@ -68,7 +68,7 @@
                         <h2 class="text-gray-400 text-lg font-semibold mb-6 flex justify-center">Back End Development [Not Focus]</h2>
                         <ul class="flex justify-center text-gray-400 gap-6">
                             <li v-for="backend in backends" :key="backend.id">
-                                <NuxtLink :to="backend.to" target="_blank" title="backend.title" class="cursor-pointer ease-in-out duration-300 hover:text-yellow-200">
+                                <NuxtLink :to="backend.to" target="_blank" :title="backend.title" class="cursor-pointer ease-in-out duration-300 hover:text-yellow-200">
                                     <Icon :name="backend.name" class="w-4 h-4 lg:w-6 lg:h-6"/>
                                 </NuxtLink>
                             </li>
@@ -81,7 +81,7 @@
                         <h2 class="text-gray-400 text-lg font-semibold mb-6 flex justify-center">Front End Development</h2>
                         <ul class="flex justify-center text-gray-400 gap-6">
                             <li v-for="frontend in frontends" :key="frontend.id">
-                                <NuxtLink :to="frontend.to" target="_blank" title="HTML" class="cursor-pointer ease-in-out duration-300 hover:text-yellow-200">
+                                <NuxtLink :to="frontend.to" target="_blank" :title="frontend.title" class="cursor-pointer ease-in-out duration-300 hover:text-yellow-200">
                                     <Icon :name="frontend.name" class="w-4 h-4 lg:w-6 lg:h-6"/>
                                 </NuxtLink>
                             </li>
