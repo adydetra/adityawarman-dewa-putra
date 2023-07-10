@@ -5,7 +5,7 @@
             <div class="bg-yellow-100 opacity-20 w-0.5 xl:h-16 2xl:h-20 text-white"></div>
                 <p class="text-xs text-gray-400 text-center -rotate-45 w-full">Home</p>
             <div class="bg-yellow-100 opacity-20 w-0.5 xl:h-36 2xl:h-52 text-white"></div>
-                <NuxtLink to="" class="w-full flex justify-center cursor-pointer py-8 ease-in-out duration-300 text-slate-400 hover:text-red-400 cursor-not-allowed">
+                <NuxtLink to="" class="w-full flex justify-center cursor-not-allowed py-8 ease-in-out duration-300 text-slate-400 hover:text-red-400 cursor-not-allowed">
                     <Icon name="uim:bars" class="w-4 h-4 lg:w-6 lg:h-6"/>
                 </NuxtLink>
             <div class="bg-yellow-100 opacity-20 w-0.5 xl:h-36 2xl:h-52 text-white"></div>

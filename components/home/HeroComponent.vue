@@ -19,7 +19,27 @@
                     </div>
                 </div>
                 <div class="col-span-3 flex justify-center items-center bg-yellow-200 py-40 bg-[url('/assets/img/pattern-hero-right.png')] bg-contain bg-center">
-                    <img src="~/assets/img/hero.jpg" alt="" class="xl:w-64 2xl:w-96 rotate-3 rounded-[2rem] shadow-xl shadow-gray-500/40" />
+                    <Swiper
+                        :modules="[SwiperAutoplay, SwiperEffectFade]"
+                        :slides-per-view="1"
+                        :loop="true"
+                        :effect="'fade'"
+                        :autoplay="{
+                            delay: 4000,
+                            disableOnInteraction: true,
+                        }"
+                    >
+                        <SwiperSlide class="py-4">
+                            <img src="~/assets/img/hero.jpg" alt="" class="xl:w-64 2xl:w-96 h-full object-cover rotate-2 rounded-[2rem]" />
+                        </SwiperSlide>
+                        <SwiperSlide class="py-4">
+                            <img src="~/assets/img/mobile-2.jpg" alt="" class="xl:w-64 2xl:w-96 h-full object-cover rotate-2 rounded-[2rem]" />
+                        </SwiperSlide>
+                        <SwiperSlide class="py-4">
+                            <img src="~/assets/img/mobile-3.jpg" alt="" class="xl:w-64 2xl:w-96 h-full object-cover object-left-bottom rotate-2 rounded-[2rem]" />
+                        </SwiperSlide>
+                    </Swiper>
+                    <!-- <img src="~/assets/img/hero.jpg" alt="" class="xl:w-64 2xl:w-96 rotate-3 rounded-[2rem] shadow-xl shadow-gray-500/40" /> -->
                 </div>
             </section>
         </div>
@@ -39,3 +59,8 @@ export default {
   },
 }
 </script>
+
+<style scoped>  
+.swiper-slide { @apply flex justify-center items-center}
+.swiper, .swiper-content { @apply !h-full }
+</style>

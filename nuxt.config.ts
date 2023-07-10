@@ -16,6 +16,7 @@ export default defineNuxtConfig({
     '@nuxtjs/google-fonts',
     '@nuxtjs/color-mode',
     'nuxt-icon',
+    'nuxt-swiper'
   ],
 
   googleFonts: {
@@ -27,4 +28,12 @@ export default defineNuxtConfig({
   colorMode: {    
     classSuffix: ''
   },
+
+  swiper: {
+    // Swiper options
+    //----------------------
+    // prefix: 'Swiper',
+    // styleLang: 'css',
+    // modules: ['navigation', 'pagination'], // all modules are imported by default
+  }
 })
