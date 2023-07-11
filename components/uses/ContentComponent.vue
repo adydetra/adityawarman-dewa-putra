@@ -79,7 +79,7 @@
                 <div class="col-span-8 flex justify-center border-dashed border-2 border-gray-400 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300">
                     <div>
                         <h2 class="text-gray-400 text-lg font-semibold mb-6 flex justify-center">Front End Development</h2>
-                        <ul class="flex justify-center text-gray-400 gap-6">
+                        <ul class="flex justify-center text-gray-400 gap-6 2xl:gap-8">
                             <li v-for="frontend in frontends" :key="frontend.id">
                                 <NuxtLink :to="frontend.to" target="_blank" :title="frontend.title" class="cursor-pointer ease-in-out duration-300 hover:text-yellow-200">
                                     <Icon :name="frontend.name" class="w-4 h-4 lg:w-6 lg:h-6"/>

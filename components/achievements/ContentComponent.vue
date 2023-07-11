@@ -36,7 +36,7 @@ export default {
             thumbnail: "icon/hackathon.svg",
             src: "icon/maritime-explore.svg",
             icon: "ri:team-fill",
-            to: "https://github.com/devdewa?tab=repositories",
+            to: "sertifikat-hackathon.jpg",
             result: "Semifinalist",
             deskripsi: "Kompetisi ini diselenggarakan oleh Dinas Pembinaan Potensi Maritim Markas Besar Angkatan Laut (Dispotmar Mabesal) dalam rangka menggalang potensi anak bangsa di bidang inovasi produk digital kemaritiman."
         },
@@ -46,7 +46,7 @@ export default {
             thumbnail: "icon/kksi.svg",
             src: "icon/go-prakerin.svg",
             icon: "ri:team-fill",
-            to: "https://dewaprogramming.vercel.app/",
+            to: "sertifikat-kksi.pdf",
             result: "Juara Harapan 1",
             deskripsi: "KKSI adalah singkatan dari Kamp Kreatif SMK Indonesia, yang merupakan event nasional yang rutin diselenggarakan oleh kementrian pendidikan dan kebudayaan serta direktorat jenderal vokasi yang dibantu oleh SMK pengampu atau penyelenggara."
         },
