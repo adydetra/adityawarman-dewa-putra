@@ -4,9 +4,9 @@
                 Achievements that I have achieved<br/>both as a team or individually.
             </h1>
 
-            <div class="grid grid-cols-8 gap-8 xl:gap-16 2xl:gap-20 realtive">
+            <div class="grid grid-cols-8 gap-8 xl:gap-16 2xl:gap-32 realtive">
                 <NuxtLink :to="achievement.to" target="_blank" :title="achievement.title" class="shadow-xl shadow-blue-800/5 col-span-4 cursor-pointer ease-in-out duration-300 hover:scale-105 rounded-2xl backdrop-saturate-200 hover:bg-yellow-200/20 flex justify-center pt-4 pb-6" v-for="achievement in achievements" :key="achievement.id">
-                    <div class="w-full flex flex-col gap-6 xl:p-8 2xl:p-12">
+                    <div class="w-full flex flex-col justify-between gap-6 xl:p-8 2xl:p-12">
                         <img :src="achievement.thumbnail" alt="" class="w-full h-60 bg-gray-800/50 py-8 px-12 rounded-2xl" />
                         <p class="text-justify indent-8 text-gray-400 leading-relaxed"><span class="text-sky-400">#</span> {{ achievement.deskripsi }}</p>
                         <p class="flex items-center font-semibold text-gray-200">Result: <span class="ml-2 text-gray-400 leading-relaxed">{{ achievement.result }}</span></p>
