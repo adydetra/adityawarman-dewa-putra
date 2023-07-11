@@ -24,15 +24,15 @@ export default {
   data() {
     return {
       projects: [
-        { id: 1, title: "Portfolio", src:"../../assets/img/hero-mobile.jpg", to: "https://github.com/devdewa?tab=repositories" },
-        { id: 2, title: "Old Portfolio", src:"../../assets/img/icon/old-portfolio.svg", to: "https://dewaprogramming.vercel.app/" },
-        { id: 3, title: "DewaProgramming", src:"../../assets/img/icon/dewaprogramming.svg", to: "https://github.com/devdewa/DewaProgramming" },
-        { id: 4, title: "Wangyland", src:"../../assets/img/icon/wangyland.svg", to: "https://wangyland.vercel.app/" },
-        { id: 5, title: "Bang CV", src:"../../assets/img/icon/bangcv.jpg", to: "https://bangcv.vercel.app/" },
-        { id: 6, title: "MP3 / MP4 Downloader", src:"../../assets/img/icon/decorative-plant.svg", to: "https://dewa-downloader.vercel.app/" },
-        { id: 7, title: "E-Commerce LSP", src:"../../assets/img/icon/lsp.png", to: "https://github.com/devdewa/E-Commerce-LSP" },
-        { id: 8, title: "Belajar HTML App", src:"../../assets/img/icon/expo.png", to: "https://github.com/devdewa/React-Native-Expo-Belajar-HTML-App" },
-        { id: 8, title: "PTS", src:"../../assets/img/icon/smkn1jakarta.png", to: "https://github.com/devdewa/PTS" },
+        { id: 1, title: "Portfolio", src:"icon/hero-mobile.jpg", to: "https://github.com/devdewa?tab=repositories" },
+        { id: 2, title: "Old Portfolio", src:"icon/old-portfolio.svg", to: "https://dewaprogramming.vercel.app/" },
+        { id: 3, title: "DewaProgramming", src:"icon/dewaprogramming.svg", to: "https://github.com/devdewa/DewaProgramming" },
+        { id: 4, title: "Wangyland", src:"icon/wangyland.svg", to: "https://wangyland.vercel.app/" },
+        { id: 5, title: "Bang CV", src:"icon/bangcv.jpg", to: "https://bangcv.vercel.app/" },
+        { id: 6, title: "MP3 / MP4 Downloader", src:"icon/decorative-plant.svg", to: "https://dewa-downloader.vercel.app/" },
+        { id: 7, title: "E-Commerce LSP", src:"icon/lsp.png", to: "https://github.com/devdewa/E-Commerce-LSP" },
+        { id: 8, title: "Belajar HTML App", src:"icon/expo.png", to: "https://github.com/devdewa/React-Native-Expo-Belajar-HTML-App" },
+        { id: 8, title: "PTS", src:"icon/smkn1jakarta.png", to: "https://github.com/devdewa/PTS" },
       ],
     }
   },
