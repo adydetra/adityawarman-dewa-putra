@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-[url('/assets/img/pattern-hero-left.png')] bg-contain bg-center mx-auto relative pt-12 pb-16">
+    <div class="bg-[url('/assets/img/pattern-hero-left.png')] bg-contain bg-center mx-auto relative pt-12">
 
             <section class="flex flex-wrap justify-center items-center h-full">
                 <div class="py-8 px-4">
@@ -137,7 +137,7 @@
                         <div class="flex justify-center flex-col gap-6">
                             <img :src="project.src" alt="" class="w-12 h-12 m-auto rounded-full bg-white p-1.5 shadow-md border border-zinc-700/50 bg-zinc-800 ring-0" />
                             <div class="flex justify-center items-center text-gray-200">
-                                <Icon name="ph:link-bold" class="w-3 h-3 lg:w-4 2xl:w-5 lg:h-4 2xl:h-5"/><span class="ml-2 text-xs font-semibold">{{ project.title }}</span>
+                                <Icon name="ph:link-bold" class="w-3 h-3"/><span class="ml-2 text-xs font-semibold">{{ project.title }}</span>
                             </div>
                         </div>
                         </NuxtLink>
@@ -147,24 +147,24 @@
             <!-- Achievement -->
             <div class="mx-auto px-6 py-8 container bg-[url('/assets/img/pattern-hero-left.png')] bg-contain bg-center">
                 <h1 class="text-gray-300 text-center text-2xl font-bold leading-snug mb-10">
-                    Achievements that I have achieved<br/>both as a team or individually.
+                    Achievements that I have achieved both as a team or individually.
                 </h1>
 
-                <div class="grid grid-cols-5 gap-8 xl:gap-16 2xl:gap-32 realtive">
+                <div class="grid grid-cols-5 gap-16 px-4 realtive">
                     <NuxtLink :to="achievement.to" target="_blank" :title="achievement.title" class="shadow-xl shadow-blue-800/5 col-span-5 cursor-pointer ease-in-out duration-300 hover:scale-105 rounded-2xl backdrop-saturate-200 hover:bg-yellow-200/20 flex justify-center pt-4 pb-6" v-for="achievement in achievements" :key="achievement.id">
-                        <div class="w-full flex flex-col justify-between gap-6 p-6">
+                        <div class="w-full flex flex-col justify-between gap-6 px-6 pt-6 pb-4">
                             <img :src="achievement.thumbnail" alt="" class="w-full h-40 bg-gray-800/50 py-8 px-12 rounded-2xl" />
-                            <p class="text-justify text-xs indent-3 text-gray-400 leading-relaxed"><span class="text-sky-400">#</span> {{ achievement.deskripsi }}</p>
+                            <p class="text-justify text-xs indent-3 text-gray-400 leading-loose"><span class="text-sky-400">#</span> {{ achievement.deskripsi }}</p>
                             <p class="flex text-sm items-center font-semibold text-gray-200">Result: <span class="ml-2 text-gray-400 leading-relaxed">{{ achievement.result }}</span></p>
                             <div class="flex items-center text-white mt-4">
-                                <img :src="achievement.src" alt="" class="w-12 h-12 rounded-full bg-white p-1.5 shadow-md border border-zinc-700/50 bg-zinc-800 ring-0" />
-                                <Icon name="ph:link-bold" class="w-3 h-3 lg:w-4 2xl:w-5 lg:h-4 2xl:h-5 ml-3"/>
-                                <span class="ml-2 text-xs font-semibold">{{ achievement.title }}</span>
+                                <img :src="achievement.src" alt="" class="w-8 h-8 rounded-full bg-white p-1.5 shadow-md border border-zinc-700/50 bg-zinc-800 ring-0" />
+                                <Icon name="ph:link-bold" class="w-3 h-3 ml-3"/>
+                                <span class="ml-2 text-xs font-semibold leading-relaxed">{{ achievement.title }}</span>
                             </div>
                         </div>
                         
                         <!-- Icon Team / Individual -->
-                        <div class="flex justify-center items-center absolute bg-gray-300 text-black -top-4 -left-4 w-12 inset-0 h-12 rounded-full"><Icon :name="achievement.icon" class="w-3 h-3 lg:w-4 2xl:w-5 lg:h-4 2xl:h-5"/></div>
+                        <div class="flex justify-center items-center absolute bg-gray-300 text-black -top-4 -left-4 w-12 inset-0 h-12 rounded-full"><Icon :name="achievement.icon" class="w-3 h-3"/></div>
                     </NuxtLink>
                 </div>
 
@@ -280,7 +280,7 @@ export default {
         },
         { 
             id: 4,
-            title: "Bootstrap 5 - Website Landing Page",
+            title: "Bootstrap 5 - Landing Page",
             thumbnail: "icon/skilvul.svg",
             src: "icon/bootstrap.svg",
             icon: "bxs:user",
