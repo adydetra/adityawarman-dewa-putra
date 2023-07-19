@@ -27,11 +27,11 @@ export default {
         { id: 2, title: "Old Portfolio", src:"icon/old-portfolio.svg", to: "https://dewaprogramming.vercel.app/" },
         { id: 3, title: "DewaProgramming", src:"icon/dewaprogramming.svg", to: "https://github.com/devdewa/DewaProgramming" },
         { id: 4, title: "Wangyland", src:"icon/wangyland.svg", to: "https://wangyland.vercel.app/" },
-        { id: 5, title: "Bang CV", src:"icon/bangcv.jpg", to: "https://bangcv.vercel.app/" },
+        { id: 5, title: "Bang CV", src:"icon/bangcv.jpg", to: "https://github.com/devdewa/bangcv" },
         { id: 6, title: "MP3 / MP4 Downloader", src:"icon/decorative-plant.svg", to: "https://dewa-downloader.vercel.app/" },
         { id: 7, title: "E-Commerce LSP", src:"icon/lsp.png", to: "https://github.com/devdewa/E-Commerce-LSP" },
         { id: 8, title: "Belajar HTML App", src:"icon/expo.png", to: "https://github.com/devdewa/React-Native-Expo-Belajar-HTML-App" },
-        { id: 8, title: "PTS", src:"icon/smkn1jakarta.png", to: "https://github.com/devdewa/PTS" },
+        { id: 8, title: "Protem", src:"icon/github.svg", to: "https://pt-teknologi-pustaka-indonesia-buku.vercel.app/" },
       ],
     }
   },
