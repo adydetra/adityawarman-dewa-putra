@@ -10,7 +10,7 @@
                         <p class="text-gray-300 text-3xl font-bold leading-snug md:hidden">
                             <span class="text-yellow-200">Front End Developer</span>, website and mobile, enjoying life.
                         </p>
-                        <p class="text-gray-300 text-4xl font-bold leading-snug">
+                        <p class="text-gray-300 text-4xl font-bold leading-snug hidden md:block">
                             <span class="text-yellow-200">Front End Developer</span>, website <br/>and mobile, enjoying life.
                         </p>
                         <p class="text-gray-400 text-sm">
