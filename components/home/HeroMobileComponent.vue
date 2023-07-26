@@ -13,8 +13,8 @@
                         <p class="text-gray-300 text-4xl font-bold leading-snug">
                             <span class="text-yellow-200">Front End Developer</span>, website <br/>and mobile, enjoying life.
                         </p>
-                        <p class="text-gray-400 text-sm md:text-md">
-                            ~ I’m Adityawarman Dewa Putra <span class="text-xs md:text-sm ml-2">🇮🇩</span>
+                        <p class="text-gray-400 text-sm">
+                            ~ I’m Adityawarman Dewa Putra <span class="text-xs ml-2">🇮🇩</span>
                         </p>
                         <ul class="flex text-gray-400 gap-7">
                             <li v-for="data in datas" :key="data.id">
@@ -45,9 +45,9 @@
                     Software I use, gadgets I love, and and the tech stack that I use.
                 </h1>
 
-                <div class="grid grid-cols-12 gap-8">
+                <div class="grid grid-cols-10 md:grid-cols-12 gap-8">
                     <!-- Workstation -->
-                    <div class="col-span-4 flex justify-center border-dashed border-2 border-gray-400/30 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300">
+                    <div class="col-span-5 md:col-span-4 flex justify-center border-dashed border-2 border-gray-400/30 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300">
                         <div>
                             <h2 class="text-gray-400 text-sm font-semibold mb-4 flex justify-center">Workstation</h2>
                             <ul class="flex justify-center text-gray-400 gap-6">
@@ -60,7 +60,7 @@
                         </div>
                     </div>
                     <!-- Database -->
-                    <div class="col-span-4 flex justify-center border-dashed border-2 border-gray-400/30 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300">
+                    <div class="col-span-5 md:col-span-4 flex justify-center border-dashed border-2 border-gray-400/30 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300">
                         <div>
                             <h2 class="text-gray-400 text-sm font-semibold mb-4 flex justify-center">Database</h2>
                             <ul class="flex justify-center text-gray-400 gap-6">
@@ -73,7 +73,7 @@
                         </div>
                     </div>
                     <!-- Operating System -->
-                    <div class="col-span-4 flex justify-center border-dashed border-2 border-gray-400/30 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300">
+                    <div class="col-span-10 md:col-span-4 flex justify-center border-dashed border-2 border-gray-400/30 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300">
                         <div>
                             <h2 class="text-gray-400 text-sm font-semibold mb-4 flex justify-center">Operating System</h2>
                             <ul class="flex justify-center text-gray-400 gap-6">
@@ -86,7 +86,7 @@
                         </div>
                     </div>
                     <!-- Development tools -->
-                    <div class="backdrop-saturate-200 col-span-6 flex justify-center border-dashed border-2 border-gray-400/30 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300">
+                    <div class="backdrop-saturate-200 col-span-10 md:col-span-6 flex justify-center border-dashed border-2 border-gray-400/30 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300">
                         <div>
                             <h2 class="text-gray-400 text-sm font-semibold mb-6 flex justify-center">Development tools</h2>
                             <ul class="flex justify-center text-gray-400 gap-6">
@@ -99,7 +99,7 @@
                         </div>
                     </div>
                     <!-- Back End Development -->
-                    <div class="backdrop-saturate-200 col-span-6 flex justify-center border-dashed border-2 border-gray-400/30 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300">
+                    <div class="backdrop-saturate-200 col-span-10 md:col-span-6 flex justify-center border-dashed border-2 border-gray-400/30 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300">
                         <div>
                             <h2 class="text-gray-400 text-sm font-semibold mb-6 flex justify-center">Back End [Not Focus]</h2>
                             <ul class="flex justify-center text-gray-400 gap-6">
@@ -112,7 +112,7 @@
                         </div>
                     </div>
                     <!-- Front End Development -->
-                    <div class="col-span-12 flex justify-center border-dashed border-2 border-gray-400/30 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300">
+                    <div class="col-span-10 md:col-span-12 flex justify-center border-dashed border-2 border-gray-400/30 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300">
                         <div>
                             <h2 class="text-gray-400 text-sm font-semibold mb-6 flex justify-center">Front End Development</h2>
                             <ul class="flex flex-wrap justify-center text-gray-400 gap-6 px-6">
@@ -134,9 +134,9 @@
                         Things I’ve made trying to put my dent in the universe.
                     </h1>
 
-                    <div class="grid grid-cols-9 gap-8">
+                    <div class="grid grid-cols-10 md:grid-cols-9 gap-8">
                         <!-- Project -->
-                        <NuxtLink :to="project.to" target="_blank" :title="project.title" class="col-span-3 cursor-pointer ease-in-out duration-300 hover:scale-105 hover:backdrop-saturate-200 flex justify-center border-dashed border-2 border-gray-800 pt-4 pb-6 hover:border-gray-100" v-for="project in projects" :key="project.id">
+                        <NuxtLink :to="project.to" target="_blank" :title="project.title" class="col-span-10 md:grid-cols-3 cursor-pointer ease-in-out duration-300 hover:scale-105 hover:backdrop-saturate-200 flex justify-center border-dashed border-2 border-gray-800 pt-4 pb-6 hover:border-gray-100" v-for="project in projects" :key="project.id">
                         <div class="flex justify-center flex-col gap-6">
                             <img :src="project.src" alt="" class="w-12 h-12 m-auto rounded-full bg-white p-1.5 shadow-md border border-zinc-700/50 bg-zinc-800 ring-0" />
                             <div class="flex justify-center items-center text-gray-200">
@@ -153,8 +153,8 @@
                     Achievements that I have achieved both as a team or individually.
                 </h1>
 
-                <div class="grid grid-cols-6 gap-16 px-4 realtive">
-                    <NuxtLink :to="achievement.to" target="_blank" :title="achievement.title" class="shadow-xl shadow-blue-800/5 col-span-3 cursor-pointer ease-in-out duration-300 hover:scale-105 rounded-2xl backdrop-saturate-200 hover:bg-yellow-200/20 flex justify-center pt-4 pb-6" v-for="achievement in achievements" :key="achievement.id">
+                <div class="grid grid-cols-5 md:grid-cols-6 gap-16 px-4 realtive">
+                    <NuxtLink :to="achievement.to" target="_blank" :title="achievement.title" class="shadow-xl shadow-blue-800/5 col-span-5 md:col-span-3 cursor-pointer ease-in-out duration-300 hover:scale-105 rounded-2xl backdrop-saturate-200 hover:bg-yellow-200/20 flex justify-center pt-4 pb-6" v-for="achievement in achievements" :key="achievement.id">
                         <div class="w-full flex flex-col justify-between gap-6 px-6 pt-6 pb-4">
                             <img :src="achievement.thumbnail" alt="" class="w-full h-40 bg-gray-800/50 py-8 px-12 rounded-2xl" />
                             <p class="text-justify text-xs indent-3 text-gray-400 leading-loose"><span class="text-sky-400">#</span> {{ achievement.deskripsi }}</p>
@@ -246,7 +246,7 @@ export default {
         { id: 6, title: "MP3 / MP4 Downloader", src:"icon/decorative-plant.svg", to: "https://dewa-downloader.vercel.app/" },
         { id: 7, title: "E-Commerce LSP", src:"icon/lsp.png", to: "https://github.com/devdewa/E-Commerce-LSP" },
         { id: 8, title: "Belajar HTML App", src:"icon/expo.png", to: "https://github.com/devdewa/React-Native-Expo-Belajar-HTML-App" },
-        { id: 8, title: "Protem", src:"icon/github.svg", to: "https://pt-teknologi-pustaka-indonesia-buku.vercel.app/" },
+        { id: 9, title: "Protem", src:"icon/github.svg", to: "https://pt-teknologi-pustaka-indonesia-buku.vercel.app/" },
       ],
 
       //Achievement
