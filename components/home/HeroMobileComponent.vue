@@ -1,22 +1,25 @@
 <template>
     <div class="bg-[url('/assets/img/pattern-hero-left.png')] bg-contain bg-center mx-auto relative pt-12">
 
-            <section class="flex flex-wrap justify-center items-center h-full">
-                <div class="py-8 px-4">
-                    <div class="flex justify-center items-center bg-yellow-200 p-0.5 w-16 rotate-3 rounded-full">
-                        <img src="~/assets/img/hero-mobile.jpg" alt="Photo" class="w-16 rounded-full shadow-md shadow-gray-500/40" />
+            <section class="flex flex-wrap justify-center items-center w-full h-full">
+                <div class="py-8 px-4 md:px-20 w-full">
+                    <div class="flex justify-center items-center bg-yellow-200 p-0.5 w-16 md:w-20 rotate-3 rounded-full">
+                        <img src="~/assets/img/hero-mobile.jpg" alt="Photo" class="w-16 md:w-20 rounded-full shadow-md shadow-gray-500/40" />
                     </div>
                     <div class="space-y-6 mt-6">
-                        <p class="text-gray-300 text-3xl font-bold leading-snug">
+                        <p class="text-gray-300 text-3xl font-bold leading-snug md:hidden">
                             <span class="text-yellow-200">Front End Developer</span>, website and mobile, enjoying life.
                         </p>
-                        <p class="text-gray-400 text-sm">
-                            ~ I’m Adityawarman Dewa Putra <span class="text-xs ml-2">🇮🇩</span>
+                        <p class="text-gray-300 text-4xl font-bold leading-snug">
+                            <span class="text-yellow-200">Front End Developer</span>, website <br/>and mobile, enjoying life.
+                        </p>
+                        <p class="text-gray-400 text-sm md:text-md">
+                            ~ I’m Adityawarman Dewa Putra <span class="text-xs md:text-sm ml-2">🇮🇩</span>
                         </p>
                         <ul class="flex text-gray-400 gap-7">
                             <li v-for="data in datas" :key="data.id">
                                 <NuxtLink :to="data.to" :title="data.title" target="_blank" class="cursor-pointer ease-in-out duration-300 hover:text-yellow-200">
-                                    <Icon :name="data.name" class="w-5 h-5 lg:w-6 lg:h-6"/>
+                                    <Icon :name="data.name" class="w-5 h-5 md:w-6 md:h-6"/>
                                 </NuxtLink>
                             </li>
                         </ul>
@@ -25,26 +28,26 @@
             </section>
 
             <section class="flex justify-center gap-6 overflow-hidden pt-16 pb-12">
-                <div class="relative aspect-[10/10] w-44 flex-none overflow-hidden rounded-xl -rotate-3 shadow-2xl shadow-yellow-200/10">
+                <div class="relative aspect-[10/10] w-44 md:w-80 flex-none overflow-hidden rounded-xl -rotate-3 shadow-2xl shadow-yellow-200/10">
                     <img src="~/assets/img/hero.jpg" alt="Photo" class="absolute h-full w-full object-cover" />
                 </div>
-                <div class="relative aspect-[10/10] w-32 flex-none overflow-hidden rounded-xl">
+                <div class="relative aspect-[10/10] w-32 md:w-60 flex-none overflow-hidden rounded-xl">
                     <img src="~/assets/img/mobile-3.jpg" alt="Photo" class="absolute h-full w-full object-scale-down" />
                 </div>
-                <div class="relative aspect-[10/10] w-44 flex-none overflow-hidden rounded-xl rotate-3 shadow-2xl shadow-yellow-200/10">
+                <div class="relative aspect-[10/10] w-44 md:w-80 flex-none overflow-hidden rounded-xl rotate-3 shadow-2xl shadow-yellow-200/10">
                     <img src="~/assets/img/mobile-2.jpg" alt="Photo" class="absolute h-full w-full object-cover" />
                 </div>
             </section>
 
             <!-- Uses -->
-            <div class="mx-auto relative    px-6 py-8 bg-[url('/assets/img/pattern-hero-left.png')] bg-contain bg-center">
+            <div class="mx-auto relative px-6 py-8 md:py-20 lg:py-8 bg-[url('/assets/img/pattern-hero-left.png')] bg-contain bg-center">
                 <h1 class="text-gray-300 text-center text-2xl font-bold leading-snug 2xl:leading-snug mb-16">
                     Software I use, gadgets I love, and and the tech stack that I use.
                 </h1>
 
-                <div class="grid grid-cols-10 gap-8">
+                <div class="grid grid-cols-12 gap-8">
                     <!-- Workstation -->
-                    <div class="col-span-5 flex justify-center border-dashed border-2 border-gray-400/30 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300">
+                    <div class="col-span-4 flex justify-center border-dashed border-2 border-gray-400/30 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300">
                         <div>
                             <h2 class="text-gray-400 text-sm font-semibold mb-4 flex justify-center">Workstation</h2>
                             <ul class="flex justify-center text-gray-400 gap-6">
@@ -57,7 +60,7 @@
                         </div>
                     </div>
                     <!-- Database -->
-                    <div class="col-span-5 flex justify-center border-dashed border-2 border-gray-400/30 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300">
+                    <div class="col-span-4 flex justify-center border-dashed border-2 border-gray-400/30 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300">
                         <div>
                             <h2 class="text-gray-400 text-sm font-semibold mb-4 flex justify-center">Database</h2>
                             <ul class="flex justify-center text-gray-400 gap-6">
@@ -70,7 +73,7 @@
                         </div>
                     </div>
                     <!-- Operating System -->
-                    <div class="col-span-10 flex justify-center border-dashed border-2 border-gray-400/30 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300">
+                    <div class="col-span-4 flex justify-center border-dashed border-2 border-gray-400/30 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300">
                         <div>
                             <h2 class="text-gray-400 text-sm font-semibold mb-4 flex justify-center">Operating System</h2>
                             <ul class="flex justify-center text-gray-400 gap-6">
@@ -83,7 +86,7 @@
                         </div>
                     </div>
                     <!-- Development tools -->
-                    <div class="backdrop-saturate-200 col-span-10 flex justify-center border-dashed border-2 border-gray-400/30 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300">
+                    <div class="backdrop-saturate-200 col-span-6 flex justify-center border-dashed border-2 border-gray-400/30 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300">
                         <div>
                             <h2 class="text-gray-400 text-sm font-semibold mb-6 flex justify-center">Development tools</h2>
                             <ul class="flex justify-center text-gray-400 gap-6">
@@ -96,7 +99,7 @@
                         </div>
                     </div>
                     <!-- Back End Development -->
-                    <div class="backdrop-saturate-200 col-span-10 flex justify-center border-dashed border-2 border-gray-400/30 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300">
+                    <div class="backdrop-saturate-200 col-span-6 flex justify-center border-dashed border-2 border-gray-400/30 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300">
                         <div>
                             <h2 class="text-gray-400 text-sm font-semibold mb-6 flex justify-center">Back End [Not Focus]</h2>
                             <ul class="flex justify-center text-gray-400 gap-6">
@@ -109,7 +112,7 @@
                         </div>
                     </div>
                     <!-- Front End Development -->
-                    <div class="col-span-10 flex justify-center border-dashed border-2 border-gray-400/30 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300">
+                    <div class="col-span-12 flex justify-center border-dashed border-2 border-gray-400/30 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300">
                         <div>
                             <h2 class="text-gray-400 text-sm font-semibold mb-6 flex justify-center">Front End Development</h2>
                             <ul class="flex flex-wrap justify-center text-gray-400 gap-6 px-6">
@@ -126,14 +129,14 @@
             </div>
 
             <!-- Project -->
-            <div class="mx-auto relative px-6 py-8 bg-[url('/assets/img/pattern-hero-left.png')] bg-contain bg-center">
-                    <h1 class="text-gray-300 text-center text-2xl font-bold leading-snug 2xl:leading-snug mb-10">
+            <div class="mx-auto relative px-6 py-8 md:py-20 lg:py-8 bg-[url('/assets/img/pattern-hero-left.png')] bg-contain bg-center">
+                    <h1 class="text-gray-300 text-center text-2xl font-bold leading-snug 2xl:leading-snug mb-10 md:mb-20 lg:mb-10">
                         Things I’ve made trying to put my dent in the universe.
                     </h1>
 
-                    <div class="grid grid-cols-10 gap-8">
+                    <div class="grid grid-cols-9 gap-8">
                         <!-- Project -->
-                        <NuxtLink :to="project.to" target="_blank" :title="project.title" class="col-span-10 cursor-pointer ease-in-out duration-300 hover:scale-105 hover:backdrop-saturate-200 flex justify-center border-dashed border-2 border-gray-800 pt-4 pb-6 hover:border-gray-100" v-for="project in projects" :key="project.id">
+                        <NuxtLink :to="project.to" target="_blank" :title="project.title" class="col-span-3 cursor-pointer ease-in-out duration-300 hover:scale-105 hover:backdrop-saturate-200 flex justify-center border-dashed border-2 border-gray-800 pt-4 pb-6 hover:border-gray-100" v-for="project in projects" :key="project.id">
                         <div class="flex justify-center flex-col gap-6">
                             <img :src="project.src" alt="" class="w-12 h-12 m-auto rounded-full bg-white p-1.5 shadow-md border border-zinc-700/50 bg-zinc-800 ring-0" />
                             <div class="flex justify-center items-center text-gray-200">
@@ -145,13 +148,13 @@
             </div>
 
             <!-- Achievement -->
-            <div class="mx-auto px-6 py-8 container bg-[url('/assets/img/pattern-hero-left.png')] bg-contain bg-center">
-                <h1 class="text-gray-300 text-center text-2xl font-bold leading-snug mb-10">
+            <div class="mx-auto px-6 py-8 md:py-20 lg:py-8 container bg-[url('/assets/img/pattern-hero-left.png')] bg-contain bg-center">
+                <h1 class="text-gray-300 text-center text-2xl font-bold leading-snug mb-10 md:mb-20 lg:mb-10">
                     Achievements that I have achieved both as a team or individually.
                 </h1>
 
-                <div class="grid grid-cols-5 gap-16 px-4 realtive">
-                    <NuxtLink :to="achievement.to" target="_blank" :title="achievement.title" class="shadow-xl shadow-blue-800/5 col-span-5 cursor-pointer ease-in-out duration-300 hover:scale-105 rounded-2xl backdrop-saturate-200 hover:bg-yellow-200/20 flex justify-center pt-4 pb-6" v-for="achievement in achievements" :key="achievement.id">
+                <div class="grid grid-cols-6 gap-16 px-4 realtive">
+                    <NuxtLink :to="achievement.to" target="_blank" :title="achievement.title" class="shadow-xl shadow-blue-800/5 col-span-3 cursor-pointer ease-in-out duration-300 hover:scale-105 rounded-2xl backdrop-saturate-200 hover:bg-yellow-200/20 flex justify-center pt-4 pb-6" v-for="achievement in achievements" :key="achievement.id">
                         <div class="w-full flex flex-col justify-between gap-6 px-6 pt-6 pb-4">
                             <img :src="achievement.thumbnail" alt="" class="w-full h-40 bg-gray-800/50 py-8 px-12 rounded-2xl" />
                             <p class="text-justify text-xs indent-3 text-gray-400 leading-loose"><span class="text-sky-400">#</span> {{ achievement.deskripsi }}</p>
