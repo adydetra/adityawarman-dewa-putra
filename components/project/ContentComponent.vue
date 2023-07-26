@@ -31,7 +31,7 @@ export default {
         { id: 6, title: "MP3 / MP4 Downloader", src:"icon/decorative-plant.svg", to: "https://dewa-downloader.vercel.app/" },
         { id: 7, title: "E-Commerce LSP", src:"icon/lsp.png", to: "https://github.com/devdewa/E-Commerce-LSP" },
         { id: 8, title: "Belajar HTML App", src:"icon/expo.png", to: "https://github.com/devdewa/React-Native-Expo-Belajar-HTML-App" },
-        { id: 8, title: "Protem", src:"icon/github.svg", to: "https://pt-teknologi-pustaka-indonesia-buku.vercel.app/" },
+        { id: 9, title: "Protem", src:"icon/github.svg", to: "https://pt-teknologi-pustaka-indonesia-buku.vercel.app/" },
       ],
     }
   },
