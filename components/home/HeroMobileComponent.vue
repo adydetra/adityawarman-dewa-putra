@@ -28,13 +28,13 @@
             </section>
 
             <section class="flex justify-center gap-6 overflow-hidden pt-16 pb-12">
-                <div class="relative aspect-[10/10] w-44 md:w-80 flex-none overflow-hidden rounded-xl -rotate-3 shadow-2xl shadow-yellow-200/10" data-aos="flip-left" data-aos-duration="1000">
+                <div class="relative aspect-[10/10] w-44 md:w-80 flex-none overflow-hidden rounded-xl -rotate-3 shadow-2xl shadow-yellow-200/10">
                     <img src="~/assets/img/hero.jpg" alt="Photo" class="absolute h-full w-full object-cover" />
                 </div>
                 <div class="relative aspect-[10/10] w-32 md:w-60 flex-none overflow-hidden rounded-xl">
                     <img src="~/assets/img/mobile-3.jpg" alt="Photo" class="absolute h-full w-full object-scale-down" />
                 </div>
-                <div class="relative aspect-[10/10] w-44 md:w-80 flex-none overflow-hidden rounded-xl rotate-3 shadow-2xl shadow-yellow-200/10" data-aos="flip-right" data-aos-duration="1000">
+                <div class="relative aspect-[10/10] w-44 md:w-80 flex-none overflow-hidden rounded-xl rotate-3 shadow-2xl shadow-yellow-200/10">
                     <img src="~/assets/img/mobile-2.jpg" alt="Photo" class="absolute h-full w-full object-cover" />
                 </div>
             </section>
@@ -47,7 +47,7 @@
 
                 <div class="grid grid-cols-10 md:grid-cols-12 gap-8">
                     <!-- Workstation -->
-                    <div data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="top-center" class="col-span-5 md:col-span-4 flex justify-center border-dashed border-2 border-gray-400/30 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300">
+                    <div class="col-span-5 md:col-span-4 flex justify-center border-dashed border-2 border-gray-400/30 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300">
                         <div>
                             <h2 class="text-gray-400 text-sm font-semibold mb-4 flex justify-center">Workstation</h2>
                             <ul class="flex justify-center text-gray-400 gap-6">
@@ -60,7 +60,7 @@
                         </div>
                     </div>
                     <!-- Database -->
-                    <div data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="top-center" class="col-span-5 md:col-span-4 flex justify-center border-dashed border-2 border-gray-400/30 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300">
+                    <div class="col-span-5 md:col-span-4 flex justify-center border-dashed border-2 border-gray-400/30 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300">
                         <div>
                             <h2 class="text-gray-400 text-sm font-semibold mb-4 flex justify-center">Database</h2>
                             <ul class="flex justify-center text-gray-400 gap-6">
@@ -73,7 +73,7 @@
                         </div>
                     </div>
                     <!-- Operating System -->
-                    <div data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="top-center" class="col-span-10 md:col-span-4 flex justify-center border-dashed border-2 border-gray-400/30 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300">
+                    <div class="col-span-10 md:col-span-4 flex justify-center border-dashed border-2 border-gray-400/30 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300">
                         <div>
                             <h2 class="text-gray-400 text-sm font-semibold mb-4 flex justify-center">Operating System</h2>
                             <ul class="flex justify-center text-gray-400 gap-6">
@@ -86,7 +86,7 @@
                         </div>
                     </div>
                     <!-- Development tools -->
-                    <div data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="top-center" class="backdrop-saturate-200 col-span-10 md:col-span-6 flex justify-center border-dashed border-2 border-gray-400/30 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300">
+                    <div class="backdrop-saturate-200 col-span-10 md:col-span-6 flex justify-center border-dashed border-2 border-gray-400/30 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300">
                         <div>
                             <h2 class="text-gray-400 text-sm font-semibold mb-6 flex justify-center">Development tools</h2>
                             <ul class="flex justify-center text-gray-400 gap-6">
@@ -99,7 +99,7 @@
                         </div>
                     </div>
                     <!-- Back End Development -->
-                    <div data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="top-center" class="backdrop-saturate-200 col-span-10 md:col-span-6 flex justify-center border-dashed border-2 border-gray-400/30 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300">
+                    <div class="backdrop-saturate-200 col-span-10 md:col-span-6 flex justify-center border-dashed border-2 border-gray-400/30 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300">
                         <div>
                             <h2 class="text-gray-400 text-sm font-semibold mb-6 flex justify-center">Back End [Not Focus]</h2>
                             <ul class="flex justify-center text-gray-400 gap-6">
@@ -112,7 +112,7 @@
                         </div>
                     </div>
                     <!-- Front End Development -->
-                    <div data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="top-center" class="col-span-10 md:col-span-12 flex justify-center border-dashed border-2 border-gray-400/30 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300">
+                    <div class="col-span-10 md:col-span-12 flex justify-center border-dashed border-2 border-gray-400/30 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300">
                         <div>
                             <h2 class="text-gray-400 text-sm font-semibold mb-6 flex justify-center">Front End Development</h2>
                             <ul class="flex flex-wrap justify-center text-gray-400 gap-6 px-6">
@@ -136,7 +136,7 @@
 
                     <div class="grid grid-cols-10 md:grid-cols-9 gap-8">
                         <!-- Project -->
-                        <NuxtLink data-aos="zoom-in" data-aos-duration="1000" data-aos-anchor-placement="top-center" :to="project.to" target="_blank" :title="project.title" class="col-span-10 md:col-span-3 cursor-pointer ease-in-out duration-300 hover:scale-105 hover:backdrop-saturate-200 flex justify-center border-dashed border-2 border-gray-800 pt-4 pb-6 hover:border-gray-100" v-for="project in projects" :key="project.id">
+                        <NuxtLink :to="project.to" target="_blank" :title="project.title" class="col-span-10 md:col-span-3 cursor-pointer ease-in-out duration-300 hover:scale-105 hover:backdrop-saturate-200 flex justify-center border-dashed border-2 border-gray-800 pt-4 pb-6 hover:border-gray-100" v-for="project in projects" :key="project.id">
                         <div class="flex justify-center flex-col gap-6">
                             <img :src="project.src" alt="" class="w-12 h-12 m-auto rounded-full bg-white p-1.5 shadow-md border border-zinc-700/50 bg-zinc-800 ring-0" />
                             <div class="flex justify-center items-center text-gray-200">
@@ -154,7 +154,7 @@
                 </h1>
 
                 <div class="grid grid-cols-5 md:grid-cols-6 gap-16 px-4 realtive">
-                    <NuxtLink data-aos="flip-right" data-aos-duration="1000" data-aos-anchor-placement="top-center" :to="achievement.to" target="_blank" :title="achievement.title" class="shadow-xl shadow-blue-800/5 col-span-5 md:col-span-3 cursor-pointer ease-in-out duration-300 hover:scale-105 rounded-2xl backdrop-saturate-200 hover:bg-yellow-200/20 flex justify-center pt-4 pb-6" v-for="achievement in achievements" :key="achievement.id">
+                    <NuxtLink :to="achievement.to" target="_blank" :title="achievement.title" class="shadow-xl shadow-blue-800/5 col-span-5 md:col-span-3 cursor-pointer ease-in-out duration-300 hover:scale-105 rounded-2xl backdrop-saturate-200 hover:bg-yellow-200/20 flex justify-center pt-4 pb-6" v-for="achievement in achievements" :key="achievement.id">
                         <div class="w-full flex flex-col justify-between gap-6 px-6 pt-6 pb-4">
                             <img :src="achievement.thumbnail" alt="" class="w-full h-40 bg-gray-800/50 py-8 px-12 rounded-2xl" />
                             <p class="text-justify text-xs indent-3 text-gray-400 leading-loose"><span class="text-sky-400">#</span> {{ achievement.deskripsi }}</p>

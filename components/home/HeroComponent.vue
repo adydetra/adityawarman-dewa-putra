@@ -28,7 +28,6 @@
                             delay: 4000,
                             disableOnInteraction: true,
                         }"
-                        data-aos="flip-right" data-aos-duration="2000"
                     >
                         <SwiperSlide class="py-4">
                             <div class="relative py-4 xl:w-64 2xl:w-96 h-full">
