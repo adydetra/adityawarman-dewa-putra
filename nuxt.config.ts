@@ -7,6 +7,8 @@ export default defineNuxtConfig({
     },
   },
 
+  plugins: [{ src: '~/plugins/aos', mode: "client" }],
+
   devtools: { enabled: true },
 
   modules: [

@@ -5,6 +5,9 @@
 </template>
 
 <script setup lang="ts">
+  import AOS from 'aos';
+  onMounted(() => AOS.init());
+
   useSeoMeta({
     title: 'Adityawarman Dewa Putra',
     ogTitle: 'Adityawarman Dewa Putra',

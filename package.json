@@ -20,6 +20,7 @@
   "dependencies": {
     "@nuxtjs/color-mode": "^3.3.0",
     "@nuxtjs/google-fonts": "^3.0.1",
+    "aos": "^2.3.4",
     "nuxt-swiper": "^1.1.1"
   }
 }
