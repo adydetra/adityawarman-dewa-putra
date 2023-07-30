@@ -1,11 +1,11 @@
 <template>
     <div class="mx-auto w-screen px-40 2xl:px-28 container xl:py-16 bg-[url('/assets/img/pattern-hero-left.png')] bg-contain bg-center">
-            <h1 data-aos="fade-down" data-aos-duration="1000" class="text-gray-300 text-center text-3xl 2xl:text-4xl font-bold leading-snug 2xl:leading-snug mb-16">
+            <h1 data-aos="fade-down" data-aos-duration="1000" class="text-gray-500 dark:text-gray-300 text-center text-3xl 2xl:text-4xl font-bold leading-snug 2xl:leading-snug mb-16">
                 Achievements that I have achieved<br/>both as a team or individually.
             </h1>
 
             <div class="grid grid-cols-8 gap-8 xl:gap-16 2xl:gap-32 realtive">
-                <NuxtLink :data-aos="achievement.aos" data-aos-duration="1000" :to="achievement.to" target="_blank" :title="achievement.title" class="shadow-xl shadow-blue-800/5 col-span-4 cursor-pointer ease-in-out duration-300 hover:scale-105 rounded-2xl backdrop-saturate-200 hover:bg-yellow-200/20 flex justify-center pt-4 pb-6" v-for="achievement in achievements" :key="achievement.id">
+                <NuxtLink :data-aos="achievement.aos" data-aos-duration="1000" :to="achievement.to" target="_blank" :title="achievement.title" class="shadow-xl shadow-blue-500/5 dark:shadow-blue-800/5 col-span-4 cursor-pointer ease-in-out duration-300 hover:scale-105 rounded-2xl backdrop-saturate-200 bg-gray-50/70 dark:bg-transparent hover:bg-yellow-200/20 flex justify-center pt-4 pb-6" v-for="achievement in achievements" :key="achievement.id">
                     <div class="w-full flex flex-col justify-between gap-6 xl:p-8 2xl:p-12">
                         <img :src="achievement.thumbnail" alt="" class="w-full h-60 bg-gray-800/50 py-8 px-12 rounded-2xl" />
                         <p class="text-justify indent-8 text-gray-400 leading-relaxed"><span class="text-sky-400">#</span> {{ achievement.deskripsi }}</p>

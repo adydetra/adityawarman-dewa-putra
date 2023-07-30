@@ -1,24 +1,24 @@
 <template>
-    <div class="bg-gradient-to-r from-gray-950 to-gray-900 mx-auto h-screen relative w-screen">
+    <div class="bg-gradient-to-r bg-white dark:from-gray-950 dark:to-gray-900 mx-auto h-screen relative w-screen">
             <section class="grid grid-cols-8 h-screen">
                 <div class="col-span-5 flex items-center py-40 px-24 bg-[url('/assets/img/pattern-hero-left.png')] bg-contain bg-center">
                     <div class="xl:space-y-6 2xl:space-y-8">
-                        <p class="text-gray-300 xl:text-3xl 2xl:text-5xl font-bold xl:leading-relaxed 2xl:leading-snug" data-aos="fade-down" data-aos-duration="1000">
-                            <span class="text-yellow-200">Front End Developer</span>, website and mobile, enjoying life.
+                        <p class="text-gray-500 dark:text-gray-300 xl:text-3xl 2xl:text-5xl font-bold xl:leading-relaxed 2xl:leading-snug">
+                            <span class="text-yellow-300 dark:text-yellow-200">Front End Developer</span>, website and mobile, enjoying life.
                         </p>
-                        <p class="text-gray-400 xl:text-md 2xl:text-lg" data-aos="fade-right" data-aos-duration="1000">
+                        <p class="text-gray-400 xl:text-md 2xl:text-lg">
                             ~ I’m Adityawarman Dewa Putra. I live in Jakarta Indonesia.
                         </p>
-                        <ul class="flex text-gray-400 xl:gap-7 2xl:gap-8" data-aos="fade-up" data-aos-duration="1000">
+                        <ul class="flex text-gray-500 dark:text-gray-400 xl:gap-7 2xl:gap-8">
                             <li v-for="data in datas" :key="data.id">
-                                <NuxtLink :to="data.to" :title="data.title" target="_blank" class="cursor-pointer ease-in-out duration-300 hover:text-yellow-200">
+                                <NuxtLink :to="data.to" :title="data.title" target="_blank" class="cursor-pointer ease-in-out duration-300 hover:text-yellow-400 dark:hover:text-yellow-200">
                                     <Icon :name="data.name" class="w-4 h-4 lg:w-6 lg:h-6"/>
                                 </NuxtLink>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-span-3 flex justify-center items-center bg-yellow-200 py-40 bg-[url('/assets/img/pattern-hero-right.png')] bg-contain bg-center">
+                <div class="col-span-3 flex justify-center items-center bg-white dark:bg-yellow-200 py-40 bg-[url('/assets/img/pattern-hero-right.png')] bg-contain bg-center">
                     <Swiper
                         :modules="[SwiperAutoplay, SwiperEffectFade]"
                         :slides-per-view="1"
@@ -72,6 +72,6 @@ export default {
 </script>
 
 <style scoped>  
-.swiper-slide { @apply flex justify-center items-center}
-.swiper, .swiper-content { @apply !h-full }
+    .swiper-slide { @apply flex justify-center items-center}
+    .swiper, .swiper-content { @apply !h-full }
 </style>

@@ -7,7 +7,7 @@ export default defineNuxtConfig({
     },
   },
 
-  plugins: [{ src: '~/plugins/aos', mode: "client" }],
+  // plugins: [{ src: '~/plugins/aos', mode: "client" }],
 
   devtools: { enabled: true },
 
@@ -28,7 +28,8 @@ export default defineNuxtConfig({
   },
   
   colorMode: {    
-    classSuffix: ''
+    classSuffix: '',
+    preference: 'dark',
   },
 
   swiper: {
