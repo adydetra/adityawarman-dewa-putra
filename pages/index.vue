@@ -31,7 +31,7 @@
 
     <!-- Mobile -->
     <section class="lg:hidden bg-gray-950 tracking-wide h-screen relative overflow-x-hidden">
-        <HomeHeroMobileComponent/>
+        <MobileViewComponent/>
     </section>
 </template>
 
