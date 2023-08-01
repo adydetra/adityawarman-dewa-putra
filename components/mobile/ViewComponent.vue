@@ -4,7 +4,7 @@
             <section class="flex flex-wrap justify-center items-center w-full h-full">
                 <div class="py-8 px-4 md:px-20 w-full">
                     <div class="flex justify-center items-center bg-yellow-200 p-0.5 w-16 md:w-20 rotate-3 rounded-full">
-                        <img src="~/assets/img/hero-mobile.jpg" alt="Photo" class="w-16 md:w-20 rounded-full shadow-md shadow-gray-500/40" />
+                        <img src="~/assets/img/hero-mobile.webp" alt="Photo" class="w-16 md:w-20 rounded-full shadow-md shadow-gray-500/40" />
                     </div>
                     <div class="space-y-6 mt-6">
                         <p class="text-gray-300 text-3xl font-bold leading-snug md:hidden">
@@ -243,7 +243,7 @@ export default {
         { id: 7, title: "Bang CV", src:"icon/bangcv.jpg", to: "https://github.com/devdewa/bangcv" },
         { id: 8, title: "MP3 / MP4 Downloader", src:"icon/github.svg", to: "https://dewa-downloader.vercel.app/" },
         { id: 9, title: "E-Commerce LSP", src:"icon/lsp.png", to: "https://github.com/devdewa/E-Commerce-LSP" },
-        { id: 10, title: "Belajar HTML App", src:"icon/expo.png", to: "https://github.com/devdewa/React-Native-Expo-Belajar-HTML-App" },
+        { id: 10, title: "Belajar HTML App", src:"icon/expo.svg", to: "https://github.com/devdewa/React-Native-Expo-Belajar-HTML-App" },
         { id: 11, title: "Averroes Unipessoal. Lda", src:"icon/averroes.svg", to: "https://www.averroes.info/" },
         { id: 12, title: "Protem", src:"icon/github.svg", to: "https://pt-teknologi-pustaka-indonesia-buku.vercel.app/" },
       ],
