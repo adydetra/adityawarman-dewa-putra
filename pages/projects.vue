@@ -14,7 +14,7 @@
         <ProjectContentComponent/>
         <div class="flex flex-wrap justify-center items-center xl:w-40 2xl:w-52 py-6 mx-auto h-screen bg-white dark:bg-gray-950 fixed top-0 right-0">
             <div class="bg-black dark:bg-yellow-100 opacity-20 w-0.5 xl:h-16 2xl:h-20 text-white"></div>
-                <button name="button" class="hidden xl:block w-full" @click="setColorTheme($colorMode.preference == 'dark' ? 'light' : 'dark')">
+                <button aria-label="Color Mode" class="hidden xl:block w-full" @click="setColorTheme($colorMode.preference == 'dark' ? 'light' : 'dark')">
                     <Icon v-if="$colorMode.value == 'dark'" name="ph:moon-fill" class="dark:text-white w-4 h-4 lg:w-6 lg:h-6"/>
                     <Icon v-else name="entypo:light-up" class="text-black w-4 h-4 lg:w-6 lg:h-6"/>
                 </button>
