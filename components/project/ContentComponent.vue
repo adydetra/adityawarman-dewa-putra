@@ -23,7 +23,7 @@ export default {
   data() {
     return {
       projects: [
-        { id: 1, title: "Portfolio", src:"icon/hero-mobile.jpg", to: "https://github.com/devdewa?tab=repositories" },
+        { id: 1, title: "Portfolio", src:"icon/hero-mobile.webp", to: "https://github.com/devdewa?tab=repositories" },
         { id: 2, title: "Old Portfolio", src:"icon/old-portfolio.svg", to: "https://dewaprogramming.vercel.app/" },
         { id: 3, title: "DewaProgramming", src:"icon/dewaprogramming.svg", to: "https://github.com/devdewa/DewaProgramming" },
         { id: 4, title: "Decorative Plant", src:"icon/decorative-plant.svg", to: "https://decorative-plant.vercel.app/" },
