@@ -30,20 +30,20 @@
                         }"
                     >
                         <SwiperSlide class="py-4">
-                            <div class="relative py-4 xl:w-64 2xl:w-96 h-full">
-                                <img src="~/assets/img/hero.webp" alt="" class=" h-full object-cover rotate-2 rounded-[2rem]" />
+                            <div class="relative py-4 xl:w-64 2xl:w-[360px] h-full">
+                                <img src="~/assets/img/hero.webp" alt="" class="xl:w-64 2xl:w-[360px] h-full object-cover rotate-2 rounded-[2rem]" />
                                 <div class="flex justify-center items-center absolute bg-gray-100 border border-gray-300 text-black -top-4 -left-4 w-12 inset-0 h-12 rounded-full">👋</div>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide class="py-4">
-                            <div class="relative py-4 xl:w-64 2xl:w-96 h-full">
-                                <img src="~/assets/img/mobile-2.webp" alt="" class="xl:w-64 2xl:w-96 h-full object-cover rotate-2 rounded-[2rem]" />
+                            <div class="relative py-4 xl:w-64 2xl:w-[360px] h-full">
+                                <img src="~/assets/img/mobile-2.webp" alt="" class="xl:w-64 2xl:w-[360px] h-full object-cover rotate-2 rounded-[2rem]" />
                                 <div class="flex justify-center items-center absolute bg-gray-100 border border-gray-300 text-black -top-4 -left-4 w-12 inset-0 h-12 rounded-full">👋</div>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide class="py-4">
-                            <div class="relative py-4 xl:w-64 2xl:w-96 h-full">
-                                <img src="~/assets/img/mobile-3.webp" alt="" class="xl:w-64 2xl:w-96 h-full object-cover object-left-bottom rotate-2 rounded-[2rem]" />
+                            <div class="relative py-4 xl:w-64 2xl:w-[360px] h-full">
+                                <img src="~/assets/img/mobile-3.webp" alt="" class="xl:w-64 2xl:w-[360px] h-full object-cover object-left-bottom rotate-2 rounded-[2rem]" />
                                 <div class="flex justify-center items-center absolute bg-gray-100 border border-gray-300 text-black -top-4 -left-4 w-12 inset-0 h-12 rounded-full">👋</div>
                             </div>
                         </SwiperSlide>
