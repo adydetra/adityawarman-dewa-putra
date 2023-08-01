@@ -30,9 +30,9 @@
     </section>
 
     <!-- Mobile -->
-    <section class="lg:hidden bg-gray-950 tracking-wide h-screen relative overflow-x-hidden">
+    <!-- <section class="lg:hidden bg-gray-950 tracking-wide h-screen relative overflow-x-hidden">
         <MobileViewComponent/>
-    </section>
+    </section> -->
 </template>
 
 <script setup lang="ts">
