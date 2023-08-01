@@ -8,7 +8,7 @@
                 <!-- Project -->
                 <NuxtLink data-aos="zoom-in" data-aos-duration="1000" :to="project.to" target="_blank" :title="project.title" class="text-gray-500 hover:text-yellow-500 dark:text-white col-span-3 cursor-pointer ease-in-out duration-300 hover:scale-105 hover:backdrop-saturate-200 flex justify-center border-dashed border-2 border-gray-400 dark:border-gray-800 pt-4 pb-6 hover:border-yellow-500 dark:hover:border-gray-100" v-for="project in projects" :key="project.id">
                   <div class="flex justify-center flex-col gap-6">
-                      <img :src="project.src" alt="" class="w-12 h-12 m-auto rounded-full bg-white p-1.5 shadow-md border border-zinc-700/50 bg-zinc-800 ring-0" />
+                      <img :src="project.src" alt="" class="w-12 h-full m-auto rounded-full bg-white p-1.5 shadow-md border border-zinc-700/50 bg-zinc-800 ring-0" />
                       <div class="flex justify-center items-center">
                         <Icon name="ph:link-bold" class="w-3 h-3 lg:w-4 2xl:w-5 lg:h-4 2xl:h-5"/><span class="ml-2 text-sm lg:text-md 2xl:text-base font-semibold">{{ project.title }}</span>
                       </div>
@@ -32,7 +32,7 @@ export default {
         { id: 7, title: "Bang CV", src:"icon/bangcv.jpg", to: "https://github.com/devdewa/bangcv" },
         { id: 8, title: "MP3 / MP4 Downloader", src:"icon/github.svg", to: "https://dewa-downloader.vercel.app/" },
         { id: 9, title: "E-Commerce LSP", src:"icon/lsp.png", to: "https://github.com/devdewa/E-Commerce-LSP" },
-        { id: 10, title: "Belajar HTML App", src:"icon/expo.png", to: "https://github.com/devdewa/React-Native-Expo-Belajar-HTML-App" },
+        { id: 10, title: "Belajar HTML App", src:"icon/expo.svg", to: "https://github.com/devdewa/React-Native-Expo-Belajar-HTML-App" },
         { id: 11, title: "Averroes Unipessoal. Lda", src:"icon/averroes.svg", to: "https://www.averroes.info/" },
         { id: 12, title: "Protem", src:"icon/github.svg", to: "https://pt-teknologi-pustaka-indonesia-buku.vercel.app/" },
       ],
