@@ -4,7 +4,7 @@
             <section class="flex flex-wrap justify-center items-center w-full h-full">
                 <div class="py-8 px-4 md:px-20 w-full">
                     <div class="flex justify-center items-center bg-yellow-200 p-0.5 w-16 md:w-20 rotate-3 rounded-full">
-                        <img src="~/assets/img/hero-mobile.jpg" alt="Photo" class="w-full h-full rounded-full shadow-md shadow-gray-500/40" />
+                        <img src="~/assets/img/hero-mobile.webp" alt="Photo" class="w-full h-full rounded-full shadow-md shadow-gray-500/40" />
                     </div>
                     <div class="space-y-6 mt-6">
                         <p class="text-gray-300 text-3xl font-bold leading-snug md:hidden">
@@ -29,13 +29,13 @@
 
             <section class="flex justify-center gap-6 overflow-hidden pt-16 pb-12">
                 <div class="relative aspect-[10/10] w-44 md:w-80 flex-none overflow-hidden rounded-xl -rotate-3 shadow-2xl shadow-yellow-200/10">
-                    <img src="~/assets/img/hero-1.jpg" alt="Photo" class="absolute h-full w-full object-cover" />
+                    <img src="~/assets/img/hero-1.webp" alt="Photo" class="absolute h-full w-full object-cover" />
                 </div>
                 <div class="relative aspect-[10/10] w-32 md:w-60 flex-none overflow-hidden rounded-xl">
-                    <img src="~/assets/img/hero-3.jpg" alt="Photo" class="absolute h-full w-full object-scale-down" />
+                    <img src="~/assets/img/hero-3.webp" alt="Photo" class="absolute h-full w-full object-scale-down" />
                 </div>
                 <div class="relative aspect-[10/10] w-44 md:w-80 flex-none overflow-hidden rounded-xl rotate-3 shadow-2xl shadow-yellow-200/10">
-                    <img src="~/assets/img/hero-2.jpg" alt="Photo" class="absolute h-full w-full object-cover" />
+                    <img src="~/assets/img/hero-2.webp" alt="Photo" class="absolute h-full w-full object-cover" />
                 </div>
             </section>
 
