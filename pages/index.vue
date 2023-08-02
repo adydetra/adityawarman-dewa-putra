@@ -1,6 +1,6 @@
 <template>
     <!-- Desktop -->
-    <section class="hidden lg:flex bg-white dark:bg-gray-950 tracking-wide h-screen select-none">
+    <section class="hidden lg:flex bg-white dark:bg-gray-950 tracking-wide h-screen select-none" v-if="$device.isDesktop">
         <div class="flex flex-wrap justify-center items-center px-12 py-6 mx-auto xl:w-44 2xl:w-60">
             <div class="bg-black dark:bg-yellow-100 opacity-20 w-0.5 xl:h-16 2xl:h-20 text-white"></div>
                 <div class="text-md text-gray-400 text-center w-full"><span class="w- bg-gray-700 py-2 px-4 text-yellow-300 dark:text-yellow-300 rounded-sm">1</span></div>
@@ -30,9 +30,9 @@
     </section>
 
     <!-- Mobile -->
-    <!-- <section class="lg:hidden bg-gray-950 tracking-wide h-screen relative overflow-x-hidden">
+    <section class="lg:hidden bg-gray-950 tracking-wide h-screen relative overflow-x-hidden" v-else>
         <MobileViewComponent/>
-    </section> -->
+    </section>
 </template>
 
 <script setup lang="ts">

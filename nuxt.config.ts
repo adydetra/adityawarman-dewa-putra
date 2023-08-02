@@ -19,6 +19,7 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@nuxtjs/google-fonts',
     '@nuxtjs/color-mode',
+    '@nuxtjs/device',
     'nuxt-icon',
     'nuxt-swiper',
     '@vite-pwa/nuxt'
