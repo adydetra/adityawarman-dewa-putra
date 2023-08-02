@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-gradient-to-r bg-white dark:from-gray-950 dark:to-gray-900 mx-auto h-screen relative w-screen">
+    <div class="bg-white dark:bg-gray-950 mx-auto h-screen relative w-screen">
             <section class="grid grid-cols-8 h-screen">
                 <div class="col-span-5 flex items-center py-40 pl-10 pr-16 2xl:px-24 bg-[url('/assets/img/pattern-hero-left.png')] bg-contain bg-center">
                     <div class="xl:space-y-6 2xl:space-y-8">
