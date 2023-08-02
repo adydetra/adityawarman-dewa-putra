@@ -4,7 +4,7 @@
             <section class="flex flex-wrap justify-center items-center w-full h-full">
                 <div class="py-8 px-4 md:px-20 w-full">
                     <div class="flex justify-center items-center bg-yellow-200 p-0.5 w-16 md:w-20 rotate-3 rounded-full">
-                        <img src="~/assets/img/hero-mobile.webp" alt="Photo" class="w-16 md:w-20 rounded-full shadow-md shadow-gray-500/40" />
+                        <img src="~/assets/img/hero-mobile.webp" alt="Photo" class="w-full h-full rounded-full shadow-md shadow-gray-500/40" />
                     </div>
                     <div class="space-y-6 mt-6">
                         <p class="text-gray-300 text-3xl font-bold leading-snug md:hidden">
