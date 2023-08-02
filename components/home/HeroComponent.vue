@@ -1,9 +1,9 @@
 <template>
     <div class="bg-gradient-to-r bg-white dark:from-gray-950 dark:to-gray-900 mx-auto h-screen relative w-screen">
             <section class="grid grid-cols-8 h-screen">
-                <div class="col-span-5 flex items-center py-40 px-24 bg-[url('/assets/img/pattern-hero-left.png')] bg-contain bg-center">
+                <div class="col-span-5 flex items-center py-40 pl-10 pr-16 2xl:px-24 bg-[url('/assets/img/pattern-hero-left.png')] bg-contain bg-center">
                     <div class="xl:space-y-6 2xl:space-y-8">
-                        <p class="text-gray-500 dark:text-gray-300 xl:text-3xl 2xl:text-5xl font-bold xl:leading-relaxed 2xl:leading-snug">
+                        <p class="text-gray-500 dark:text-gray-300 xl:text-4xl 2xl:text-5xl font-bold xl:leading-relaxed 2xl:leading-snug">
                             <span class="text-yellow-300 dark:text-yellow-200">Front End Developer</span>, website and mobile, enjoying life.
                         </p>
                         <p class="text-gray-400 xl:text-md 2xl:text-lg">
@@ -18,7 +18,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-span-3 flex justify-center items-center bg-white dark:bg-yellow-200 py-40 bg-[url('/assets/img/pattern-hero-right.png')] bg-contain bg-center">
+                <div class="col-span-3 flex justify-center items-center bg-white dark:bg-yellow-200  bg-[url('/assets/img/pattern-hero-right.png')] bg-contain bg-center">
                     <Swiper
                         :modules="[SwiperAutoplay, SwiperEffectFade]"
                         :slides-per-view="1"
@@ -30,20 +30,20 @@
                         }"
                     >
                         <SwiperSlide class="py-4">
-                            <div class="relative py-4 xl:w-64 2xl:w-[360px] h-full">
-                                <img src="~/assets/img/hero.webp" alt="" class="xl:w-64 2xl:w-[360px] h-full object-cover rotate-2 rounded-[2rem]" />
+                            <div class="relative py-4">
+                                <img src="~/assets/img/hero.webp" alt="" class="xl:w-[280px] 2xl:w-[360px] xl:h-[420px] 2xl:h-[540px] object-cover rotate-2 rounded-[2rem]" />
                                 <div class="flex justify-center items-center absolute bg-gray-100 border border-gray-300 text-black -top-4 -left-4 w-12 inset-0 h-12 rounded-full">👋</div>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide class="py-4">
-                            <div class="relative py-4 xl:w-64 2xl:w-[360px] h-full">
-                                <img src="~/assets/img/mobile-2.webp" alt="" class="xl:w-64 2xl:w-[360px] h-full object-cover rotate-2 rounded-[2rem]" />
+                            <div class="relative py-4">
+                                <img src="~/assets/img/mobile-2.webp" alt="" class="xl:w-[280px] 2xl:w-[360px] xl:h-[420px] 2xl:h-[540px] object-cover rotate-2 rounded-[2rem]" />
                                 <div class="flex justify-center items-center absolute bg-gray-100 border border-gray-300 text-black -top-4 -left-4 w-12 inset-0 h-12 rounded-full">👋</div>
                             </div>
                         </SwiperSlide>
                         <SwiperSlide class="py-4">
-                            <div class="relative py-4 xl:w-64 2xl:w-[360px] h-full">
-                                <img src="~/assets/img/mobile-3.webp" alt="" class="xl:w-64 2xl:w-[360px] h-full object-cover object-left-bottom rotate-2 rounded-[2rem]" />
+                            <div class="relative py-4">
+                                <img src="~/assets/img/mobile-3.webp" alt="" class="xl:w-[280px] 2xl:w-[360px] xl:h-[420px] 2xl:h-[540px] object-cover object-left-bottom rotate-2 rounded-[2rem]" />
                                 <div class="flex justify-center items-center absolute bg-gray-100 border border-gray-300 text-black -top-4 -left-4 w-12 inset-0 h-12 rounded-full">👋</div>
                             </div>
                         </SwiperSlide>
