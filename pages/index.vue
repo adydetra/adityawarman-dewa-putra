@@ -30,7 +30,7 @@
     </section>
 
     <!-- Mobile -->
-    <section class="lg:hidden bg-gray-950 tracking-wide h-screen relative overflow-x-hidden" v-else>
+    <section class="lg:hidden bg-gray-950 tracking-wide h-screen relative overflow-x-hidden" >
         <MobileViewComponent/>
     </section>
 </template>

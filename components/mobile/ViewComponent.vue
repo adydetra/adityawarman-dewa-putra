@@ -27,7 +27,7 @@
                 </div>
             </section>
 
-            <section class="flex justify-center gap-6 overflow-hidden pt-16 pb-12">
+            <!-- <section class="flex justify-center gap-6 overflow-hidden pt-16 pb-12">
                 <div class="relative aspect-[10/10] w-44 md:w-80 flex-none overflow-hidden rounded-xl -rotate-3 shadow-2xl shadow-yellow-200/10">
                     <img src="~/assets/img/hero.webp" alt="Photo" class="absolute h-full w-full object-cover" />
                 </div>
@@ -37,7 +37,7 @@
                 <div class="relative aspect-[10/10] w-44 md:w-80 flex-none overflow-hidden rounded-xl rotate-3 shadow-2xl shadow-yellow-200/10">
                     <img src="~/assets/img/mobile-2.webp" alt="Photo" class="absolute h-full w-full object-cover" />
                 </div>
-            </section>
+            </section> -->
 
             <!-- Uses -->
             <div class="mx-auto relative px-6 py-8 md:py-20 lg:py-8 bg-[url('/assets/img/pattern-hero-left.png')] bg-contain bg-center">
