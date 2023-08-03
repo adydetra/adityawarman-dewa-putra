@@ -1,5 +1,5 @@
 <template>
-    <div class="mx-auto w-screen px-40 2xl:px-28 container xl:py-16 bg-[url('/assets/img/pattern-hero-left.png')] bg-contain bg-center">
+    <div class="mx-auto w-screen px-40 2xl:px-28 container xl:py-16 bg-[url('/assets/img/pattern-hero-left.png')] dark:bg-[url('/assets/img/pattern-hero-left-dark.png')] bg-contain bg-center">
             <h1 data-aos="fade-down" data-aos-duration="1000" class="text-gray-500 dark:text-gray-300 text-center text-3xl 2xl:text-4xl font-bold leading-snug 2xl:leading-snug mb-16">
                 Achievements that I have achieved<br/>both as a team or individually.
             </h1>
@@ -9,8 +9,8 @@
                     <div class="w-full flex flex-col justify-between gap-6 xl:p-8 2xl:p-12">
                         <img :src="achievement.thumbnail" alt="" class="w-full h-60 bg-gray-800/50 py-8 px-12 rounded-2xl" />
                         <p class="text-justify indent-8 text-gray-400 leading-relaxed"><span class="text-sky-400">#</span> {{ achievement.deskripsi }}</p>
-                        <p class="flex items-center font-semibold text-gray-200">Result: <span class="ml-2 text-gray-400 leading-relaxed">{{ achievement.result }}</span></p>
-                        <div class="flex items-center text-white mt-4">
+                        <p class="flex items-center font-semibold text-gray-500 dark:text-gray-200">Result: <span class="ml-2 text-gray-400 leading-relaxed">{{ achievement.result }}</span></p>
+                        <div class="flex items-center text-gray-500 dark:text-white mt-4">
                             <img :src="achievement.src" alt="" class="w-12 h-12 rounded-full bg-white p-1.5 shadow-md border border-zinc-700/50 bg-zinc-800 ring-0" />
                             <Icon name="ph:link-bold" class="w-3 h-3 lg:w-4 2xl:w-5 lg:h-4 2xl:h-5 ml-3"/>
                             <span class="ml-2 text-sm lg:text-md 2xl:text-base font-semibold">{{ achievement.title }}</span>

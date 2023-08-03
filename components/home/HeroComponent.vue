@@ -1,7 +1,7 @@
 <template>
-    <div class="bg-white dark:bg-gray-950 mx-auto h-screen relative w-screen">
+    <div class="mx-auto h-screen relative w-screen">
             <section class="grid grid-cols-8 h-screen">
-                <div class="col-span-5 flex items-center py-40 pl-10 pr-16 2xl:px-24 bg-[url('/assets/img/pattern-hero-left.png')] bg-contain bg-center">
+                <div class="col-span-5 flex items-center py-40 pl-10 pr-16 2xl:px-24 bg-[url('/assets/img/pattern-hero-left.png')] dark:bg-[url('/assets/img/pattern-hero-left-dark.png')] bg-contain bg-center">
                     <div class="xl:space-y-6 2xl:space-y-8">
                         <p class="text-gray-500 dark:text-gray-300 xl:text-4xl 2xl:text-5xl font-bold xl:leading-relaxed 2xl:leading-snug">
                             <span class="text-yellow-300 dark:text-yellow-200">Front End Developer</span>, website and mobile, enjoying life.
@@ -18,7 +18,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-span-3 flex justify-center items-center bg-white dark:bg-yellow-200  bg-[url('/assets/img/pattern-hero-right.png')] bg-contain bg-center">
+                <div class="col-span-3 flex justify-center items-center bg-white dark:bg-yellow-200 bg-[url('/assets/img/pattern-hero-right.png')] bg-contain bg-center">
                     <Swiper
                         :modules="[SwiperAutoplay, SwiperEffectFade]"
                         :slides-per-view="1"
