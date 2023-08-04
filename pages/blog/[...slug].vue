@@ -8,14 +8,12 @@
         <div class="text-muted mx-auto py-12 px-16 w-full max-w-[40rem] bg-gray-900/40">
           <ContentRenderer :value="data" />
           <div class="mt-12 space-x-4">
-            <NuxtLink
+            <span
               v-for="tag in data.tags"
-              :key="tag"
-              :to="'/blog/tags/${tag}'"
               class="text-xs font-semibold py-2 px-4 rounded-lg text-gray-100 bg-blue-500 uppercase"
             >
               <Icon name="pajamas:label" size="0.8rem" class="text-gray-100 mr-2 -mt-[0.2rem]" />{{ tag }}
-            </NuxtLink>
+            </span>
           </div>
         </div>
       </div>
