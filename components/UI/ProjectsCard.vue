@@ -13,7 +13,7 @@
       <img
         :src="project.src"
         alt=""
-        class="w-12 h-full m-auto rounded-full bg-white p-1.5 shadow-md border border-zinc-700/50 bg-zinc-800 ring-0"
+        class="w-12 h-full m-auto rounded-full p-1.5 shadow-md bg-zinc-800 border border-zinc-700/50 ring-0"
       />
       <div class="flex justify-center items-center">
         <Icon name="ph:link-bold" class="w-3 h-3 lg:w-4 2xl:w-5 lg:h-4 2xl:h-5" /><span

@@ -25,7 +25,7 @@
         <img
           :src="achievement.src"
           alt=""
-          class="w-12 h-12 rounded-full bg-white p-1.5 shadow-md border border-zinc-700/50 bg-zinc-800 ring-0"
+          class="w-12 h-12 rounded-full bg-zinc-800 p-1.5 shadow-md border border-zinc-700/50 ring-0"
         />
         <Icon name="ph:link-bold" class="w-3 h-3 lg:w-4 2xl:w-5 lg:h-4 2xl:h-5 ml-3" />
         <span class="ml-2 text-sm lg:text-md 2xl:text-base font-semibold">{{
