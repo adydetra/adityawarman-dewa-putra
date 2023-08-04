@@ -2,7 +2,7 @@
   <div class="mx-auto h-screen relative w-screen">
     <section class="grid grid-cols-8 h-screen">
       <div
-        class="col-span-5 flex items-center py-40 pl-10 pr-16 2xl:px-24 bg-[url('/assets/img/pattern-hero-left.png')] dark:bg-[url('/assets/img/pattern-hero-left-dark.png')] bg-contain bg-center"
+        class="col-span-5 flex items-center py-40 pl-10 pr-16 2xl:px-24 bg-[url('/assets/pattern-hero-left.png')] dark:bg-[url('/assets/pattern-hero-left-dark.png')] bg-contain bg-center"
       >
         <div class="xl:space-y-6 2xl:space-y-8">
           <p
@@ -18,7 +18,7 @@
         </div>
       </div>
       <div
-        class="col-span-3 flex justify-center items-center bg-white dark:bg-yellow-200 bg-[url('/assets/img/pattern-hero-right.png')] bg-contain bg-center"
+        class="col-span-3 flex justify-center items-center bg-white dark:bg-yellow-200 bg-[url('/assets/pattern-hero-right.png')] bg-contain bg-center"
       >
         <UISwiper />
       </div>

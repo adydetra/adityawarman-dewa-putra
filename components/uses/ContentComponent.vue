@@ -1,6 +1,6 @@
 <template>
   <div
-    class="mx-auto h-screen relative w-screen px-12 2xl:px-24 py-8 2xl:py-16 bg-[url('/assets/img/pattern-hero-left.png')] dark:bg-[url('/assets/img/pattern-hero-left-dark.png')] bg-contain bg-center"
+    class="mx-auto h-screen relative w-screen px-12 2xl:px-24 py-8 2xl:py-16 bg-[url('/assets/pattern-hero-left.png')] dark:bg-[url('/assets/pattern-hero-left-dark.png')] bg-contain bg-center"
   >
     <h1
       data-aos="fade-down"

@@ -1,10 +1,10 @@
 <template>
-    <div class="bg-[url('/assets/img/pattern-hero-left-dark.png')] bg-contain bg-center mx-auto relative pt-12">
+    <div class="bg-[url('/assets/pattern-hero-left-dark.png')] bg-contain bg-center mx-auto relative pt-12">
 
             <section class="flex flex-wrap justify-center items-center w-full h-full">
                 <div class="py-8 px-4 md:px-20 w-full">
                     <div class="flex justify-center items-center bg-yellow-200 p-0.5 w-16 md:w-20 rotate-3 rounded-full">
-                        <img src="~/assets/img/hero-mobile.webp" alt="Photo" class="w-full h-full rounded-full shadow-md shadow-gray-500/40" />
+                        <img src="~/assets/hero-mobile.webp" alt="Photo" class="w-full h-full rounded-full shadow-md shadow-gray-500/40" />
                     </div>
                     <div class="space-y-6 mt-6">
                         <p class="text-gray-300 text-3xl font-bold leading-snug md:hidden">
@@ -29,18 +29,18 @@
 
             <section class="flex justify-center gap-6 overflow-hidden pt-16 pb-12">
                 <div class="relative aspect-[10/10] w-44 md:w-80 flex-none overflow-hidden rounded-xl -rotate-3 shadow-2xl shadow-yellow-200/10">
-                    <img src="~/assets/img/hero-1.webp" alt="Photo" class="absolute h-full w-full object-cover" />
+                    <img src="~/assets/hero-1.webp" alt="Photo" class="absolute h-full w-full object-cover" />
                 </div>
                 <div class="relative aspect-[10/10] w-32 md:w-60 flex-none overflow-hidden rounded-xl">
-                    <img src="~/assets/img/hero-3.webp" alt="Photo" class="absolute h-full w-full object-scale-down" />
+                    <img src="~/assets/hero-3.webp" alt="Photo" class="absolute h-full w-full object-scale-down" />
                 </div>
                 <div class="relative aspect-[10/10] w-44 md:w-80 flex-none overflow-hidden rounded-xl rotate-3 shadow-2xl shadow-yellow-200/10">
-                    <img src="~/assets/img/hero-2.webp" alt="Photo" class="absolute h-full w-full object-cover" />
+                    <img src="~/assets/hero-2.webp" alt="Photo" class="absolute h-full w-full object-cover" />
                 </div>
             </section>
 
             <!-- Uses -->
-            <div class="mx-auto relative px-6 py-8 md:py-20 lg:py-8 bg-[url('/assets/img/pattern-hero-left.png')] bg-contain bg-center">
+            <div class="mx-auto relative px-6 py-8 md:py-20 lg:py-8 bg-[url('/assets/pattern-hero-left.png')] bg-contain bg-center">
                 <h1 class="text-gray-300 text-center text-2xl font-bold leading-snug 2xl:leading-snug mb-16">
                     Software I use, gadgets I love, and and the tech stack that I use.
                 </h1>
@@ -129,7 +129,7 @@
             </div>
 
             <!-- Project -->
-            <div class="mx-auto relative px-6 py-8 md:py-20 lg:py-8 bg-[url('/assets/img/pattern-hero-left.png')] bg-contain bg-center">
+            <div class="mx-auto relative px-6 py-8 md:py-20 lg:py-8 bg-[url('/assets/pattern-hero-left.png')] bg-contain bg-center">
                     <h1 class="text-gray-300 text-center text-2xl font-bold leading-snug 2xl:leading-snug mb-10 md:mb-20 lg:mb-10">
                         Things I’ve made trying to put my dent in the universe.
                     </h1>
@@ -148,7 +148,7 @@
             </div>
 
             <!-- Achievement -->
-            <div class="mx-auto px-6 py-8 md:py-20 lg:py-8 container bg-[url('/assets/img/pattern-hero-left.png')] bg-contain bg-center">
+            <div class="mx-auto px-6 py-8 md:py-20 lg:py-8 container bg-[url('/assets/pattern-hero-left.png')] bg-contain bg-center">
                 <h1 class="text-gray-300 text-center text-2xl font-bold leading-snug mb-10 md:mb-20 lg:mb-10">
                     Achievements that I have achieved both as a team or individually.
                 </h1>
