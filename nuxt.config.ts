@@ -17,7 +17,6 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxt/content',
-    '@nuxtjs/i18n',
     '@nuxtjs/google-fonts',
     '@nuxtjs/color-mode',
     '@nuxtjs/device',
@@ -29,23 +28,6 @@ export default defineNuxtConfig({
   googleFonts: {
     families: {
       Poppins: [100, 200, 300, 400, 500, 600, 700],
-    }
-  },
-
-  i18n: {
-    locales: [
-      {
-        code: 'en',
-        name: 'English'
-      },
-    ],
-    strategy: 'prefix_except_default',
-    defaultLocale: 'en',
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieKey: 'i18n_redirected',
-      redirectOn: 'root',
-      alwaysRedirect: true
     }
   },
   
