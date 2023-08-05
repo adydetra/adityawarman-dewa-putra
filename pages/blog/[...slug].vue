@@ -45,7 +45,7 @@
     @apply bg-gray-800 rounded-md px-4 py-2 my-2 text-xs;
   }
 </style>
-
+<!-- 
 <script setup>
   // const { path } = useRoute();
 
@@ -54,4 +54,4 @@
   //     .where({ _path: path })
   //     .findOne();
   // });
-</script>
+</script> -->

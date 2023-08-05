@@ -6,7 +6,7 @@
 
 <style>
   body * {
-      @apply transition-colors ease-in-out duration-500;
+    @apply transition-colors ease-in-out duration-500;
   }
 </style>
 
