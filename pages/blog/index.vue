@@ -1,8 +1,8 @@
-<script setup>
+<!-- <script setup>
   const { data: posts } = await useAsyncData("posts", () => 
     queryContent("/blog").find()
   );
-</script>
+</script> -->
 
 <template>
   <main class="bg-gray-950 text-white min-h-screen">
@@ -13,10 +13,14 @@
         <h1 class="text-md xl:text-3xl 2xl:text-4xl text-center font-bold py-12">Blog Posts</h1>
         <section class="grid md:grid-cols-3 gap-10 2xl:gap-20 mt-8">
               <ContentList path="/blog" v-slot="{ list }">
+                
               <div v-for="article in list" :key="article._path">
+                <NuxtLink :to="article._path">
                 <h2>{{ article.title }}</h2>
                 <p>{{ article.description }}</p>
+              </NuxtLink>
               </div>
+            
             </ContentList>
         </section>
       </div>
