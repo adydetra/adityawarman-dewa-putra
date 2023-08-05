@@ -1,7 +1,13 @@
 <script setup>
-  const { data: posts } = await useAsyncData("posts", () => 
-    queryContent("/blog").find()
-  );
+const { data: posts } = await useAsyncData("posts", () => queryContent("/blog").find());
+
+const title = ref("Blog - Dewa");
+const description = ref("This is my Blo");
+
+useSeoMeta({
+  title,
+  description,
+});
 </script>
 
 <template>
