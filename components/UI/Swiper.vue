@@ -1,7 +1,7 @@
 <template>
   <Swiper
-    :modules="[SwiperAutoplay, SwiperEffectFade]"
-    :slides-per-view="1"
+    :modules="[SwiperAutoplay, SwiperEffectCreative]"
+    :slides-per-view="1 "
     :loop="true"
     :effect="'fade'"
     :autoplay="{

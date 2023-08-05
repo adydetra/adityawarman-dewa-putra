@@ -20,7 +20,7 @@
       <div
         class="col-span-3 flex justify-center items-center bg-white dark:bg-yellow-200 bg-[url('/assets/pattern-hero-right.png')] bg-contain bg-center"
       >
-        <UISwiper />
+        <UIHeroPict />
       </div>
     </section>
   </div>
