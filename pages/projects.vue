@@ -44,3 +44,13 @@
     </div>
   </main>
 </template>
+
+<script setup lang="ts">
+const title = ref("Project - Dewa");
+const description = ref("This is my projects");
+
+useSeoMeta({
+  title,
+  description,
+});
+</script>

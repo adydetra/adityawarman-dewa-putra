@@ -43,3 +43,13 @@
     </div>
   </main>
 </template>
+
+<script setup lang="ts">
+const title = ref("Achievements - Dewa");
+const description = ref("This is my achievements");
+
+useSeoMeta({
+  title,
+  description,
+});
+</script>

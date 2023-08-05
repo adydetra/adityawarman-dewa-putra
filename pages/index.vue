@@ -47,3 +47,13 @@
     <MobileViewComponent />
   </main>
 </template>
+
+<script setup lang="ts">
+const title = ref("Adityawarman Dewa Putra");
+const description = ref("This is my personal portfolio, build using nuxt js and tailwind css.");
+
+useSeoMeta({
+  title,
+  description,
+});
+</script>
