@@ -4,8 +4,8 @@
       class="bg-[url('/assets/pattern-hero-left.png')] dark:bg-[url('/assets/pattern-hero-left-dark.png')] bg-contain bg-center px-8 lg:px-32"
     >
       <div class="container mx-auto bg-gray-900/20 relative">
-        <button @click.prevent="$router.back()" class="absolute top-4 -left-3 bg-white/10 px-2 py-1 lg:p-0 lg:bg-transparent lg:top-7 lg:left-9">
-          <Icon name="icon-park-twotone:back" class="text-white w-4 h-4 lg:w-7 lg:h-7" />
+        <button @click.prevent="$router.back()" class="fixed top-4 left-4 rounded-md bg-white/10 px-2 py-1 lg:p-0 lg:bg-transparent lg:top-7 lg:left-9">
+          <Icon name="icon-park-twotone:back" class="text-white w-4 h-4 lg:w-8 lg:h-8 -mt-1" />
         </button>
         <div class="text-muted mx-auto py-12 px-8 lg:px-16 w-full lg:max-w-[40rem] bg-gray-900/40">
           <!-- <ContentRenderer :value="data" /> -->
