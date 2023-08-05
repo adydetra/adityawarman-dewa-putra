@@ -9,12 +9,12 @@
           <!-- <ContentRenderer :value="data" /> -->
           <ContentDoc />
           <div class="mt-12 space-x-4">
-            <!-- <span
+            <span
               v-for="tag in data.tags"
               class="text-xs font-semibold py-2 px-4 rounded-lg text-gray-100 bg-blue-500 uppercase"
             >
               <Icon name="pajamas:label" size="0.8rem" class="text-gray-100 mr-2 -mt-[0.2rem]" />{{ tag }}
-            </span> -->
+            </span>
           </div>
         </div>
       </div>
@@ -45,13 +45,13 @@
     @apply bg-gray-800 rounded-md px-4 py-2 my-2 text-xs;
   }
 </style>
-<!-- 
-<script setup>
-  // const { path } = useRoute();
 
-  // const { data } = await useAsyncData('content-${path}', () => {
-  //   return queryContent()
-  //     .where({ _path: path })
-  //     .findOne();
-  // });
-</script> -->
+<script setup>
+  const { path } = useRoute();
+
+  const { data } = await useAsyncData('content-${path}', () => {
+    return queryContent()
+      .where({ _path: path })
+      .findOne();
+  });
+</script>
