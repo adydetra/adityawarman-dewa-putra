@@ -10,10 +10,10 @@
         <div class="text-muted mx-auto py-12 px-8 lg:px-16 w-full lg:max-w-[40rem] bg-gray-900/40">
           <!-- <ContentRenderer :value="data" /> -->
           <ContentDoc />
-          <div class="mt-12 space-x-4">
+          <div class="flex justify-evenly items-center flex-wrap lg:block mt-6 lg:mt-12 my-4 lg:my-0 lg:space-x-4">
             <span
               v-for="tag in data.tags"
-              class="text-xs font-semibold py-2 px-4 rounded-lg text-gray-100 bg-blue-500 uppercase"
+              class="text-[10px] lg:text-xs max-w-[50%] lg:max-w-full font-semibold py-2 px-2 lg:px-4 rounded-lg text-gray-100 bg-blue-500 uppercase"
             >
               <Icon name="pajamas:label" size="0.8rem" class="text-gray-100 mr-2 -mt-[0.2rem]" />{{
                 tag
