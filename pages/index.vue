@@ -27,7 +27,7 @@
     <ContentsHeroComponent />
     <div class="flex flex-wrap justify-center items-center px-12 py-6 mx-auto xl:w-44 2xl:w-60">
       <BlockLeftSide />
-      <UISwitchColorMode />
+      <UISwitchColorMode class="w-full"/>
       <BlockLeftCenter />
       <NuxtLink
         to="/uses"

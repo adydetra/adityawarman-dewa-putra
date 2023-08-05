@@ -1,13 +1,12 @@
 <template>
-  <main class="bg-gray-950 text-gray-400" id="blog">
+  <main class="bg-white dark:bg-gray-950 text-gray-600 dark:text-gray-400" id="blog">
     <section
       class="bg-[url('/assets/pattern-hero-left.png')] dark:bg-[url('/assets/pattern-hero-left-dark.png')] bg-contain bg-center px-8 lg:px-32"
     >
-      <div class="container mx-auto bg-gray-900/20 relative">
-        <button @click.prevent="$router.back()" class="fixed top-4 left-4 rounded-md bg-white/10 px-2 py-1 lg:p-0 lg:bg-transparent lg:top-7 lg:left-9">
-          <Icon name="icon-park-twotone:back" class="text-white w-4 h-4 lg:w-8 lg:h-8 -mt-1" />
-        </button>
-        <div class="text-muted mx-auto py-12 px-8 lg:px-16 w-full lg:max-w-[40rem] bg-gray-900/40">
+      <div class="container mx-auto bg-gray-100/50 dark:bg-gray-900/20 relative">
+        <UIBlogBackButton/>
+        <UISwitchColorMode class="fixed top-7 right-7" />
+        <div class="text-muted mx-auto py-12 px-8 lg:px-16 w-full lg:max-w-[40rem] bg-gray-500/10 dark:bg-gray-900/40">
           <!-- <ContentRenderer :value="data" /> -->
           <ContentDoc />
           <div class="flex justify-evenly items-center flex-wrap lg:block mt-6 lg:mt-12 my-4 lg:my-0 lg:space-x-4">
@@ -47,7 +46,7 @@
   @apply text-xs lg:text-sm list-disc ml-5 mt-3 !leading-loose;
 }
 #blog blockquote {
-  @apply bg-gray-800 rounded-md px-4 py-2 my-2 text-xs;
+  @apply bg-gray-300 dark:bg-gray-800 rounded-md px-4 py-2 my-2 text-xs;
 }
 </style>
 
