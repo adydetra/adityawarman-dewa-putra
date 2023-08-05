@@ -1,7 +1,6 @@
 <template>
   <button
     aria-label="Color Mode"
-    class="hidden xl:block"
     @click="setColorTheme($colorMode.preference == 'dark' ? 'light' : 'dark')"
   >
     <Icon

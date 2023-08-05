@@ -43,7 +43,7 @@
   </main>
 
   <!-- Mobile -->
-  <main class="lg:hidden bg-gray-950 tracking-wide h-screen relative overflow-x-hidden" v-else>
+  <main class="lg:hidden bg-white dark:bg-gray-950 tracking-wide h-screen relative overflow-x-hidden" v-else>
     <MobileViewComponent />
   </main>
 </template>

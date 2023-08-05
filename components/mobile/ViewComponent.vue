@@ -1,22 +1,22 @@
 <template>
     <div class="bg-[url('/assets/pattern-hero-left-dark.png')] bg-contain bg-center mx-auto relative pt-12">
-
+        <UISwitchColorMode class="fixed top-7 right-7 z-10"/>
             <section class="flex flex-wrap justify-center items-center w-full h-full">
                 <div class="py-8 px-4 md:px-20 w-full">
                     <div class="flex justify-center items-center bg-yellow-200 p-0.5 w-16 md:w-20 rotate-3 rounded-full">
                         <img src="~/assets/hero-mobile.webp" alt="Photo" class="w-full h-full rounded-full shadow-md shadow-gray-500/40" />
                     </div>
                     <div class="space-y-6 mt-6">
-                        <p class="text-gray-300 text-3xl font-bold leading-snug md:hidden">
-                            <span class="text-yellow-200">Front End Developer</span>, website and mobile, enjoying life.
+                        <p class="text-gray-500 dark:text-gray-300 text-3xl font-bold leading-snug md:hidden">
+                            <span class="text-yellow-300 dark:text-yellow-200">Front End Developer</span>, website and mobile, enjoying life.
                         </p>
-                        <p class="text-gray-300 text-4xl font-bold leading-snug hidden md:block">
-                            <span class="text-yellow-200">Front End Developer</span>, website <br/>and mobile, enjoying life.
+                        <p class="text-gray-500 dark:text-gray-300 text-4xl font-bold leading-snug hidden md:block">
+                            <span class="text-yellow-300 dark:text-yellow-200">Front End Developer</span>, website <br/>and mobile, enjoying life.
                         </p>
                         <p class="text-gray-400 text-sm">
                             ~ I’m Adityawarman Dewa Putra <span class="text-xs ml-2">🇮🇩</span>
                         </p>
-                        <ul class="flex text-gray-400 gap-7">
+                        <ul class="flex text-gray-500 dark:text-gray-400 gap-7">
                             <li v-for="data in datas" :key="data.id">
                                 <NuxtLink :to="data.to" :title="data.title" target="_blank" class="cursor-pointer ease-in-out duration-300 hover:text-yellow-200">
                                     <Icon :name="data.name" class="w-5 h-5 md:w-6 md:h-6"/>
@@ -41,15 +41,15 @@
 
             <!-- Uses -->
             <div class="mx-auto relative px-6 py-8 md:py-20 lg:py-8 bg-[url('/assets/pattern-hero-left.png')] bg-contain bg-center">
-                <h1 class="text-gray-300 text-center text-2xl font-bold leading-snug 2xl:leading-snug mb-16">
+                <h1 class="text-gray-500 dark:text-gray-300 text-center text-2xl font-bold leading-snug 2xl:leading-snug mb-16">
                     Software I use, gadgets I love, and and the tech stack that I use.
                 </h1>
 
                 <div class="grid grid-cols-10 md:grid-cols-12 gap-8">
                     <!-- Workstation -->
-                    <div class="col-span-5 md:col-span-4 flex justify-center border-dashed border-2 border-gray-400/30 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300">
+                    <div class="col-span-5 md:col-span-4 flex justify-center border-dashed border-2 border-gray-400 dark:border-gray-800 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300">
                         <div>
-                            <h2 class="text-gray-400 text-sm font-semibold mb-4 flex justify-center">Workstation</h2>
+                            <h2 class="text-gray-500 dark:text-gray-400 text-sm font-semibold mb-4 flex justify-center">Workstation</h2>
                             <ul class="flex justify-center text-gray-400 gap-6">
                                 <li v-for="workstation in workstations" :key="workstation.id">
                                     <NuxtLink :to="workstation.to" target="_blank" :title="workstation.title" class="cursor-pointer ease-in-out duration-300 hover:text-yellow-200">
@@ -60,9 +60,9 @@
                         </div>
                     </div>
                     <!-- Database -->
-                    <div class="col-span-5 md:col-span-4 flex justify-center border-dashed border-2 border-gray-400/30 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300">
+                    <div class="col-span-5 md:col-span-4 flex justify-center border-dashed border-2 border-gray-400 dark:border-gray-800 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300">
                         <div>
-                            <h2 class="text-gray-400 text-sm font-semibold mb-4 flex justify-center">Database</h2>
+                            <h2 class="text-gray-500 dark:text-gray-400 text-sm font-semibold mb-4 flex justify-center">Database</h2>
                             <ul class="flex justify-center text-gray-400 gap-6">
                                 <li v-for="database in databases" :key="database.id">
                                     <NuxtLink :to="database.to" target="_blank" :title="database.title" class="cursor-pointer ease-in-out duration-300 hover:text-yellow-200">
@@ -73,9 +73,9 @@
                         </div>
                     </div>
                     <!-- Operating System -->
-                    <div class="col-span-10 md:col-span-4 flex justify-center border-dashed border-2 border-gray-400/30 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300">
+                    <div class="col-span-10 md:col-span-4 flex justify-center border-dashed border-2 border-gray-400 dark:border-gray-800 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300">
                         <div>
-                            <h2 class="text-gray-400 text-sm font-semibold mb-4 flex justify-center">Operating System</h2>
+                            <h2 class="text-gray-500 dark:text-gray-400 text-sm font-semibold mb-4 flex justify-center">Operating System</h2>
                             <ul class="flex justify-center text-gray-400 gap-6">
                                 <li v-for="operating in operatings" :key="operating.id">
                                     <NuxtLink :to="operating.to" target="_blank" :title="operating.title" class="cursor-pointer ease-in-out duration-300 hover:text-yellow-200">
@@ -86,9 +86,9 @@
                         </div>
                     </div>
                     <!-- Development tools -->
-                    <div class="backdrop-saturate-200 col-span-10 md:col-span-6 flex justify-center border-dashed border-2 border-gray-400/30 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300">
+                    <div class="backdrop-saturate-200 col-span-10 md:col-span-6 flex justify-center border-dashed border-2 border-gray-400 dark:border-gray-800 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300">
                         <div>
-                            <h2 class="text-gray-400 text-sm font-semibold mb-6 flex justify-center">Development tools</h2>
+                            <h2 class="text-gray-500 dark:text-gray-400 text-sm font-semibold mb-6 flex justify-center">Development tools</h2>
                             <ul class="flex justify-center text-gray-400 gap-6">
                                 <li v-for="development in developments" :key="development.id">
                                     <NuxtLink :to="development.to" target="_blank" :title="development.title" class="cursor-pointer ease-in-out duration-300 hover:text-yellow-200">
@@ -99,9 +99,9 @@
                         </div>
                     </div>
                     <!-- Back End Development -->
-                    <div class="backdrop-saturate-200 col-span-10 md:col-span-6 flex justify-center border-dashed border-2 border-gray-400/30 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300">
+                    <div class="backdrop-saturate-200 col-span-10 md:col-span-6 flex justify-center border-dashed border-2 border-gray-400 dark:border-gray-800 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300">
                         <div>
-                            <h2 class="text-gray-400 text-sm font-semibold mb-6 flex justify-center">Back End [Not Focus]</h2>
+                            <h2 class="text-gray-500 dark:text-gray-400 text-sm font-semibold mb-6 flex justify-center">Back End [Not Focus]</h2>
                             <ul class="flex justify-center text-gray-400 gap-6">
                                 <li v-for="backend in backends" :key="backend.id">
                                     <NuxtLink :to="backend.to" target="_blank" :title="backend.title" class="cursor-pointer ease-in-out duration-300 hover:text-yellow-200">
@@ -112,9 +112,9 @@
                         </div>
                     </div>
                     <!-- Front End Development -->
-                    <div class="col-span-10 md:col-span-12 flex justify-center border-dashed border-2 border-gray-400/30 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300">
+                    <div class="col-span-10 md:col-span-12 flex justify-center border-dashed border-2 border-gray-400 dark:border-gray-800 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300">
                         <div>
-                            <h2 class="text-gray-400 text-sm font-semibold mb-6 flex justify-center">Front End Development</h2>
+                            <h2 class="text-gray-500 dark:text-gray-400 text-sm font-semibold mb-6 flex justify-center">Front End Development</h2>
                             <ul class="flex flex-wrap justify-center text-gray-400 gap-6 px-6">
                                 <li v-for="frontend in frontends" :key="frontend.id">
                                     <NuxtLink :to="frontend.to" target="_blank" :title="frontend.title" class="cursor-pointer ease-in-out duration-300 hover:text-yellow-200">
@@ -130,16 +130,16 @@
 
             <!-- Project -->
             <div class="mx-auto relative px-6 py-8 md:py-20 lg:py-8 bg-[url('/assets/pattern-hero-left.png')] bg-contain bg-center">
-                    <h1 class="text-gray-300 text-center text-2xl font-bold leading-snug 2xl:leading-snug mb-10 md:mb-20 lg:mb-10">
+                    <h1 class="text-gray-500 dark:text-gray-300 text-center text-2xl font-bold leading-snug 2xl:leading-snug mb-10 md:mb-20 lg:mb-10">
                         Things I’ve made trying to put my dent in the universe.
                     </h1>
 
                     <div class="grid grid-cols-10 md:grid-cols-9 gap-8">
                         <!-- Project -->
-                        <NuxtLink :to="project.to" target="_blank" :title="project.title" class="col-span-10 md:col-span-3 cursor-pointer ease-in-out duration-300 hover:scale-105 hover:backdrop-saturate-200 flex justify-center border-dashed border-2 border-gray-800 pt-4 pb-6 hover:border-gray-100" v-for="project in projects" :key="project.id">
+                        <NuxtLink :to="project.to" target="_blank" :title="project.title" class="text-gray-500 dark:text-white  col-span-10 md:col-span-3 cursor-pointer ease-in-out duration-300 hover:scale-105 hover:backdrop-saturate-200 flex justify-center border-dashed border-2 border-gray-400 dark:border-gray-800 pt-4 pb-6 hover:border-gray-100" v-for="project in projects" :key="project.id">
                         <div class="flex justify-center flex-col gap-6">
                             <img :src="project.src" alt="" class="w-12 h-12 m-auto rounded-full bg-zinc-800 p-1.5 shadow-md border border-zinc-700/50 ring-0" />
-                            <div class="flex justify-center items-center text-gray-200">
+                            <div class="flex justify-center items-center">
                                 <Icon name="ph:link-bold" class="w-3 h-3"/><span class="ml-2 text-xs font-semibold">{{ project.title }}</span>
                             </div>
                         </div>
@@ -149,17 +149,17 @@
 
             <!-- Achievement -->
             <div class="mx-auto px-6 py-8 md:py-20 lg:py-8 container bg-[url('/assets/pattern-hero-left.png')] bg-contain bg-center">
-                <h1 class="text-gray-300 text-center text-2xl font-bold leading-snug mb-10 md:mb-20 lg:mb-10">
+                <h1 class="text-gray-500 dark:text-gray-300 text-center text-2xl font-bold leading-snug mb-10 md:mb-20 lg:mb-10">
                     Achievements that I have achieved both as a team or individually.
                 </h1>
 
                 <div class="grid grid-cols-5 md:grid-cols-6 gap-16 px-4 realtive">
-                    <NuxtLink :to="achievement.to" target="_blank" :title="achievement.title" class="shadow-xl shadow-blue-800/5 col-span-5 md:col-span-3 cursor-pointer ease-in-out duration-300 hover:scale-105 rounded-2xl backdrop-saturate-200 hover:bg-yellow-200/20 flex justify-center pt-4 pb-6" v-for="achievement in achievements" :key="achievement.id">
+                    <NuxtLink :to="achievement.to" target="_blank" :title="achievement.title" class="shadow-xl shadow-blue-500/5 dark:shadow-blue-800/5 col-span-5 md:col-span-3 cursor-pointer ease-in-out duration-300 hover:scale-105 rounded-2xl backdrop-saturate-200 bg-gray-100/30 dark:bg-transparent hover:bg-yellow-200/20 flex justify-center pt-4 pb-6" v-for="achievement in achievements" :key="achievement.id">
                         <div class="w-full flex flex-col justify-between gap-6 px-6 pt-6 pb-4">
                             <img :src="achievement.thumbnail" alt="" class="w-full h-40 bg-gray-800/50 py-8 px-12 rounded-2xl" />
                             <p class="text-justify text-xs indent-3 text-gray-400 leading-loose"><span class="text-sky-400">#</span> {{ achievement.deskripsi }}</p>
-                            <p class="flex text-sm items-center font-semibold text-gray-200">Result: <span class="ml-2 text-gray-400 leading-relaxed">{{ achievement.result }}</span></p>
-                            <div class="flex items-center text-white mt-4">
+                            <p class="flex text-xs items-center font-semibold text-gray-500 dark:text-gray-200">Result: <span class="ml-2 text-gray-400 leading-relaxed">{{ achievement.result }}</span></p>
+                            <div class="flex items-center text-gray-500 dark:text-white mt-4">
                                 <img :src="achievement.src" alt="" class="w-8 h-8 rounded-full bg-zinc-800 p-1.5 shadow-md border border-zinc-700/50 ring-0" />
                                 <Icon name="ph:link-bold" class="w-3 h-3 ml-3"/>
                                 <span class="ml-2 text-xs font-semibold leading-relaxed">{{ achievement.title }}</span>
