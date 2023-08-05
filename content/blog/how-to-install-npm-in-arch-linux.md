@@ -20,6 +20,8 @@ NPM stands for Node Package Manager. It's a library and registry for JavaScript 
 
 ### Install Node Js
 
+Command:
+
 > sudo pacman -Sy nodejs
 
 With the above command you will get the latest version of nodejs.
