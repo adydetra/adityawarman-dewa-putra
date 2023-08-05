@@ -13,10 +13,12 @@
 <script setup lang="ts">
   type Theme = 'light' | 'dark';
 
-  useSeoMeta({
-    description: 'This is my personal portfolio, build using nuxt js and tailwind css.',
-    ogDescription: 'This is my personal portfolio, build using nuxt js and tailwind css.',
-  }),
+  // useSeoMeta({
+  //   title: 'Adityawarman Dewa Putra',
+  //   ogTitle: 'Adityawarman Dewa Putra',
+  //   description: 'This is my personal portfolio, build using nuxt js and tailwind css.',
+  //   ogDescription: 'This is my personal portfolio, build using nuxt js and tailwind css.',
+  // }),
 
   definePageMeta({  
     colorMode: 'dark',

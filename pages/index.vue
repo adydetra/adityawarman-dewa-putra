@@ -47,10 +47,3 @@
     <MobileViewComponent />
   </main>
 </template>
-
-<script setup lang="ts">
-useSeoMeta({
-  title: 'Adityawarman Dewa Putra',
-  ogTitle: 'Adityawarman Dewa Putra'
-}),
-</script>

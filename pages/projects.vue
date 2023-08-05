@@ -44,10 +44,3 @@
     </div>
   </main>
 </template>
-
-<script setup lang="ts">
-useSeoMeta({
-  title: "Projects - Dewa",
-  ogTitle: "Projects - Dewa",
-});
-</script>
