@@ -42,7 +42,7 @@
             <!-- Uses -->
             <div class="mx-auto relative px-6 py-8 md:py-20 lg:py-8 bg-[url('/assets/pattern-hero-left.png')] bg-contain bg-center">
                 <h1 class="text-gray-500 dark:text-gray-300 text-center text-2xl font-bold leading-snug 2xl:leading-snug mb-16">
-                    Software I use, gadgets I love, and and the tech stack that I use.
+                    Software I use, gadgets I love, and the tech stack that I use.
                 </h1>
 
                 <div class="grid grid-cols-10 md:grid-cols-12 gap-8">

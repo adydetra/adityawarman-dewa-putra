@@ -7,7 +7,7 @@
       data-aos-duration="1000"
       class="text-gray-500 dark:text-gray-300 text-center text-3xl 2xl:text-4xl font-bold leading-snug 2xl:leading-snug mb-16"
     >
-      Software I use, gadgets I love, and<br />and the tech stack that I use.
+      Software I use, gadgets I love, and<br />the tech stack that I use.
     </h1>
 
     <div class="grid grid-cols-8 gap-20">
