@@ -29,7 +29,7 @@
       class="flex flex-wrap justify-center items-center xl:w-40 2xl:w-52 py-6 mx-auto h-screen bg-white dark:bg-gray-950 fixed top-0 right-0"
     >
       <BlockLeftSide />
-      <UISwitchColorMode class="w-full"/>
+      <UISwitchColorMode class="w-full" />
       <BlockLeftCenter />
       <div
         to=""
@@ -38,7 +38,7 @@
         <Icon name="line-md:grid-3" class="w-4 h-4 lg:w-6 lg:h-6" />
       </div>
       <BlockLeftCenter />
-      <p class="text-xs text-gray-400 text-center rotate-45 w-full">By Dewa</p>
+      <UILinkFeed />
       <BlockLeftSide />
     </div>
   </main>

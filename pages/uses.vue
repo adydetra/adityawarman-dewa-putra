@@ -35,7 +35,7 @@
         <Icon name="line-md:chevron-small-double-right" class="animate-pulse w-4 h-4 lg:w-6 lg:h-6" />
       </NuxtLink>
       <BlockLeftCenter />
-      <p class="text-xs text-gray-400 text-center rotate-45 w-full">By Dewa</p>
+      <UILinkFeed />
       <BlockLeftSide />
     </div>
   </main>

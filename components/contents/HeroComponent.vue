@@ -12,7 +12,7 @@
             and mobile, enjoying life.
           </p>
           <p class="text-gray-400 xl:text-md 2xl:text-lg">
-            ~ I’m Adityawarman Dewa Putra. I live in Jakarta Indonesia.
+            ~ I’m Adityawarman Dewa Putra. I live in Jakarta Indonesia. 🇮🇩
           </p>
           <UISocialMedia />
         </div>
