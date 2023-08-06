@@ -5,10 +5,10 @@
   >
     <Icon
       v-if="$colorMode.value == 'dark'"
-      name="ph:moon-fill"
+      name="line-md:moon-filled-alt-loop"
       class="dark:text-white w-4 h-4 lg:w-6 lg:h-6"
     />
-    <Icon v-else name="entypo:light-up" class="text-black w-4 h-4 lg:w-6 lg:h-6" />
+    <Icon v-else name="line-md:moon-alt-to-sunny-outline-loop-transition" class="text-black w-4 h-4 lg:w-6 lg:h-6" />
   </button>
 </template>
 

@@ -7,7 +7,7 @@
         target="_blank"
         class="cursor-pointer ease-in-out duration-300 hover:text-yellow-400 dark:hover:text-yellow-200"
       >
-        <Icon :name="data.name" class="w-4 h-4 lg:w-6 lg:h-6" />
+        <Icon :name="data.name" class="w-5 h-5 lg:w-7 lg:h-7" />
       </NuxtLink>
     </li>
   </ul>
@@ -18,22 +18,28 @@ export default {
   data() {
     return {
       datas: [
-        { id: 1, name: "uim:github-alt", title: "Github", to: "https://github.com/devdewa/" },
+        { id: 1, name: "line-md:github-loop", title: "Github", to: "https://github.com/devdewa/" },
         {
           id: 2,
-          name: "uim:instagram",
+          name: "line-md:email",
+          title: "Email",
+          to: "mailto:devdewa123.sp@gmail.com",
+        },
+        {
+          id: 3,
+          name: "line-md:instagram",
           title: "Instagram",
           to: "https://www.instagram.com/741_dewa/",
         },
         {
-          id: 3,
-          name: "uim:facebook-f",
+          id: 4,
+          name: "line-md:facebook",
           title: "Facebook",
           to: "https://web.facebook.com/adityawarman.dewa.putra",
         },
         {
-          id: 4,
-          name: "uim:linkedin-alt",
+          id: 5,
+          name: "line-md:linkedin",
           title: "Linkedin",
           to: "https://www.linkedin.com/in/adityawarman-dewa-putra/",
         },

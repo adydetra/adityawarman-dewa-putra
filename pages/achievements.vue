@@ -13,7 +13,7 @@
         title="Swap to Projects"
         class="w-full flex justify-center cursor-pointer py-8 ease-in-out duration-300 text-slate-400 hover:text-yellow-400 dark:hover:text-yellow-200"
       >
-        <Icon name="uim:angle-double-left" class="w-4 h-4 lg:w-6 lg:h-6" />
+        <Icon name="line-md:chevron-small-double-left" class="w-4 h-4 lg:w-6 lg:h-6" />
       </NuxtLink>
       <BlockLeftCenter />
       <NuxtLink
@@ -35,7 +35,7 @@
         to=""
         class="w-full flex justify-center cursor-not-allowed py-8 ease-in-out duration-300 text-slate-400 hover:text-red-400"
       >
-        <Icon name="uim:bars" class="w-4 h-4 lg:w-6 lg:h-6" />
+        <Icon name="line-md:grid-3" class="w-4 h-4 lg:w-6 lg:h-6" />
       </div>
       <BlockLeftCenter />
       <p class="text-xs text-gray-400 text-center rotate-45 w-full">By Dewa</p>

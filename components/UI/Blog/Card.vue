@@ -1,5 +1,5 @@
 <script setup>
-  const props = defineProps(["posts"]);
+const props = defineProps(["posts"]);
 </script>
 
 <template>
@@ -17,7 +17,7 @@
       <div class="p-4 lg:p-6 text-gray-500 dark:text-gray-100 bg-white/10 h-full">
         <h2 class="text-sm lg:text-md font-bold">{{ post.title }}</h2>
         <div class="flex justify-between items-center py-2">
-          <p class="text-xs">{{ post.publishDate }}</p>
+          <p class="text-xs"><Icon name="line-md:calendar" class="mr-1" />{{ post.publishDate }}</p>
         </div>
       </div>
     </NuxtLink>

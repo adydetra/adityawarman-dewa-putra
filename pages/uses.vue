@@ -11,7 +11,7 @@
         title="Swap to Home"
         class="w-full flex justify-center cursor-pointer py-8 ease-in-out duration-300 text-slate-400 hover:text-yellow-400 dark:hover:text-yellow-200"
       >
-        <Icon name="uim:angle-double-left" class="animate-pulse w-4 h-4 lg:w-6 lg:h-6" />
+        <Icon name="line-md:chevron-small-double-left" class="animate-pulse w-4 h-4 lg:w-6 lg:h-6" />
       </NuxtLink>
       <BlockLeftCenter />
       <NuxtLink
@@ -32,7 +32,7 @@
         title="Swap to Projects"
         class="w-full flex justify-center cursor-pointer py-8 ease-in-out duration-300 text-slate-400 hover:text-yellow-400 dark:hover:text-yellow-200"
       >
-        <Icon name="uim:angle-double-right" class="animate-pulse w-4 h-4 lg:w-6 lg:h-6" />
+        <Icon name="line-md:chevron-small-double-right" class="animate-pulse w-4 h-4 lg:w-6 lg:h-6" />
       </NuxtLink>
       <BlockLeftCenter />
       <p class="text-xs text-gray-400 text-center rotate-45 w-full">By Dewa</p>
