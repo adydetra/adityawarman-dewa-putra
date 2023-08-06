@@ -26,7 +26,7 @@ const props = defineProps(["posts"]);
         </h2>
         <p class="text-xs"><Icon name="line-md:calendar" class="mr-1" />{{ post.publishDate }}</p>
       </div>
-      <p class="text-xs mt-4 max-w-[65%] leading-loose">{{ post.description }}</p>
+      <p class="text-xs mt-4 lg:max-w-[65%] leading-loose">{{ post.description }}</p>
       <img
         :src="`/images/feed/${post.cover}`"
         alt="Photo"
