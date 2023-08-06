@@ -7,7 +7,7 @@
         target="_blank"
         class="cursor-pointer ease-in-out duration-300 hover:text-yellow-400 dark:hover:text-yellow-200"
       >
-        <Icon :name="data.name" class="w-5 h-5 lg:w-7 lg:h-7" />
+        <Icon :name="data.name" class="w-6 h-6 2xl:w-7 2xl:h-7" />
       </NuxtLink>
     </li>
   </ul>

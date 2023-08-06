@@ -15,7 +15,7 @@
         alt=""
         class="w-full h-60 bg-gray-800/50 py-8 px-12 rounded-2xl"
       />
-      <p class="text-justify indent-8 text-gray-400 leading-relaxed">
+      <p class="text-justify text-sm 2xl:text-md indent-8 text-gray-400 leading-loose">
         <span class="text-sky-400">#</span> {{ achievement.deskripsi }}
       </p>
       <p class="flex items-center font-semibold text-gray-500 dark:text-gray-200">

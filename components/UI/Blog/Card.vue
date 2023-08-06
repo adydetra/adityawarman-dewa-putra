@@ -12,9 +12,9 @@ const props = defineProps(["posts"]);
       <img
         :src="`/images/blog/${post.cover}`"
         alt="Blog Post Cover Image"
-        class="w-full h-32 lg:h-52 object-cover"
+        class="w-full h-32 lg:h-40 2xl:h-52 object-cover"
       />
-      <div class="p-4 lg:p-6 text-gray-500 dark:text-gray-100 bg-white/10 h-full">
+      <div class="p-4 lg:px-5 2xl:p-6 text-gray-500 dark:text-gray-100 bg-white/10 h-full">
         <h2 class="text-sm lg:text-md font-bold">{{ post.title }}</h2>
         <div class="flex justify-between items-center py-2">
           <p class="text-xs"><Icon name="line-md:calendar" class="mr-1" />{{ post.publishDate }}</p>

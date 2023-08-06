@@ -17,7 +17,7 @@
             :title="workstation.title"
             class="cursor-pointer ease-in-out duration-300 hover:text-yellow-400 dark:hover:text-yellow-200"
           >
-            <Icon :name="workstation.name" class="w-4 h-4 lg:w-6 lg:h-6" />
+            <Icon :name="workstation.name" class="w-5 h-5" />
           </NuxtLink>
         </li>
       </ul>
@@ -41,7 +41,7 @@
             :title="operating.title"
             class="cursor-pointer ease-in-out duration-300 hover:text-yellow-400 dark:hover:text-yellow-200"
           >
-            <Icon :name="operating.name" class="w-4 h-4 lg:w-6 lg:h-6" />
+            <Icon :name="operating.name" class="w-5 h-5" />
           </NuxtLink>
         </li>
       </ul>
@@ -65,7 +65,7 @@
             :title="database.title"
             class="cursor-pointer ease-in-out duration-300 hover:text-yellow-400 dark:hover:text-yellow-200"
           >
-            <Icon :name="database.name" class="w-4 h-4 lg:w-6 lg:h-6" />
+            <Icon :name="database.name" class="w-5 h-5" />
           </NuxtLink>
         </li>
       </ul>
@@ -89,7 +89,7 @@
             :title="development.title"
             class="cursor-pointer ease-in-out duration-300 hover:text-yellow-400 dark:hover:text-yellow-200"
           >
-            <Icon :name="development.name" class="w-4 h-4 lg:w-6 lg:h-6" />
+            <Icon :name="development.name" class="w-5 h-5" />
           </NuxtLink>
         </li>
       </ul>
@@ -113,7 +113,7 @@
             :title="backend.title"
             class="cursor-pointer ease-in-out duration-300 hover:text-yellow-400 dark:hover:text-yellow-200"
           >
-            <Icon :name="backend.name" class="w-4 h-4 lg:w-6 lg:h-6" />
+            <Icon :name="backend.name" class="w-5 h-5" />
           </NuxtLink>
         </li>
       </ul>
@@ -137,7 +137,7 @@
             :title="frontend.title"
             class="cursor-pointer ease-in-out duration-300 hover:text-yellow-400 dark:hover:text-yellow-200"
           >
-            <Icon :name="frontend.name" class="w-4 h-4 lg:w-6 lg:h-6" />
+            <Icon :name="frontend.name" class="w-5 h-5" />
           </NuxtLink>
         </li>
       </ul>
