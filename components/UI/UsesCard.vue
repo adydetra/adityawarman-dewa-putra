@@ -1,22 +1,11 @@
 <template>
   <!-- Workstation -->
-  <div
-    data-aos="zoom-in"
-    data-aos-duration="1000"
-    class="col-span-2 flex justify-center border-dashed border-2 border-gray-400 pt-4 pb-6 hover:border-yellow-500 dark:hover:border-gray-100 ease-in-out duration-300"
-  >
+  <div data-aos="zoom-in" data-aos-duration="1000" class="col-span-2" :class="card">
     <div>
-      <h2 class="text-gray-400 text-lg font-semibold mb-4 flex justify-center">
-        Workstation
-      </h2>
+      <h2 :class="h2Style">Workstation</h2>
       <ul class="flex justify-center text-gray-400 gap-6">
         <li v-for="workstation in workstations" :key="workstation.id">
-          <NuxtLink
-            :to="workstation.to"
-            target="_blank"
-            :title="workstation.title"
-            class="cursor-pointer ease-in-out duration-300 hover:text-yellow-400 dark:hover:text-yellow-200"
-          >
+          <NuxtLink :to="workstation.to" target="_blank" :title="workstation.title" :class="link">
             <Icon :name="workstation.name" class="w-5 h-5" />
           </NuxtLink>
         </li>
@@ -24,23 +13,12 @@
     </div>
   </div>
   <!-- Operating System -->
-  <div
-    data-aos="zoom-in"
-    data-aos-duration="1000"
-    class="col-span-4 flex justify-center border-dashed border-2 border-gray-400 pt-4 pb-6 hover:border-yellow-500 dark:hover:border-gray-100 ease-in-out duration-300"
-  >
+  <div data-aos="zoom-in" data-aos-duration="1000" class="col-span-4" :class="card">
     <div>
-      <h2 class="text-gray-400 text-lg font-semibold mb-4 flex justify-center">
-        Operating System
-      </h2>
+      <h2 :class="h2Style">Operating System</h2>
       <ul class="flex justify-center text-gray-400 gap-6">
         <li v-for="operating in operatings" :key="operating.id">
-          <NuxtLink
-            :to="operating.to"
-            target="_blank"
-            :title="operating.title"
-            class="cursor-pointer ease-in-out duration-300 hover:text-yellow-400 dark:hover:text-yellow-200"
-          >
+          <NuxtLink :to="operating.to" target="_blank" :title="operating.title" :class="link">
             <Icon :name="operating.name" class="w-5 h-5" />
           </NuxtLink>
         </li>
@@ -48,23 +26,12 @@
     </div>
   </div>
   <!-- Database -->
-  <div
-    data-aos="zoom-in"
-    data-aos-duration="1000"
-    class="col-span-2 flex justify-center border-dashed border-2 border-gray-400 pt-4 pb-6 hover:border-yellow-500 dark:hover:border-gray-100 ease-in-out duration-300"
-  >
+  <div data-aos="zoom-in" data-aos-duration="1000" class="col-span-2" :class="card">
     <div>
-      <h2 class="text-gray-400 text-lg font-semibold mb-4 flex justify-center">
-        Database
-      </h2>
+      <h2 :class="h2Style">Database</h2>
       <ul class="flex justify-center text-gray-400 gap-6">
         <li v-for="database in databases" :key="database.id">
-          <NuxtLink
-            :to="database.to"
-            target="_blank"
-            :title="database.title"
-            class="cursor-pointer ease-in-out duration-300 hover:text-yellow-400 dark:hover:text-yellow-200"
-          >
+          <NuxtLink :to="database.to" target="_blank" :title="database.title" :class="link">
             <Icon :name="database.name" class="w-5 h-5" />
           </NuxtLink>
         </li>
@@ -75,20 +42,14 @@
   <div
     data-aos="zoom-in"
     data-aos-duration="1000"
-    class="backdrop-saturate-200 col-span-4 flex justify-center border-dashed border-2 border-gray-400 pt-4 pb-6 hover:border-yellow-500 dark:hover:border-gray-100 ease-in-out duration-300"
+    class="backdrop-saturate-200 col-span-4"
+    :class="card"
   >
     <div>
-      <h2 class="text-gray-400 text-lg font-semibold mb-6 flex justify-center">
-        Development tools
-      </h2>
+      <h2 :class="h2Style">Development tools</h2>
       <ul class="flex justify-center text-gray-400 gap-6">
         <li v-for="development in developments" :key="development.id">
-          <NuxtLink
-            :to="development.to"
-            target="_blank"
-            :title="development.title"
-            class="cursor-pointer ease-in-out duration-300 hover:text-yellow-400 dark:hover:text-yellow-200"
-          >
+          <NuxtLink :to="development.to" target="_blank" :title="development.title" :class="link">
             <Icon :name="development.name" class="w-5 h-5" />
           </NuxtLink>
         </li>
@@ -99,20 +60,14 @@
   <div
     data-aos="zoom-in"
     data-aos-duration="1000"
-    class="backdrop-saturate-200 col-span-4 flex justify-center border-dashed border-2 border-gray-400 pt-4 pb-6 hover:border-yellow-500 dark:hover:border-gray-100 ease-in-out duration-300"
+    class="backdrop-saturate-200 col-span-4"
+    :class="card"
   >
     <div>
-      <h2 class="text-gray-400 text-lg font-semibold mb-6 flex justify-center">
-        Back End Development [Not Focus]
-      </h2>
+      <h2 :class="h2Style">Back End Development [Not Focus]</h2>
       <ul class="flex justify-center text-gray-400 gap-6">
         <li v-for="backend in backends" :key="backend.id">
-          <NuxtLink
-            :to="backend.to"
-            target="_blank"
-            :title="backend.title"
-            class="cursor-pointer ease-in-out duration-300 hover:text-yellow-400 dark:hover:text-yellow-200"
-          >
+          <NuxtLink :to="backend.to" target="_blank" :title="backend.title" :class="link">
             <Icon :name="backend.name" class="w-5 h-5" />
           </NuxtLink>
         </li>
@@ -120,23 +75,12 @@
     </div>
   </div>
   <!-- Front End Development -->
-  <div
-    data-aos="zoom-in"
-    data-aos-duration="1000"
-    class="col-span-8 flex justify-center border-dashed border-2 border-gray-400 pt-4 pb-6 hover:border-yellow-500 dark:hover:border-gray-100 ease-in-out duration-300"
-  >
+  <div data-aos="zoom-in" data-aos-duration="1000" class="col-span-8" :class="card">
     <div>
-      <h2 class="text-gray-400 text-lg font-semibold mb-6 flex justify-center">
-        Front End Development
-      </h2>
+      <h2 :class="h2Style">Front End Development</h2>
       <ul class="flex justify-center text-gray-400 gap-6 2xl:gap-8">
         <li v-for="frontend in frontends" :key="frontend.id">
-          <NuxtLink
-            :to="frontend.to"
-            target="_blank"
-            :title="frontend.title"
-            class="cursor-pointer ease-in-out duration-300 hover:text-yellow-400 dark:hover:text-yellow-200"
-          >
+          <NuxtLink :to="frontend.to" target="_blank" :title="frontend.title" :class="link">
             <Icon :name="frontend.name" class="w-5 h-5" />
           </NuxtLink>
         </li>
@@ -144,6 +88,14 @@
     </div>
   </div>
 </template>
+
+<script setup>
+const card =
+  "flex justify-center border-dashed border-2 border-gray-400 pt-4 pb-6 hover:border-yellow-500 dark:hover:border-gray-100 ease-in-out duration-300";
+const h2Style = "text-gray-400 text-lg font-semibold mb-6 flex justify-center";
+const link =
+  "cursor-pointer ease-in-out duration-300 hover:text-yellow-400 dark:hover:text-yellow-200";
+</script>
 
 <script>
 export default {
