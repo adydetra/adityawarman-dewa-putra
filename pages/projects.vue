@@ -24,7 +24,7 @@
       >
       <BlockLeftSide />
     </div>
-    <ContentsProjectComponent />
+    <BaseProjectComponent />
     <div
       class="flex flex-wrap justify-center items-center xl:w-40 2xl:w-52 py-6 mx-auto h-screen bg-white dark:bg-gray-950 fixed top-0 right-0"
     >
