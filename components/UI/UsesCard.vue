@@ -39,12 +39,7 @@
     </div>
   </div>
   <!-- Development tools -->
-  <div
-    data-aos="zoom-in"
-    data-aos-duration="1000"
-    class="backdrop-saturate-200 col-span-4"
-    :class="card"
-  >
+  <div data-aos="zoom-in" data-aos-duration="1000" class="backdrop-saturate-200 col-span-4" :class="card">
     <div>
       <h2 :class="h2Style">Development tools</h2>
       <ul class="flex justify-center text-gray-400 gap-6">
@@ -57,12 +52,7 @@
     </div>
   </div>
   <!-- Back End Development -->
-  <div
-    data-aos="zoom-in"
-    data-aos-duration="1000"
-    class="backdrop-saturate-200 col-span-4"
-    :class="card"
-  >
+  <div data-aos="zoom-in" data-aos-duration="1000" class="backdrop-saturate-200 col-span-4" :class="card">
     <div>
       <h2 :class="h2Style">Back End Development [Not Focus]</h2>
       <ul class="flex justify-center text-gray-400 gap-6">
@@ -89,192 +79,182 @@
   </div>
 </template>
 
-<script setup>
-const card =
-  "flex justify-center border-dashed border-2 border-gray-400 pt-4 pb-6 hover:border-yellow-500 dark:hover:border-gray-100 ease-in-out duration-300";
+<script setup lang="ts">
+const card = "flex justify-center border-dashed border-2 border-gray-400 pt-4 pb-6 hover:border-yellow-500 dark:hover:border-gray-100 ease-in-out duration-300";
 const h2Style = "text-gray-400 text-lg font-semibold mb-6 flex justify-center";
-const link =
-  "cursor-pointer ease-in-out duration-300 hover:text-yellow-400 dark:hover:text-yellow-200";
-</script>
+const link = "cursor-pointer ease-in-out duration-300 hover:text-yellow-400 dark:hover:text-yellow-200";
 
-<script>
-export default {
-  data() {
-    return {
-      workstations: [
-        {
-          id: 1,
-          name: "ic:round-smartphone",
-          title: "Xiaomi Redmi Note 7 Pro",
-          to: "https://www.gsmarena.com/xiaomi_redmi_note_7-9513.php",
-        },
-        {
-          id: 2,
-          name: "solar:laptop-outline",
-          title: "Asus A412DA Ryzen 3",
-          to: "https://www.reviewlaptop-id.com/asus-a412da-ek301t-amd-ryzen-3-3200u/",
-        },
-      ],
-
-      operatings: [
-        {
-          id: 1,
-          name: "uim:android",
-          title: "Android",
-          to: "https://www.android.com/intl/id_id/",
-        },
-        {
-          id: 2,
-          name: "uim:windows",
-          title: "Windows",
-          to: "https://www.microsoft.com/en-us/windows",
-        },
-        {
-          id: 3,
-          name: "cib:arch-linux",
-          title: "Arch Linux",
-          to: "https://archlinux.org/",
-        },
-      ],
-
-      databases: [
-        {
-          id: 1,
-          name: "simple-icons:mysql",
-          title: "My SQL",
-          to: "https://www.mysql.com/",
-        },
-      ],
-
-      developments: [
-        {
-          id: 1,
-          name: "akar-icons:vscode-fill",
-          title: "VS Code",
-          to: "https://code.visualstudio.com/",
-        },
-        {
-          id: 2,
-          name: "solar:figma-bold-duotone",
-          title: "FIGMA",
-          to: "https://www.figma.com",
-        },
-        {
-          id: 3,
-          name: "simple-icons:androidstudio",
-          title: "Android Studio",
-          to: "https://developer.android.com/studio",
-        },
-        {
-          id: 4,
-          name: "simple-icons:postman",
-          title: "Postman",
-          to: "https://www.postman.com/",
-        },
-        {
-          id: 5,
-          name: "simple-icons:xampp",
-          title: "XAMPP",
-          to: "https://www.apachefriends.org/download.html",
-        },
-        {
-          id: 6,
-          name: "mdi:firefox",
-          title: "Firefox",
-          to: "https://www.mozilla.org/id/firefox/new/",
-        },
-      ],
-
-      backends: [
-        {
-          id: 1,
-          name: "akar-icons:php-fill",
-          title: "PHP",
-          to: "https://www.php.net/",
-        },
-        {
-          id: 2,
-          name: "mdi:laravel",
-          title: "Laravel",
-          to: "https://laravel.com/",
-        },
-        {
-          id: 3,
-          name: "simple-icons:codeigniter",
-          title: "Codeigniter",
-          to: "https://www.codeigniter.com/",
-        },
-      ],
-
-      frontends: [
-        {
-          id: 1,
-          name: "simple-icons:tailwindcss",
-          title: "Tailwind CSS",
-          to: "https://tailwindcss.com/",
-        },
-        {
-          id: 2,
-          name: "ri:bootstrap-fill",
-          title: "Bootstrap",
-          to: "https://getbootstrap.com/",
-        },
-        {
-          id: 3,
-          name: "akar-icons:jquery-fill",
-          title: "jQuery",
-          to: "https://jquery.com/",
-        },
-        {
-          id: 4,
-          name: "simple-icons:vuedotjs",
-          title: "Vue Js",
-          to: "https://vuejs.org/",
-        },
-        {
-          id: 5,
-          name: "simple-icons:nuxtdotjs",
-          title: "Nuxt Js",
-          to: "https://nuxt.com/",
-        },
-        {
-          id: 6,
-          name: "mdi:react",
-          title: "React Js",
-          to: "https://react.dev/",
-        },
-        {
-          id: 7,
-          name: "teenyicons:nextjs-solid",
-          title: "Next Js",
-          to: "https://nextjs.org/",
-        },
-        {
-          id: 8,
-          name: "devicon-plain:vitejs",
-          title: "Vite Js",
-          to: "https://vitejs.dev/",
-        },
-        {
-          id: 9,
-          name: "tabler:brand-react-native",
-          title: "React Native",
-          to: "https://reactnative.dev/",
-        },
-        {
-          id: 10,
-          name: "simple-icons:npm",
-          title: "NPM",
-          to: "https://www.npmjs.com/",
-        },
-        {
-          id: 11,
-          name: "akar-icons:yarn-fill",
-          title: "Yarn",
-          to: "https://yarnpkg.com/",
-        },
-      ],
-    };
+const workstations = [
+  {
+    id: 1,
+    name: "ic:round-smartphone",
+    title: "Xiaomi Redmi Note 7 Pro",
+    to: "https://www.gsmarena.com/xiaomi_redmi_note_7-9513.php",
   },
-};
+  {
+    id: 2,
+    name: "solar:laptop-outline",
+    title: "Asus A412DA Ryzen 3",
+    to: "https://www.reviewlaptop-id.com/asus-a412da-ek301t-amd-ryzen-3-3200u/",
+  },
+];
+
+const operatings = [
+  {
+    id: 1,
+    name: "uim:android",
+    title: "Android",
+    to: "https://www.android.com/intl/id_id/",
+  },
+  {
+    id: 2,
+    name: "uim:windows",
+    title: "Windows",
+    to: "https://www.microsoft.com/en-us/windows",
+  },
+  {
+    id: 3,
+    name: "cib:arch-linux",
+    title: "Arch Linux",
+    to: "https://archlinux.org/",
+  },
+];
+
+const databases = [
+  {
+    id: 1,
+    name: "simple-icons:mysql",
+    title: "My SQL",
+    to: "https://www.mysql.com/",
+  },
+];
+
+const developments = [
+  {
+    id: 1,
+    name: "akar-icons:vscode-fill",
+    title: "VS Code",
+    to: "https://code.visualstudio.com/",
+  },
+  {
+    id: 2,
+    name: "solar:figma-bold-duotone",
+    title: "FIGMA",
+    to: "https://www.figma.com",
+  },
+  {
+    id: 3,
+    name: "simple-icons:androidstudio",
+    title: "Android Studio",
+    to: "https://developer.android.com/studio",
+  },
+  {
+    id: 4,
+    name: "simple-icons:postman",
+    title: "Postman",
+    to: "https://www.postman.com/",
+  },
+  {
+    id: 5,
+    name: "simple-icons:xampp",
+    title: "XAMPP",
+    to: "https://www.apachefriends.org/download.html",
+  },
+  {
+    id: 6,
+    name: "mdi:firefox",
+    title: "Firefox",
+    to: "https://www.mozilla.org/id/firefox/new/",
+  },
+];
+
+const backends = [
+  {
+    id: 1,
+    name: "akar-icons:php-fill",
+    title: "PHP",
+    to: "https://www.php.net/",
+  },
+  {
+    id: 2,
+    name: "mdi:laravel",
+    title: "Laravel",
+    to: "https://laravel.com/",
+  },
+  {
+    id: 3,
+    name: "simple-icons:codeigniter",
+    title: "Codeigniter",
+    to: "https://www.codeigniter.com/",
+  },
+];
+
+const frontends = [
+  {
+    id: 1,
+    name: "simple-icons:tailwindcss",
+    title: "Tailwind CSS",
+    to: "https://tailwindcss.com/",
+  },
+  {
+    id: 2,
+    name: "ri:bootstrap-fill",
+    title: "Bootstrap",
+    to: "https://getbootstrap.com/",
+  },
+  {
+    id: 3,
+    name: "akar-icons:jquery-fill",
+    title: "jQuery",
+    to: "https://jquery.com/",
+  },
+  {
+    id: 4,
+    name: "simple-icons:vuedotjs",
+    title: "Vue Js",
+    to: "https://vuejs.org/",
+  },
+  {
+    id: 5,
+    name: "simple-icons:nuxtdotjs",
+    title: "Nuxt Js",
+    to: "https://nuxt.com/",
+  },
+  {
+    id: 6,
+    name: "mdi:react",
+    title: "React Js",
+    to: "https://react.dev/",
+  },
+  {
+    id: 7,
+    name: "teenyicons:nextjs-solid",
+    title: "Next Js",
+    to: "https://nextjs.org/",
+  },
+  {
+    id: 8,
+    name: "devicon-plain:vitejs",
+    title: "Vite Js",
+    to: "https://vitejs.dev/",
+  },
+  {
+    id: 9,
+    name: "tabler:brand-react-native",
+    title: "React Native",
+    to: "https://reactnative.dev/",
+  },
+  {
+    id: 10,
+    name: "simple-icons:npm",
+    title: "NPM",
+    to: "https://www.npmjs.com/",
+  },
+  {
+    id: 11,
+    name: "akar-icons:yarn-fill",
+    title: "Yarn",
+    to: "https://yarnpkg.com/",
+  },
+];
 </script>
