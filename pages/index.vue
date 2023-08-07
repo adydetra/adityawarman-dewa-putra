@@ -1,7 +1,7 @@
 <template>
   <!-- Desktop -->
   <main class="hidden lg:flex bg-white dark:bg-gray-950 tracking-wide h-screen select-none" v-if="$device.isDesktop">
-    <div class="flex flex-wrap justify-center items-center px-12 py-6 mx-auto xl:w-44 2xl:w-60">
+    <div :class="layout">
       <BlockLeftSide />
       <div class="text-md text-gray-400 text-center w-full">
         <span class="bg-gray-700 py-2 px-4 text-yellow-300 dark:text-yellow-300 rounded-sm">1</span>
@@ -15,7 +15,7 @@
       <BlockLeftSide />
     </div>
     <BaseHeroComponent />
-    <div class="flex flex-wrap justify-center items-center px-12 py-6 mx-auto xl:w-44 2xl:w-60">
+    <div :class="layout">
       <BlockLeftSide />
       <UISwitchColorMode class="w-full" />
       <BlockLeftCenter />
@@ -41,6 +41,8 @@
 <script setup lang="ts">
 const title = ref("Adityawarman Dewa Putra");
 const description = ref("This is my personal portfolio, build using nuxt js and tailwind css.");
+
+const layout = "flex flex-wrap justify-center items-center px-12 py-6 mx-auto xl:w-44 2xl:w-60";
 
 useSeoMeta({
   title,
