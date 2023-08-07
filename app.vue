@@ -1,19 +1,21 @@
 <template>
-  <VitePwaManifest />
-  <NuxtLoadingIndicator />
-  <NuxtPage />
+  <NuxtLayout>
+    <VitePwaManifest />
+    <NuxtLoadingIndicator />
+    <NuxtPage />
+  </NuxtLayout>
 </template>
 
 <style>
-  body * {
-    @apply transition-colors ease-in-out duration-500;
-  }
+body * {
+  @apply transition-colors ease-in-out duration-500;
+}
 </style>
 
 <script setup lang="ts">
-  type Theme = 'light' | 'dark';
+type Theme = "light" | "dark";
 
-  definePageMeta({  
-    colorMode: 'dark',
-  })
+definePageMeta({
+  colorMode: "dark",
+});
 </script>
