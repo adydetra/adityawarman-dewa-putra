@@ -13,8 +13,6 @@ body * {
 </style>
 
 <script setup lang="ts">
-type Theme = "light" | "dark";
-
 definePageMeta({
   colorMode: "dark",
 });
