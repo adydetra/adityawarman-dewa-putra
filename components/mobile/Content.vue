@@ -118,7 +118,7 @@
         <div class="flex justify-center flex-col gap-6">
           <img :src="project.src" alt="" class="w-12 h-full m-auto rounded-full bg-zinc-800 p-1.5 shadow-md border border-zinc-700/50 ring-0" />
           <div class="flex justify-center items-center">
-            <Icon name="ph:link-bold" class="w-3 h-3" /><span class="ml-2 text-xs font-semibold">{{ project.title }}</span>
+            <Icon name="line-md:external-link" class="w-3 h-3" /><span class="ml-2 text-xs font-semibold">{{ project.title }}</span>
           </div>
         </div>
       </NuxtLink>
@@ -149,7 +149,7 @@
           </p>
           <div class="flex items-center text-gray-500 dark:text-white mt-4">
             <img :src="achievement.src" alt="" class="w-8 h-8 rounded-full bg-zinc-800 p-1.5 shadow-md border border-zinc-700/50 ring-0" />
-            <Icon name="ph:link-bold" class="w-3 h-3 ml-3" />
+            <Icon name="line-md:text-box" class="w-3 h-3 ml-3" />
             <span class="ml-2 text-[10px] font-semibold leading-relaxed">{{ achievement.title }}</span>
           </div>
         </div>
