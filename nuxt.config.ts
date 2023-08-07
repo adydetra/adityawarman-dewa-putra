@@ -13,7 +13,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   modules: [
-    '@nuxtjs/tailwindcss',
+    // '@nuxtjs/tailwindcss',
     '@nuxt/content',
     '@nuxtjs/google-fonts',
     '@nuxtjs/color-mode',
@@ -22,6 +22,14 @@ export default defineNuxtConfig({
     'nuxt-swiper',
     '@vite-pwa/nuxt'
   ],
+
+  css: ['~/assets/css/main.css'],
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
 
   googleFonts: {
     families: {
