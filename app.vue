@@ -11,9 +11,3 @@ body * {
   @apply transition-colors ease-in-out duration-500;
 }
 </style>
-
-<script setup lang="ts">
-definePageMeta({
-  colorMode: "dark",
-});
-</script>

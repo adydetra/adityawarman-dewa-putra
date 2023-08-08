@@ -19,7 +19,7 @@ export default defineNuxtConfig({
     "@nuxtjs/color-mode",
     "@nuxtjs/device",
     "nuxt-icon",
-    "nuxt-swiper",
+    // "nuxt-swiper",
     "nuxt-simple-robots",
     "@vite-pwa/nuxt",
   ],
