@@ -1,19 +1,19 @@
 <template>
   <section class="flex justify-center gap-6 overflow-hidden pt-16 pb-12">
     <div class="relative aspect-[10/10] w-44 md:w-80 flex-none overflow-hidden rounded-xl -rotate-3 shadow-2xl shadow-yellow-200/10">
-      <img src="~/assets/hero-1.webp" alt="o" class="absolute h-full w-full object-cover" />
+      <img src="images/hero-1.webp" alt="o" class="absolute h-full w-full object-cover" />
     </div>
     <div class="relative aspect-[10/10] w-32 md:w-60 flex-none overflow-hidden rounded-xl">
-      <img src="~/assets/hero-3.webp" alt="o" class="absolute h-full w-full object-scale-down" />
+      <img src="images/hero-3.webp" alt="o" class="absolute h-full w-full object-scale-down" />
     </div>
     <div class="relative aspect-[10/10] w-44 md:w-80 flex-none overflow-hidden rounded-xl rotate-3 shadow-2xl shadow-yellow-200/10">
-      <img src="~/assets/hero-2.webp" alt="o" class="absolute h-full w-full object-cover" />
+      <img src="images/hero-2.webp" alt="o" class="absolute h-full w-full object-cover" />
     </div>
   </section>
 
   <!-- Uses -->
   <div
-    class="mx-auto relative px-6 py-8 md:py-20 lg:py-8 bg-[url('/assets/pattern-hero-left.png')] dark:bg-[url('/assets/pattern-hero-left-dark.png')] bg-contain bg-center"
+    class="mx-auto relative px-6 py-8 md:py-20 lg:py-8 bg-[url('images/pattern-hero-left.png')] dark:bg-[url('images/pattern-hero-left-dark.png')] bg-contain bg-center"
   >
     <h1 class="text-gray-500 dark:text-gray-300 text-center text-2xl font-bold leading-snug 2xl:leading-snug mb-16">
       Software I use, gadgets I love, and the tech stack that I use.
@@ -103,7 +103,7 @@
 
   <!-- Project -->
   <div
-    class="mx-auto relative px-6 py-8 md:py-20 lg:py-8 bg-[url('/assets/pattern-hero-left.png')] dark:bg-[url('/assets/pattern-hero-left-dark.png')] bg-contain bg-center"
+    class="mx-auto relative px-6 py-8 md:py-20 lg:py-8 bg-[url('images/pattern-hero-left.png')] dark:bg-[url('images/pattern-hero-left-dark.png')] bg-contain bg-center"
   >
     <h1 class="text-gray-500 dark:text-gray-300 text-center text-2xl font-bold leading-snug 2xl:leading-snug mb-10 md:mb-20 lg:mb-10">
       Things I’ve made trying to put my dent in the universe.
@@ -131,7 +131,7 @@
 
   <!-- Achievement -->
   <div
-    class="mx-auto px-6 py-8 md:py-20 lg:py-8 container bg-[url('/assets/pattern-hero-left.png')] dark:bg-[url('/assets/pattern-hero-left-dark.png')] bg-contain bg-center"
+    class="mx-auto px-6 py-8 md:py-20 lg:py-8 container bg-[url('images/pattern-hero-left.png')] dark:bg-[url('images/pattern-hero-left-dark.png')] bg-contain bg-center"
   >
     <h1 class="text-gray-500 dark:text-gray-300 text-center text-2xl font-bold leading-snug mb-10 md:mb-20 lg:mb-10">
       Achievements that I have achieved both as a team or individually.
@@ -438,7 +438,7 @@ const achievements = [
     thumbnail: "icon/hackathon.svg",
     src: "icon/maritime-explore.svg",
     icon: "ri:team-fill",
-    to: "sertifikat-hackathon.jpg",
+    to: "images/sertifikat-hackathon.jpg",
     result: "Semifinalist",
     deskripsi:
       "Kompetisi ini diselenggarakan oleh Dinas Pembinaan Potensi Maritim Markas Besar Angkatan Laut (Dispotmar Mabesal) dalam rangka menggalang potensi anak bangsa di bidang inovasi produk digital kemaritiman.",
@@ -450,7 +450,7 @@ const achievements = [
     thumbnail: "icon/kksi.svg",
     src: "icon/go-prakerin.svg",
     icon: "ri:team-fill",
-    to: "sertifikat-kksi.pdf",
+    to: "pdf/sertifikat-kksi.pdf",
     result: "Juara Harapan 1",
     deskripsi:
       "KKSI adalah singkatan dari Kamp Kreatif SMK Indonesia, yang merupakan event nasional yang rutin diselenggarakan oleh kementrian pendidikan dan kebudayaan serta direktorat jenderal vokasi yang dibantu oleh SMK pengampu atau penyelenggara.",
