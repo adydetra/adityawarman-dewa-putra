@@ -17,6 +17,7 @@
     "autoprefixer": "^10.4.14",
     "nuxt": "^3.6.5",
     "nuxt-icon": "^0.4.1",
+    "nuxt-simple-robots": "^3.1.0",
     "postcss": "^8.4.27"
   },
   "dependencies": {

@@ -6582,6 +6582,42 @@ nuxt-icon@^0.4.1:
     "@iconify/vue" "^4.1.1"
     "@nuxt/kit" "^3.6.1"
 
+nuxt-simple-robots@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/nuxt-simple-robots/-/nuxt-simple-robots-3.1.0.tgz#b4b2334acb4e4023ab349ae506e4ac13a63fa33c"
+  integrity sha512-K+frvIOxRXwpZs77wCD/28NdDaK6eeecMmwX7MlVU5qJyfxp3olrgDQyEOQc3qcS6nLZ2s1nY5y6Dp0AiQoJrg==
+  dependencies:
+    "@nuxt/kit" "^3.6.5"
+    defu "^6.1.2"
+    nuxt-site-config "^1.0.10"
+    nuxt-site-config-kit "^1.0.10"
+    pathe "^1.1.1"
+    ufo "^1.2.0"
+
+nuxt-site-config-kit@1.0.10, nuxt-site-config-kit@^1.0.10:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/nuxt-site-config-kit/-/nuxt-site-config-kit-1.0.10.tgz#5907bbc3bb8f5ef366455cfc87b5fe9c62d7b164"
+  integrity sha512-LvuXp2mWLONdB3biY4GmUPHu47XBZvoPIy2yDceWiGWa4tfwdCp/jVBJwgyFYVqwiXNZ7uJxG0omjNRPafXkqw==
+  dependencies:
+    "@nuxt/kit" "^3.6.5"
+    "@nuxt/schema" "^3.6.5"
+    defu "^6.1.2"
+    pkg-types "^1.0.3"
+    site-config-stack "1.0.10"
+    ufo "^1.2.0"
+
+nuxt-site-config@^1.0.10:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/nuxt-site-config/-/nuxt-site-config-1.0.10.tgz#832b26cd126e9c9256f14b5d83a56d2648237bc3"
+  integrity sha512-rXiyDMeJTn32EBSZ5sSLAPrGOee2aacCCbCSFOlLfcQD3uXxNk25FZWFJbNO9RGVaSajY3qcNKcqa5vRKEy35A==
+  dependencies:
+    "@nuxt/kit" "^3.6.5"
+    "@nuxt/schema" "^3.6.5"
+    nuxt-site-config-kit "1.0.10"
+    pathe "^1.1.1"
+    site-config-stack "1.0.10"
+    ufo "^1.2.0"
+
 nuxt-swiper@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/nuxt-swiper/-/nuxt-swiper-1.2.0.tgz#5d6b4c25e3c9e667748a93432586a5f2bb1ba8a0"
@@ -8000,6 +8036,16 @@ sisteransi@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/sisteransi/-/sisteransi-1.0.5.tgz#134d681297756437cc05ca01370d3a7a571075ed"
   integrity sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==
+
+site-config-stack@1.0.10:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/site-config-stack/-/site-config-stack-1.0.10.tgz#c641f97ea255ee0d5e293c4740f0da97a0ad1439"
+  integrity sha512-sEKECSkg9XYrzs6ykKWbelxj/P/K8kUgKtWZdETTfLlnKl7e/0JsTS0UZf2Gu4aNEXWUwHrOxtZcvIa3ASYhHA==
+  dependencies:
+    "@nuxt/kit" "^3.6.5"
+    defu "^6.1.2"
+    pkg-types "^1.0.3"
+    ufo "^1.2.0"
 
 slash@^4.0.0:
   version "4.0.0"
