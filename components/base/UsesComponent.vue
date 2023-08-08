@@ -10,7 +10,7 @@
       Software I use, gadgets I love, and<br />the tech stack that I use.
     </h1>
 
-    <div class="grid grid-cols-8 gap-20">
+    <div class="grid grid-cols-8 gap-16 2xl:gap-20">
       <UIUsesCard />
     </div>
   </div>

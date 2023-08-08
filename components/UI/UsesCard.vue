@@ -6,7 +6,7 @@
       <ul class="flex justify-center text-gray-400 gap-6">
         <li v-for="workstation in workstations" :key="workstation.id">
           <NuxtLink :to="workstation.to" target="_blank" :title="workstation.title" :class="link">
-            <Icon :name="workstation.name" class="w-5 h-5" />
+            <Icon :name="workstation.name" :class="icon" />
           </NuxtLink>
         </li>
       </ul>
@@ -19,7 +19,7 @@
       <ul class="flex justify-center text-gray-400 gap-6">
         <li v-for="operating in operatings" :key="operating.id">
           <NuxtLink :to="operating.to" target="_blank" :title="operating.title" :class="link">
-            <Icon :name="operating.name" class="w-5 h-5" />
+            <Icon :name="operating.name" :class="icon" />
           </NuxtLink>
         </li>
       </ul>
@@ -32,7 +32,7 @@
       <ul class="flex justify-center text-gray-400 gap-6">
         <li v-for="database in databases" :key="database.id">
           <NuxtLink :to="database.to" target="_blank" :title="database.title" :class="link">
-            <Icon :name="database.name" class="w-5 h-5" />
+            <Icon :name="database.name" :class="icon" />
           </NuxtLink>
         </li>
       </ul>
@@ -45,20 +45,20 @@
       <ul class="flex justify-center text-gray-400 gap-6">
         <li v-for="development in developments" :key="development.id">
           <NuxtLink :to="development.to" target="_blank" :title="development.title" :class="link">
-            <Icon :name="development.name" class="w-5 h-5" />
+            <Icon :name="development.name" :class="icon" />
           </NuxtLink>
         </li>
       </ul>
     </div>
   </div>
-  <!-- Back End Development -->
+  <!-- Package Manager -->
   <div data-aos="zoom-in" data-aos-duration="1000" class="backdrop-saturate-200 col-span-4" :class="card">
     <div>
-      <h2 :class="h2Style">Back End Development [Not Focus]</h2>
+      <h2 :class="h2Style">Package Manager</h2>
       <ul class="flex justify-center text-gray-400 gap-6">
-        <li v-for="backend in backends" :key="backend.id">
-          <NuxtLink :to="backend.to" target="_blank" :title="backend.title" :class="link">
-            <Icon :name="backend.name" class="w-5 h-5" />
+        <li v-for="pack in packages" :key="pack.id">
+          <NuxtLink :to="pack.to" target="_blank" :title="pack.title" :class="link">
+            <Icon :name="pack.name" :class="icon" />
           </NuxtLink>
         </li>
       </ul>
@@ -71,7 +71,20 @@
       <ul class="flex justify-center text-gray-400 gap-6 2xl:gap-8">
         <li v-for="frontend in frontends" :key="frontend.id">
           <NuxtLink :to="frontend.to" target="_blank" :title="frontend.title" :class="link">
-            <Icon :name="frontend.name" class="w-5 h-5" />
+            <Icon :name="frontend.name" :class="icon" />
+          </NuxtLink>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- Back End Development -->
+  <div data-aos="zoom-in" data-aos-duration="1000" class="backdrop-saturate-200 col-span-8" :class="card">
+    <div>
+      <h2 :class="h2Style">Back End Development [Not Focus]</h2>
+      <ul class="flex justify-center text-gray-400 gap-6">
+        <li v-for="backend in backends" :key="backend.id">
+          <NuxtLink :to="backend.to" target="_blank" :title="backend.title" :class="link">
+            <Icon :name="backend.name" :class="icon" />
           </NuxtLink>
         </li>
       </ul>
@@ -81,8 +94,9 @@
 
 <script setup lang="ts">
 const card = "flex justify-center border-dashed border-2 border-gray-400 pt-4 pb-6 hover:border-yellow-500 dark:hover:border-gray-100 ease-in-out duration-300";
-const h2Style = "text-gray-400 text-lg font-semibold mb-6 flex justify-center";
+const h2Style = "text-gray-400 text-md 2xl:text-lg font-semibold mb-3 2xl:mb-6 flex justify-center";
 const link = "cursor-pointer ease-in-out duration-300 hover:text-yellow-400 dark:hover:text-yellow-200";
+const icon = "w-4 h-4 2xl:w-5 2xl:h-5";
 
 const workstations = [
   {
@@ -174,6 +188,21 @@ const developments = [
   },
 ];
 
+const packages = [
+  {
+    id: 1,
+    name: "simple-icons:npm",
+    title: "NPM",
+    to: "https://www.npmjs.com/",
+  },
+  {
+    id: 2,
+    name: "akar-icons:yarn-fill",
+    title: "Yarn",
+    to: "https://yarnpkg.com/",
+  },
+];
+
 const backends = [
   {
     id: 1,
@@ -249,18 +278,6 @@ const frontends = [
     name: "tabler:brand-react-native",
     title: "React Native",
     to: "https://reactnative.dev/",
-  },
-  {
-    id: 10,
-    name: "simple-icons:npm",
-    title: "NPM",
-    to: "https://www.npmjs.com/",
-  },
-  {
-    id: 11,
-    name: "akar-icons:yarn-fill",
-    title: "Yarn",
-    to: "https://yarnpkg.com/",
   },
 ];
 </script>

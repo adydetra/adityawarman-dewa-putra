@@ -12,22 +12,18 @@
   </section>
 
   <!-- Uses -->
-  <div
-    class="mx-auto relative px-6 py-8 md:py-20 lg:py-8 bg-[url('images/pattern-hero-left.png')] dark:bg-[url('images/pattern-hero-left-dark.png')] bg-contain bg-center"
-  >
-    <h1 class="text-gray-500 dark:text-gray-300 text-center text-2xl font-bold leading-snug 2xl:leading-snug mb-16">
-      Software I use, gadgets I love, and the tech stack that I use.
-    </h1>
+  <div :class="container">
+    <h1 :class="h1Style">Software I use, gadgets I love, and the tech stack that I use.</h1>
 
     <div class="grid grid-cols-10 md:grid-cols-12 gap-8">
       <!-- Workstation -->
       <div class="col-span-5 md:col-span-4" :class="WorkstationCard">
         <div>
           <h2 :class="h2Style">Workstation</h2>
-          <ul class="flex justify-center text-gray-400 gap-6">
+          <ul :class="useslist">
             <li v-for="workstation in workstations" :key="workstation.id">
-              <NuxtLink :to="workstation.to" target="_blank" :title="workstation.title" class="cursor-pointer ease-in-out duration-300 hover:text-yellow-200">
-                <Icon :name="workstation.name" class="w-4 h-4 lg:w-6 lg:h-6" />
+              <NuxtLink :to="workstation.to" target="_blank" :title="workstation.title" :class="useslink">
+                <Icon :name="workstation.name" :class="usesicon" />
               </NuxtLink>
             </li>
           </ul>
@@ -37,10 +33,10 @@
       <div class="col-span-5 md:col-span-4" :class="WorkstationCard">
         <div>
           <h2 :class="h2Style">Database</h2>
-          <ul class="flex justify-center text-gray-400 gap-6">
+          <ul :class="useslist">
             <li v-for="database in databases" :key="database.id">
-              <NuxtLink :to="database.to" target="_blank" :title="database.title" class="cursor-pointer ease-in-out duration-300 hover:text-yellow-200">
-                <Icon :name="database.name" class="w-4 h-4 lg:w-6 lg:h-6" />
+              <NuxtLink :to="database.to" target="_blank" :title="database.title" :class="useslink">
+                <Icon :name="database.name" :class="usesicon" />
               </NuxtLink>
             </li>
           </ul>
@@ -50,10 +46,10 @@
       <div class="col-span-10 md:col-span-4" :class="WorkstationCard">
         <div>
           <h2 :class="h2Style">Operating System</h2>
-          <ul class="flex justify-center text-gray-400 gap-6">
+          <ul :class="useslist">
             <li v-for="operating in operatings" :key="operating.id">
-              <NuxtLink :to="operating.to" target="_blank" :title="operating.title" class="cursor-pointer ease-in-out duration-300 hover:text-yellow-200">
-                <Icon :name="operating.name" class="w-4 h-4 lg:w-6 lg:h-6" />
+              <NuxtLink :to="operating.to" target="_blank" :title="operating.title" :class="useslink">
+                <Icon :name="operating.name" :class="usesicon" />
               </NuxtLink>
             </li>
           </ul>
@@ -63,23 +59,23 @@
       <div class="backdrop-saturate-200 col-span-10 md:col-span-6" :class="WorkstationCard">
         <div>
           <h2 :class="h2Style">Development tools</h2>
-          <ul class="flex justify-center text-gray-400 gap-6">
+          <ul :class="useslist">
             <li v-for="development in developments" :key="development.id">
-              <NuxtLink :to="development.to" target="_blank" :title="development.title" class="cursor-pointer ease-in-out duration-300 hover:text-yellow-200">
-                <Icon :name="development.name" class="w-4 h-4 lg:w-6 lg:h-6" />
+              <NuxtLink :to="development.to" target="_blank" :title="development.title" :class="useslink">
+                <Icon :name="development.name" :class="usesicon" />
               </NuxtLink>
             </li>
           </ul>
         </div>
       </div>
-      <!-- Back End Development -->
+      <!-- Package Manager -->
       <div class="backdrop-saturate-200 col-span-10 md:col-span-6" :class="WorkstationCard">
         <div>
-          <h2 :class="h2Style">Back End [Not Focus]</h2>
-          <ul class="flex justify-center text-gray-400 gap-6">
-            <li v-for="backend in backends" :key="backend.id">
-              <NuxtLink :to="backend.to" target="_blank" :title="backend.title" class="cursor-pointer ease-in-out duration-300 hover:text-yellow-200">
-                <Icon :name="backend.name" class="w-4 h-4 lg:w-6 lg:h-6" />
+          <h2 :class="h2Style">Package Manager</h2>
+          <ul :class="useslist">
+            <li v-for="pack in packages" :key="pack.id">
+              <NuxtLink :to="pack.to" target="_blank" :title="pack.title" :class="useslink">
+                <Icon :name="pack.name" :class="usesicon" />
               </NuxtLink>
             </li>
           </ul>
@@ -89,10 +85,23 @@
       <div class="col-span-10 md:col-span-12" :class="WorkstationCard">
         <div>
           <h2 :class="h2Style">Front End Development</h2>
-          <ul class="flex flex-wrap justify-center text-gray-400 gap-6 px-6">
+          <ul :class="useslist">
             <li v-for="frontend in frontends" :key="frontend.id">
-              <NuxtLink :to="frontend.to" target="_blank" :title="frontend.title" class="cursor-pointer ease-in-out duration-300 hover:text-yellow-200">
-                <Icon :name="frontend.name" class="w-4 h-4 lg:w-6 lg:h-6" />
+              <NuxtLink :to="frontend.to" target="_blank" :title="frontend.title" :class="useslink">
+                <Icon :name="frontend.name" :class="usesicon" />
+              </NuxtLink>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Back End Development -->
+      <div class="backdrop-saturate-200 col-span-10 md:col-span-12" :class="WorkstationCard">
+        <div>
+          <h2 :class="h2Style">Back End [Not Focus]</h2>
+          <ul :class="useslist">
+            <li v-for="backend in backends" :key="backend.id">
+              <NuxtLink :to="backend.to" target="_blank" :title="backend.title" :class="useslink">
+                <Icon :name="backend.name" :class="usesicon" />
               </NuxtLink>
             </li>
           </ul>
@@ -102,12 +111,8 @@
   </div>
 
   <!-- Project -->
-  <div
-    class="mx-auto relative px-6 py-8 md:py-20 lg:py-8 bg-[url('images/pattern-hero-left.png')] dark:bg-[url('images/pattern-hero-left-dark.png')] bg-contain bg-center"
-  >
-    <h1 class="text-gray-500 dark:text-gray-300 text-center text-2xl font-bold leading-snug 2xl:leading-snug mb-10 md:mb-20 lg:mb-10">
-      Things I’ve made trying to put my dent in the universe.
-    </h1>
+  <div :class="container">
+    <h1 :class="h1Style">Things I’ve made trying to put my dent in the universe.</h1>
 
     <div class="grid grid-cols-10 md:grid-cols-9 gap-8">
       <!-- Project -->
@@ -130,12 +135,8 @@
   </div>
 
   <!-- Achievement -->
-  <div
-    class="mx-auto px-6 py-8 md:py-20 lg:py-8 container bg-[url('images/pattern-hero-left.png')] dark:bg-[url('images/pattern-hero-left-dark.png')] bg-contain bg-center"
-  >
-    <h1 class="text-gray-500 dark:text-gray-300 text-center text-2xl font-bold leading-snug mb-10 md:mb-20 lg:mb-10">
-      Achievements that I have achieved both as a team or individually.
-    </h1>
+  <div :class="container">
+    <h1 :class="h1Style">Achievements that I have achieved both as a team or individually.</h1>
 
     <div class="grid grid-cols-5 md:grid-cols-6 gap-16 px-4 realtive">
       <NuxtLink
@@ -170,8 +171,15 @@
 </template>
 
 <script setup lang="ts">
+const container =
+  "mx-auto px-6 py-8 md:py-20 lg:py-8 bg-[url('images/pattern-hero-left.png')] dark:bg-[url('images/pattern-hero-left-dark.png')] bg-contain bg-center";
+const h1Style = "text-gray-500 dark:text-gray-300 text-center text-2xl font-bold leading-snug 2xl:leading-snug mb-10";
 const h2Style = "text-gray-500 dark:text-gray-400 text-sm font-semibold mb-4 flex justify-center";
 const WorkstationCard = "flex justify-center border-dashed border-2 border-gray-400 dark:border-gray-800 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300";
+const useslink = "cursor-pointer ease-in-out duration-300 hover:text-yellow-200";
+const useslist = "flex flex-wrap justify-center text-gray-400 gap-6 px-6";
+const usesicon = "w-4 h-4";
+
 //Uses
 const workstations = [
   {
@@ -263,6 +271,21 @@ const developments = [
   },
 ];
 
+const packages = [
+  {
+    id: 1,
+    name: "simple-icons:npm",
+    title: "NPM",
+    to: "https://www.npmjs.com/",
+  },
+  {
+    id: 2,
+    name: "akar-icons:yarn-fill",
+    title: "Yarn",
+    to: "https://yarnpkg.com/",
+  },
+];
+
 const backends = [
   {
     id: 1,
@@ -338,18 +361,6 @@ const frontends = [
     name: "tabler:brand-react-native",
     title: "React Native",
     to: "https://reactnative.dev/",
-  },
-  {
-    id: 10,
-    name: "simple-icons:npm",
-    title: "NPM",
-    to: "https://www.npmjs.com/",
-  },
-  {
-    id: 11,
-    name: "akar-icons:yarn-fill",
-    title: "Yarn",
-    to: "https://yarnpkg.com/",
   },
 ];
 
