@@ -25,7 +25,6 @@
     "@nuxtjs/color-mode": "^3.3.0",
     "@nuxtjs/device": "^3.1.0",
     "@nuxtjs/google-fonts": "^3.0.1",
-    "aos": "^2.3.4",
-    "nuxt-swiper": "^1.2.0"
+    "aos": "^2.3.4"
   }
 }
