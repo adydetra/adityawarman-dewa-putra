@@ -20,7 +20,7 @@ export default defineNuxtConfig({
     "@nuxtjs/device",
     "nuxt-icon",
     "nuxt-swiper",
-    'nuxt-simple-robots',
+    "nuxt-simple-robots",
     "@vite-pwa/nuxt",
   ],
 
