@@ -1,13 +1,13 @@
 <template>
   <section class="flex justify-center gap-6 overflow-hidden pt-16 pb-12">
     <div class="relative aspect-[10/10] w-44 md:w-80 flex-none overflow-hidden rounded-xl -rotate-3 shadow-2xl shadow-yellow-200/10">
-      <img src="images/hero-1.webp" alt="o" class="absolute h-full w-full object-cover" />
+      <img src="/images/hero-1.webp" alt="o" class="absolute h-full w-full object-cover" />
     </div>
     <div class="relative aspect-[10/10] w-32 md:w-60 flex-none overflow-hidden rounded-xl">
-      <img src="images/hero-3.webp" alt="o" class="absolute h-full w-full object-scale-down" />
+      <img src="/images/hero-3.webp" alt="o" class="absolute h-full w-full object-scale-down" />
     </div>
     <div class="relative aspect-[10/10] w-44 md:w-80 flex-none overflow-hidden rounded-xl rotate-3 shadow-2xl shadow-yellow-200/10">
-      <img src="images/hero-2.webp" alt="o" class="absolute h-full w-full object-cover" />
+      <img src="/images/hero-2.webp" alt="o" class="absolute h-full w-full object-cover" />
     </div>
   </section>
 
@@ -172,7 +172,7 @@
 
 <script setup lang="ts">
 const container =
-  "mx-auto px-6 py-8 md:py-20 lg:py-8 bg-[url('images/pattern-hero-left.png')] dark:bg-[url('images/pattern-hero-left-dark.png')] bg-contain bg-center";
+  "mx-auto px-6 py-8 md:py-20 lg:py-8 bg-[url('/images/pattern-hero-left.png')] dark:bg-[url('/images/pattern-hero-left-dark.png')] bg-contain bg-center";
 const h1Style = "text-gray-500 dark:text-gray-300 text-center text-2xl font-bold leading-snug 2xl:leading-snug mb-10";
 const h2Style = "text-gray-500 dark:text-gray-400 text-sm font-semibold mb-4 flex justify-center";
 const WorkstationCard = "flex justify-center border-dashed border-2 border-gray-400 dark:border-gray-800 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300";
@@ -449,7 +449,7 @@ const achievements = [
     thumbnail: "icon/hackathon.svg",
     src: "icon/maritime-explore.svg",
     icon: "ri:team-fill",
-    to: "images/sertifikat-hackathon.jpg",
+    to: "/images/sertifikat-hackathon.jpg",
     result: "Semifinalist",
     deskripsi:
       "Kompetisi ini diselenggarakan oleh Dinas Pembinaan Potensi Maritim Markas Besar Angkatan Laut (Dispotmar Mabesal) dalam rangka menggalang potensi anak bangsa di bidang inovasi produk digital kemaritiman.",

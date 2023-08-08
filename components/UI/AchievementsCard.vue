@@ -38,7 +38,7 @@ const achievements = [
     thumbnail: "icon/hackathon.svg",
     src: "icon/maritime-explore.svg",
     icon: "ri:team-fill",
-    to: "images/sertifikat-hackathon.jpg",
+    to: "/images/sertifikat-hackathon.jpg",
     result: "Semifinalist",
     deskripsi:
       "Kompetisi ini diselenggarakan oleh Dinas Pembinaan Potensi Maritim Markas Besar Angkatan Laut (Dispotmar Mabesal) dalam rangka menggalang potensi anak bangsa di bidang inovasi produk digital kemaritiman.",
