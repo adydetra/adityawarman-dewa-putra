@@ -21,8 +21,9 @@
         </div>
       </div>
     </section>
-
-    <LazyMobileContent />
+    <DelayHydration>
+      <LazyMobileContent />
+    </DelayHydration>
   </div>
 </template>
 

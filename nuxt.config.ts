@@ -19,7 +19,7 @@ export default defineNuxtConfig({
     "@nuxtjs/color-mode",
     "@nuxtjs/device",
     "nuxt-icon",
-    // "nuxt-swiper",
+    "nuxt-delay-hydration",
     "nuxt-simple-robots",
     "@vite-pwa/nuxt",
   ],
@@ -44,6 +44,10 @@ export default defineNuxtConfig({
   colorMode: {
     classSuffix: "",
     preference: "dark",
+  },
+
+  delayHydration: {
+    mode: 'mount'
   },
 
   pwa: {
