@@ -13,7 +13,7 @@ useSeoMeta({
 <template>
   <main class="bg-white dark:bg-gray-950 text-gray-500 dark:text-white min-h-screen">
     <section
-      class="bg-[url('/assets/pattern-hero-left.png')] dark:bg-[url('/assets/pattern-hero-left-dark.png')] bg-contain bg-center px-8 lg:px-32"
+      class="bg-[url('/images/pattern-hero-left.png')] dark:bg-[url('/images/pattern-hero-left-dark.png')] bg-contain bg-center px-8 lg:px-32"
     >
       <div class="min-h-screen container mx-auto bg-gray-100/50 dark:bg-gray-900/50 py-4 lg:py-10 px-8 lg:px-28 relative">
         <UIBlogBackButton/>
