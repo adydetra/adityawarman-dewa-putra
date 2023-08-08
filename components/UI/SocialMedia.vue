@@ -13,24 +13,30 @@ const datas = [
   { id: 1, name: "line-md:github-loop", title: "Github", to: "https://github.com/devdewa/" },
   {
     id: 2,
+    name: "line-md:discord",
+    title: "Discord",
+    to: "https://discord.gg/9z6APrYMAq",
+  },
+  {
+    id: 3,
     name: "line-md:email",
     title: "Email",
     to: "mailto:devdewa123.sp@gmail.com",
   },
   {
-    id: 3,
+    id: 4,
     name: "line-md:instagram",
     title: "Instagram",
     to: "https://www.instagram.com/741_dewa/",
   },
   {
-    id: 4,
+    id: 5,
     name: "line-md:facebook",
     title: "Facebook",
     to: "https://web.facebook.com/adityawarman.dewa.putra",
   },
   {
-    id: 5,
+    id: 6,
     name: "line-md:linkedin",
     title: "Linkedin",
     to: "https://www.linkedin.com/in/adityawarman-dewa-putra/",

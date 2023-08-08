@@ -8,7 +8,7 @@
           <p class="text-gray-500 dark:text-gray-300 xl:text-4xl 2xl:text-5xl font-bold xl:leading-relaxed 2xl:leading-snug">
             <span class="text-yellow-300 dark:text-yellow-200">Front End Developer</span>, website and mobile, enjoying life.
           </p>
-          <p class="text-gray-400 xl:text-md 2xl:text-lg">~ I’m Adityawarman Dewa Putra. I live in Jakarta Indonesia. 🇮🇩</p>
+          <p class="text-gray-400 xl:text-md 2xl:text-lg">~ I’m Adityawarman Dewa Putra. Live in Jakarta, Indonesia. 🇮🇩</p>
           <UISocialMedia />
         </div>
       </div>
