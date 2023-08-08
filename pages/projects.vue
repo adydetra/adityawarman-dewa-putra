@@ -13,7 +13,7 @@
       <NuxtLink to="/blog" title="Redirect to Blog" class="text-xs text-gray-400 text-center -rotate-45 w-full">Blog</NuxtLink>
       <BlockLeftSide />
     </div>
-    <BaseProjectComponent />
+    <LazyBaseProjectComponent />
     <div class="right-0" :class="layout">
       <BlockLeftSide />
       <UISwitchColorMode class="w-full" />
