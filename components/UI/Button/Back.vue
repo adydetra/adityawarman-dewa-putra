@@ -18,13 +18,7 @@
 export default {
   methods: {
     goToPrev() {
-
-    // ...
-    // Do other logic like logging, etc.
-    // ...
-
-    // Tell router to go back one
-    window.history.length > 1 ? this.$router.go(-1) : this.$router.push('/')
+      window.history.length > 1 ? this.$router.back() : this.$router.push('/')
     },
   },
 }
