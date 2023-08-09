@@ -18,13 +18,3 @@
     </section>
   </div>
 </template>
-
-<style scoped>
-.swiper-slide {
-  @apply flex justify-center items-center;
-}
-.swiper,
-.swiper-content {
-  @apply !h-full;
-}
-</style>
