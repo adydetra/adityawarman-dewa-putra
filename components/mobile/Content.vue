@@ -143,7 +143,7 @@
         :to="achievement.to"
         target="_blank"
         :title="achievement.title"
-        class="shadow-xl shadow-blue-500/5 dark:shadow-blue-800/5 col-span-5 md:col-span-3 cursor-pointer ease-in-out duration-300 hover:scale-105 rounded-2xl backdrop-saturate-200 bg-gray-100/30 dark:bg-transparent hover:bg-yellow-200/20 flex justify-center pt-4 pb-6"
+        class="bg-gray-100/40 dark:bg-slate-900/40 shadow-xl shadow-blue-500/5 dark:shadow-blue-800/5 hover:bg-yellow-200/20 col-span-5 md:col-span-3 cursor-pointer ease-in-out duration-300 hover:scale-105 rounded-2xl backdrop-saturate-200 flex justify-center pt-4 pb-6"
         v-for="achievement in achievements"
         :key="achievement.id"
       >

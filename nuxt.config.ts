@@ -13,7 +13,6 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
 
   modules: [
-    // '@nuxtjs/tailwindcss',
     "@nuxt/content",
     "@nuxtjs/google-fonts",
     "@nuxtjs/color-mode",
@@ -47,7 +46,7 @@ export default defineNuxtConfig({
   },
 
   delayHydration: {
-    mode: 'mount'
+    mode: "mount",
   },
 
   pwa: {
