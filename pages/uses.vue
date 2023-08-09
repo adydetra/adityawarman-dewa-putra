@@ -10,7 +10,7 @@
         <Icon name="line-md:chevron-small-double-left" class="animate-pulse w-4 h-4 lg:w-6 lg:h-6" />
       </NuxtLink>
       <BlockLeftCenter />
-      <NuxtLink to="/blog" title="Redirect to Blog" class="text-xs text-gray-400 text-center -rotate-45 w-full">Blog</NuxtLink>
+      <UILinkBlog/>
       <BlockLeftSide />
     </div>
     <LazyBaseUsesComponent />

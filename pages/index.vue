@@ -11,7 +11,7 @@
         <Icon name="line-md:grid-3" class="w-4 h-4 lg:w-6 lg:h-6" />
       </div>
       <BlockLeftCenter />
-      <NuxtLink to="/blog" title="Redirect to Blog" class="text-xs text-gray-400 text-center -rotate-45 w-full">Blog</NuxtLink>
+      <UILinkBlog/>
       <BlockLeftSide />
     </div>
     <BaseHeroComponent />
