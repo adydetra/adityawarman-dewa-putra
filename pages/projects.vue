@@ -9,21 +9,17 @@
       <NuxtLink to="/uses" title="Swap to Uses" :class="link">
         <Icon name="line-md:chevron-small-double-left" class="w-4 h-4 lg:w-6 lg:h-6" />
       </NuxtLink>
-      <BlockLeftCenter />
       <UILinkBlog/>
-      <BlockLeftSide />
     </div>
     <LazyBaseProjectComponent />
     <div class="right-0" :class="layout">
       <BlockLeftSide />
-      <UISwitchColorMode class="w-full" />
+      <UIButtonColorMode class="w-full" />
       <BlockLeftCenter />
       <NuxtLink to="/achievements" title="Swap to Achievement" :class="link">
         <Icon name="line-md:chevron-small-double-right" class="animate-pulse w-4 h-4 lg:w-6 lg:h-6" />
       </NuxtLink>
-      <BlockLeftCenter />
       <UILinkFeed />
-      <BlockLeftSide />
     </div>
   </main>
 </template>

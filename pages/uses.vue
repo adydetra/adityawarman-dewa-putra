@@ -9,21 +9,17 @@
       <NuxtLink to="/" title="Swap to Home" :class="link">
         <Icon name="line-md:chevron-small-double-left" class="animate-pulse w-4 h-4 lg:w-6 lg:h-6" />
       </NuxtLink>
-      <BlockLeftCenter />
       <UILinkBlog/>
-      <BlockLeftSide />
     </div>
     <LazyBaseUsesComponent />
     <div class="right-0" :class="layout">
       <BlockLeftSide />
-      <UISwitchColorMode class="w-full" />
+      <UIButtonColorMode class="w-full" />
       <BlockLeftCenter />
       <NuxtLink to="/projects" title="Swap to Projects" :class="link">
         <Icon name="line-md:chevron-small-double-right" class="animate-pulse w-4 h-4 lg:w-6 lg:h-6" />
       </NuxtLink>
-      <BlockLeftCenter />
       <UILinkFeed />
-      <BlockLeftSide />
     </div>
   </main>
 </template>

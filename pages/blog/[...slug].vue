@@ -6,7 +6,7 @@
       <div class="container mx-auto bg-gray-100/50 dark:bg-gray-900/20 relative">
         <UIButtonBack/>
         <div class="">
-          <UISwitchColorMode class="fixed top-4 right-4 rounded-md bg-gray-200 ring-1 ring-gray-400 dark:ring-0 lg:ring-0 dark:bg-white/10 px-2 py-1 lg:p-0 lg:bg-transparent dark:lg:bg-transparent lg:top-7 lg:right-9" />
+          <UIButtonColorMode class="fixed top-4 right-4 rounded-md bg-gray-200 ring-1 ring-gray-400 dark:ring-0 lg:ring-0 dark:bg-white/10 px-2 py-1 lg:p-0 lg:bg-transparent dark:lg:bg-transparent lg:top-7 lg:right-9" />
         </div>
         <div class="text-muted mx-auto py-12 px-8 lg:px-16 w-full lg:max-w-[40rem] bg-gray-500/10 dark:bg-gray-900/40">
           <ContentDoc />

@@ -13,21 +13,17 @@
       >
         <Icon name="line-md:chevron-small-double-left" class="w-4 h-4 lg:w-6 lg:h-6" />
       </NuxtLink>
-      <BlockLeftCenter />
       <UILinkBlog/>
-      <BlockLeftSide />
     </div>
     <LazyBaseAchievementsComponent />
     <div class="fixed top-0 right-0" :class="layout">
       <BlockLeftSide />
-      <UISwitchColorMode class="w-full" />
+      <UIButtonColorMode class="w-full" />
       <BlockLeftCenter />
       <div to="" class="w-full flex justify-center cursor-not-allowed py-8 ease-in-out duration-300 text-slate-400 hover:text-red-400">
         <Icon name="line-md:grid-3" class="w-4 h-4 lg:w-6 lg:h-6" />
       </div>
-      <BlockLeftCenter />
       <UILinkFeed />
-      <BlockLeftSide />
     </div>
   </main>
 </template>

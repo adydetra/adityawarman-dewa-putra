@@ -10,14 +10,12 @@
       <div class="w-full flex justify-center cursor-not-allowed py-8 ease-in-out duration-300 text-slate-400 hover:text-red-400">
         <Icon name="line-md:grid-3" class="w-4 h-4 lg:w-6 lg:h-6" />
       </div>
-      <BlockLeftCenter />
-      <UILinkBlog/>
-      <BlockLeftSide />
+      <UILinkBlog />
     </div>
     <BaseHeroComponent />
     <div :class="layout">
       <BlockLeftSide />
-      <UISwitchColorMode class="w-full" />
+      <UIButtonColorMode class="w-full" />
       <BlockLeftCenter />
       <NuxtLink
         to="/uses"
@@ -26,9 +24,7 @@
       >
         <Icon name="line-md:chevron-small-double-right" class="animate-pulse w-4 h-4 lg:w-6 lg:h-6" />
       </NuxtLink>
-      <BlockLeftCenter />
       <UILinkFeed />
-      <BlockLeftSide />
     </div>
   </main>
 
