@@ -18,7 +18,7 @@
 export default {
   methods: {
     goToPrev() {
-      window.history.length > 1 ? this.$router.back() : this.$router.push('/')
+      window.history.length > 0 ? this.$router.back() : this.$router.push('/')
     },
   },
 }
