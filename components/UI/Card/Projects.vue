@@ -26,7 +26,7 @@ const projects = [
     id: 1,
     title: "Portfolio",
     src: "icon/hero-mobile.webp",
-    to: "https://github.com/devdewa?tab=repositories",
+    to: "https://github.com/devdewa/adityawarman-dewa-putra",
   },
   {
     id: 2,
@@ -38,7 +38,7 @@ const projects = [
     id: 3,
     title: "DewaProgramming",
     src: "icon/dewaprogramming.png",
-    to: "https://github.com/devdewa/DewaProgramming",
+    to: "https://github.com/DewaSmkn1JAKARTA/DewaProgramming",
   },
   {
     id: 4,
