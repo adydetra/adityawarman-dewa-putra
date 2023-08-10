@@ -11,7 +11,7 @@
       </NuxtLink>
       <UILinkBlog/>
     </div>
-    <LazyBaseUsesComponent />
+    <LazyBaseUses />
     <div class="right-0" :class="layout">
       <BlockLeftSide />
       <UIButtonColorMode class="w-full" />

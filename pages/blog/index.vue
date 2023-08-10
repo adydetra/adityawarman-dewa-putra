@@ -20,7 +20,7 @@ useSeoMeta({
         <UIButtonColorMode class="fixed top-4 right-4 rounded-md bg-gray-200 ring-1 ring-gray-400 dark:ring-0 lg:ring-0 dark:bg-white/10 px-2 py-1 lg:p-0 lg:bg-transparent dark:lg:bg-transparent lg:top-7 lg:right-9" />
         <h1 class="text-2xl xl:text-3xl 2xl:text-4xl text-center font-bold py-6 lg:py-12">Blog Posts</h1>
         <section class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 2xl:gap-20 mt-4 lg:mt-8">
-          <UIBlogCard :posts="posts" />
+          <UICardBlog :posts="posts" />
         </section>
       </div>
     </section>

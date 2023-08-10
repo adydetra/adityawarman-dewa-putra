@@ -15,7 +15,7 @@
       </NuxtLink>
       <UILinkBlog/>
     </div>
-    <LazyBaseAchievementsComponent />
+    <LazyBaseAchievements />
     <div class="fixed top-0 right-0" :class="layout">
       <BlockLeftSide />
       <UIButtonColorMode class="w-full" />

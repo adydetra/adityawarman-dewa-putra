@@ -12,7 +12,7 @@
       </div>
       <UILinkBlog />
     </div>
-    <BaseHeroComponent />
+    <BaseHero />
     <div :class="layout">
       <BlockLeftSide />
       <UIButtonColorMode class="w-full" />
