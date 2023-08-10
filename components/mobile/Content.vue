@@ -173,7 +173,7 @@
 <script setup lang="ts">
 const container =
   "mx-auto px-6 py-8 md:py-20 lg:py-8 bg-[url('/images/pattern-hero-left.png')] dark:bg-[url('/images/pattern-hero-left-dark.png')] bg-contain bg-center";
-const h1Style = "text-gray-500 dark:text-gray-300 text-center text-2xl font-bold leading-snug 2xl:leading-snug mb-10";
+const h1Style = "text-gray-500 dark:text-gray-300 md:max-w-[70%] mx-auto text-center text-2xl font-bold leading-snug 2xl:leading-snug mb-10";
 const h2Style = "text-gray-500 dark:text-gray-400 text-sm font-semibold mb-4 flex justify-center";
 const WorkstationCard = "flex justify-center border-dashed border-2 border-gray-400 dark:border-gray-800 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300";
 const useslink = "cursor-pointer ease-in-out duration-300 hover:text-yellow-200";

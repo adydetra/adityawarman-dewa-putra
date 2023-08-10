@@ -4,13 +4,13 @@
       class="fixed z-10 flex items-center top-4 right-4 rounded-md bg-gray-200 ring-1 ring-gray-400 dark:ring-0 dark:bg-white/10 p-2 dark:lg:bg-transparent"
     />
     <section class="flex flex-wrap justify-center items-center w-full h-full">
-      <div class="py-8 px-4 md:px-20 w-full">
+      <div class="py-8 px-4 w-full">
         <UILinkMobileList/>
         <div class="flex justify-center items-center bg-yellow-200 p-0.5 w-16 md:w-20 rotate-3 rounded-full">
           <img src="/images/hero-mobile.webp" alt="Photo" class="w-full h-full rounded-full shadow-md shadow-gray-500/40" />
         </div>
         <div class="space-y-6 mt-6">
-          <p class="text-gray-500 dark:text-gray-300 text-3xl md:text-4xl md:max-w-[85%] font-bold leading-snug md:leading-relaxed">
+          <p class="text-gray-500 dark:text-gray-300 text-3xl md:text-4xl md:max-w-[75%] font-bold leading-snug md:leading-relaxed">
             <span class="text-yellow-300 dark:text-yellow-200">Front End Developer</span>, website and mobile, enjoying life.
           </p>
           <p class="text-gray-400 text-sm leading-loose max-w-[75%]">~ I’m Adityawarman Dewa Putra. Live in Jakarta, Indonesia. 🇮🇩</p>
