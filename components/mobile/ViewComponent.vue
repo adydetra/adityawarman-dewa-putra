@@ -1,6 +1,6 @@
 <template>
   <div class="bg-[url('/images/pattern-hero-left.png')] dark:bg-[url('/images/pattern-hero-left-dark.png')] bg-contain bg-center mx-auto relative pt-12">
-    <UIButtonColorMode class="fixed top-4 right-4 rounded-md bg-gray-200 ring-1 ring-gray-400 dark:ring-0 dark:bg-white/10 px-2 py-1 dark:lg:bg-transparent" />
+    <UIButtonColorMode class="fixed z-10 flex items-center top-4 right-4 rounded-md bg-gray-200 ring-1 ring-gray-400 dark:ring-0 dark:bg-white/10 p-2 dark:lg:bg-transparent" />
     <section class="flex flex-wrap justify-center items-center w-full h-full">
       <div class="py-8 px-4 md:px-20 w-full">
         <div class="flex justify-center items-center bg-yellow-200 p-0.5 w-16 md:w-20 rotate-3 rounded-full">

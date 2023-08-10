@@ -21,7 +21,8 @@ export default defineNuxtConfig({
     "nuxt-delay-hydration",
     "nuxt-simple-robots",
     "@vite-pwa/nuxt",
-    "@vueuse/nuxt"
+    "@vueuse/nuxt",
+    "@element-plus/nuxt"
   ],
 
   css: ["~/assets/css/main.css"],
