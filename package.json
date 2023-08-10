@@ -25,6 +25,8 @@
     "@nuxtjs/color-mode": "^3.3.0",
     "@nuxtjs/device": "^3.1.0",
     "@nuxtjs/google-fonts": "^3.0.1",
+    "@vueuse/core": "^10.3.0",
+    "@vueuse/nuxt": "^10.3.0",
     "aos": "^2.3.4"
   }
 }
