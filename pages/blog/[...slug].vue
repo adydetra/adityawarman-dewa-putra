@@ -37,7 +37,6 @@
 #blog p {
   @apply text-xs md:text-sm font-extralight md:font-normal !leading-loose py-2;
 }
-
 #blog strong {
   @apply text-xs md:text-sm my-4;
 }
