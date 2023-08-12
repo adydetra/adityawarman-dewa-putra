@@ -51,6 +51,10 @@ export default defineNuxtConfig({
     mode: "mount",
   },
 
+  device: {
+    refreshOnResize: true
+  },
+
   pwa: {
     registerType: "autoUpdate",
     manifest: {

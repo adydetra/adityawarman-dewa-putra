@@ -137,9 +137,15 @@ const operatings = [
 const databases = [
   {
     id: 1,
-    name: "simple-icons:mysql",
-    title: "My SQL",
+    name: "tabler:brand-mysql",
+    title: "MySQL",
     to: "https://www.mysql.com/",
+  },
+  {
+    id: 2,
+    name: "akar-icons:postgresql-fill",
+    title: "PostgreSQL",
+    to: "https://www.postgresql.org/",
   },
 ];
 
