@@ -29,10 +29,13 @@
   @apply text-2xl md:text-3xl text-center font-bold mb-6;
 }
 #blog prose-h2 {
-  @apply text-xl block font-semibold pt-4 pb-2;
+  @apply text-xl block font-semibold mt-8 mb-2;
 }
 #blog prose-h3 {
-  @apply text-sm block font-semibold pt-6 pb-2;
+  @apply text-lg block font-semibold mt-6 mb-2 pl-2.5 border-l-4 dark:text-yellow-100 dark:border-yellow-200 border-gray-900/50;
+}
+#blog prose-h4 {
+  @apply text-[1rem] block font-semibold mt-6 mb-2;
 }
 #blog p {
   @apply text-xs md:text-sm font-extralight md:font-normal !leading-loose py-2;
@@ -41,10 +44,16 @@
   @apply text-xs md:text-sm my-4;
 }
 #blog li {
-  @apply text-xs md:text-sm list-disc ml-5 mt-3 !leading-loose;
+  @apply text-xs md:text-sm font-extralight md:font-normal list-disc ml-5 mt-3 !leading-loose;
 }
 #blog blockquote p {
   @apply text-[9px] font-normal md:text-xs bg-gray-300 dark:bg-gray-800 rounded-md px-4 py-2 my-2;
+}
+#blog hr {
+  @apply !mt-8 border-2 border-gray-900/20 dark:border-gray-300/10;
+}
+#blog img {
+  @apply -mb-4;
 }
 </style>
 
