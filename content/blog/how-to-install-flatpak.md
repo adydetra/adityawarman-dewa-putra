@@ -10,21 +10,25 @@ tags: [Linux, Flatpak]
 
 ![Thumbnail](/images/blog/how-to-install-flatpak.png)
 
-## Arch Quick Setup
+## What is Flatpak?
 
-### Install Flatpak
+Flatpak is a system for building, distributing, and running sandboxed desktop applications on Linux.
+
+### Arch Quick Setup
+
+#### Install Flatpak
 
 To install Flatpak, run the following in a terminal:
 
 > sudo pacman -S flatpak
 
-### Restart
+#### Restart
 
 To complete setup, restart your system. Now all you have to do is install some apps!
 
-## Ubuntu Quick Setup 
+### Ubuntu Quick Setup 
 
-### Install Flatpak
+#### Install Flatpak
 
 To install Flatpak on Ubuntu 18.10 (Cosmic Cuttlefish) or later, simply run:
 
@@ -38,18 +42,18 @@ With older Ubuntu versions, the official Flatpak PPA is the recommended way to i
 
 > sudo apt install flatpak
 
-### Install the Software Flatpak plugin
+#### Install the Software Flatpak plugin
 
 The Flatpak plugin for the Software app makes it possible to install apps without needing the command line. To install, run:
 
 > sudo apt install gnome-software-plugin-flatpak
 
-### Add the Flathub repository
+#### Add the Flathub repository
 
 Flathub is the best place to get Flatpak apps. To enable it, run:
 
 > flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 
-### Restart
+#### Restart
 
 To complete setup, restart your system. Now all you have to do is install some apps!

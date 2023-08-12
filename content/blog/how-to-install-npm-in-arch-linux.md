@@ -18,7 +18,7 @@ Nodejs is a Javascript Runtime Environment which has a lot of libraries. It uses
 
 NPM stands for Node Package Manager. It's a library and registry for JavaScript software packages. NPM also has command-line tools to help you install the different packages and manage their dependencies.
 
-### Install Node Js
+#### Install Node Js
 
 Command:
 
@@ -28,13 +28,13 @@ With the above command you will get the latest version of nodejs.
 
 > node -v
 
-### Install NPM
+#### Install NPM
 
 The installation method is very easy, we do it with Pacman.
 
 > sudo pacman -S npm
 
-### Update NPM
+#### Update NPM
 
 Of course with the above command we will get the latest version of npm. But npm development itself is much faster and more active than nodejs. 
 
@@ -44,7 +44,7 @@ How to update we can do it with the following command:
 
 > npm install npm@latest -g
 
-### Error NPM Permission
+#### Error NPM Permission
 
 You may get EACCES errors when installing nodejs modules globally. That means you do not have access rights while installing the module. You can get around this by using the sudo command, but I don't recommend that method.
 
@@ -52,17 +52,17 @@ Why can there be an error? Because by default when we install npm on arch linux,
 
 So the coolest solution to this problem is to change the npm default directory for storing global modules.
 
-### It's easy. First, create a folder to store nodejs modules.
+#### It's easy. First, create a folder to store nodejs modules.
 
 For example I will create a .node_modules folder in my home folder. So I did the following command:
 
 > mkdir ~/.node_modules
 
-### Set npm to use that folder as the default directory.
+#### Set npm to use that folder as the default directory.
 
 > npm config set prefix '~/.node_modules'
 
-### Make the above directory a global directory.
+#### Make the above directory a global directory.
 
 The trick, you first open the file in the location ~/.bashrc . Or if the file doesn't exist, you can create one.
 
@@ -70,6 +70,6 @@ Then add the following line at the very bottom:
 
 > export PATH="$HOME/.node_modules/bin:$PATH"
 
-### Update the system variables that we created earlier.
+#### Update the system variables that we created earlier.
 
 The method is very easy. The first you can close the terminal and then open it again.
