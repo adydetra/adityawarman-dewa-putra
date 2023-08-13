@@ -54,6 +54,10 @@ export default defineNuxtConfig({
   device: {
     refreshOnResize: true
   },
+  
+  content: {
+    documentDriven: true
+  },
 
   pwa: {
     registerType: "autoUpdate",
