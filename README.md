@@ -1,4 +1,4 @@
-# Personal Page | Portfolio 🌱
+# Personal Site 🌱
 
 ## Setup
 
