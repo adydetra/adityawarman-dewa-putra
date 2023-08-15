@@ -62,7 +62,6 @@ const datas = [
     title: "Email",
     to: "mailto:devdewa123.sp@gmail.com",
   },
-
   {
     id: 6,
     name: "line-md:instagram",
