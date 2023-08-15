@@ -5,7 +5,6 @@
         <Icon :name="data.name" class="w-6 h-6 2xl:w-7 2xl:h-7" />
       </NuxtLink>
     </li>
-    <a rel="me" href="https://mastodon.social/@adityawarman">Mastodon</a>
   </ul>
 </template>
 
