@@ -59,8 +59,11 @@
 
 <script setup>
 const { path } = useRoute();
-
 const { data } = await useAsyncData("content-${path}", () => {
   return queryContent().where({ _path: path }).findOne();
+});
+
+useSeoMeta({
+  titleTemplate: (title) => (title ? `${title}` : "Adityawarman Dewa Putra"),
 });
 </script>

@@ -29,13 +29,6 @@
 </template>
 
 <script setup lang="ts">
-const title = ref("Achievements - Dewa");
-const description = ref("This is my achievements");
-
+definePageMeta({ title: "Achievements" });
 const layout = "flex flex-wrap justify-center items-center xl:w-40 2xl:w-52 py-6 mx-auto h-screen bg-white dark:bg-gray-950 fixed top-0";
-
-useSeoMeta({
-  title,
-  description,
-});
 </script>

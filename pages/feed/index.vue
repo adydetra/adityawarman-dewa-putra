@@ -1,13 +1,6 @@
 <script setup>
+definePageMeta({ title: "Feed" });
 const { data: posts } = await useAsyncData("posts", () => queryContent("/feed").find());
-
-const title = ref("Feed - Dewa");
-const description = ref("This is my Feed");
-
-useSeoMeta({
-  title,
-  description,
-});
 </script>
 
 <template>

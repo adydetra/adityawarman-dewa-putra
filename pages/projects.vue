@@ -25,14 +25,7 @@
 </template>
 
 <script setup lang="ts">
-const title = ref("Project - Dewa");
-const description = ref("This is my projects");
-
+definePageMeta({ title: "Projects" });
 const layout = "flex flex-wrap justify-center items-center xl:w-40 2xl:w-52 py-6 mx-auto h-screen bg-white dark:bg-gray-950 fixed top-0";
 const link = "w-full flex justify-center cursor-pointer py-8 ease-in-out duration-300 text-slate-400 hover:text-yellow-400 dark:hover:text-yellow-200";
-
-useSeoMeta({
-  title,
-  description,
-});
 </script>

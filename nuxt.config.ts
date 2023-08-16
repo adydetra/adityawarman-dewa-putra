@@ -22,7 +22,7 @@ export default defineNuxtConfig({
     "nuxt-simple-robots",
     "@vite-pwa/nuxt",
     "@vueuse/nuxt",
-    "@element-plus/nuxt"
+    "@element-plus/nuxt",
   ],
 
   css: ["~/assets/css/main.css"],
@@ -52,11 +52,11 @@ export default defineNuxtConfig({
   },
 
   device: {
-    refreshOnResize: true
+    refreshOnResize: true,
   },
-  
+
   content: {
-    documentDriven: true
+    documentDriven: true,
   },
 
   pwa: {

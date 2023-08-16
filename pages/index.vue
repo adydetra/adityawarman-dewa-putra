@@ -35,13 +35,5 @@
 </template>
 
 <script setup lang="ts">
-const title = ref("Adityawarman Dewa Putra");
-const description = ref("This is my personal portfolio, build using nuxt js and tailwind css.");
-
 const layout = "flex flex-wrap justify-center items-center px-12 py-6 mx-auto xl:w-44 2xl:w-60";
-
-useSeoMeta({
-  title,
-  description,
-});
 </script>
