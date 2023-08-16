@@ -80,7 +80,7 @@
   <!-- Back End Development -->
   <div data-aos="zoom-in" data-aos-duration="1000" class="backdrop-saturate-200 col-span-8" :class="card">
     <div>
-      <h2 :class="h2Style">Back End Development [Not Focus]</h2>
+      <h2 :class="h2Style">Back End Development</h2>
       <ul class="flex justify-center text-gray-400 gap-6">
         <li v-for="backend in backends" :key="backend.id">
           <NuxtLink :to="backend.to" target="_blank" :title="backend.title" :class="link">
@@ -222,12 +222,6 @@ const backends = [
     title: "Laravel",
     to: "https://laravel.com/",
   },
-  {
-    id: 3,
-    name: "simple-icons:codeigniter",
-    title: "Codeigniter",
-    to: "https://www.codeigniter.com/",
-  },
 ];
 
 const frontends = [
@@ -263,24 +257,12 @@ const frontends = [
   },
   {
     id: 6,
-    name: "mdi:react",
-    title: "React Js",
-    to: "https://react.dev/",
-  },
-  {
-    id: 7,
-    name: "teenyicons:nextjs-solid",
-    title: "Next Js",
-    to: "https://nextjs.org/",
-  },
-  {
-    id: 8,
     name: "devicon-plain:vitejs",
     title: "Vite Js",
     to: "https://vitejs.dev/",
   },
   {
-    id: 9,
+    id: 7,
     name: "tabler:brand-react-native",
     title: "React Native",
     to: "https://reactnative.dev/",

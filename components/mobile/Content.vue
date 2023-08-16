@@ -1,5 +1,5 @@
 <template>
-  <!-- <section class="flex justify-center gap-6 overflow-hidden pt-16 pb-12">
+  <section class="flex justify-center gap-6 overflow-hidden pt-16 pb-12">
     <div class="relative aspect-[10/10] w-44 md:w-80 flex-none overflow-hidden rounded-xl shadow-2xl shadow-yellow-200/10 -rotate-3">
       <img src="/images/hero-1.webp" alt="" class="absolute h-full w-full object-cover" />
     </div>
@@ -9,7 +9,7 @@
     <div class="relative aspect-[10/10] w-44 md:w-80 flex-none overflow-hidden rounded-xl shadow-2xl shadow-yellow-200/10 rotate-3">
       <img src="/images/hero-3.webp" alt="" class="absolute h-full w-full object-cover" />
     </div>
-  </section> -->
+  </section>
 
   <!-- Uses -->
   <div :class="container">
@@ -97,7 +97,7 @@
       <!-- Back End Development -->
       <div class="backdrop-saturate-200 col-span-10 md:col-span-12" :class="WorkstationCard">
         <div>
-          <h2 :class="h2Style">Back End [Not Focus]</h2>
+          <h2 :class="h2Style">Back End Development</h2>
           <ul :class="useslist">
             <li v-for="backend in backends" :key="backend.id">
               <NuxtLink :to="backend.to" target="_blank" :title="backend.title" :class="useslink">
@@ -304,12 +304,6 @@ const backends = [
     title: "Laravel",
     to: "https://laravel.com/",
   },
-  {
-    id: 3,
-    name: "simple-icons:codeigniter",
-    title: "Codeigniter",
-    to: "https://www.codeigniter.com/",
-  },
 ];
 
 const frontends = [
@@ -345,24 +339,12 @@ const frontends = [
   },
   {
     id: 6,
-    name: "mdi:react",
-    title: "React Js",
-    to: "https://react.dev/",
-  },
-  {
-    id: 7,
-    name: "teenyicons:nextjs-solid",
-    title: "Next Js",
-    to: "https://nextjs.org/",
-  },
-  {
-    id: 8,
     name: "devicon-plain:vitejs",
     title: "Vite Js",
     to: "https://vitejs.dev/",
   },
   {
-    id: 9,
+    id: 7,
     name: "tabler:brand-react-native",
     title: "React Native",
     to: "https://reactnative.dev/",
