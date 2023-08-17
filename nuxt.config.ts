@@ -22,7 +22,6 @@ export default defineNuxtConfig({
     "nuxt-simple-robots",
     "@vite-pwa/nuxt",
     "@vueuse/nuxt",
-    "@element-plus/nuxt",
   ],
 
   css: ["~/assets/css/main.css"],

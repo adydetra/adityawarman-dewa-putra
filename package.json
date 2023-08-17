@@ -22,7 +22,6 @@
     "postcss": "^8.4.27"
   },
   "dependencies": {
-    "@element-plus/nuxt": "^1.0.5",
     "@nuxtjs/color-mode": "^3.3.0",
     "@nuxtjs/device": "^3.1.0",
     "@nuxtjs/google-fonts": "^3.0.1",
