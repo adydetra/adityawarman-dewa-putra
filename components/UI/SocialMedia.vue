@@ -18,7 +18,7 @@ const datas = [
   },
   {
     id: 2,
-    name: "line-md:twitter-x",
+    name: "line-md:twitter",
     title: "Twitter",
     to: "https://twitter.com/devdewa_id",
   },
