@@ -12,15 +12,15 @@
 const datas = [
   {
     id: 1,
-    name: "line-md:mastodon",
-    title: "Mastodon",
-    to: "https://mastodon.social/@adityawarman",
+    name: "line-md:twitter-x",
+    title: "Twitter",
+    to: "https://twitter.com/devdewa_id",
   },
   {
     id: 2,
-    name: "line-md:twitter",
-    title: "Twitter",
-    to: "https://twitter.com/devdewa_id",
+    name: "line-md:mastodon",
+    title: "Mastodon",
+    to: "https://mastodon.social/@adityawarman",
   },
   {
     id: 3,
@@ -44,7 +44,7 @@ const datas = [
     id: 6,
     name: "line-md:instagram",
     title: "Instagram",
-    to: "https://www.instagram.com/741_dewa/",
+    to: "https://www.instagram.com/adydetra/",
   },
 ];
 </script>
