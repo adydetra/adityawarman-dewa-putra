@@ -18,10 +18,9 @@ export default defineNuxtConfig({
     "@nuxtjs/color-mode",
     "@nuxtjs/device",
     "nuxt-icon",
-    // "nuxt-delay-hydration",
+    "nuxt-delay-hydration",
     "nuxt-simple-robots",
     "@vite-pwa/nuxt",
-    "@vueuse/nuxt",
   ],
 
   css: ["~/assets/css/main.css"],
@@ -46,9 +45,9 @@ export default defineNuxtConfig({
     preference: "dark",
   },
 
-  // delayHydration: {
-  //   mode: "init",
-  // },
+  delayHydration: {
+    mode: "init",
+  },
 
   device: {
     refreshOnResize: true,
