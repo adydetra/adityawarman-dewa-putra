@@ -439,7 +439,7 @@ const achievements = [
     to: "/images/sertifikat-hackathon.jpg",
     result: "Semifinalist",
     deskripsi:
-      "Kompetisi ini diselenggarakan oleh Dinas Pembinaan Potensi Maritim Markas Besar Angkatan Laut (Dispotmar Mabesal) dalam rangka menggalang potensi anak bangsa di bidang inovasi produk digital kemaritiman.",
+      "This competition was organized by the Maritime Potential Development Service at the Navy Headquarters (Dispotmar Mabesal) in order to raise the potential of the nation's children in the field of maritime digital product innovation.",
   },
   {
     id: 2,
@@ -449,9 +449,9 @@ const achievements = [
     src: "icon/go-prakerin.svg",
     icon: "ri:team-fill",
     to: "pdf/sertifikat-kksi.pdf",
-    result: "Juara Harapan 1",
+    result: "1st Runner Up",
     deskripsi:
-      "KKSI adalah singkatan dari Kamp Kreatif SMK Indonesia, yang merupakan event nasional yang rutin diselenggarakan oleh kementrian pendidikan dan kebudayaan serta direktorat jenderal vokasi yang dibantu oleh SMK pengampu atau penyelenggara.",
+      "KKSI stands for Indonesian Vocational Creative Camp, which is a national-scale event that is routinely held by the Ministry of Education and Culture and the Directorate General of Vocational Education assisted by SMK administrators or organizers.",
   },
   {
     id: 3,
@@ -463,7 +463,7 @@ const achievements = [
     to: "https://skilvul.com/paths/coding-di-skilvul-playground/student/ckqzaqvkkbpov0722lngebxow",
     result: "Complete",
     deskripsi:
-      "Tulis coding tanpa harus install aplikasi lain dan langsung lihat hasil dari codemu dalam satu tempat. Membuat Halaman Website Pertama Kamu dengan menggunakan Skilvul Playground, hanya di Skilvul Playground!",
+      "Write coding without having to install other applications and immediately see the results of your code in one place. Create Your First Website Page using Skillvul Playground, only at Skillvul Playground!",
   },
   {
     id: 4,
@@ -475,7 +475,7 @@ const achievements = [
     to: "https://skilvul.com/courses/bootstrap-5-membuat-website-landing-page/student/ckqzaqvr4bppp0722g5uqhx0w",
     result: "SkilPoin 320/385",
     deskripsi:
-      "Bootstrap membuat front-end developer dapat membuat website dengan cepat, fokus pada responsive mobile, dan membuat website menjadi lebih interaktif tanpa membuat banyak CSS dan JavaScript dari nol.",
+      "Bootstrap is a free and open source CSS framework. this working build contains HTML and CSS-based design templates for form, navigation, and other interface components, as well as JavaScript-enabled extensions.",
   },
 ];
 </script>
