@@ -24,15 +24,15 @@
         </div>
       </div>
     </section>
-    <DelayHydration>
+    <!-- <DelayHydration> -->
       <LazyMobileContent />
-    </DelayHydration>
+    <!-- </DelayHydration> -->
   </div>
 </template>
 
 <script setup lang="ts">
 const datas = [
-  {
+  {git a
     id: 1,
     name: "line-md:twitter-x",
     title: "Twitter",
