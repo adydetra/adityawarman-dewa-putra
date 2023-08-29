@@ -1,176 +1,49 @@
+function dt(id: number, name: string, title: string, url: string) {
+  return {
+    id,
+    name,
+    title,
+    to: url,
+  };
+}
+
 export const workstations = [
-  {
-    id: 1,
-    name: "ic:round-smartphone",
-    title: "Xiaomi Redmi Note 7 Pro",
-    to: "https://www.gsmarena.com/xiaomi_redmi_note_7-9513.php",
-  },
-  {
-    id: 2,
-    name: "solar:laptop-outline",
-    title: "Asus A412DA Ryzen 3",
-    to: "https://www.reviewlaptop-id.com/asus-a412da-ek301t-amd-ryzen-3-3200u/",
-  },
+  dt(1, "ic:round-smartphone", "Xiaomi Redmi Note 7 Pro", "https://www.gsmarena.com/xiaomi_redmi_note_7-9513.php"),
+  dt(2, "solar:laptop-outline", "Asus A412DA Ryzen 3", "https://www.reviewlaptop-id.com/asus-a412da-ek301t-amd-ryzen-3-3200u/"),
 ];
 
 export const operatings = [
-  {
-    id: 1,
-    name: "uim:android",
-    title: "Android",
-    to: "https://www.android.com/intl/id_id/",
-  },
-  {
-    id: 2,
-    name: "uim:windows",
-    title: "Windows",
-    to: "https://www.microsoft.com/en-us/windows",
-  },
-  {
-    id: 3,
-    name: "cib:arch-linux",
-    title: "Arch Linux",
-    to: "https://archlinux.org/",
-  },
+  dt(1, "uim:android", "Android", "https://www.android.com/intl/id_id/"),
+  dt(2, "uim:windows", "Windows", "https://www.microsoft.com/en-us/windows"),
+  dt(3, "cib:arch-linux", "Arch Linux", "https://archlinux.org/"),
 ];
 
 export const databases = [
-  {
-    id: 1,
-    name: "tabler:brand-mysql",
-    title: "MySQL",
-    to: "https://www.mysql.com/",
-  },
-  {
-    id: 2,
-    name: "akar-icons:postgresql-fill",
-    title: "PostgreSQL",
-    to: "https://www.postgresql.org/",
-  },
+  dt(1, "tabler:brand-mysql", "MySQL", "https://www.mysql.com/"),
+  dt(2, "akar-icons:postgresql-fill", "PostgreSQL", "https://www.postgresql.org/"),
 ];
 
 export const developments = [
-  {
-    id: 1,
-    name: "akar-icons:vscode-fill",
-    title: "VS Code",
-    to: "https://code.visualstudio.com/",
-  },
-  {
-    id: 2,
-    name: "solar:figma-bold-duotone",
-    title: "FIGMA",
-    to: "https://www.figma.com",
-  },
-  {
-    id: 3,
-    name: "simple-icons:androidstudio",
-    title: "Android Studio",
-    to: "https://developer.android.com/studio",
-  },
-  {
-    id: 4,
-    name: "simple-icons:alacritty",
-    title: "Alacritty",
-    to: "https://alacritty.org/",
-  },
-  {
-    id: "5",
-    name: "mdi:git",
-    title: "Git",
-    to: "https://git-scm.com/",
-  },
-  {
-    id: 6,
-    name: "simple-icons:postman",
-    title: "Postman",
-    to: "https://www.postman.com/",
-  },
-  {
-    id: 7,
-    name: "simple-icons:xampp",
-    title: "XAMPP",
-    to: "https://www.apachefriends.org/download.html",
-  },
-  {
-    id: 8,
-    name: "mdi:firefox",
-    title: "Firefox",
-    to: "https://www.mozilla.org/id/firefox/new/",
-  },
+  dt(1, "akar-icons:vscode-fill", "VS Code", "https://code.visualstudio.com/"),
+  dt(2, "solar:figma-bold-duotone", "FIGMA", "https://www.figma.com"),
+  dt(3, "simple-icons:androidstudio", "Android Studio", "https://developer.android.com/studio"),
+  dt(4, "simple-icons:alacritty", "Alacritty", "https://alacritty.org/"),
+  dt(5, "mdi:git", "Git", "https://git-scm.com/"),
+  dt(6, "simple-icons:postman", "Postman", "https://www.postman.com/"),
+  dt(7, "simple-icons:xampp", "XAMPP", "https://www.apachefriends.org/download.html"),
+  dt(8, "mdi:firefox", "Firefox", "https://www.mozilla.org/id/firefox/new/"),
 ];
 
-export const packages = [
-  {
-    id: 1,
-    name: "simple-icons:npm",
-    title: "NPM",
-    to: "https://www.npmjs.com/",
-  },
-  {
-    id: 2,
-    name: "akar-icons:yarn-fill",
-    title: "Yarn",
-    to: "https://yarnpkg.com/",
-  },
-];
+export const packages = [dt(1, "simple-icons:npm", "NPM", "https://www.npmjs.com/"), dt(2, "akar-icons:yarn-fill", "Yarn", "https://yarnpkg.com/")];
 
-export const backends = [
-  {
-    id: 1,
-    name: "akar-icons:php-fill",
-    title: "PHP",
-    to: "https://www.php.net/",
-  },
-  {
-    id: 2,
-    name: "mdi:laravel",
-    title: "Laravel",
-    to: "https://laravel.com/",
-  },
-];
+export const backends = [dt(1, "akar-icons:php-fill", "PHP", "https://www.php.net/"), dt(2, "mdi:laravel", "Laravel", "https://laravel.com/")];
 
 export const frontends = [
-  {
-    id: 1,
-    name: "simple-icons:tailwindcss",
-    title: "Tailwind CSS",
-    to: "https://tailwindcss.com/",
-  },
-  {
-    id: 2,
-    name: "ri:bootstrap-fill",
-    title: "Bootstrap",
-    to: "https://getbootstrap.com/",
-  },
-  {
-    id: 3,
-    name: "akar-icons:jquery-fill",
-    title: "jQuery",
-    to: "https://jquery.com/",
-  },
-  {
-    id: 4,
-    name: "simple-icons:vuedotjs",
-    title: "Vue Js",
-    to: "https://vuejs.org/",
-  },
-  {
-    id: 5,
-    name: "simple-icons:nuxtdotjs",
-    title: "Nuxt Js",
-    to: "https://nuxt.com/",
-  },
-  {
-    id: 6,
-    name: "devicon-plain:vitejs",
-    title: "Vite Js",
-    to: "https://vitejs.dev/",
-  },
-  {
-    id: 7,
-    name: "tabler:brand-react-native",
-    title: "React Native",
-    to: "https://reactnative.dev/",
-  },
+  dt(1, "simple-icons:tailwindcss", "Tailwind CSS", "https://tailwindcss.com/"),
+  dt(2, "ri:bootstrap-fill", "Bootstrap", "https://getbootstrap.com/"),
+  dt(3, "akar-icons:jquery-fill", "jQuery", "https://jquery.com/"),
+  dt(4, "simple-icons:vuedotjs", "Vue Js", "https://vuejs.org/"),
+  dt(5, "simple-icons:nuxtdotjs", "Nuxt Js", "https://nuxt.com/"),
+  dt(6, "devicon-plain:vitejs", "Vite Js", "https://vitejs.dev/"),
+  dt(7, "tabler:brand-react-native", "React Native", "https://reactnative.dev/"),
 ];

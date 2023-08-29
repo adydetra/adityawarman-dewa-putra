@@ -1,38 +1,17 @@
+function dt(id: number, name: string, title: string, url: string) {
+  return {
+    id,
+    name,
+    title,
+    to: url,
+  };
+}
+
 export const social = [
-  {
-    id: 1,
-    name: "line-md:twitter-x",
-    title: "Twitter",
-    to: "https://twitter.com/adydetra",
-  },
-  {
-    id: 2,
-    name: "line-md:mastodon",
-    title: "Mastodon",
-    to: "https://mastodon.social/@adityawarman",
-  },
-  {
-    id: 3,
-    name: "line-md:github-loop",
-    title: "Github",
-    to: "https://github.com/devdewa",
-  },
-  {
-    id: 4,
-    name: "line-md:discord",
-    title: "Discord",
-    to: "https://discord.gg/9z6APrYMAq",
-  },
-  {
-    id: 5,
-    name: "line-md:email",
-    title: "Email",
-    to: "mailto:devdewa123.sp@gmail.com",
-  },
-  {
-    id: 6,
-    name: "line-md:instagram",
-    title: "Instagram",
-    to: "https://www.instagram.com/adydetra",
-  },
+  dt(1, "line-md:twitter-x", "Twitter", "https://twitter.com/adydetra"),
+  dt(2, "line-md:mastodon", "Mastodon", "https://mastodon.social/@adityawarman"),
+  dt(3, "line-md:github-loop", "Github", "https://github.com/devdewa"),
+  dt(4, "line-md:discord", "Discord", "https://discord.gg/9z6APrYMAq"),
+  dt(5, "line-md:email", "Email", "mailto:devdewa123.sp@gmail.com"),
+  dt(6, "line-md:instagram", "Instagram", "https://www.instagram.com/adydetra"),
 ];
