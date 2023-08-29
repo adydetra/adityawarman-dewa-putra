@@ -5,7 +5,7 @@
     />
     <section class="flex flex-wrap justify-center items-center w-full h-full">
       <div class="py-8 px-4 w-full">
-        <UILinkMobileList/>
+        <UILinkMobileList />
         <div class="flex justify-center items-center bg-yellow-200 p-0.5 w-16 md:w-20 rotate-3 rounded-full">
           <img src="/images/hero-mobile.webp" alt="Photo" class="w-full h-full rounded-full shadow-md shadow-gray-500/40" />
         </div>
@@ -30,14 +30,8 @@
   </div>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import * as data from "~/types/index";
 
-export default defineComponent({
-  data() {
-    return {
-      social: data.social,
-    };
-  },
-});
+const social = data.social;
 </script>

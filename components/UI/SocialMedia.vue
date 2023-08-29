@@ -8,14 +8,8 @@
   </ul>
 </template>
 
-<script lang="ts">
+<script setup lang="ts">
 import * as data from "~/types/index";
 
-export default defineComponent({
-  data() {
-    return {
-      social: data.social,
-    };
-  },
-});
+const social = data.social;
 </script>
