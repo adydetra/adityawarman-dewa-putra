@@ -7,7 +7,7 @@
       <div class="py-8 px-4 w-full">
         <UILinkMobileList />
         <div class="flex justify-center items-center bg-yellow-200 p-0.5 w-16 md:w-20 rotate-3 rounded-full">
-          <img src="/images/hero-mobile.webp" alt="Photo" class="w-full h-full rounded-full shadow-md shadow-gray-500/40" />
+          <NuxtImg src="/images/hero-mobile.webp" alt="Photo" placeholder loading="lazy" class="w-full h-full rounded-full shadow-md shadow-gray-500/40" />
         </div>
         <div class="space-y-6 mt-6">
           <p class="text-gray-500 dark:text-gray-300 text-3xl md:text-4xl md:max-w-[75%] font-bold leading-snug md:leading-relaxed">

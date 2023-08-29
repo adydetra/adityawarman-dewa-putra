@@ -10,7 +10,7 @@
     :key="project.id"
   >
     <div class="flex justify-center flex-col gap-6">
-      <img :src="project.src" alt="" class="w-12 h-full m-auto rounded-full p-1.5 shadow-md bg-zinc-800 border border-zinc-700/50 ring-0" />
+      <NuxtImg :src="project.src" alt="" placeholder loading="lazy" class="w-12 h-full m-auto rounded-full p-1.5 shadow-md bg-zinc-800 border border-zinc-700/50 ring-0" />
       <div class="flex justify-center items-center">
         <Icon name="line-md:external-link" class="w-3 h-3 lg:w-4 2xl:w-5 lg:h-4 2xl:h-5" /><span class="ml-2 text-sm lg:text-md 2xl:text-base font-semibold">{{
           project.title

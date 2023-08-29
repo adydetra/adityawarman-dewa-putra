@@ -10,13 +10,13 @@
     :key="achievement.id"
   >
     <div class="w-full flex flex-col justify-between gap-6 xl:p-8 2xl:p-12">
-      <img :src="achievement.thumbnail" alt="" class="w-full h-60 bg-gray-800/50 py-8 px-12 rounded-2xl" />
+      <NuxtImg :src="achievement.thumbnail" alt="" placeholder loading="lazy" class="w-full h-60 bg-gray-800/50 py-8 px-12 rounded-2xl" />
       <p class="text-justify text-sm 2xl:text-md indent-8 text-gray-400 leading-loose"><span class="text-sky-400">#</span> {{ achievement.deskripsi }}</p>
       <p class="flex items-center font-semibold text-gray-500 dark:text-gray-200">
         Result: <span class="ml-2 text-gray-400 leading-relaxed">{{ achievement.result }}</span>
       </p>
       <div class="flex items-center text-gray-500 dark:text-white mt-4">
-        <img :src="achievement.src" alt="" class="w-12 h-12 rounded-full bg-zinc-800 p-1.5 shadow-md border border-zinc-700/50 ring-0" />
+        <NuxtImg :src="achievement.src" alt="" placeholder loading="lazy" class="w-12 h-12 rounded-full bg-zinc-800 p-1.5 shadow-md border border-zinc-700/50 ring-0" />
         <Icon name="line-md:text-box" class="w-3 h-3 lg:w-4 2xl:w-5 lg:h-4 2xl:h-5 ml-3" />
         <span class="ml-2 text-sm lg:text-md 2xl:text-base font-semibold">{{ achievement.title }}</span>
       </div>

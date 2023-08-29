@@ -13,13 +13,13 @@ export default defineNuxtConfig({
 
   modules: [
     "@nuxt/content",
+    "@nuxt/image",
     "@nuxtjs/google-fonts",
     "@nuxtjs/color-mode",
     "@nuxtjs/device",
     "nuxt-icon",
     "nuxt-delay-hydration",
     "nuxt-simple-robots",
-    "nuxt-gtag",
     "@vite-pwa/nuxt",
   ],
 
@@ -29,6 +29,11 @@ export default defineNuxtConfig({
       tailwindcss: {},
       autoprefixer: {},
     },
+  },
+
+  image: {
+    quality: 1,
+    format: ['webp']
   },
 
   googleFonts: {
@@ -55,10 +60,6 @@ export default defineNuxtConfig({
 
   content: {
     documentDriven: true,
-  },
-
-  gtag: {
-    id: 'G-EES4EGW29H'
   },
 
   pwa: {

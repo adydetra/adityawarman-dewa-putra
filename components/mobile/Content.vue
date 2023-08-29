@@ -1,13 +1,13 @@
 <template>
   <section class="flex justify-center gap-6 overflow-hidden pt-16 pb-12">
     <div class="relative aspect-[10/10] w-44 md:w-80 flex-none overflow-hidden rounded-xl shadow-2xl shadow-yellow-200/10 -rotate-3">
-      <img src="/images/hero-1.webp" alt="" class="absolute h-full w-full object-cover" />
+      <NuxtImg src="/images/hero-1.webp" alt="" placeholder loading="lazy" class="absolute h-full w-full object-cover" />
     </div>
     <div class="relative aspect-[10/10] w-32 md:w-60 flex-none overflow-hidden rounded-xl">
-      <img src="/images/hero-2.webp" alt="" class="absolute h-full w-full object-scale-down" />
+      <NuxtImg src="/images/hero-2.webp" alt="" placeholder loading="lazy" class="absolute h-full w-full object-scale-down" />
     </div>
     <div class="relative aspect-[10/10] w-44 md:w-80 flex-none overflow-hidden rounded-xl shadow-2xl shadow-yellow-200/10 rotate-3">
-      <img src="/images/hero-3.webp" alt="" class="absolute h-full w-full object-cover" />
+      <NuxtImg src="/images/hero-3.webp" alt="" placeholder loading="lazy" class="absolute h-full w-full object-cover" />
     </div>
   </section>
 
@@ -125,7 +125,7 @@
         :key="project.id"
       >
         <div class="flex justify-center flex-col gap-6">
-          <img :src="project.src" alt="" class="w-12 h-full m-auto rounded-full bg-zinc-800 p-1.5 shadow-md border border-zinc-700/50 ring-0" />
+          <NuxtImg :src="project.src" alt="" placeholder loading="lazy" class="w-12 h-full m-auto rounded-full bg-zinc-800 p-1.5 shadow-md border border-zinc-700/50 ring-0" />
           <div class="flex justify-center items-center">
             <Icon name="line-md:external-link" class="w-3 h-3" /><span class="ml-2 text-xs font-semibold">{{ project.title }}</span>
           </div>
@@ -148,14 +148,14 @@
         :key="achievement.id"
       >
         <div class="w-full flex flex-col justify-between gap-6 px-6 pt-6 pb-4">
-          <img :src="achievement.thumbnail" alt="" class="w-full h-40 bg-gray-800/50 py-8 px-12 rounded-2xl" />
+          <NuxtImg :src="achievement.thumbnail" alt="" placeholder loading="lazy" class="w-full h-40 bg-gray-800/50 py-8 px-12 rounded-2xl" />
           <p class="text-justify text-xs indent-3 text-gray-400 leading-loose"><span class="text-sky-400">#</span> {{ achievement.deskripsi }}</p>
           <p class="flex text-xs items-center font-semibold text-gray-500 dark:text-gray-200">
             Result:
             <span class="ml-2 text-gray-400 leading-relaxed">{{ achievement.result }}</span>
           </p>
           <div class="flex items-center text-gray-500 dark:text-white mt-4">
-            <img :src="achievement.src" alt="" class="w-8 h-8 rounded-full bg-zinc-800 p-1.5 shadow-md border border-zinc-700/50 ring-0" />
+            <NuxtImg :src="achievement.src" alt="" placeholder loading="lazy" class="w-8 h-8 rounded-full bg-zinc-800 p-1.5 shadow-md border border-zinc-700/50 ring-0" />
             <Icon name="line-md:text-box" class="w-3 h-3 ml-3" />
             <span class="ml-2 text-[10px] font-semibold leading-relaxed">{{ achievement.title }}</span>
           </div>
