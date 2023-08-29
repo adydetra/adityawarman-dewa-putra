@@ -18,15 +18,3 @@
     </section>
   </div>
 </template>
-
-<script lang="ts">
-import { dataArray } from '~/types/index'
-
-export default defineComponent({
-  data() {
-    return {
-      dataArray: dataArray,
-    }
-  },
-})
-</script>
