@@ -15,7 +15,7 @@
           </p>
           <p class="text-gray-400 text-sm leading-loose max-w-[75%]">~ I’m Adityawarman Dewa Putra. Live in Jakarta, Indonesia. 🇮🇩</p>
           <ul class="flex text-gray-500 dark:text-gray-400 gap-8 md:gap-7">
-            <li v-for="data in datas" :key="data.id">
+            <li v-for="data in social" :key="data.id">
               <NuxtLink :to="data.to" :title="data.title" target="_blank" class="cursor-pointer ease-in-out duration-300 hover:text-yellow-200">
                 <Icon :name="data.name" class="w-5 h-5 md:w-6 md:h-6" />
               </NuxtLink>
@@ -30,43 +30,14 @@
   </div>
 </template>
 
-<script setup lang="ts">
-const datas = [
-  {
-    id: 1,
-    name: "line-md:twitter-x",
-    title: "Twitter",
-    to: "https://twitter.com/devdewa_id",
+<script lang="ts">
+import * as data from "~/types/index";
+
+export default defineComponent({
+  data() {
+    return {
+      social: data.social,
+    };
   },
-  {
-    id: 2,
-    name: "line-md:mastodon",
-    title: "Mastodon",
-    to: "https://mastodon.social/@adityawarman",
-  },
-  {
-    id: 3,
-    name: "line-md:github-loop",
-    title: "Github",
-    to: "https://github.com/devdewa/",
-  },
-  {
-    id: 4,
-    name: "line-md:discord",
-    title: "Discord",
-    to: "https://discord.gg/9z6APrYMAq",
-  },
-  {
-    id: 5,
-    name: "line-md:email",
-    title: "Email",
-    to: "mailto:devdewa123.sp@gmail.com",
-  },
-  {
-    id: 6,
-    name: "line-md:instagram",
-    title: "Instagram",
-    to: "https://www.instagram.com/adydetra/",
-  },
-];
+});
 </script>

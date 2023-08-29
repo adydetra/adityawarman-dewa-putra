@@ -3,7 +3,7 @@ export const social = [
     id: 1,
     name: "line-md:twitter-x",
     title: "Twitter",
-    to: "https://twitter.com/devdewa_id",
+    to: "https://twitter.com/adydetra",
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ export const social = [
     id: 3,
     name: "line-md:github-loop",
     title: "Github",
-    to: "https://github.com/devdewa/",
+    to: "https://github.com/devdewa",
   },
   {
     id: 4,
@@ -33,6 +33,6 @@ export const social = [
     id: 6,
     name: "line-md:instagram",
     title: "Instagram",
-    to: "https://www.instagram.com/adydetra/",
+    to: "https://www.instagram.com/adydetra",
   },
 ];
