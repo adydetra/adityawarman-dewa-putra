@@ -75,24 +75,25 @@ export const developments = [
     to: "https://alacritty.org/",
   },
   {
+    id: "5",
     name: "mdi:git",
     title: "Git",
     to: "https://git-scm.com/",
   },
   {
-    id: 5,
+    id: 6,
     name: "simple-icons:postman",
     title: "Postman",
     to: "https://www.postman.com/",
   },
   {
-    id: 6,
+    id: 7,
     name: "simple-icons:xampp",
     title: "XAMPP",
     to: "https://www.apachefriends.org/download.html",
   },
   {
-    id: 7,
+    id: 8,
     name: "mdi:firefox",
     title: "Firefox",
     to: "https://www.mozilla.org/id/firefox/new/",
