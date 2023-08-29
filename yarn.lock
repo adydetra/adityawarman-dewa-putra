@@ -6738,6 +6738,15 @@ nuxt-delay-hydration@^1.2.1:
     packrup "^0.1.0"
     radix3 "^1.0.1"
 
+nuxt-gtag@^0.6.2:
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/nuxt-gtag/-/nuxt-gtag-0.6.2.tgz#8d4d6d32b23e1e452992ccc34a598f9a6c4e29e3"
+  integrity sha512-gtmOG/AeNJKbKyoFACQK7jM8o5CYb5ChJsgsK2mDXiuJTvkCAZ5moJyXGRaZTPJhbpC4xzDGnEWmoZKs7aSaaQ==
+  dependencies:
+    "@nuxt/kit" "^3.6.5"
+    defu "^6.1.2"
+    pathe "^1.1.1"
+
 nuxt-icon@^0.4.1:
   version "0.4.2"
   resolved "https://registry.yarnpkg.com/nuxt-icon/-/nuxt-icon-0.4.2.tgz#040efe9463b06d0d48d8e84702582758a5e76357"

@@ -20,6 +20,7 @@ export default defineNuxtConfig({
     "nuxt-icon",
     "nuxt-delay-hydration",
     "nuxt-simple-robots",
+    "nuxt-gtag",
     "@vite-pwa/nuxt",
   ],
 
@@ -55,6 +56,10 @@ export default defineNuxtConfig({
 
   content: {
     documentDriven: true,
+  },
+
+  gtag: {
+    id: 'G-EES4EGW29H'
   },
 
   pwa: {
