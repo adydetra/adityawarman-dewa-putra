@@ -1,11 +1,7 @@
 <template>
   <main class="bg-white dark:bg-gray-950 tracking-wide select-none relative">
     <div class="fixed top-0 left-0" :class="layout">
-      <BlockLeftSide />
-      <div class="text-md text-gray-400 text-center w-full">
-        <span class="bg-gray-700 py-2 px-4 text-yellow-300 dark:text-yellow-300 rounded-sm">4</span>
-      </div>
-      <BlockLeftCenter />
+      <number>4</number>
       <NuxtLink
         to="/projects"
         title="Swap to Projects"
@@ -13,17 +9,17 @@
       >
         <Icon name="line-md:chevron-small-double-left" class="w-4 h-4 lg:w-6 lg:h-6" />
       </NuxtLink>
-      <UILinkBlog/>
+      <LinkBlog />
     </div>
     <LazyBaseAchievements />
     <div class="fixed top-0 right-0" :class="layout">
-      <BlockLeftSide />
-      <UIButtonColorMode class="w-full" />
-      <BlockLeftCenter />
+      <line-l-s />
+      <ButtonColorMode class="w-full" />
+      <line-l-c />
       <div to="" class="w-full flex justify-center cursor-not-allowed py-8 ease-in-out duration-300 text-slate-400 hover:text-red-400">
         <Icon name="line-md:grid-3" class="w-4 h-4 lg:w-6 lg:h-6" />
       </div>
-      <UILinkFeed />
+      <LinkFeed />
     </div>
   </main>
 </template>

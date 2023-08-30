@@ -17,7 +17,7 @@
 
     <div class="grid grid-cols-10 md:grid-cols-12 gap-8">
       <!-- Workstation -->
-      <div class="col-span-5 md:col-span-4" :class="WorkstationCard">
+      <div class="col-span-5 md:col-span-4" :class="card">
         <div>
           <h2 :class="h2Style">Workstation</h2>
           <ul :class="useslist">
@@ -30,7 +30,7 @@
         </div>
       </div>
       <!-- Database -->
-      <div class="col-span-5 md:col-span-4" :class="WorkstationCard">
+      <div class="col-span-5 md:col-span-4" :class="card">
         <div>
           <h2 :class="h2Style">Database</h2>
           <ul :class="useslist">
@@ -43,7 +43,7 @@
         </div>
       </div>
       <!-- Operating System -->
-      <div class="col-span-10 md:col-span-4" :class="WorkstationCard">
+      <div class="col-span-10 md:col-span-4" :class="card">
         <div>
           <h2 :class="h2Style">Operating System</h2>
           <ul :class="useslist">
@@ -56,7 +56,7 @@
         </div>
       </div>
       <!-- Development tools -->
-      <div class="backdrop-saturate-200 col-span-10 md:col-span-6" :class="WorkstationCard">
+      <div class="backdrop-saturate-200 col-span-10 md:col-span-6" :class="card">
         <div>
           <h2 :class="h2Style">Development tools</h2>
           <ul :class="useslist">
@@ -69,7 +69,7 @@
         </div>
       </div>
       <!-- Package Manager -->
-      <div class="backdrop-saturate-200 col-span-10 md:col-span-6" :class="WorkstationCard">
+      <div class="backdrop-saturate-200 col-span-10 md:col-span-6" :class="card">
         <div>
           <h2 :class="h2Style">Package Manager</h2>
           <ul :class="useslist">
@@ -82,7 +82,7 @@
         </div>
       </div>
       <!-- Front End Development -->
-      <div class="col-span-10 md:col-span-12" :class="WorkstationCard">
+      <div class="col-span-10 md:col-span-12" :class="card">
         <div>
           <h2 :class="h2Style">Front End Development</h2>
           <ul :class="useslist">
@@ -95,7 +95,7 @@
         </div>
       </div>
       <!-- Back End Development -->
-      <div class="backdrop-saturate-200 col-span-10 md:col-span-12" :class="WorkstationCard">
+      <div class="backdrop-saturate-200 col-span-10 md:col-span-12" :class="card">
         <div>
           <h2 :class="h2Style">Back End Development</h2>
           <ul :class="useslist">
@@ -190,7 +190,7 @@ const achievements = ach.achievements;
 const container = "mx-auto px-6 py-8 md:py-20 lg:py-8 bg-[url('/images/pattern-hero-left.png')] dark:bg-[url('/images/pattern-hero-left-dark.png')] bg-contain bg-center";
 const h1Style = "text-gray-500 dark:text-gray-300 md:max-w-[70%] mx-auto text-center text-2xl font-bold leading-snug 2xl:leading-snug mb-10";
 const h2Style = "text-gray-500 dark:text-gray-400 text-sm font-semibold mb-4 flex justify-center";
-const WorkstationCard = "flex justify-center border-dashed border-2 border-gray-400 dark:border-gray-800 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300";
+const card = "flex justify-center border-dashed border-2 border-gray-400 dark:border-gray-800 pt-4 pb-6 hover:border-gray-100 ease-in-out duration-300";
 const useslink = "cursor-pointer ease-in-out duration-300 hover:text-yellow-200";
 const useslist = "flex flex-wrap justify-center text-gray-400 gap-6 px-6";
 const usesicon = "w-4 h-4";

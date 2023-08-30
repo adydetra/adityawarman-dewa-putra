@@ -11,7 +11,7 @@
     </h1>
 
     <div class="grid grid-cols-8 gap-16 2xl:gap-20">
-      <UICardUses />
+      <CardUses />
     </div>
   </div>
 </template>

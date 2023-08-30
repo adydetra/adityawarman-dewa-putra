@@ -1,25 +1,21 @@
 <template>
   <main class="bg-white dark:bg-gray-950 tracking-wide select-none relative">
     <div class="left-0" :class="layout">
-      <BlockLeftSide />
-      <div class="text-md text-gray-400 text-center w-full">
-        <span class="bg-gray-700 py-2 px-4 text-yellow-300 dark:text-yellow-300 rounded-sm">3</span>
-      </div>
-      <BlockLeftCenter />
+      <number>3</number>
       <NuxtLink to="/uses" title="Swap to Uses" :class="link">
         <Icon name="line-md:chevron-small-double-left" class="w-4 h-4 lg:w-6 lg:h-6" />
       </NuxtLink>
-      <UILinkBlog/>
+      <LinkBlog/>
     </div>
     <LazyBaseProject />
     <div class="right-0" :class="layout">
-      <BlockLeftSide />
-      <UIButtonColorMode class="w-full" />
-      <BlockLeftCenter />
+      <line-l-s />
+      <ButtonColorMode class="w-full" />
+      <line-l-c />
       <NuxtLink to="/achievements" title="Swap to Achievement" :class="link">
         <Icon name="line-md:chevron-small-double-right" class="animate-pulse w-4 h-4 lg:w-6 lg:h-6" />
       </NuxtLink>
-      <UILinkFeed />
+      <LinkFeed />
     </div>
   </main>
 </template>

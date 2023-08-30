@@ -2,21 +2,17 @@
   <!-- Desktop -->
   <main class="hidden lg:flex bg-white dark:bg-gray-950 tracking-wide h-screen select-none" v-if="$device.isDesktop">
     <div :class="layout">
-      <BlockLeftSide />
-      <div class="text-md text-gray-400 text-center w-full">
-        <span class="bg-gray-700 py-2 px-4 text-yellow-300 dark:text-yellow-300 rounded-sm">1</span>
-      </div>
-      <BlockLeftCenter />
+      <number>1</number>
       <div class="w-full flex justify-center cursor-not-allowed py-8 ease-in-out duration-300 text-slate-400 hover:text-red-400">
         <Icon name="line-md:grid-3" class="w-4 h-4 lg:w-6 lg:h-6" />
       </div>
-      <UILinkBlog />
+      <LinkBlog />
     </div>
     <BaseHero />
     <div :class="layout">
-      <BlockLeftSide />
-      <UIButtonColorMode class="w-full" />
-      <BlockLeftCenter />
+      <line-l-s />
+      <ButtonColorMode class="w-full" />
+      <line-l-c />
       <NuxtLink
         to="/uses"
         title="Swap to Uses"
@@ -24,13 +20,13 @@
       >
         <Icon name="line-md:chevron-small-double-right" class="animate-pulse w-4 h-4 lg:w-6 lg:h-6" />
       </NuxtLink>
-      <UILinkFeed />
+      <LinkFeed />
     </div>
   </main>
 
   <!-- Mobile -->
   <main class="lg:hidden bg-white dark:bg-gray-950 tracking-wide h-screen relative overflow-x-hidden" v-else>
-    <MobileViewComponent />
+    <MobileView />
   </main>
 </template>
 
