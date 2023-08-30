@@ -17,6 +17,7 @@ export default defineNuxtConfig({
     "@nuxtjs/google-fonts",
     "@nuxtjs/color-mode",
     "@nuxtjs/device",
+    "@nuxtjs/fontaine",
     "nuxt-icon",
     "nuxt-delay-hydration",
     "nuxt-simple-robots",
@@ -33,7 +34,7 @@ export default defineNuxtConfig({
 
   image: {
     quality: 1,
-    format: ['webp']
+    format: ["webp"],
   },
 
   googleFonts: {

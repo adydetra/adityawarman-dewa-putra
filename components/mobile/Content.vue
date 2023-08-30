@@ -148,7 +148,9 @@
         :key="achievement.id"
       >
         <div class="w-full flex flex-col justify-between gap-6 px-6 pt-6 pb-4">
-          <NuxtImg :src="achievement.thumbnail" alt="" placeholder loading="lazy" class="w-full h-40 bg-gray-800/50 py-8 px-12 rounded-2xl" />
+          <div class="h-40">
+            <NuxtImg :src="achievement.thumbnail" alt="" placeholder loading="lazy" class="w-full h-full bg-gray-800/50 py-8 px-12 rounded-2xl" />
+          </div>
           <p class="text-justify text-xs indent-3 text-gray-400 leading-loose"><span class="text-sky-400">#</span> {{ achievement.deskripsi }}</p>
           <p class="flex text-xs items-center font-semibold text-gray-500 dark:text-gray-200">
             Result:
