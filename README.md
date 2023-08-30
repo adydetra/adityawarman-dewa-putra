@@ -1,17 +1,11 @@
 # Personal Site 🌱
 
-## Setup
+![Static Badge](https://img.shields.io/badge/license-MIT-brightgreen?label=LICENSE)
 
-Make sure to install the dependencies:
+**[adityawarman.vercel.app](https://adityawarman.vercel.app)**
 
-```bash
-yarn install
-```
+This is the code and content for my personal website, built in [Nuxt](https://nuxt.com/).
 
-## Development Server
+## License
 
-Start the development server on `http://localhost:3000`:
-
-```bash
-yarn dev
-```
+The code is licensed under [MIT](LICENSE), and my original images in blog or feed are licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
