@@ -10,7 +10,9 @@
     :key="achievement.id"
   >
     <div class="w-full flex flex-col justify-between gap-6 xl:p-8 2xl:p-12">
-      <NuxtImg :src="achievement.thumbnail" alt="" placeholder loading="lazy" class="w-full h-60 bg-gray-800/50 py-8 px-12 rounded-2xl" />
+      <div class="h-60">
+        <NuxtImg :src="achievement.thumbnail" alt="" placeholder loading="lazy" class="w-full h-full bg-gray-800/50 py-8 px-12 rounded-2xl" />
+      </div>
       <p class="text-justify text-sm 2xl:text-md indent-8 text-gray-400 leading-loose"><span class="text-sky-400">#</span> {{ achievement.deskripsi }}</p>
       <p class="flex items-center font-semibold text-gray-500 dark:text-gray-200">
         Result: <span class="ml-2 text-gray-400 leading-relaxed">{{ achievement.result }}</span>
