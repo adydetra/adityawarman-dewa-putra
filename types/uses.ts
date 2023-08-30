@@ -10,6 +10,7 @@ function dt(id: number, name: string, title: string, url: string) {
 export const workstations = [
   dt(1, "ic:round-smartphone", "Xiaomi Redmi Note 7 Pro", "https://www.gsmarena.com/xiaomi_redmi_note_7-9513.php"),
   dt(2, "solar:laptop-outline", "Asus A412DA Ryzen 3", "https://www.reviewlaptop-id.com/asus-a412da-ek301t-amd-ryzen-3-3200u/"),
+  dt(3, "streamline:entertainment-earpods-airpods-audio-earpods-music-earbuds-true-wireless", "HUAWEI FreeBuds SE", "https://consumer.huawei.com/id/headphones/freebuds-se/")
 ];
 
 export const operatings = [
@@ -43,7 +44,7 @@ export const frontends = [
   dt(2, "ri:bootstrap-fill", "Bootstrap", "https://getbootstrap.com/"),
   dt(3, "akar-icons:jquery-fill", "jQuery", "https://jquery.com/"),
   dt(4, "simple-icons:vuedotjs", "Vue Js", "https://vuejs.org/"),
-  dt(5, "simple-icons:nuxtdotjs", "Nuxt Js", "https://nuxt.com/"),
-  dt(6, "devicon-plain:vitejs", "Vite Js", "https://vitejs.dev/"),
-  dt(7, "tabler:brand-react-native", "React Native", "https://reactnative.dev/"),
+  dt(5, "simple-icons:nuxtdotjs", "Nuxt", "https://nuxt.com/"),
+  dt(6, "file-icons:vite", "Vite Js", "https://vitejs.dev/"),
+  dt(7, "simple-icons:expo", "Expo", "https://expo.dev/"),
 ];
