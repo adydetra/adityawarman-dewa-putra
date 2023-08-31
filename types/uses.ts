@@ -10,7 +10,8 @@ function dt(id: number, name: string, title: string, url: string) {
 export const workstations = [
   dt(1, "ic:round-smartphone", "Xiaomi Redmi Note 7 Pro", "https://www.gsmarena.com/xiaomi_redmi_note_7-9513.php"),
   dt(2, "solar:laptop-outline", "Asus A412DA Ryzen 3", "https://www.reviewlaptop-id.com/asus-a412da-ek301t-amd-ryzen-3-3200u/"),
-  dt(3, "streamline:entertainment-earpods-airpods-audio-earpods-music-earbuds-true-wireless", "HUAWEI FreeBuds SE", "https://consumer.huawei.com/id/headphones/freebuds-se/")
+  dt(3, "tabler:rectangle", "Paradox Tarot", "https://paradoxgaming.id/produk/fox-mask-tarot/"),
+  dt(4, "streamline:entertainment-earpods-airpods-audio-earpods-music-earbuds-true-wireless", "HUAWEI FreeBuds SE", "https://consumer.huawei.com/id/headphones/freebuds-se/"),
 ];
 
 export const operatings = [
