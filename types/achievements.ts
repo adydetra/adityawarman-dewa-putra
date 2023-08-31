@@ -1,9 +1,9 @@
-function dt(id: number, aos: string, title: string, thumbnail: string, src: string, icon: string, to: string, result: string, deskripsi: string) {
+function data(id: number, aos: string, title: string, thumbnail: string, src: string, icon: string, to: string, result: string, deskripsi: string) {
   return { id, aos, title, thumbnail, src, icon, to, result, deskripsi };
 }
 
 export const achievements = [
-  dt(
+  data(
     1,
     "flip-left",
     "Hackathon Maritime 2021",
@@ -14,7 +14,7 @@ export const achievements = [
     "Semifinalist",
     "This competition was organized by the Maritime Potential Development Service at the Navy Headquarters (Dispotmar Mabesal) in order to raise the potential of the nation's children in the field of maritime digital product innovation."
   ),
-  dt(
+  data(
     2,
     "flip-right",
     "KKSI 2021",
@@ -25,7 +25,7 @@ export const achievements = [
     "1st Runner Up",
     "KKSI stands for Indonesian Vocational Creative Camp, which is a national-scale event that is routinely held by the Ministry of Education and Culture and the Directorate General of Vocational Education assisted by SMK administrators or organizers."
   ),
-  dt(
+  data(
     3,
     "flip-left",
     "Coding di Skilvul Playground",
@@ -36,7 +36,7 @@ export const achievements = [
     "Complete",
     "Write coding without having to install other applications and immediately see the results of your code in one place. Create Your First Website Page using Skillvul Playground, only at Skillvul Playground!"
   ),
-  dt(
+  data(
     4,
     "flip-right",
     "Bootstrap 5 - Website Landing Page",
