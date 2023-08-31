@@ -1,10 +1,10 @@
 <template>
-  <!-- Workstation -->
+  <!-- Operating System -->
   <div data-aos="zoom-in" data-aos-duration="1000" class="col-span-2" :class="card">
     <div>
-      <h2 :class="h2Style">Workstation</h2>
+      <h2 :class="h2Style">OS</h2>
       <ul class="flex justify-center text-gray-400 gap-6">
-        <li v-for="data in workstations" :key="data.id">
+        <li v-for="data in operatings" :key="data.id">
           <NuxtLink :to="data.to" target="_blank" :title="data.title" :class="link">
             <Icon :name="data.name" :class="icon" />
           </NuxtLink>
@@ -12,12 +12,12 @@
       </ul>
     </div>
   </div>
-  <!-- Operating System -->
+  <!-- Workstation -->
   <div data-aos="zoom-in" data-aos-duration="1000" class="col-span-4" :class="card">
     <div>
-      <h2 :class="h2Style">Operating System</h2>
+      <h2 :class="h2Style">Workstation</h2>
       <ul class="flex justify-center text-gray-400 gap-6">
-        <li v-for="data in operatings" :key="data.id">
+        <li v-for="data in workstations" :key="data.id">
           <NuxtLink :to="data.to" target="_blank" :title="data.title" :class="link">
             <Icon :name="data.name" :class="icon" />
           </NuxtLink>
@@ -38,12 +38,12 @@
       </ul>
     </div>
   </div>
-  <!-- Development tools -->
+  <!-- Package Manager -->
   <div data-aos="zoom-in" data-aos-duration="1000" class="backdrop-saturate-200 col-span-4" :class="card">
     <div>
-      <h2 :class="h2Style">Development tools</h2>
+      <h2 :class="h2Style">Package Manager</h2>
       <ul class="flex justify-center text-gray-400 gap-6">
-        <li v-for="data in developments" :key="data.id">
+        <li v-for="data in packages" :key="data.id">
           <NuxtLink :to="data.to" target="_blank" :title="data.title" :class="link">
             <Icon :name="data.name" :class="icon" />
           </NuxtLink>
@@ -51,12 +51,12 @@
       </ul>
     </div>
   </div>
-  <!-- Package Manager -->
+  <!-- Back End Development -->
   <div data-aos="zoom-in" data-aos-duration="1000" class="backdrop-saturate-200 col-span-4" :class="card">
     <div>
-      <h2 :class="h2Style">Package Manager</h2>
+      <h2 :class="h2Style">Back End Development</h2>
       <ul class="flex justify-center text-gray-400 gap-6">
-        <li v-for="data in packages" :key="data.id">
+        <li v-for="data in backends" :key="data.id">
           <NuxtLink :to="data.to" target="_blank" :title="data.title" :class="link">
             <Icon :name="data.name" :class="icon" />
           </NuxtLink>
@@ -77,12 +77,12 @@
       </ul>
     </div>
   </div>
-  <!-- Back End Development -->
+  <!-- Development tools -->
   <div data-aos="zoom-in" data-aos-duration="1000" class="backdrop-saturate-200 col-span-8" :class="card">
     <div>
-      <h2 :class="h2Style">Back End Development</h2>
-      <ul class="flex justify-center text-gray-400 gap-6">
-        <li v-for="data in backends" :key="data.id">
+      <h2 :class="h2Style">Development tools</h2>
+      <ul class="flex justify-center text-gray-400 gap-10">
+        <li v-for="data in developments" :key="data.id">
           <NuxtLink :to="data.to" target="_blank" :title="data.title" :class="link">
             <Icon :name="data.name" :class="icon" />
           </NuxtLink>
@@ -95,13 +95,13 @@
 <script setup lang="ts">
 import * as use from "~/types/uses";
 
-const workstations = use.workstations;
 const operatings = use.operatings;
+const workstations = use.workstations;
 const databases = use.databases;
-const developments = use.developments;
 const packages = use.packages;
-const frontends = use.frontends;
 const backends = use.backends;
+const frontends = use.frontends;
+const developments = use.developments;
 
 const card = "flex justify-center border-dashed border-2 border-gray-400 pt-4 pb-6 hover:border-yellow-500 dark:hover:border-gray-100 ease-in-out duration-300";
 const h2Style = "text-gray-400 text-md 2xl:text-lg font-semibold mb-3 2xl:mb-6 flex justify-center";

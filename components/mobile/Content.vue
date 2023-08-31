@@ -17,7 +17,7 @@
 
     <div class="grid grid-cols-10 md:grid-cols-12 gap-8">
       <!-- Workstation -->
-      <div class="col-span-5 md:col-span-4" :class="card">
+      <div class="col-span-10 md:col-span-4" :class="card">
         <div>
           <h2 :class="h2Style">Workstation</h2>
           <ul :class="useslist">
@@ -43,26 +43,13 @@
         </div>
       </div>
       <!-- Operating System -->
-      <div class="col-span-10 md:col-span-4" :class="card">
+      <div class="col-span-5 md:col-span-4" :class="card">
         <div>
-          <h2 :class="h2Style">Operating System</h2>
+          <h2 :class="h2Style">OS</h2>
           <ul :class="useslist">
             <li v-for="operating in operatings" :key="operating.id">
               <NuxtLink :to="operating.to" target="_blank" :title="operating.title" :class="useslink">
                 <Icon :name="operating.name" :class="usesicon" />
-              </NuxtLink>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <!-- Development tools -->
-      <div class="backdrop-saturate-200 col-span-10 md:col-span-6" :class="card">
-        <div>
-          <h2 :class="h2Style">Development tools</h2>
-          <ul :class="useslist">
-            <li v-for="development in developments" :key="development.id">
-              <NuxtLink :to="development.to" target="_blank" :title="development.title" :class="useslink">
-                <Icon :name="development.name" :class="usesicon" />
               </NuxtLink>
             </li>
           </ul>
@@ -102,6 +89,19 @@
             <li v-for="backend in backends" :key="backend.id">
               <NuxtLink :to="backend.to" target="_blank" :title="backend.title" :class="useslink">
                 <Icon :name="backend.name" :class="usesicon" />
+              </NuxtLink>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Development tools -->
+      <div class="backdrop-saturate-200 col-span-10 md:col-span-6" :class="card">
+        <div>
+          <h2 :class="h2Style">Development tools</h2>
+          <ul :class="useslist">
+            <li v-for="development in developments" :key="development.id">
+              <NuxtLink :to="development.to" target="_blank" :title="development.title" :class="useslink">
+                <Icon :name="development.name" :class="usesicon" />
               </NuxtLink>
             </li>
           </ul>
