@@ -1,7 +1,7 @@
 <template>
   <main class="bg-white dark:bg-gray-950 tracking-wide select-none relative">
     <div class="fixed top-0 left-0" :class="layout">
-      <number>4</number>
+      <AtomsNumber>4</AtomsNumber>
       <NuxtLink
         to="/projects"
         title="Swap to Projects"
@@ -9,17 +9,17 @@
       >
         <Icon name="line-md:chevron-small-double-left" class="w-4 h-4 lg:w-6 lg:h-6" />
       </NuxtLink>
-      <LinkBlog />
+      <AtomsLinkBlog />
     </div>
-    <LazyBaseAchievements />
+    <LazyOrganismAchievements />
     <div class="fixed top-0 right-0" :class="layout">
-      <line-l-s />
-      <ButtonColorMode class="w-full" />
-      <line-l-c />
+      <AtomsLineSide />
+      <AtomsButtonColor class="w-full" />
+      <AtomsLineCenter />
       <div to="" class="w-full flex justify-center cursor-not-allowed py-8 ease-in-out duration-300 text-slate-400 hover:text-red-400">
         <Icon name="line-md:grid-3" class="w-4 h-4 lg:w-6 lg:h-6" />
       </div>
-      <LinkFeed />
+      <AtomsLinkFeed />
     </div>
   </main>
 </template>

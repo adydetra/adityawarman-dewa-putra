@@ -9,11 +9,11 @@
             <span class="text-yellow-300 dark:text-yellow-200">Front End Developer</span>, website and mobile, enjoying life.
           </p>
           <p class="text-gray-400 xl:text-md 2xl:text-lg">~ I’m Adityawarman Dewa Putra. Live in Jakarta, Indonesia. 🇮🇩</p>
-          <SocialMedia />
+          <AtomsSocialMedia />
         </div>
       </div>
       <div class="col-span-3 flex justify-center items-center bg-white dark:bg-yellow-200 bg-[url('/images/pattern-hero-right.png')] bg-contain bg-center">
-        <HeroPict />
+        <AtomsHeroPict />
       </div>
     </section>
   </div>

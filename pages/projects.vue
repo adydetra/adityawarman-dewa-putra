@@ -1,21 +1,21 @@
 <template>
   <main class="bg-white dark:bg-gray-950 tracking-wide select-none relative">
     <div class="left-0" :class="layout">
-      <number>3</number>
+      <AtomsNumber>3</AtomsNumber>
       <NuxtLink to="/uses" title="Swap to Uses" :class="link">
         <Icon name="line-md:chevron-small-double-left" class="w-4 h-4 lg:w-6 lg:h-6" />
       </NuxtLink>
-      <LinkBlog/>
+      <AtomsLinkBlog/>
     </div>
-    <LazyBaseProject />
+    <LazyOrganismProject />
     <div class="right-0" :class="layout">
-      <line-l-s />
-      <ButtonColorMode class="w-full" />
-      <line-l-c />
+      <AtomsLineSide />
+      <AtomsButtonColor class="w-full" />
+      <AtomsLineCenter />
       <NuxtLink to="/achievements" title="Swap to Achievement" :class="link">
         <Icon name="line-md:chevron-small-double-right" class="animate-pulse w-4 h-4 lg:w-6 lg:h-6" />
       </NuxtLink>
-      <LinkFeed />
+      <AtomsLinkFeed />
     </div>
   </main>
 </template>

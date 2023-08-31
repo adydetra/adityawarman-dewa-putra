@@ -2,17 +2,17 @@
   <!-- Desktop -->
   <main class="hidden lg:flex bg-white dark:bg-gray-950 tracking-wide h-screen select-none" v-if="$device.isDesktop">
     <div :class="layout">
-      <number>1</number>
+      <AtomsNumber>1</AtomsNumber>
       <div class="w-full flex justify-center cursor-not-allowed py-8 ease-in-out duration-300 text-slate-400 hover:text-red-400">
         <Icon name="line-md:grid-3" class="w-4 h-4 lg:w-6 lg:h-6" />
       </div>
-      <LinkBlog />
+      <AtomsLinkBlog />
     </div>
-    <BaseHero />
+    <MoleculesHero />
     <div :class="layout">
-      <line-l-s />
-      <ButtonColorMode class="w-full" />
-      <line-l-c />
+      <AtomsLineSide />
+      <AtomsButtonColor class="w-full" />
+      <AtomsLineCenter />
       <NuxtLink
         to="/uses"
         title="Swap to Uses"
@@ -20,7 +20,7 @@
       >
         <Icon name="line-md:chevron-small-double-right" class="animate-pulse w-4 h-4 lg:w-6 lg:h-6" />
       </NuxtLink>
-      <LinkFeed />
+      <AtomsLinkFeed />
     </div>
   </main>
 
