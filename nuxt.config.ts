@@ -19,7 +19,6 @@ export default defineNuxtConfig({
     "@nuxtjs/device",
     "@nuxtjs/fontaine",
     "nuxt-icon",
-    "nuxt-delay-hydration",
     "nuxt-simple-robots",
     "@vite-pwa/nuxt",
   ],
@@ -49,10 +48,6 @@ export default defineNuxtConfig({
   colorMode: {
     classSuffix: "",
     preference: "dark",
-  },
-
-  delayHydration: {
-    mode: "init",
   },
 
   device: {
