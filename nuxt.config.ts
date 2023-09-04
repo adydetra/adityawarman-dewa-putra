@@ -19,7 +19,6 @@ export default defineNuxtConfig({
     "@nuxtjs/device",
     "@nuxtjs/fontaine",
     "nuxt-icon",
-    "nuxt-simple-robots",
     "@vite-pwa/nuxt",
   ],
 
