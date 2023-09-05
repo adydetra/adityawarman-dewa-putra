@@ -11,14 +11,16 @@
   >
     <div class="flex flex-col gap-4 2xl:gap-6 w-full px-6">
       <div class="flex items-center">
-        <span
-          class="text-xs 2xl:text-base font-light tracking-wider"
-          >{{ project.title }}</span
-        >
+        <span class="text-xs 2xl:text-base font-light tracking-wider">{{ project.title }}</span>
       </div>
       <div class="flex justify-between items-center w-full">
-        <span class="text-[11px] 2xl:text-xs font-extralight tracking-widest">TECH STACK<span class="ml-2.5 bg-gray-100 dark:bg-slate-900 rounded py-0.5 px-1.5">{{ project.tech }}</span></span>
-        <Icon :name="project.src" class="absolute right-6 w-6 h-6 2xl:w-7 2xl:h-7 rounded-full p-1.5 shadow-sm bg-gray-100 dark:bg-zinc-800 border border-gray-400/50 dark:border-zinc-700/50 ring-0" />
+        <span class="text-[11px] 2xl:text-xs font-extralight tracking-widest"
+          >TECH STACK<span class="ml-2.5 bg-gray-100 dark:bg-slate-900 rounded py-0.5 px-1.5">{{ project.tech }}</span></span
+        >
+        <Icon
+          :name="project.src"
+          class="absolute right-6 w-6 h-6 2xl:w-7 2xl:h-7 rounded-full p-1.5 shadow-sm bg-gray-100 dark:bg-zinc-800 border border-gray-400/50 dark:border-zinc-700/50 ring-0"
+        />
       </div>
     </div>
   </NuxtLink>
