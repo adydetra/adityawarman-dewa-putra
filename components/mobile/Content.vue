@@ -120,14 +120,22 @@
         :to="project.to"
         target="_blank"
         :title="project.title"
-        class="text-gray-500 dark:text-white col-span-10 md:col-span-3 cursor-pointer ease-in-out duration-300 hover:scale-105 hover:backdrop-saturate-200 flex justify-center border-dashed border-2 border-gray-400 dark:border-gray-800 pt-4 pb-6 hover:border-gray-100"
+        class="relative flex justify-center col-span-10 md:col-span-3 py-4 text-gray-500 dark:text-gray-400 cursor-pointer hover:backdrop-saturate-200 border-2 border-dashed border-gray-400 dark:border-gray-800 hover:border-yellow-500 dark:hover:border-gray-100"
         v-for="project in projects"
         :key="project.id"
       >
-        <div class="flex justify-center flex-col gap-6">
-          <NuxtImg :src="project.src" alt="" placeholder loading="lazy" class="w-12 h-full m-auto rounded-full bg-zinc-800 p-1.5 shadow-md border border-zinc-700/50 ring-0" />
-          <div class="flex justify-center items-center">
-            <Icon name="line-md:external-link" class="w-3 h-3" /><span class="ml-2 text-xs font-semibold">{{ project.title }}</span>
+        <div class="flex flex-col gap-4 2xl:gap-6 w-full px-3">
+          <div class="flex items-center">
+            <span class="text-xs 2xl:text-base font-light tracking-wider">{{ project.title }}</span>
+          </div>
+          <div class="flex justify-between items-center w-full">
+            <span class="text-[11px] 2xl:text-xs font-extralight tracking-widest"
+              >TECH STACK<span class="ml-2.5 bg-gray-100 dark:bg-slate-900 rounded py-0.5 px-1.5">{{ project.tech }}</span></span
+            >
+            <Icon
+              :name="project.src"
+              class="absolute right-3 w-6 h-6 rounded-full p-1.5 shadow-sm bg-gray-100 dark:bg-zinc-800 border border-gray-400/50 dark:border-zinc-700/50 ring-0"
+            />
           </div>
         </div>
       </NuxtLink>
