@@ -28,9 +28,7 @@ export const databases = [
 
 export const packages = [data(1, "simple-icons:npm", "NPM", "https://www.npmjs.com/"), data(2, "akar-icons:yarn-fill", "Yarn", "https://yarnpkg.com/")];
 
-export const backends = [data(1, "akar-icons:php-fill", "PHP", "https://www.php.net/"), data(2, "mdi:laravel", "Laravel", "https://laravel.com/")];
-
-export const frontends = [
+export const techstacks = [
   data(1, "simple-icons:tailwindcss", "Tailwind CSS", "https://tailwindcss.com/"),
   data(2, "ri:bootstrap-fill", "Bootstrap", "https://getbootstrap.com/"),
   data(3, "akar-icons:jquery-fill", "jQuery", "https://jquery.com/"),

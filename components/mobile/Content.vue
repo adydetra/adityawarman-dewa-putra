@@ -68,34 +68,21 @@
           </ul>
         </div>
       </div>
-      <!-- Front End Development -->
-      <div class="col-span-10 md:col-span-12" :class="card">
+      <!-- Tech Stack Development -->
+      <div class="backdrop-saturate-200 col-span-10 md:col-span-6" :class="card">
         <div>
-          <h2 :class="h2Style">Front End Development</h2>
+          <h2 :class="h2Style">Tech Stack</h2>
           <ul :class="useslist">
-            <li v-for="frontend in frontends" :key="frontend.id">
-              <NuxtLink :to="frontend.to" target="_blank" :title="frontend.title" :class="useslink">
-                <Icon :name="frontend.name" :class="usesicon" />
-              </NuxtLink>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <!-- Back End Development -->
-      <div class="backdrop-saturate-200 col-span-10 md:col-span-12" :class="card">
-        <div>
-          <h2 :class="h2Style">Back End Development</h2>
-          <ul :class="useslist">
-            <li v-for="backend in backends" :key="backend.id">
-              <NuxtLink :to="backend.to" target="_blank" :title="backend.title" :class="useslink">
-                <Icon :name="backend.name" :class="usesicon" />
+            <li v-for="techstack in techstacks" :key="techstack.id">
+              <NuxtLink :to="techstack.to" target="_blank" :title="techstack.title" :class="useslink">
+                <Icon :name="techstack.name" :class="usesicon" />
               </NuxtLink>
             </li>
           </ul>
         </div>
       </div>
       <!-- Development tools -->
-      <div class="backdrop-saturate-200 col-span-10 md:col-span-6" :class="card">
+      <div class="col-span-10 md:col-span-12" :class="card">
         <div>
           <h2 :class="h2Style">Development tools</h2>
           <ul :class="useslist">
@@ -190,8 +177,7 @@ const operatings = use.operatings;
 const databases = use.databases;
 const developments = use.developments;
 const packages = use.packages;
-const frontends = use.frontends;
-const backends = use.backends;
+const techstacks = use.techstacks;
 const projects = pro.projects;
 const achievements = ach.achievements;
 

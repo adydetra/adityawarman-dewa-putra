@@ -51,25 +51,12 @@
       </ul>
     </div>
   </div>
-  <!-- Back End Development -->
+  <!-- Tech Stack Development -->
   <div data-aos="zoom-in" data-aos-duration="1000" class="backdrop-saturate-200 col-span-4" :class="card">
     <div>
-      <h2 :class="h2">Back End Development</h2>
-      <ul class="flex justify-center text-gray-400 gap-6">
-        <li v-for="data in backends" :key="data.id">
-          <NuxtLink :to="data.to" target="_blank" :title="data.title" :class="link">
-            <Icon :name="data.name" :class="icon" />
-          </NuxtLink>
-        </li>
-      </ul>
-    </div>
-  </div>
-  <!-- Front End Development -->
-  <div data-aos="zoom-in" data-aos-duration="1000" class="col-span-8" :class="card">
-    <div>
-      <h2 :class="h2">Front End Development</h2>
+      <h2 :class="h2">Tech Stack</h2>
       <ul class="flex justify-center text-gray-400 gap-6 2xl:gap-8">
-        <li v-for="data in frontends" :key="data.id">
+        <li v-for="data in techstacks" :key="data.id">
           <NuxtLink :to="data.to" target="_blank" :title="data.title" :class="link">
             <Icon :name="data.name" :class="icon" />
           </NuxtLink>
@@ -78,7 +65,7 @@
     </div>
   </div>
   <!-- Development tools -->
-  <div data-aos="zoom-in" data-aos-duration="1000" class="backdrop-saturate-200 col-span-8" :class="card">
+  <div data-aos="zoom-in" data-aos-duration="1000" class="col-span-8" :class="card">
     <div>
       <h2 :class="h2">Development tools</h2>
       <ul class="flex justify-center text-gray-400 gap-10">
@@ -99,8 +86,7 @@ const operatings = use.operatings;
 const workstations = use.workstations;
 const databases = use.databases;
 const packages = use.packages;
-const backends = use.backends;
-const frontends = use.frontends;
+const techstacks = use.techstacks;
 const developments = use.developments;
 
 const card =
