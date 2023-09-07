@@ -15,7 +15,7 @@
       </div>
       <div class="flex justify-between items-center w-full">
         <span class="text-[11px] 2xl:text-xs font-extralight tracking-widest"
-          >TECH STACK<span class="ml-2.5 bg-gray-100 dark:bg-slate-900 rounded py-0.5 px-1.5">{{ project.tech }}</span></span
+          >TECH<span class="ml-2.5 bg-gray-100 dark:bg-slate-900 rounded py-0.5 px-1.5">{{ project.tech }}</span></span
         >
         <Icon
           :name="project.src"
