@@ -5,7 +5,7 @@
     :to="project.to"
     target="_blank"
     :title="project.title"
-    class="relative flex justify-center col-span-3 pt-4 pb-6 2xl:pb-7 text-gray-500 dark:text-gray-400 cursor-pointer hover:backdrop-saturate-200 border-2 border-dashed border-gray-400 dark:border-gray-800 hover:border-yellow-500 dark:hover:border-gray-100"
+    class="relative flex justify-center col-span-8 md:col-span-4 lg:col-span-3 pt-4 pb-6 2xl:pb-7 text-gray-500 dark:text-gray-400 cursor-pointer hover:backdrop-saturate-200 border-2 border-dashed border-gray-400 dark:border-gray-800 hover:border-yellow-500 dark:hover:border-gray-100"
     v-for="project in projects"
     :key="project.id"
   >
