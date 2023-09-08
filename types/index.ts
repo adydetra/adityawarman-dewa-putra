@@ -12,6 +12,6 @@ export const social = [
   data(2, "line-md:mastodon", "Mastodon", "https://mastodon.social/@adityawarman"),
   data(3, "line-md:github-loop", "Github", "https://github.com/devdewa"),
   data(4, "line-md:discord", "Discord", "https://discord.gg/9z6APrYMAq"),
-  data(5, "line-md:email", "Email", "mailto:devdewa123.sp@gmail.com"),
-  data(6, "line-md:instagram", "Instagram", "https://www.instagram.com/adydetra"),
+  data(5, "line-md:instagram", "Instagram", "https://www.instagram.com/adydetra"),
+  data(6, "line-md:linkedin", "Linkedin", "https://linkedin.com/in/adityawarman-dewa-putra"),
 ];
