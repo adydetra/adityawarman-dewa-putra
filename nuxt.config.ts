@@ -19,6 +19,7 @@ export default defineNuxtConfig({
     "@nuxtjs/device",
     "@nuxtjs/fontaine",
     "nuxt-icon",
+    "nuxt-delay-hydration",
     "@vite-pwa/nuxt",
   ],
 
@@ -55,6 +56,10 @@ export default defineNuxtConfig({
 
   content: {
     documentDriven: true,
+  },
+
+  delayHydration: {
+    mode: "mount",
   },
 
   pwa: {
