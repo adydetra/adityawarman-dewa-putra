@@ -1,6 +1,6 @@
 <template>
   <div class="flex items-center absolute top-4 left-4 text-gray-500 dark:text-gray-300 text-xs gap-2 font-semibold pl-0 p-2">
-    <ul class="flex items-center">
+    <ul class="flex items-center space-x-2">
       <slot />
       <li><NuxtLink to="/blog" title="Blog">Blog</NuxtLink></li>
       <li><Icon name="svg-spinners:pulse" class="w-5 h-5 md:w-6 md:h-6" /></li>
