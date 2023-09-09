@@ -8,7 +8,7 @@
       />
       <AtomsLinkList>
         <li>
-          <NuxtLink to="/"><Icon name="line-md:home-simple" class="w-4 h-4 md:w-6 md:h-6 -mt-0.5 text-gray-300 dark:text-gray-700" /></NuxtLink>
+          <NuxtLink to="/" title="Home"><Icon name="line-md:home-simple" class="w-4 h-4 md:w-6 md:h-6 -mt-0.5 text-gray-300 dark:text-gray-700" /></NuxtLink>
         </li>
         <li><Icon name="line-md:chevron-small-left" class="w-5 h-5 md:w-6 md:h-6 text-gray-300 dark:text-gray-700" /></li>
       </AtomsLinkList>
