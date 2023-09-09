@@ -8,7 +8,7 @@
         <div class="mt-6 text-gray-400 text-sm leading-loose">
           <div class="space-y-4">
             <p>~ Hello, I am Adityawarman Dewa Putra. Front End Developer focused on web or mobile.</p>
-            <p>Study at <NuxtLink to="/projects" title="Project" :class="link">Terbuka University.</NuxtLink></p>
+            <p>Study at <NuxtLink to="https://www.ut.ac.id/" title="Terbuka University" :class="link">Terbuka University.</NuxtLink></p>
             <p>
               Dreaming up ideas and making them come true is where my passion lies. You can find my
               <NuxtLink to="/projects" title="Project" :class="link">full project list here</NuxtLink>
