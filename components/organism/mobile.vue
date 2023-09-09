@@ -1,7 +1,7 @@
 <template>
   <div class="bg-[url('/images/pattern-hero-left.png')] dark:bg-[url('/images/pattern-hero-left-dark.png')] bg-contain bg-center mx-auto relative pt-12">
     <AtomsButtonColor class="fixed z-10 flex items-center top-4 right-4 rounded-md bg-gray-200 ring-1 ring-gray-400 dark:ring-0 dark:bg-white/10 p-2 dark:lg:bg-transparent" />
-    <section class="flex flex-wrap justify-center items-center w-full h-full py-12">
+    <section class="flex flex-wrap justify-center items-center w-full h-full pt-12">
       <div class="py-8 px-4 w-full">
         <AtomsLinkList />
         <p class="text-black dark:text-gray-300 text-2xl font-bold">A.<span class="text-4xl">Dewa</span> Putra</p>
