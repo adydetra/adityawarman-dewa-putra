@@ -20,7 +20,7 @@
           </div>
         </div>
       </div>
-      <AtomsFooter v-if="$device.isMobileOrTablet" />
+      <AtomsFooter v-if="$device.isMobileOrTablet" class="!text-center" />
     </section>
   </main>
 </template>

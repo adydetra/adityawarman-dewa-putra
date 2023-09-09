@@ -25,8 +25,8 @@
   </main>
 
   <!-- Mobile -->
-  <main class="lg:hidden bg-white dark:bg-gray-950 tracking-wide h-screen relative overflow-x-hidden" v-else>
-    <MobileView />
+  <main class="lg:hidden bg-white dark:bg-gray-950 tracking-wide h-screen relative overflow-x-hidden px-3" v-else>
+    <OrganismMobile />
   </main>
 </template>
 
