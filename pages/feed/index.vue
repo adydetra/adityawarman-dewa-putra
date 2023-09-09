@@ -15,6 +15,7 @@ const { data: posts } = await useAsyncData("posts", () => queryContent("/feed").
         <section class="flex lg:w-[55%] 2xl:w-[45%] flex-col mx-auto space-y-5 mt-4 lg:mt-8">
           <AtomsCardFeed :posts="posts" />
         </section>
+        <AtomsFooter v-if="$device.isMobileOrTablet"/>
       </div>
     </section>
   </main>

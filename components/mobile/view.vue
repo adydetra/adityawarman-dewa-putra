@@ -23,6 +23,7 @@
       </div>
     </section>
     <LazyMobileContent />
+    <AtomsFooter v-if="$device.isMobileOrTablet"/>
   </div>
 </template>
 

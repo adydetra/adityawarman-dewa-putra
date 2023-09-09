@@ -21,5 +21,6 @@
     <div class="grid grid-cols-8 gap-2 space-y-4 lg:space-y-0 lg:gap-12 2xl:gap-20">
       <AtomsCardUses />
     </div>
+    <AtomsFooter v-if="$device.isMobileOrTablet"/>
   </div>
 </template>
