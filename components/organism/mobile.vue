@@ -27,7 +27,7 @@
                 </NuxtLink>
               </li>
             </ul>
-            <p class="mt-8">If you enjoy my works, consider sponsoring me on <NuxtLink to="/projects" title="Project" :class="link">Github Sponsor.</NuxtLink></p>
+            <p class="mt-8">If you enjoy my works, consider sponsoring me on <NuxtLink to="https://github.com/sponsors/devdewa" title="Github Sponsor" :class="link">Github Sponsor.</NuxtLink></p>
           </div>
           <AtomsFooter v-if="$device.isMobileOrTablet" />
         </div>
