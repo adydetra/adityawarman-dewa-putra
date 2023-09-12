@@ -19,9 +19,9 @@ export default defineNuxtConfig({
     "@nuxtjs/google-fonts",
     "@nuxtjs/color-mode",
     "@nuxtjs/device",
-    // "@nuxtjs/fontaine",
+    "@nuxtjs/fontaine",
     "nuxt-icon",
-    // "nuxt-delay-hydration",
+    "nuxt-delay-hydration",
     "@vite-pwa/nuxt",
   ],
 
@@ -60,9 +60,9 @@ export default defineNuxtConfig({
     documentDriven: true,
   },
 
-  // delayHydration: {
-  //   mode: "mount",
-  // },
+  delayHydration: {
+    mode: "mount",
+  },
 
   pwa: {
     registerType: "autoUpdate",
