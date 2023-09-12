@@ -1,6 +1,6 @@
 <template>
   <!-- Operating System -->
-  <div data-aos="zoom-in" data-aos-duration="1000" class="col-span-8 lg:col-span-2" :class="card">
+  <div class="col-span-8 lg:col-span-2" :class="card">
     <div>
       <h2 :class="h2">OS</h2>
       <ul :class="list" class="gap-6">
@@ -13,7 +13,7 @@
     </div>
   </div>
   <!-- Workstation -->
-  <div data-aos="zoom-in" data-aos-duration="1000" class="col-span-8 lg:col-span-4" :class="card">
+  <div class="col-span-8 lg:col-span-4" :class="card">
     <div>
       <h2 :class="h2">Workstation</h2>
       <ul :class="list" class="gap-6">
@@ -26,7 +26,7 @@
     </div>
   </div>
   <!-- Database -->
-  <div data-aos="zoom-in" data-aos-duration="1000" class="col-span-8 lg:col-span-2" :class="card">
+  <div class="col-span-8 lg:col-span-2" :class="card">
     <div>
       <h2 :class="h2">Database</h2>
       <ul :class="list" class="gap-6">
@@ -39,7 +39,7 @@
     </div>
   </div>
   <!-- Package Manager -->
-  <div data-aos="zoom-in" data-aos-duration="1000" class="lg:backdrop-saturate-200 col-span-8 lg:col-span-4" :class="card">
+  <div class="lg:backdrop-saturate-200 col-span-8 lg:col-span-4" :class="card">
     <div>
       <h2 :class="h2">Package Manager</h2>
       <ul :class="list" class="gap-6">
@@ -52,7 +52,7 @@
     </div>
   </div>
   <!-- Tech Stack Development -->
-  <div data-aos="zoom-in" data-aos-duration="1000" class="lg:backdrop-saturate-200 col-span-8 lg:col-span-4" :class="card">
+  <div class="lg:backdrop-saturate-200 col-span-8 lg:col-span-4" :class="card">
     <div>
       <h2 :class="h2">Tech Stack</h2>
       <ul :class="list" class="gap-6 2xl:gap-8">
@@ -65,7 +65,7 @@
     </div>
   </div>
   <!-- Development tools -->
-  <div data-aos="zoom-in" data-aos-duration="1000" class="col-span-8" :class="card">
+  <div class="col-span-8" :class="card">
     <div>
       <h2 :class="h2">Development tools</h2>
       <ul :class="list" class="gap-6 lg:gap-10">

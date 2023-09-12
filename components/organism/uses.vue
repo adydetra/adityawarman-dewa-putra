@@ -20,7 +20,7 @@
         <li><Icon name="line-md:chevron-small-left" class="w-5 h-5 md:w-6 md:h-6 text-gray-300 dark:text-gray-700" /></li>
       </AtomsLinkList>
     </div>
-    <h1 data-aos="fade-down" data-aos-duration="1000" class="text-gray-500 dark:text-gray-300 text-center text-4xl lg:text-3xl 2xl:text-4xl font-bold mb-16">
+    <h1 class="text-gray-500 dark:text-gray-300 text-center text-4xl lg:text-3xl 2xl:text-4xl font-bold mb-16">
       <div class="leading-relaxed" v-if="$device.isDesktop">Software I use, gadgets I love, and<br />the tech stack that I use.</div>
       <div v-else>Uses</div>
     </h1>

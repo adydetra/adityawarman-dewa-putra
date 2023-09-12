@@ -1,11 +1,9 @@
 <template>
   <NuxtLink
-    :data-aos="achievement.aos"
-    data-aos-duration="1000"
     :to="achievement.to"
     target="_blank"
     :title="achievement.title"
-    class="flex justify-center my-6 lg:pt-4 lg:pb-6 lg:bg-gray-200/30 lg:dark:bg-slate-900/40 lg:shadow-xl shadow-blue-900/5 hover:bg-yellow-200/20 col-span-8 lg:col-span-4 cursor-pointer ease-in-out duration-300 hover:scale-105 rounded-2xl"
+    class="relative flex justify-center col-span-8 lg:col-span-4 my-6 lg:pt-4 lg:pb-6 lg:bg-gray-200/30 lg:dark:bg-slate-900/40 lg:shadow-sm shadow-blue-900/5 hover:bg-yellow-200/20 dark:hover:bg-slate-900 cursor-pointer ease-in-out duration-300 rounded-2xl"
     v-for="achievement in achievements"
     :key="achievement.id"
   >
@@ -18,7 +16,13 @@
         Result: <span class="ml-2 text-gray-400 leading-relaxed">{{ achievement.result }}</span>
       </p>
       <div class="flex items-center text-gray-500 dark:text-white mt-4">
-        <NuxtImg :src="achievement.src" alt="" placeholder loading="lazy" class="w-10 md:w-12 w-10 md:h-12 p-1.5 rounded-full bg-zinc-800/5 dark:bg-zinc-800 shadow-sm md:border border-zinc-700/50 ring-0" />
+        <NuxtImg
+          :src="achievement.src"
+          alt=""
+          placeholder
+          loading="lazy"
+          class="w-10 md:w-12 w-10 md:h-12 p-1.5 rounded-full bg-zinc-800/5 dark:bg-zinc-800 shadow-sm md:border border-zinc-700/50 ring-0"
+        />
         <Icon name="line-md:text-box" class="w-3 h-3 lg:w-4 2xl:w-5 lg:h-4 2xl:h-5 ml-3" />
         <span class="ml-2 text-xs lg:text-md 2xl:text-base font-semibold">{{ achievement.title }}</span>
       </div>

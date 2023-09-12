@@ -1,7 +1,5 @@
 <template>
   <NuxtLink
-    data-aos="zoom-in"
-    data-aos-duration="1000"
     :to="project.to"
     target="_blank"
     :title="project.title"

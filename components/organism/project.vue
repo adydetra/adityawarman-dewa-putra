@@ -20,7 +20,7 @@
         <li><Icon name="line-md:chevron-small-left" class="w-5 h-5 md:w-6 md:h-6 text-gray-300 dark:text-gray-700" /></li>
       </AtomsLinkList>
     </div>
-    <h1 data-aos="fade-down" data-aos-duration="1000" class="text-gray-500 dark:text-gray-300 text-center text-4xl lg:text-3xl 2xl:text-4xl font-bold mb-12 md:mb-16">
+    <h1 class="text-gray-500 dark:text-gray-300 text-center text-4xl lg:text-3xl 2xl:text-4xl font-bold mb-12 md:mb-16">
       <div class="leading-relaxed" v-if="$device.isDesktop">Things I’ve made trying to put<br />my dent in the universe.</div>
       <div v-else>Projects</div>
     </h1>

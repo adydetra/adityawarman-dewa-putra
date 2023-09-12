@@ -25,7 +25,6 @@
     "@nuxt/image": "^1.0.0-rc.1",
     "@nuxtjs/color-mode": "^3.3.0",
     "@nuxtjs/device": "^3.1.0",
-    "@nuxtjs/google-fonts": "^3.0.1",
-    "aos": "^2.3.4"
+    "@nuxtjs/google-fonts": "^3.0.1"
   }
 }
