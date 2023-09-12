@@ -11,7 +11,7 @@ export default defineNuxtConfig({
 
   devtools: { enabled: false },
 
-  ssr: false,
+  ssr: true,
 
   modules: [
     "@nuxt/content",
