@@ -19,7 +19,6 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@nuxtjs/google-fonts",
     "@nuxtjs/color-mode",
-    "@nuxtjs/device",
     "@nuxtjs/fontaine",
     "nuxt-icon",
     "nuxt-delay-hydration",
@@ -47,10 +46,6 @@ export default defineNuxtConfig({
   colorMode: {
     classSuffix: "",
     preference: "dark",
-  },
-
-  device: {
-    refreshOnResize: true,
   },
 
   content: {

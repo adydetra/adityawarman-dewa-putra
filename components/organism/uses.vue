@@ -9,7 +9,7 @@
   <div
     class="mx-auto min-h-screen w-screen flex flex-col justify-center px-4 lg:px-40 2xl:px-24 pb-14 2xl:pb-16 py-14 2xl:py-0 container bg-[url('/images/pattern-hero-left.png')] dark:bg-[url('/images/pattern-hero-left-dark.png')] bg-contain bg-center"
   >
-    <div class="mb-16" v-if="$device.isMobileOrTablet">
+    <div class="mb-16 lg:hidden">
       <AtomsButtonColor
         class="fixed z-10 flex items-center top-4 right-4 rounded-md bg-gray-200 ring-1 ring-gray-400 dark:ring-0 dark:bg-white/10 p-2 dark:lg:bg-transparent"
       />
@@ -21,14 +21,14 @@
       </AtomsLinkList>
     </div>
     <h1 class="text-gray-500 dark:text-gray-300 text-center text-4xl lg:text-3xl 2xl:text-4xl font-bold mb-16">
-      <div class="leading-relaxed" v-if="$device.isDesktop">Software I use, gadgets I love, and<br />the tech stack that I use.</div>
-      <div v-else>Uses</div>
+      <div class="leading-relaxed block hidden lg:block">Software I use, gadgets I love, and<br />the tech stack that I use.</div>
+      <div class="lg:hidden">Uses</div>
     </h1>
 
     <div class="grid grid-cols-8 gap-2 space-y-4 lg:space-y-0 lg:gap-12 2xl:gap-20">
       <AtomsCardUses />
     </div>
-    <AtomsFooter v-if="$device.isMobileOrTablet" class="!text-center" />
+    <AtomsFooter class="!text-center lg:hidden" />
   </div>
   <div class="right-0" :class="layout">
     <AtomsLineSide />

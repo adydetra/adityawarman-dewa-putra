@@ -32,7 +32,7 @@
               <NuxtLink to="https://github.com/sponsors/devdewa" title="Github Sponsor" :class="link">Github Sponsor.</NuxtLink>
             </p>
           </div>
-          <AtomsFooter v-if="$device.isMobileOrTablet" />
+          <AtomsFooter class="lg:hidden"/>
         </div>
       </div>
     </section>

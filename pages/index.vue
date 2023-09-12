@@ -1,6 +1,6 @@
 <template>
   <!-- Desktop -->
-  <main class="hidden lg:flex bg-white dark:bg-gray-950 tracking-wide h-screen select-none" v-if="$device.isDesktop">
+  <main class="hidden lg:flex bg-white dark:bg-gray-950 tracking-wide h-screen select-none">
     <div :class="layout">
       <AtomsNumber>1</AtomsNumber>
       <div class="w-full flex justify-center cursor-not-allowed py-8 ease-in-out duration-300 text-slate-400 hover:text-red-400">
@@ -25,7 +25,7 @@
   </main>
 
   <!-- Mobile -->
-  <main class="lg:hidden bg-white dark:bg-gray-950 tracking-wide h-screen relative overflow-x-hidden px-3" v-else>
+  <main class="lg:hidden bg-white dark:bg-gray-950 tracking-wide h-screen relative overflow-x-hidden px-3">
     <OrganismMobile />
   </main>
 </template>
