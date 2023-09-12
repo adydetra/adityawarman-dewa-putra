@@ -1,6 +1,5 @@
 <script setup>
 definePageMeta({ title: "Feed" });
-const { data: posts } = await useAsyncData("posts", () => queryContent("/feed").find());
 </script>
 
 <template>
