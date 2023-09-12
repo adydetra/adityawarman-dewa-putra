@@ -1,11 +1,10 @@
-function data(id: number, aos: string, title: string, thumbnail: string, src: string, icon: string, to: string, result: string, deskripsi: string) {
+function data(id: number, title: string, thumbnail: string, src: string, icon: string, to: string, result: string, deskripsi: string) {
   return { id, aos, title, thumbnail, src, icon, to, result, deskripsi };
 }
 
 export const achievements = [
   data(
     1,
-    "flip-left",
     "Hackathon Maritime 2021",
     "icon/hackathon.svg",
     "icon/maritime-explore.svg",
@@ -16,7 +15,6 @@ export const achievements = [
   ),
   data(
     2,
-    "flip-right",
     "KKSI 2021",
     "icon/kksi.svg",
     "icon/go-prakerin.svg",
@@ -27,7 +25,6 @@ export const achievements = [
   ),
   data(
     3,
-    "flip-left",
     "Coding di Skilvul Playground",
     "icon/skilvul.svg",
     "icon/html.svg",
@@ -38,7 +35,6 @@ export const achievements = [
   ),
   data(
     4,
-    "flip-right",
     "Bootstrap 5 - Website Landing Page",
     "icon/skilvul.svg",
     "icon/bootstrap.svg",
