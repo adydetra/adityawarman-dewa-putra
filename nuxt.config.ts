@@ -14,6 +14,7 @@ export default defineNuxtConfig({
   ssr: true,
 
   modules: [
+    "@nuxtjs/tailwindcss",
     "@nuxt/content",
     "@nuxt/image",
     "@nuxtjs/google-fonts",
@@ -25,17 +26,13 @@ export default defineNuxtConfig({
     "@vite-pwa/nuxt",
   ],
 
-  css: ["~/assets/css/main.css"],
-  postcss: {
-    plugins: {
-      tailwindcss: {},
-      autoprefixer: {},
-    },
-  },
-
   image: {
     quality: 1,
     format: ["webp"],
+  },
+
+  tailwindcss: {
+    viewer: false,
   },
 
   googleFonts: {
