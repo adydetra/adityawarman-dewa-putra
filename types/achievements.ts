@@ -1,5 +1,5 @@
 function data(id: number, title: string, thumbnail: string, src: string, icon: string, to: string, result: string, deskripsi: string) {
-  return { id, aos, title, thumbnail, src, icon, to, result, deskripsi };
+  return { id, title, thumbnail, src, icon, to, result, deskripsi };
 }
 
 export const achievements = [
