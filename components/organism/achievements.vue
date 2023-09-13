@@ -11,7 +11,7 @@
     <AtomsLinkBlog />
   </div>
   <div
-    class="mx-auto min-h-screen w-screen px-10 lg:px-40 2xl:px-24 py-14 2xl:py-16 container bg-[url('/images/pattern-hero-left.png')] dark:bg-[url('/images/pattern-hero-left-dark.png')] bg-contain bg-center"
+    class="mx-auto min-h-screen w-screen px-10 lg:px-40 2xl:px-24 py-14 2xl:py-16 container lg:bg-[url('/images/pattern-hero-left.png')] lg:dark:bg-[url('/images/pattern-hero-left-dark.png')] bg-contain bg-center"
   >
     <div class="mb-16 lg:hidden">
       <AtomsButtonColor
