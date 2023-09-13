@@ -2,7 +2,7 @@
   <div class="left-0" :class="layout">
     <AtomsNumber>3</AtomsNumber>
     <NuxtLink to="/uses" title="Swap to Uses" :class="link">
-      <Icon name="line-md:chevron-small-double-left" class="w-4 h-4 lg:w-6 lg:h-6" />
+      <Icon name="ci:chevron-left-duo" class="w-4 h-4 lg:w-6 lg:h-6" />
     </NuxtLink>
     <AtomsLinkBlog />
   </div>
@@ -30,7 +30,7 @@
     <AtomsButtonColor class="w-full" />
     <AtomsLineCenter />
     <NuxtLink to="/achievements" title="Swap to Achievement" :class="link">
-      <Icon name="line-md:chevron-small-double-right" class="animate-pulse w-4 h-4 lg:w-6 lg:h-6" />
+      <Icon name="ci:chevron-right-duo" class="animate-pulse w-4 h-4 lg:w-6 lg:h-6" />
     </NuxtLink>
     <AtomsLinkFeed />
   </div>

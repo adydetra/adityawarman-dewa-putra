@@ -2,7 +2,7 @@
   <div class="left-0" :class="layout">
     <AtomsNumber>2</AtomsNumber>
     <NuxtLink to="/" title="Swap to Home" :class="link">
-      <Icon name="line-md:chevron-small-double-left" class="animate-pulse w-4 h-4 lg:w-6 lg:h-6" />
+      <Icon name="ci:chevron-left-duo" class="animate-pulse w-4 h-4 lg:w-6 lg:h-6" />
     </NuxtLink>
     <AtomsLinkBlog />
   </div>
@@ -30,7 +30,7 @@
     <AtomsButtonColor class="w-full" />
     <AtomsLineCenter />
     <NuxtLink to="/projects" title="Swap to Projects" :class="link">
-      <Icon name="line-md:chevron-small-double-right" class="animate-pulse w-4 h-4 lg:w-6 lg:h-6" />
+      <Icon name="ci:chevron-right-duo" class="animate-pulse w-4 h-4 lg:w-6 lg:h-6" />
     </NuxtLink>
     <AtomsLinkFeed />
   </div>

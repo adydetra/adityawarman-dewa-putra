@@ -6,7 +6,7 @@
       title="Swap to Projects"
       class="w-full flex justify-center cursor-pointer py-8 ease-in-out duration-300 text-slate-400 hover:text-yellow-400 dark:hover:text-yellow-200"
     >
-      <Icon name="line-md:chevron-small-double-left" class="w-4 h-4 lg:w-6 lg:h-6" />
+      <Icon name="ci:chevron-left-duo" class="w-4 h-4 lg:w-6 lg:h-6" />
     </NuxtLink>
     <AtomsLinkBlog />
   </div>
@@ -34,7 +34,7 @@
     <AtomsButtonColor class="w-full" />
     <AtomsLineCenter />
     <div to="" class="w-full flex justify-center cursor-not-allowed py-8 ease-in-out duration-300 text-slate-400 hover:text-red-400">
-      <Icon name="line-md:grid-3" class="w-4 h-4 lg:w-6 lg:h-6" />
+      <Icon name="mingcute:dot-grid-line" class="w-4 h-4 lg:w-6 lg:h-6" />
     </div>
     <AtomsLinkFeed />
   </div>
