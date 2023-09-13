@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center absolute top-4 left-4 text-gray-400 dark:text-gray-500 text-xs gap-2 font-semibold pl-0 p-2">
+  <div class="flex items-center absolute top-4 left-7 text-gray-400 dark:text-gray-500 text-xs gap-2 font-semibold pl-0 p-2">
     <ul class="flex items-center space-x-7">
       <li>
         <NuxtLink to="/" title="Home"><Icon name="majesticons:home-simple-line" class="w-4 h-4" /></NuxtLink>

@@ -25,7 +25,7 @@
   </main>
 
   <!-- Mobile -->
-  <main class="lg:hidden dark:bg-gray-950 tracking-wide h-screen relative px-3">
+  <main class="lg:hidden dark:bg-gray-950 tracking-wide h-screen relative overflow-x-hidden px-3">
     <OrganismMobile />
   </main>
 </template>
