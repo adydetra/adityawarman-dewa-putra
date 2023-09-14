@@ -15,7 +15,7 @@ const links = ref([
   { to: "/", title: "Home", icon: "majesticons:home-simple-line" },
   { to: "/uses", title: "Uses", icon: "majesticons:heart-line" },
   { to: "/work", title: "Work", icon: "majesticons:cpu-line" },
-  { to: "/blog", title: "Blog", icon: "majesticons:receipt-text-line" },
+  { to: "/demo", title: "Demo", icon: "majesticons:receipt-text-line" },
   { to: "/feed", title: "Feed", icon: "majesticons:user-box-line" },
 ]);
 </script>
