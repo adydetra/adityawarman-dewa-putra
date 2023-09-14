@@ -12,10 +12,10 @@
 
 <script setup lang="ts">
 const links = ref([
-  { to: "/", title: "Home", icon: "majesticons:home-simple-line" },
+  { to: "/", title: "Home", icon: "icon-park-outline:home-two" },
   { to: "/uses", title: "Uses", icon: "majesticons:heart-line" },
   { to: "/work", title: "Work", icon: "majesticons:cpu-line" },
-  { to: "/demo", title: "Demo", icon: "majesticons:receipt-text-line" },
+  { to: "/demo", title: "Demo", icon: "tdesign:play-demo" },
   { to: "/feed", title: "Feed", icon: "majesticons:user-box-line" },
 ]);
 </script>
