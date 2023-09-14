@@ -11,27 +11,26 @@ export default defineNuxtConfig({
 
   devtools: { enabled: false },
 
-  ssr: true,
-
   modules: [
     "@nuxtjs/tailwindcss",
-    "@nuxt/content",
-    "@nuxt/image",
     "@nuxtjs/google-fonts",
+    "@nuxt/image",
     "@nuxtjs/color-mode",
-    "@nuxtjs/fontaine",
     "nuxt-icon",
     "nuxt-delay-hydration",
-    "@vite-pwa/nuxt",
   ],
 
   image: {
-    quality: 1,
+    quality: 30,
     format: ["webp"],
   },
 
   tailwindcss: {
     viewer: false,
+  },
+
+  delayHydration: {
+    mode: "mount",
   },
 
   googleFonts: {
@@ -46,68 +45,5 @@ export default defineNuxtConfig({
   colorMode: {
     classSuffix: "",
     preference: "dark",
-  },
-
-  content: {
-    documentDriven: true,
-  },
-
-  delayHydration: {
-    mode: "mount",
-  },
-
-  pwa: {
-    registerType: "autoUpdate",
-    manifest: {
-      name: "Adityawarman Dewa Putra",
-      short_name: "Adityawarman Dewa Putra",
-      theme_color: "#000",
-      background_color: "#000",
-      icons: [
-        {
-          src: "pwa/icon_48x48.png",
-          sizes: "48x48",
-          type: "image/png",
-        },
-        {
-          src: "pwa/icon_64x64.png",
-          sizes: "64x64",
-          type: "image/png",
-        },
-        {
-          src: "pwa/icon_72x72.png",
-          sizes: "72x72",
-          type: "image/png",
-        },
-        {
-          src: "pwa/icon_96x96.png",
-          sizes: "96x96",
-          type: "image/png",
-        },
-        {
-          src: "pwa/icon_144x144.png",
-          sizes: "144x144",
-          type: "image/png",
-        },
-        {
-          src: "pwa/icon_192x192.png",
-          sizes: "192x192",
-          type: "image/png",
-        },
-        {
-          src: "pwa/icon_512x512.png",
-          sizes: "512x512",
-          type: "image/png",
-        },
-      ],
-    },
-    workbox: {
-      navigateFallback: "/",
-      globPatterns: ["*"],
-    },
-    devOptions: {
-      enabled: true,
-      type: "module",
-    },
   },
 });
