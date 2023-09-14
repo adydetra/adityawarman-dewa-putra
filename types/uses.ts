@@ -26,7 +26,11 @@ export const databases = [
   data(2, "akar-icons:postgresql-fill", "PostgreSQL", "https://www.postgresql.org/"),
 ];
 
-export const packages = [data(1, "simple-icons:npm", "NPM", "https://www.npmjs.com/"), data(2, "akar-icons:yarn-fill", "Yarn", "https://yarnpkg.com/")];
+export const packages = [
+  data(1, "simple-icons:npm", "NPM", "https://www.npmjs.com/"),
+  data(2, "akar-icons:yarn-fill", "Yarn", "https://yarnpkg.com/"),
+  data(3, "simple-icons:bun", "Bun", "https://bun.sh/"),
+];
 
 export const techstacks = [
   data(1, "simple-icons:tailwindcss", "Tailwind CSS", "https://tailwindcss.com/"),
@@ -45,6 +49,5 @@ export const developments = [
   data(4, "simple-icons:alacritty", "Alacritty", "https://alacritty.org/"),
   data(5, "bi:git", "Git", "https://git-scm.com/"),
   data(6, "simple-icons:postman", "Postman", "https://www.postman.com/"),
-  data(7, "simple-icons:xampp", "XAMPP", "https://www.apachefriends.org/download.html"),
-  data(8, "simple-icons:firefoxbrowser", "Firefox", "https://www.mozilla.org/id/firefox/new/"),
+  data(7, "simple-icons:firefoxbrowser", "Firefox Developer Edition", "https://www.mozilla.org/id/firefox/new/"),
 ];

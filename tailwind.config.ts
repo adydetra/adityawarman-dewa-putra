@@ -1,21 +1,15 @@
-import type { Config } from 'tailwindcss'
-import defaultTheme from 'tailwindcss/defaultTheme'
+import type { Config } from "tailwindcss";
+import defaultTheme from "tailwindcss/defaultTheme";
 
 export default <Partial<Config>>{
-  darkMode: 'class',
-  content: [
-    "./components/**/*.{vue,js}",
-    "./layouts/**/*.vue",
-    "./pages/**/*.vue",
-    "./nuxt.config.{js,ts}",
-    "./app.vue"
-  ],
+  darkMode: "class",
+  content: ["./components/**/*.{vue,js}", "./layouts/**/*.vue", "./pages/**/*.vue", "./nuxt.config.{js,ts}", "./app.vue"],
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Poppins", ...defaultTheme.fontFamily.sans]
+        sans: ["Poppins", ...defaultTheme.fontFamily.sans],
       },
     },
   },
-  plugins: [],
-}
+  plugins: [require("@tailwindcss/typography")],
+};

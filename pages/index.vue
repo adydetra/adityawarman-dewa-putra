@@ -1,35 +1,6 @@
 <template>
-  <!-- Desktop -->
-  <main class="hidden lg:flex dark:bg-gray-950 tracking-wide h-screen select-none">
-    <div :class="layout">
-      <AtomsNumber>1</AtomsNumber>
-      <div class="w-full flex justify-center cursor-not-allowed py-8 ease-in-out duration-300 text-slate-400 hover:text-red-400">
-        <Icon name="mingcute:dot-grid-line" class="w-4 h-4 lg:w-6 lg:h-6" />
-      </div>
-      <AtomsLinkBlog />
-    </div>
+  <NuxtLayout class="hidden lg:flex">
     <MoleculesHero />
-    <div :class="layout">
-      <AtomsLineSide />
-      <AtomsButtonColor class="w-full" />
-      <AtomsLineCenter />
-      <NuxtLink
-        to="/uses"
-        title="Swap to Uses"
-        class="w-full flex justify-center cursor-pointer py-8 ease-in-out duration-300 text-slate-400 hover:text-yellow-400 dark:hover:text-yellow-200"
-      >
-        <Icon name="ci:chevron-right-duo" class="animate-pulse w-4 h-4 lg:w-6 lg:h-6" />
-      </NuxtLink>
-      <AtomsLinkFeed />
-    </div>
-  </main>
-
-  <!-- Mobile -->
-  <main class="lg:hidden dark:bg-gray-950 tracking-wide h-screen relative overflow-x-hidden px-3">
-    <OrganismMobile />
-  </main>
+  </NuxtLayout>
+  <NuxtLayout class="lg:hidden dark:bg-gray-950 tracking-wide h-screen relative overflow-x-hidden px-3" name="mobile"/>
 </template>
-
-<script setup lang="ts">
-const layout = "flex flex-wrap justify-center items-center px-12 py-6 mx-auto xl:w-44 2xl:w-60";
-</script>

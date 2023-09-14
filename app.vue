@@ -1,9 +1,8 @@
 <template>
-  <NuxtLayout>
-    <VitePwaManifest />
+  <main class="overflow-x-hidden">
     <NuxtLoadingIndicator />
     <NuxtPage />
-  </NuxtLayout>
+  </main>
 </template>
 
 <style>
