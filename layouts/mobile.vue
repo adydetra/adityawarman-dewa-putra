@@ -28,7 +28,7 @@
           </ul>
           <p class="mt-8">
             If you enjoy my works, consider sponsoring me on
-            <NuxtLink to="https://github.com/sponsors/devdewa" title="Github Sponsor" :class="link">Github Sponsor.</NuxtLink>
+            <NuxtLink to="https://github.com/sponsors/devdewa" title="GitHub Sponsor" :class="link">GitHub Sponsor.</NuxtLink>
           </p>
         </div>
         <AtomsFooter class="lg:hidden" />
@@ -41,5 +41,5 @@
 import * as data from "~/types/index";
 
 const social = data.social;
-const link = "text-gray-600 dark:text-gray-300 border-b";
+const link = "text-gray-600 dark:text-gray-300 pb-0.5 border-b-2 border-gray-200/50 dark:border-gray-700/40";
 </script>
