@@ -1,7 +1,7 @@
 <template>
   <section class="bg-white dark:bg-gray-950 text-gray-500 dark:text-white min-h-screen">
     <div class="lg:bg-[url('/images/pattern-hero-left.png')] lg:dark:bg-[url('/images/pattern-hero-left-dark.png')] bg-contain bg-center px-0 lg:px-32">
-      <div class="flex flex-col min-h-screen mx-auto py-4 lg:py-10 px-6 md:px-10 relative">
+      <div class="container flex flex-col min-h-screen mx-auto py-4 lg:py-10 px-6 md:px-10 lg:px-28 relative">
         <div class="hidden lg:block">
           <AtomsBack class="left-4" :class="button" />
           <AtomsColorMode class="fixed right-4" :class="button" />
