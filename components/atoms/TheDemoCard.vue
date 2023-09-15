@@ -6,8 +6,11 @@
           <video class="w-full" :src="status.media_attachments[0]?.url" autoplay muted loop></video>
         </a>
         <div class="p-5 !pt-3 border-t border-gray-200 dark:border-gray-800">
-          <p class="text-xs md:text-[16px] text-gray-500 leading-loose md:leading-[2.7rem]" v-html="status.content"></p>
-          <p class="text-xs md:text-sm text-gray-400 mt-2 flex items-center"><Icon name="line-md:calendar" class="mr-1" />{{ formatDate(status.created_at) }}</p>
+          <p class="text-xs md:text-[16px] text-gray-500 leading-loose md:leading-[2.7rem]" v-html="formatDescription(status.content)"></p>
+          <p class="text-xs md:text-sm text-gray-400 mt-2 flex items-center">
+            <Icon name="line-md:calendar" class="mr-1" />
+            {{ formatDate(status.created_at) }}
+          </p>
         </div>
       </div>
     </div>
@@ -22,13 +25,14 @@ const hasVideoAttachment = (status: any) => {
   return status.media_attachments?.length > 0 && status.media_attachments[0].type === "video";
 };
 
+const formatDescription = (content: string) => {
+  return content.replace(/https:\/\//g, "");
+};
+
 const formatDate = (dateString: string) => {
   const date = new Date(dateString);
   const day = date.getDate().toString().padStart(2, "0");
-  const monthNames = [
-    "January", "February", "March", "April", "May", "June", "July",
-    "August", "September", "October", "November", "December"
-  ];
+  const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
   const month = monthNames[date.getMonth()];
   const year = date.getFullYear();
   return `${day} ${month} ${year}`;
