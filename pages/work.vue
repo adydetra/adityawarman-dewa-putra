@@ -11,7 +11,7 @@
         <div class="leading-relaxed hidden lg:block">Things I’ve made trying to put<br />my dent in the universe.</div>
         <div class="lg:hidden">Work</div>
       </h1>
-      <div class="grid grid-cols-8 lg:grid-cols-9 gap-2 md:gap-8 lg:gap-12 2xl:gap-20">
+      <div class="grid grid-cols-8 lg:grid-cols-9 gap-6 md:gap-8 lg:gap-12 2xl:gap-20">
         <AtomsTheWorkCard />
       </div>
     </div>
