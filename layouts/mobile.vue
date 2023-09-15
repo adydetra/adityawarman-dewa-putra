@@ -10,7 +10,7 @@
           <p>Study at <NuxtLink to="https://www.ut.ac.id/" title="Terbuka University" :class="link">Terbuka University.</NuxtLink></p>
           <p>
             Dreaming up ideas and making them come true is where my passion lies. You can find my
-            <NuxtLink to="/projects" title="Project" :class="link">full project list here</NuxtLink>
+            <NuxtLink to="/work" title="Work" :class="link">full work list here</NuxtLink>
           </p>
           <p>
             Outside of programming, I enjoy watching streamers and playing games. If you happen to be in the same city as where I live (currently in Jakarta), maybe we could

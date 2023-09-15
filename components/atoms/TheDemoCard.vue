@@ -7,7 +7,7 @@
         </a>
         <div class="p-5 !pt-3 border-t border-gray-200 dark:border-gray-800">
           <p class="text-xs md:text-[16px] text-gray-500 leading-loose md:leading-[2.7rem]" v-html="status.content"></p>
-          <p class="text-xs md:text-sm text-gray-400 mt-2">{{ formatDate(status.created_at) }}</p>
+          <p class="text-xs md:text-sm text-gray-400 mt-2 flex items-center"><Icon name="line-md:calendar" class="mr-1" />{{ formatDate(status.created_at) }}</p>
         </div>
       </div>
     </div>
@@ -24,10 +24,14 @@ const hasVideoAttachment = (status: any) => {
 
 const formatDate = (dateString: string) => {
   const date = new Date(dateString);
-  const year = date.getFullYear();
-  const month = (date.getMonth() + 1).toString().padStart(2, "0");
   const day = date.getDate().toString().padStart(2, "0");
-  return `${day}-${month}-${year}`;
+  const monthNames = [
+    "January", "February", "March", "April", "May", "June", "July",
+    "August", "September", "October", "November", "December"
+  ];
+  const month = monthNames[date.getMonth()];
+  const year = date.getFullYear();
+  return `${day} ${month} ${year}`;
 };
 
 onMounted(async () => {
