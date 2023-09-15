@@ -12,7 +12,7 @@
           <p class="text-xs"><Icon name="line-md:calendar" class="mr-1" />{{ formatDate(status.created_at) }}</p>
         </div>
       </NuxtLink>
-      <p class="text-xs mt-4 leading-loose" v-html="formatDescription(status.content)"></p>
+      <p class="text-xs mt-4 leading-loose" v-html="(status.content)"></p>
       <NuxtImg
         :src="status.media_attachments[0]?.url"
         v-if="status.media_attachments && status.media_attachments.length > 0"
@@ -31,10 +31,6 @@ const filteredStatuses = ref<any[]>([]);
 
 const hasVideoAttachment = (status: any) => {
   return status.media_attachments && status.media_attachments.length > 0 && status.media_attachments[0].type === "video";
-};
-
-const formatDescription = (content: string) => {
-  return content.replace(/https:\/\//g, "");
 };
 
 const formatDate = (dateString: string) => {
