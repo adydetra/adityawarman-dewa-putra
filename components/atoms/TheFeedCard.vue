@@ -2,7 +2,7 @@
   <div v-for="status in filteredStatuses" :key="status.id" class="flex space-x-4 bg-gray-300/30 first-letter:dark:bg-slate-800 p-4 text-gray-600 dark:text-gray-300">
     <div>
       <div class="flex justify-center items-center w-8 md:w-12 overflow-hidden">
-        <NuxtImg :src="status.account.avatar" alt="Photo" placeholder loading="lazy" class="rounded-full shadow-md shadow-gray-500/40" />
+        <NuxtImg :src="status.account.avatar" alt="Photo" placeholder loading="lazy" class="rounded-full" />
       </div>
     </div>
     <div class="w-full overflow-hidden space-y-4">
