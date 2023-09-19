@@ -17,7 +17,7 @@ export const works = [
   data(6, "Learning Centre Indonesia", "Laravel Blade", "line-md:external-link", "https://learningcentreindonesia.com/web"),
   data(7, "Wangyland", "Nuxt", "line-md:external-link", "https://wangyland.vercel.app"),
   data(8, "Bang CV", "Next", "line-md:github-loop", "https://github.com/devdewa/bangcv"),
-  data(9, "MP3 / MP4 Downloader", "Next", "line-md:external-link", "https://dewa-downloader.vercel.app"),
+  data(9, "MP3 / MP4 Downloader", "Next", "line-md:github-loop", "https://github.com/devdewa/mp3-mp4-downloader"),
   data(10, "E-Commerce LSP", "PHP", "line-md:github-loop", "https://github.com/devdewa/e-commerce-lsp"),
   data(11, "Belajar HTML App", "Expo", "line-md:github-loop", "https://github.com/devdewa/expo-belajar-html-app"),
   data(12, "Averroes Unipessoal. Lda", "HTML", "line-md:external-link", "https://www.averroes.info"),
