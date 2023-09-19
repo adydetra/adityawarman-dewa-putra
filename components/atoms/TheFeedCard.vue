@@ -1,5 +1,5 @@
 <template>
-  <div v-if="isLoading" class="space-y-5">
+  <div v-if="isLoading" class="space-y-5 w-72 md:w-96 lg:w-full">
     <div v-for="index in 4" :key="index" :class="cardStyle">
       <div>
         <div class="flex justify-center items-center w-8 md:w-12 h-8 md:h-12 bg-gray-400/40 rounded-full"></div>
