@@ -27,7 +27,7 @@
             <p class="text-xs"><Icon name="line-md:calendar" class="mr-1" />{{ formatDate(status.created_at) }}</p>
           </div>
         </NuxtLink>
-        <p class="text-xs mt-4 leading-loose" v-html="status.content"></p>
+        <p class="text-xs mt-4 space-y-3 leading-loose" v-html="status.content"></p>
         <NuxtImg
           :src="status.media_attachments[0]?.url"
           v-if="status.media_attachments && status.media_attachments.length > 0"
