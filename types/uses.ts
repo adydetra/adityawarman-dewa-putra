@@ -48,5 +48,5 @@ export const developments = [
   data(4, "simple-icons:alacritty", "Alacritty", "https://alacritty.org/"),
   data(5, "bi:git", "Git", "https://git-scm.com/"),
   data(6, "simple-icons:postman", "Postman", "https://www.postman.com/"),
-  data(7, "simple-icons:firefoxbrowser", "Firefox Developer Edition", "https://www.mozilla.org/id/firefox/new/"),
+  data(7, "simple-icons:firefoxbrowser", "Firefox Developer Edition", "https://www.mozilla.org/id/firefox/developer/"),
 ];
