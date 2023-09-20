@@ -35,11 +35,10 @@ export const packages = [
 export const techstacks = [
   data(1, "simple-icons:tailwindcss", "Tailwind CSS", "https://tailwindcss.com/"),
   data(2, "ri:bootstrap-fill", "Bootstrap", "https://getbootstrap.com/"),
-  data(3, "akar-icons:jquery-fill", "jQuery", "https://jquery.com/"),
-  data(4, "simple-icons:vuedotjs", "Vue Js", "https://vuejs.org/"),
-  data(5, "simple-icons:nuxtdotjs", "Nuxt", "https://nuxt.com/"),
-  data(6, "file-icons:vite", "Vite Js", "https://vitejs.dev/"),
-  data(7, "simple-icons:expo", "Expo", "https://expo.dev/"),
+  data(3, "simple-icons:vuedotjs", "Vue Js", "https://vuejs.org/"),
+  data(4, "simple-icons:nuxtdotjs", "Nuxt", "https://nuxt.com/"),
+  data(5, "file-icons:vite", "Vite Js", "https://vitejs.dev/"),
+  data(6, "simple-icons:expo", "Expo", "https://expo.dev/"),
 ];
 
 export const developments = [
