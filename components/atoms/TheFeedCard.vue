@@ -61,7 +61,7 @@ const formatDate = (dateString: string) => {
 
 onMounted(async () => {
   try {
-    const response = await fetch("https://mastodon.social/api/v1/accounts/110889737873743694/statuses");
+    const response = await fetch(useRuntimeConfig().public.MASTODON_URL);
     if (response.ok) {
       const data = await response.json();
       statuses.value = data;

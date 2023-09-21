@@ -9,6 +9,12 @@ export default defineNuxtConfig({
     },
   },
 
+  runtimeConfig: {
+    public: {
+      MASTODON_URL: process.env.MASTODON_URL,
+    },
+  },
+
   devtools: { enabled: false },
 
   modules: [
