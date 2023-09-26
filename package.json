@@ -11,7 +11,7 @@
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "@nuxtjs/tailwindcss": "^6.8.0",
-    "nuxt": "^3.7.3"
+    "nuxt": "^3.7.4"
   },
   "dependencies": {
     "@nuxt/image": "^1.0.0-rc.1",
