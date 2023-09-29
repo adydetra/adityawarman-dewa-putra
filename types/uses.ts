@@ -29,16 +29,16 @@ export const databases = [
 export const packages = [
   data(1, "simple-icons:npm", "NPM", "https://www.npmjs.com/"),
   data(2, "akar-icons:yarn-fill", "Yarn", "https://yarnpkg.com/"),
-  data(3, "simple-icons:bun", "Bun", "https://bun.sh/"),
+  data(3, "file-icons:pnpm", "PNPM", "https://pnpm.io/"),
+  data(4, "simple-icons:bun", "Bun", "https://bun.sh/"),
 ];
 
 export const techstacks = [
   data(1, "simple-icons:tailwindcss", "Tailwind CSS", "https://tailwindcss.com/"),
-  data(2, "ri:bootstrap-fill", "Bootstrap", "https://getbootstrap.com/"),
-  data(3, "simple-icons:vuedotjs", "Vue Js", "https://vuejs.org/"),
-  data(4, "simple-icons:nuxtdotjs", "Nuxt", "https://nuxt.com/"),
-  data(5, "file-icons:vite", "Vite Js", "https://vitejs.dev/"),
-  data(6, "simple-icons:expo", "Expo", "https://expo.dev/"),
+  data(2, "simple-icons:vuedotjs", "Vue Js", "https://vuejs.org/"),
+  data(3, "simple-icons:nuxtdotjs", "Nuxt", "https://nuxt.com/"),
+  data(4, "file-icons:vite", "Vite Js", "https://vitejs.dev/"),
+  data(5, "simple-icons:expo", "Expo", "https://expo.dev/"),
 ];
 
 export const developments = [
