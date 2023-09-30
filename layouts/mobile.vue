@@ -28,7 +28,7 @@
           </ul>
           <p class="mt-8">
             If you enjoy my works, consider sponsoring me on
-            <NuxtLink to="https://github.com/sponsors/devdewa" title="GitHub Sponsor" :class="link">GitHub Sponsor.</NuxtLink>
+            <NuxtLink to="https://github.com/sponsors/adydetra" title="GitHub Sponsor" :class="link">GitHub Sponsor.</NuxtLink>
           </p>
         </div>
         <AtomsFooter class="lg:hidden" />
