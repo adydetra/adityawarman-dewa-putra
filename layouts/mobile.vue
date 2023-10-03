@@ -6,7 +6,7 @@
       <p class="text-black dark:text-gray-300 text-2xl font-bold">A.<span class="text-4xl">Dewa</span> Putra</p>
       <div class="mt-6 text-gray-400 text-sm leading-loose">
         <div class="space-y-4">
-          <p>~ Hello, I am Adityawarman Dewa Putra. Front End Developer focused on web or mobile.</p>
+          <p>~ Hello, I am Adityawarman <span class="px-1 rounded-md bg-gray-200/50 dark:bg-gray-900">Dewa</span> Putra. Front End Developer, big fan open source, enjoying life.</p>
           <p>Study at <NuxtLink to="https://www.ut.ac.id/" title="Terbuka University" :class="link">Terbuka University.</NuxtLink></p>
           <p>
             Dreaming up ideas and making them come true is where my passion lies. You can find my
