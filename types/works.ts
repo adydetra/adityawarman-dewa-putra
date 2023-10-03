@@ -21,11 +21,11 @@ export const works = [
   data(10, "E-Commerce LSP", "PHP", "line-md:github-loop", "https://github.com/adydetra/e-commerce-lsp"),
   data(11, "Belajar HTML App", "Expo", "line-md:github-loop", "https://github.com/adydetra/expo-belajar-html-app"),
   data(12, "Averroes Unipessoal. Lda", "HTML", "line-md:external-link", "https://www.averroes.info"),
-  data(13, "List Web", "Nuxt", "line-md:external-link", "https://list-web.vercel.app/"),
+  data(13, "List Web", "Nuxt", "line-md:external-link", "https://list-web.adydetra.my.id/"),
   data(14, "Protem", "Vue", "line-md:external-link", "https://pt-teknologi-pustaka-indonesia-buku.vercel.app/"),
   data(15, "Nuxt Starter", "Nuxt", "line-md:github-loop", "https://github.com/adydetra/nuxt-starter"),
   data(16, "Ensik Archieve", "Nuxt", "line-md:github-loop", "https://github.com/ose-id/ensik-archieve"),
   data(17, "D-Notes", "Nuxt", "line-md:github-loop", "https://github.com/adydetra/d-notes"),
   data(18, "OSE", "Astro", "line-md:github-loop", "https://github.com/ose-id/ose"),
-  data(19, "Insta", "Nuxt", "line-md:external-link", "https://insta-planner.vercel.app/"),
+  data(19, "Insta", "Nuxt", "line-md:external-link", "https://insta.adydetra.my.id/"),
 ];
