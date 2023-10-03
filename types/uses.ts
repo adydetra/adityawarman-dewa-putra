@@ -38,15 +38,15 @@ export const techstacks = [
   data(2, "simple-icons:vuedotjs", "Vue Js", "https://vuejs.org/"),
   data(3, "simple-icons:nuxtdotjs", "Nuxt", "https://nuxt.com/"),
   data(4, "file-icons:vite", "Vite Js", "https://vitejs.dev/"),
-  data(5, "simple-icons:expo", "Expo", "https://expo.dev/"),
+  data(5, "devicon-plain:typescript", "TypeScript", "https://www.typescriptlang.org/"),
 ];
 
 export const developments = [
   data(1, "akar-icons:vscode-fill", "VS Code", "https://code.visualstudio.com/"),
   data(2, "cib:figma", "FIGMA", "https://www.figma.com"),
-  data(3, "simple-icons:androidstudio", "Android Studio", "https://developer.android.com/studio"),
+  data(3, "bi:git", "Git", "https://git-scm.com/"),
   data(4, "simple-icons:alacritty", "Alacritty", "https://alacritty.org/"),
-  data(5, "bi:git", "Git", "https://git-scm.com/"),
-  data(6, "simple-icons:postman", "Postman", "https://www.postman.com/"),
-  data(7, "simple-icons:firefoxbrowser", "Firefox Developer Edition", "https://www.mozilla.org/id/firefox/developer/"),
+  data(5, "simple-icons:postman", "Postman", "https://www.postman.com/"),
+  data(6, "simple-icons:firefoxbrowser", "Firefox Developer Edition", "https://www.mozilla.org/id/firefox/developer/"),
+  data(7, "NuxtIcon", "Arc", "https://arc.net/"),
 ];
