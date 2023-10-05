@@ -25,6 +25,6 @@ const route = useRoute();
 useSeoMeta({
   title: () => (route.meta.title as string) || "",
   titleTemplate: (title) => (title ? `${title} - Dewa` : "Adityawarman Dewa Putra"),
-  description: "This is my personal site, build using Nuxt",
+  description: "~ Hello, I am Adityawarman Dewa Putra, big fan open source, study at Terbuka University. This is my personal site, build using Nuxt.",
 });
 </script>
