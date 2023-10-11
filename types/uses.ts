@@ -35,9 +35,9 @@ export const packages = [
 
 export const techstacks = [
   data(1, "simple-icons:tailwindcss", "Tailwind CSS", "https://tailwindcss.com/"),
-  data(2, "simple-icons:vuedotjs", "Vue Js", "https://vuejs.org/"),
+  data(2, "simple-icons:vuedotjs", "Vue", "https://vuejs.org/"),
   data(3, "simple-icons:nuxtdotjs", "Nuxt", "https://nuxt.com/"),
-  data(4, "file-icons:vite", "Vite Js", "https://vitejs.dev/"),
+  data(4, "file-icons:vite", "Vite", "https://vitejs.dev/"),
   data(5, "devicon-plain:typescript", "TypeScript", "https://www.typescriptlang.org/"),
 ];
 
