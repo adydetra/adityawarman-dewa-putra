@@ -4,7 +4,12 @@
       <AtomsLine>
         <AtomsNumber :number="currentNumber" />
       </AtomsLine>
-      <NuxtLink :to="leftLink" :title="currentNumber === 1 ? '' : currentNumber === 2 ? 'Home' : 'Uses'" :class="leftContentClass" aria-label="slide">
+      <NuxtLink
+        :to="leftLink"
+        :title="currentNumber === 1 ? '' : currentNumber === 2 ? 'Home' : currentNumber === 3 ? 'Uses' : 'Work'"
+        :class="leftContentClass"
+        aria-label="slide"
+      >
         <Icon :name="leftIconName" class="animate-pulse w-4 h-4 lg:w-6 lg:h-6" v-if="showLeftContent" />
         <Icon name="mingcute:dot-grid-line" class="w-4 h-4 lg:w-6 lg:h-6" v-else />
       </NuxtLink>
@@ -17,7 +22,12 @@
       <AtomsLine>
         <AtomsColorMode class="w-full" />
       </AtomsLine>
-      <NuxtLink :to="rightLink" :title="currentNumber === 1 ? 'Uses' : currentNumber === 2 ? 'Work' : ''" :class="rightContentClass" aria-label="slide">
+      <NuxtLink
+        :to="rightLink"
+        :title="currentNumber === 1 ? 'Uses' : currentNumber === 2 ? 'Work' : currentNumber === 3 ? 'Closing' : ''"
+        :class="rightContentClass"
+        aria-label="slide"
+      >
         <Icon :name="rightIconName" class="animate-pulse w-4 h-4 lg:w-6 lg:h-6" v-if="showRightContent" />
         <Icon name="mingcute:dot-grid-line" class="w-4 h-4 lg:w-6 lg:h-6" v-else />
       </NuxtLink>
@@ -37,15 +47,16 @@ const routeMap: Record<string, number> = {
   "/": 1,
   "/uses": 2,
   "/work": 3,
+  "/closing": 4,
 };
 const currentNumber = routeMap[route.path] || 0;
 
 const showLeftContent = currentNumber !== 1;
-const leftLink = showLeftContent ? (currentNumber === 2 ? "/" : "/uses") : "#";
+const leftLink = showLeftContent ? (currentNumber === 2 ? "/" : currentNumber === 3 ? "uses" : currentNumber === 4 ? "work" : "#") : "#";
 const leftIconName = showLeftContent ? (currentNumber === 2 ? "ci:chevron-left-duo" : "ci:chevron-left-duo") : "#";
 
-const showRightContent = currentNumber !== 3;
-const rightLink = showRightContent ? (currentNumber === 1 ? "/uses" : "/work") : "#";
+const showRightContent = currentNumber !== 4;
+const rightLink = showRightContent ? (currentNumber === 1 ? "uses" : currentNumber === 2 ? "work" : currentNumber === 3 ? "closing" : "#") : "#";
 const rightIconName = showRightContent ? (currentNumber === 1 ? "ci:chevron-right-duo" : "ci:chevron-right-duo") : "#";
 
 const leftContentClass = showLeftContent
