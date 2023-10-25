@@ -17,14 +17,16 @@ export default defineNuxtConfig({
 
   devtools: { enabled: false },
 
-  modules: [
-    "@nuxtjs/tailwindcss",
-    "@nuxtjs/google-fonts",
-    "@nuxt/image",
-    "@nuxtjs/color-mode",
-    "nuxt-icon",
-    "nuxt-delay-hydration",
-  ],
+  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/google-fonts", "@nuxt/image", "@nuxtjs/color-mode", "nuxt-icon", "nuxt-delay-hydration", "nuxt-simple-sitemap"],
+
+  site: {
+    url: "https://www.adydetra.my.id",
+  },
+
+  sitemap: {
+    xslTips: false,
+    exclude: ["/closing"],
+  },
 
   image: {
     quality: 30,
