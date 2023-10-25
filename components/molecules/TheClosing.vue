@@ -44,6 +44,6 @@ const games = [
   { src: "/images/dw6.svg", title: "Dynasty Warriors 6" },
   { src: "/images/cs.svg", title: "Counter Strike" },
   { src: "/images/stronghold.svg", title: "Stronghold Crusader" },
-  { src: "/images/lfd.svg", title: "Left For Dead" },
+  { src: "/images/lfd.svg", title: "Left 4 Dead" },
 ];
 </script>
