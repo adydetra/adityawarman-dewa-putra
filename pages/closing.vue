@@ -11,7 +11,7 @@
         <div class="leading-relaxed block hidden lg:block">Thanks to god, me, family, and<br />other people in my life.</div>
       </h1>
       <div class="max-w-[550px] m-auto">
-        <AtomsTheClosing />
+        <MoleculesTheClosing />
       </div>
     </div>
   </NuxtLayout>
