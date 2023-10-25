@@ -24,7 +24,7 @@ export default defineNuxtConfig({
   },
 
   sitemap: {
-    xslTips: false,
+    xsl: false,
     exclude: ["/closing"],
   },
 
