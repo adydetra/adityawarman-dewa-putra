@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "^1.0.0",
-    "@nuxtjs/tailwindcss": "^6.8.0",
+    "@nuxtjs/tailwindcss": "^6.8.1",
     "nuxt": "^3.8.0"
   },
   "dependencies": {
@@ -19,6 +19,6 @@
     "@nuxtjs/google-fonts": "^3.0.2",
     "@tailwindcss/typography": "^0.5.10",
     "nuxt-delay-hydration": "^1.2.3",
-    "nuxt-icon": "^0.5.0"
+    "nuxt-icon": "^0.6.0"
   }
 }
