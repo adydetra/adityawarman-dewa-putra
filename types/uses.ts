@@ -17,7 +17,7 @@ export const workstations = [
     4,
     "streamline:entertainment-earpods-airpods-audio-earpods-music-earbuds-true-wireless",
     "HUAWEI FreeBuds SE",
-    "https://consumer.huawei.com/id/headphones/freebuds-se/"
+    "https://consumer.huawei.com/en/headphones/freebuds-se/"
   ),
 ];
 
