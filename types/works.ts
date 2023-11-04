@@ -11,7 +11,7 @@ function data(id: number, title: string, tech: string, src: string, url: string)
 export const works = [
   data(1, "Personal Site", "Nuxt", "line-md:github-loop", "https://github.com/adydetra/adityawarman-dewa-putra"),
   data(2, "Old Personal Site", "HTML", "line-md:github-loop", "https://github.com/adydetra/portfolio"),
-  data(3, "Dewa Programming", "Laravel", "line-md:github-loop", "https://github.com/DewaSmkn1JAKARTA/DewaProgramming"),
+  data(3, "Dewa Programming", "Laravel", "line-md:github-loop", "https://github.com/adityawarmandewaputra/dewa-programming"),
   data(4, "Decorative Plant", "Laravel Blade", "line-md:external-link", "https://decorative-plant.vercel.app"),
   data(5, "Maritime Explore", "Laravel Blade", "line-md:github-loop", "https://github.com/adydetra/maritime-explore"),
   data(6, "Learning Centre Indonesia", "Laravel Blade", "line-md:external-link", "https://learningcentreindonesia.com/web"),

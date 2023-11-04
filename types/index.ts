@@ -13,5 +13,5 @@ export const social = [
   data(3, "line-md:instagram", "Instagram", "https://www.instagram.com/adydetra"),
   data(4, "line-md:github-loop", "GitHub", "https://github.com/adydetra"),
   data(5, "line-md:discord", "Discord", "https://discord.gg/9z6APrYMAq"),
-  data(6, "line-md:linkedin", "Linkedin", "https://linkedin.com/in/adityawarman-dewa-putra"),
+  data(6, "line-md:linkedin", "LinkedIn", "https://linkedin.com/in/adityawarman-dewa-putra"),
 ];
