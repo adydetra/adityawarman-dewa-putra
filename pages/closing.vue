@@ -10,7 +10,7 @@
       <h1 class="text-gray-500 dark:text-gray-300 text-center text-4xl lg:text-3xl 2xl:text-4xl font-bold mb-16">
         <div class="leading-relaxed block hidden lg:block">Thanks to god, me, family, and<br />other people in my life.</div>
       </h1>
-      <div class="max-w-[550px] m-auto">
+      <div class="max-w-[580px] m-auto">
         <MoleculesTheClosing />
       </div>
     </div>
