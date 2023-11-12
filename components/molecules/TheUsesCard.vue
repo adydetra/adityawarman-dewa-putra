@@ -4,9 +4,9 @@
     <div>
       <h2 :class="h2">OS</h2>
       <ul :class="list">
-        <li v-for="data in operatings" :key="data.id">
-          <NuxtLink :to="data.to" target="_blank" :title="data.title" :class="link">
-            <Icon :name="data.name" :class="icon" />
+        <li v-for="(data, index) in operatings" :key="index">
+          <NuxtLink :to="data.url" target="_blank" :title="data.title" :class="link">
+            <Icon :name="data.icon" :class="icon" />
           </NuxtLink>
         </li>
       </ul>
@@ -17,9 +17,9 @@
     <div>
       <h2 :class="h2">Workstation</h2>
       <ul :class="list">
-        <li v-for="data in workstations" :key="data.id">
-          <NuxtLink :to="data.to" target="_blank" :title="data.title" :class="link">
-            <Icon :name="data.name" :class="icon" />
+        <li v-for="(data, index) in workstations" :key="index">
+          <NuxtLink :to="data.url" target="_blank" :title="data.title" :class="link">
+            <Icon :name="data.icon" :class="icon" />
           </NuxtLink>
         </li>
       </ul>
@@ -30,9 +30,9 @@
     <div>
       <h2 :class="h2">Database</h2>
       <ul :class="list">
-        <li v-for="data in databases" :key="data.id">
-          <NuxtLink :to="data.to" target="_blank" :title="data.title" :class="link">
-            <Icon :name="data.name" :class="icon" />
+        <li v-for="(data, index) in databases" :key="index">
+          <NuxtLink :to="data.url" target="_blank" :title="data.title" :class="link">
+            <Icon :name="data.icon" :class="icon" />
           </NuxtLink>
         </li>
       </ul>
@@ -43,9 +43,9 @@
     <div>
       <h2 :class="h2">Package Manager</h2>
       <ul :class="list">
-        <li v-for="data in packages" :key="data.id">
-          <NuxtLink :to="data.to" target="_blank" :title="data.title" :class="link">
-            <Icon :name="data.name" :class="icon" />
+        <li v-for="(data, index) in packages" :key="index">
+          <NuxtLink :to="data.url" target="_blank" :title="data.title" :class="link">
+            <Icon :name="data.icon" :class="icon" />
           </NuxtLink>
         </li>
       </ul>
@@ -56,9 +56,9 @@
     <div>
       <h2 :class="h2">Tech Stack</h2>
       <ul :class="list">
-        <li v-for="data in techstacks" :key="data.id">
-          <NuxtLink :to="data.to" target="_blank" :title="data.title" :class="link">
-            <Icon :name="data.name" :class="icon" />
+        <li v-for="(data, index) in techstacks" :key="index">
+          <NuxtLink :to="data.url" target="_blank" :title="data.title" :class="link">
+            <Icon :name="data.icon" :class="icon" />
           </NuxtLink>
         </li>
       </ul>
@@ -69,9 +69,9 @@
     <div>
       <h2 :class="h2">Development tools</h2>
       <ul :class="list" class="lg:gap-10">
-        <li v-for="data in developments" :key="data.id">
-          <NuxtLink :to="data.to" target="_blank" :title="data.title" :class="link">
-            <Icon :name="data.name" :class="icon" />
+        <li v-for="(data, index) in developments" :key="index">
+          <NuxtLink :to="data.url" target="_blank" :title="data.title" :class="link">
+            <Icon :name="data.icon" :class="icon" />
           </NuxtLink>
         </li>
       </ul>
@@ -80,14 +80,12 @@
 </template>
 
 <script setup lang="ts">
-import * as use from "~/types/uses";
-
-const operatings = use.operatings;
-const workstations = use.workstations;
-const databases = use.databases;
-const packages = use.packages;
-const techstacks = use.techstacks;
-const developments = use.developments;
+const operatings = useOperatings();
+const workstations = useWorkstations();
+const databases = useDatabases();
+const packages = usePackages();
+const techstacks = useTechstacks();
+const developments = useDevelopments();
 
 const card = "flex justify-center pt-6 pb-8 bg-gray-200/30 dark:bg-gray-500/5 rounded-md text-gray-400";
 const h2 = "text-sm md:text-md 2xl:text-lg font-light mb-6 lg:mb-8 text-center";
