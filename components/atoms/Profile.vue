@@ -19,7 +19,7 @@
     </p>
     <div class="mt-12">
       <p>Find Me On</p>
-      <AtomsSocialMedia class="justify-center gap-8 md:gap-7 mt-2" />
+      <AtomsSocialMedia class="gap-8 md:gap-7 mt-2" />
       <p class="mt-8">
         If you enjoy my works, consider sponsoring me on
         <NuxtLink to="https://github.com/sponsors/adydetra" title="GitHub Sponsor" :class="link">GitHub Sponsor.</NuxtLink>
