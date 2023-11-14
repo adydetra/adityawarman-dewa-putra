@@ -5,10 +5,7 @@
         <div class="flex justify-center items-center w-8 md:w-12 h-8 md:h-12 bg-gray-400/40 rounded-full"></div>
       </div>
       <div class="w-full space-y-4">
-        <div class="bg-gray-400/40 h-3 w-1/2"></div>
-        <div class="bg-gray-400/40 h-3 w-3/4"></div>
-        <div class="bg-gray-400/40 h-3 w-2/3"></div>
-        <div class="bg-gray-400/40 h-3 w-4/5"></div>
+        <div v-for="(width, index) in widths" :key="index" :class="'bg-gray-400/40 h-3 w-' + width"></div>
       </div>
     </div>
   </div>
@@ -45,6 +42,7 @@
 const statuses = ref<any[]>([]);
 const filteredStatuses = ref<any[]>([]);
 const isLoading = ref<boolean>(true);
+const widths = ["1/2", "3/4", "2/3", "4/5"];
 const cardStyle = "flex space-x-4 bg-gray-300/30 first-letter:dark:bg-slate-800 p-4 text-gray-600 dark:text-gray-300";
 
 const hasVideoAttachment = (status: any) => {
