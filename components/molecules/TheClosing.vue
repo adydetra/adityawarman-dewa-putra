@@ -1,3 +1,8 @@
+<script setup lang="ts">
+const games = useGame();
+const link = "text-gray-600 dark:text-gray-300 pb-0.5 border-b-2 border-gray-200/50 dark:border-gray-700/40 dark:hover:!border-yellow-200/50 hover:!border-yellow-200";
+</script>
+
 <template>
   <section class="text-gray-400 !leading-[2.5rem] text-center">
     <h2 class="mb-4">Study at <NuxtLink to="https://www.ut.ac.id/" title="Terbuka University" :class="link">Terbuka University.</NuxtLink></h2>
@@ -36,8 +41,3 @@
     <AtomsFooter />
   </section>
 </template>
-
-<script setup lang="ts">
-const games = useGame();
-const link = "text-gray-600 dark:text-gray-300 pb-0.5 border-b-2 border-gray-200/50 dark:border-gray-700/40 dark:hover:!border-yellow-200/50 hover:!border-yellow-200";
-</script>

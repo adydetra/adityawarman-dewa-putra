@@ -1,3 +1,7 @@
+<script lang="ts" setup>
+const social = useSocial();
+</script>
+
 <template>
   <section class="grid grid-cols-8 h-screen lg:px-36 2xl:px-52">
     <div
@@ -29,7 +33,3 @@
     </div>
   </section>
 </template>
-
-<script lang="ts" setup>
-const social = useSocial();
-</script>

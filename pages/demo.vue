@@ -1,3 +1,7 @@
+<script setup>
+definePageMeta({ title: "Demo", layout: "demo" });
+</script>
+
 <template>
   <NuxtLayout>
     <h1 class="text-4xl lg:text-5xl text-center font-bold py-10 lg:py-12">Demo</h1>
@@ -6,7 +10,3 @@
     </section>
   </NuxtLayout>
 </template>
-
-<script setup>
-definePageMeta({ title: "Demo", layout: "demo" });
-</script>

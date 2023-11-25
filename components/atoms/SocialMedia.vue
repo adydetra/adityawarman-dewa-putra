@@ -1,3 +1,7 @@
+<script setup lang="ts">
+const social = useSocial();
+</script>
+
 <template>
   <ul class="flex text-gray-500 dark:text-gray-400">
     <li v-for="(data, index) in social" :key="index">
@@ -7,7 +11,3 @@
     </li>
   </ul>
 </template>
-
-<script setup lang="ts">
-const social = useSocial();
-</script>

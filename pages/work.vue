@@ -1,3 +1,7 @@
+<script setup lang="ts">
+definePageMeta({ title: "Work" });
+</script>
+
 <template>
   <NuxtLayout class="lg:bg-[url('/images/pattern-hero-left.png')] lg:dark:bg-[url('/images/pattern-hero-left-dark.png')] bg-contain bg-center">
     <div class="container mx-auto px-7 lg:px-40 2xl:px-24 py-14">
@@ -17,7 +21,3 @@
     </div>
   </NuxtLayout>
 </template>
-
-<script setup lang="ts">
-definePageMeta({ title: "Work" });
-</script>

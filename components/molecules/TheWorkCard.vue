@@ -1,3 +1,7 @@
+<script setup lang="ts">
+const works = useWorks();
+</script>
+
 <template>
   <NuxtLink
     v-for="(work, index) in works"
@@ -23,7 +27,3 @@
     </div>
   </NuxtLink>
 </template>
-
-<script setup lang="ts">
-const works = useWorks();
-</script>

@@ -1,3 +1,8 @@
+<script setup lang="ts">
+const social = useSocial();
+const link = "text-gray-600 dark:text-gray-300 pb-0.5 border-b-2 border-gray-200/50 dark:border-gray-700/40";
+</script>
+
 <template>
   <p class="text-black dark:text-gray-300 text-2xl font-bold">A.<span class="text-4xl">Dewa</span> Putra</p>
   <div class="mt-6 text-gray-400 text-sm lg:text-base !leading-loose">
@@ -28,8 +33,3 @@
     <AtomsFooter />
   </div>
 </template>
-
-<script setup lang="ts">
-const social = useSocial();
-const link = "text-gray-600 dark:text-gray-300 pb-0.5 border-b-2 border-gray-200/50 dark:border-gray-700/40";
-</script>

@@ -1,3 +1,7 @@
+<script setup lang="ts">
+const button = "top-4 p-3 rounded-md";
+</script>
+
 <template>
   <section class="bg-white dark:bg-gray-950 text-gray-500 dark:text-white min-h-screen">
     <div class="lg:bg-[url('/images/pattern-hero-left.png')] lg:dark:bg-[url('/images/pattern-hero-left-dark.png')] bg-contain bg-center px-0 lg:px-32">
@@ -18,7 +22,3 @@
     </div>
   </section>
 </template>
-
-<script setup lang="ts">
-const button = "top-4 p-3 rounded-md";
-</script>
