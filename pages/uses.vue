@@ -1,5 +1,5 @@
-<script setup lang="ts">
-definePageMeta({ title: "Uses" });
+<script lang="ts" setup>
+definePageMeta({ title: 'Uses' });
 </script>
 
 <template>
@@ -12,8 +12,12 @@ definePageMeta({ title: "Uses" });
         <AtomsNav />
       </div>
       <h1 class="text-gray-500 dark:text-gray-300 text-center text-4xl lg:text-3xl 2xl:text-4xl font-bold mb-16">
-        <div class="leading-relaxed block hidden lg:block">Software I use, gadgets I love, and<br />the tech stack that I use.</div>
-        <div class="lg:hidden">Uses</div>
+        <div class="leading-relaxed hidden lg:block">
+          Software I use, gadgets I love, and<br>the tech stack that I use.
+        </div>
+        <div class="lg:hidden">
+          Uses
+        </div>
       </h1>
       <div class="grid grid-cols-8 gap-2 space-y-4 lg:space-y-0 lg:gap-12 2xl:gap-20">
         <MoleculesTheUsesCard />

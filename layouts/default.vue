@@ -1,30 +1,30 @@
-<script setup lang="ts">
-const layout = "hidden lg:flex flex-wrap justify-center items-center xl:w-40 2xl:w-52 py-6 mx-auto h-screen bg-white dark:bg-gray-950 fixed top-0";
-const link = "text-xs text-gray-400 hover:text-yellow-500 dark:hover:text-yellow-300 text-center w-full";
+<script lang="ts" setup>
+const layout = 'hidden lg:flex flex-wrap justify-center items-center xl:w-40 2xl:w-52 py-6 mx-auto h-screen bg-white dark:bg-gray-950 fixed top-0';
+const link = 'text-xs text-gray-400 hover:text-yellow-500 dark:hover:text-yellow-300 text-center w-full';
 
 const route = useRoute();
 const routeMap: Record<string, number> = {
-  "/": 1,
-  "/uses": 2,
-  "/work": 3,
-  "/closing": 4,
+  '/': 1,
+  '/uses': 2,
+  '/work': 3,
+  '/closing': 4,
 };
 const currentNumber = routeMap[route.path] || 0;
 
 const showLeftContent = currentNumber !== 1;
-const leftLink = showLeftContent ? (currentNumber === 2 ? "/" : currentNumber === 3 ? "uses" : currentNumber === 4 ? "work" : "#") : "#";
-const leftIconName = showLeftContent ? (currentNumber === 2 ? "ci:chevron-left-duo" : "ci:chevron-left-duo") : "#";
+const leftLink = showLeftContent ? (currentNumber === 2 ? '/' : currentNumber === 3 ? 'uses' : currentNumber === 4 ? 'work' : '#') : '#';
+const leftIconName = showLeftContent ? (currentNumber === 2 ? 'ci:chevron-left-duo' : 'ci:chevron-left-duo') : '#';
 
 const showRightContent = currentNumber !== 4;
-const rightLink = showRightContent ? (currentNumber === 1 ? "uses" : currentNumber === 2 ? "work" : currentNumber === 3 ? "closing" : "#") : "#";
-const rightIconName = showRightContent ? (currentNumber === 1 ? "ci:chevron-right-duo" : "ci:chevron-right-duo") : "#";
+const rightLink = showRightContent ? (currentNumber === 1 ? 'uses' : currentNumber === 2 ? 'work' : currentNumber === 3 ? 'closing' : '#') : '#';
+const rightIconName = showRightContent ? (currentNumber === 1 ? 'ci:chevron-right-duo' : 'ci:chevron-right-duo') : '#';
 
 const leftContentClass = showLeftContent
-  ? "w-full flex justify-center cursor-pointer py-8 ease-in-out duration-300 text-slate-400 hover:text-yellow-400 dark:hover:text-yellow-200"
-  : "w-full flex justify-center cursor-not-allowed py-8 ease-in-out duration-300 text-slate-400 hover:text-red-400";
+  ? 'w-full flex justify-center cursor-pointer py-8 ease-in-out duration-300 text-slate-400 hover:text-yellow-400 dark:hover:text-yellow-200'
+  : 'w-full flex justify-center cursor-not-allowed py-8 ease-in-out duration-300 text-slate-400 hover:text-red-400';
 const rightContentClass = showRightContent
-  ? "w-full flex justify-center cursor-pointer py-8 ease-in-out duration-300 text-slate-400 hover:text-yellow-400 dark:hover:text-yellow-200"
-  : "w-full flex justify-center cursor-not-allowed py-8 ease-in-out duration-300 text-slate-400 hover:text-red-400";
+  ? 'w-full flex justify-center cursor-pointer py-8 ease-in-out duration-300 text-slate-400 hover:text-yellow-400 dark:hover:text-yellow-200'
+  : 'w-full flex justify-center cursor-not-allowed py-8 ease-in-out duration-300 text-slate-400 hover:text-red-400';
 </script>
 
 <template>
@@ -39,11 +39,13 @@ const rightContentClass = showRightContent
         :class="leftContentClass"
         aria-label="slide"
       >
-        <Icon :name="leftIconName" class="animate-pulse w-4 h-4 lg:w-6 lg:h-6" v-if="showLeftContent" />
-        <Icon name="mingcute:dot-grid-line" class="w-4 h-4 lg:w-6 lg:h-6" v-else />
+        <Icon v-if="showLeftContent" :name="leftIconName" class="animate-pulse w-4 h-4 lg:w-6 lg:h-6" />
+        <Icon v-else name="mingcute:dot-grid-line" class="w-4 h-4 lg:w-6 lg:h-6" />
       </NuxtLink>
       <AtomsLine>
-        <NuxtLink to="/demo" title="Redirect to Demo" class="-rotate-45" :class="link">Demo</NuxtLink>
+        <NuxtLink to="/demo" title="Redirect to Demo" class="-rotate-45" :class="link">
+          Demo
+        </NuxtLink>
       </AtomsLine>
     </div>
     <slot />
@@ -57,11 +59,13 @@ const rightContentClass = showRightContent
         :class="rightContentClass"
         aria-label="slide"
       >
-        <Icon :name="rightIconName" class="animate-pulse w-4 h-4 lg:w-6 lg:h-6" v-if="showRightContent" />
-        <Icon name="mingcute:dot-grid-line" class="w-4 h-4 lg:w-6 lg:h-6" v-else />
+        <Icon v-if="showRightContent" :name="rightIconName" class="animate-pulse w-4 h-4 lg:w-6 lg:h-6" />
+        <Icon v-else name="mingcute:dot-grid-line" class="w-4 h-4 lg:w-6 lg:h-6" />
       </NuxtLink>
       <AtomsLine>
-        <NuxtLink to="/feed" title="Redirect to Feed" class="rotate-45" :class="link">Feed</NuxtLink>
+        <NuxtLink to="/feed" title="Redirect to Feed" class="rotate-45" :class="link">
+          Feed
+        </NuxtLink>
       </AtomsLine>
     </div>
   </section>

@@ -2,16 +2,16 @@
 const route = useRoute();
 
 useSeoMeta({
-  title: () => (route.meta.title as string) || "",
-  titleTemplate: (title) => (title ? `${title} - Dewa` : "Adityawarman Dewa Putra"),
-  description: "~ Hello, I am Adityawarman Dewa Putra, big fan open source, study at Terbuka University. This is my personal site, build using Nuxt.",
+  title: () => (route.meta.title as string) || '',
+  titleTemplate: title => (title ? `${title} - Dewa` : 'Adityawarman Dewa Putra'),
+  description: '~ Hello, I am Adityawarman Dewa Putra, big fan open source, study at Terbuka University. This is my personal site, build using Nuxt.',
 });
 
 useHead(() => ({
   link: [
     {
-      rel: "canonical",
-      href: "https://www.adydetra.my.id" + route.path,
+      rel: 'canonical',
+      href: `https://www.adydetra.my.id${route.path}`,
     },
   ],
 }));

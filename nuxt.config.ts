@@ -1,16 +1,16 @@
 export default defineNuxtConfig({
   app: {
     head: {
-      charset: "utf-8",
-      viewport: "width=device-width, initial-scale=1",
+      charset: 'utf-8',
+      viewport: 'width=device-width, initial-scale=1',
       htmlAttrs: {
-        lang: "en",
+        lang: 'en',
       },
       script: [
         {
-          src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1000712907457165",
+          src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1000712907457165',
           async: true,
-          crossorigin: "anonymous",
+          crossorigin: 'anonymous',
         },
       ],
     },
@@ -18,26 +18,26 @@ export default defineNuxtConfig({
 
   runtimeConfig: {
     public: {
-      MASTODON_URL: process.env.MASTODON_URL,
+      MASTODON_URL: import.meta.env.MASTODON_URL,
     },
   },
 
   devtools: { enabled: false },
 
-  modules: ["@nuxtjs/tailwindcss", "@nuxtjs/google-fonts", "@nuxt/image", "@nuxtjs/color-mode", "nuxt-icon", "nuxt-delay-hydration", "nuxt-simple-sitemap"],
+  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/google-fonts', '@nuxt/image', '@nuxtjs/color-mode', 'nuxt-icon', 'nuxt-delay-hydration', 'nuxt-simple-sitemap'],
 
   site: {
-    url: "https://www.adydetra.my.id",
+    url: 'https://www.adydetra.my.id',
   },
 
   sitemap: {
     xsl: false,
-    exclude: ["/closing"],
+    exclude: ['/closing'],
   },
 
   image: {
     quality: 30,
-    format: ["webp"],
+    format: ['webp'],
   },
 
   tailwindcss: {
@@ -45,20 +45,20 @@ export default defineNuxtConfig({
   },
 
   delayHydration: {
-    mode: "mount",
+    mode: 'mount',
   },
 
   googleFonts: {
     families: {
       Poppins: [200, 300, 400, 500, 600, 700],
     },
-    display: "swap",
+    display: 'swap',
     prefetch: true,
     preconnect: true,
   },
 
   colorMode: {
-    classSuffix: "",
-    preference: "dark",
+    classSuffix: '',
+    preference: 'dark',
   },
 });

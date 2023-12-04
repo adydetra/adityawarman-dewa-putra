@@ -1,5 +1,5 @@
-<script setup lang="ts">
-const button = "top-4 p-3 rounded-md";
+<script lang="ts" setup>
+const button = 'top-4 p-3 rounded-md';
 </script>
 
 <template>

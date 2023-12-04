@@ -1,5 +1,5 @@
-<script setup lang="ts">
-const button = "top-4 p-3 rounded-md !bg-gray-200/80 dark:!bg-gray-800/80";
+<script lang="ts" setup>
+const button = 'top-4 p-3 rounded-md !bg-gray-200/80 dark:!bg-gray-800/80';
 </script>
 
 <template>

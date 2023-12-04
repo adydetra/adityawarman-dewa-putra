@@ -1,10 +1,10 @@
-<script setup lang="ts">
+<script lang="ts" setup>
 const links = ref([
-  { to: "/", title: "Home", icon: "icon-park-outline:home-two" },
-  { to: "/uses", title: "Uses", icon: "majesticons:heart-line" },
-  { to: "/work", title: "Work", icon: "majesticons:cpu-line" },
-  { to: "/demo", title: "Demo", icon: "tdesign:play-demo" },
-  { to: "/feed", title: "Feed", icon: "majesticons:user-box-line" },
+  { to: '/', title: 'Home', icon: 'icon-park-outline:home-two' },
+  { to: '/uses', title: 'Uses', icon: 'majesticons:heart-line' },
+  { to: '/work', title: 'Work', icon: 'majesticons:cpu-line' },
+  { to: '/demo', title: 'Demo', icon: 'tdesign:play-demo' },
+  { to: '/feed', title: 'Feed', icon: 'majesticons:user-box-line' },
 ]);
 </script>
 

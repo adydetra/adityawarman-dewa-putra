@@ -1,17 +1,15 @@
 {
   "name": "adityawarman-dewa-putra",
+  "type": "module",
   "private": true,
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
-  },
-  "devDependencies": {
-    "@nuxt/devtools": "^1.0.3",
-    "@nuxtjs/tailwindcss": "^6.10.1",
-    "nuxt": "^3.8.2"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
     "@nuxt/image": "1.1.0",
@@ -20,6 +18,14 @@
     "@tailwindcss/typography": "^0.5.10",
     "nuxt-delay-hydration": "^1.3.3",
     "nuxt-icon": "^0.6.6",
-    "nuxt-simple-sitemap": "4.1.6"
+    "nuxt-simple-sitemap": "4.1.7"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^2.3.1",
+    "@nuxt/devtools": "^1.0.4",
+    "@nuxtjs/tailwindcss": "^6.10.1",
+    "eslint": "^8.55.0",
+    "eslint-plugin-format": "^0.0.1",
+    "nuxt": "^3.8.2"
   }
 }
