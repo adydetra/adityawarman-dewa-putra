@@ -6,7 +6,6 @@ function setColorTheme(newTheme: Theme) {
 }
 </script>
 
-+
 <template>
   <button aria-label="Color Mode" @click="setColorTheme($colorMode.preference === 'dark' ? 'light' : 'dark')">
     <Icon v-if="$colorMode.value === 'dark'" name="line-md:moon-filled-alt-loop" class="dark:text-white w-4 h-4 lg:w-6 lg:h-6" />
