@@ -30,8 +30,25 @@ useHead(() => ({
   scrollbar-color: #d4d4d4 #ffffff;
 }
 html.dark {
-  scrollbar-width: thin;
   scrollbar-color: #1b1b1b #050505;
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #d4d4d4;
+}
+::-webkit-scrollbar-thumb:active {
+  background-color: #ffffff;
+}
+html.dark ::-webkit-scrollbar-thumb {
+  background-color: #1b1b1b;
+}
+html.dark ::-webkit-scrollbar-thumb:active {
+  background-color: rgb(41, 41, 41);
+}
+html.dark ::-webkit-scrollbar {
+  background-color: #050505;
 }
 body * {
   @apply transition-colors ease-in-out duration-500;
