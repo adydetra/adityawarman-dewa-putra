@@ -20,7 +20,6 @@
     "@nuxtjs/color-mode": "^3.3.2",
     "@nuxtjs/google-fonts": "^3.1.1",
     "@nuxtjs/tailwindcss": "^6.10.1",
-    "@tailwindcss/typography": "^0.5.10",
     "eslint": "^8.55.0",
     "eslint-plugin-format": "^0.1.0",
     "nuxt": "^3.8.2",
