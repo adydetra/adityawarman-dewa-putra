@@ -6,13 +6,6 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'en',
       },
-      script: [
-        {
-          src: 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1000712907457165',
-          async: true,
-          crossorigin: 'anonymous',
-        },
-      ],
     },
   },
 
