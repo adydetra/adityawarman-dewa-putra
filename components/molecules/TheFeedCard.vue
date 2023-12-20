@@ -1,4 +1,5 @@
 <script lang="ts" setup>
+const formatDate = useDateFeed();
 const statuses = ref<any[]>([]);
 const filteredStatuses = ref<any[]>([]);
 const isLoading = ref<boolean>(true);
@@ -7,14 +8,6 @@ const cardStyle = 'flex space-x-4 bg-gray-300/30 first-letter:dark:bg-slate-800 
 
 function hasVideoAttachment(status: any) {
   return status.media_attachments && status.media_attachments.length > 0 && status.media_attachments[0].type === 'video';
-}
-
-function formatDate(dateString: string) {
-  const date = new Date(dateString);
-  const year = date.getFullYear();
-  const month = (date.getMonth() + 1).toString().padStart(2, '0');
-  const day = date.getDate().toString().padStart(2, '0');
-  return `${day}-${month}-${year}`;
 }
 
 onMounted(async () => {
@@ -52,7 +45,7 @@ onMounted(async () => {
     <div v-for="status in filteredStatuses" :key="status.id" :class="cardStyle">
       <div>
         <div class="flex justify-center items-center w-8 md:w-12 overflow-hidden">
-          <NuxtImg :src="status.account.avatar" alt="Photo" placeholder loading="lazy" class="rounded-full" />
+          <NuxtImg placeholder :src="status.account.avatar" alt="Photo" loading="lazy" class="rounded-full" />
         </div>
       </div>
       <div class="w-full overflow-hidden space-y-4">

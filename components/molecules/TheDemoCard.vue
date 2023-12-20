@@ -1,19 +1,11 @@
 <script lang="ts" setup>
+const formatDate = useDateDemo();
 const statuses = ref<any[]>([]);
 const filteredStatuses = ref<any[]>([]);
 const isLoading = ref<boolean>(true);
 
 function hasVideoAttachment(status: any) {
   return status.media_attachments?.length > 0 && status.media_attachments[0].type === 'video';
-}
-
-function formatDate(dateString: string) {
-  const date = new Date(dateString);
-  const day = date.getDate().toString().padStart(2, '0');
-  const monthNames = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
-  const month = monthNames[date.getMonth()];
-  const year = date.getFullYear();
-  return `${day} ${month} ${year}`;
 }
 
 onMounted(async () => {
