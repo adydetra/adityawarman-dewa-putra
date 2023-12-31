@@ -25,6 +25,8 @@
     "nuxt": "^3.9.0",
     "nuxt-delay-hydration": "^1.3.3",
     "nuxt-icon": "^0.6.8",
-    "nuxt-simple-sitemap": "^4.2.0"
+    "nuxt-simple-sitemap": "^4.2.3",
+    "vue": "^3.4.3",
+    "vue-router": "^4.2.5"
   }
 }
