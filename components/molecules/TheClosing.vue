@@ -34,13 +34,6 @@ const link = 'text-gray-600 dark:text-gray-300 pb-0.5 border-b-2 border-gray-200
       </div>
     </div>
     <p>Find Me On</p>
-    <!-- <ul class="flex justify-center text-gray-500 dark:text-gray-400 gap-8 md:gap-7 mt-2">
-      <li v-for="(data, index) in social" :key="index">
-        <NuxtLink :to="data.url" :title="data.title" target="_blank" class="cursor-pointer ease-in-out duration-300 hover:text-yellow-400">
-          <Icon :name="data.icon" class="w-5 h-5 md:w-6 md:h-6" />
-        </NuxtLink>
-      </li>
-    </ul> -->
     <AtomsSocialMedia class="justify-center gap-8 md:gap-7 mt-2" />
     <p class="mt-8">
       If you enjoy my works, consider sponsoring<br>me on
