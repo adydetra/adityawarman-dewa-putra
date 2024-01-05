@@ -24,12 +24,11 @@ export function useWorks(): Works[] {
     { icon: 'line-md:external-link', title: 'Protem', tech: 'Vue', url: 'tpi-protem.vercel.app' },
     { icon: 'line-md:github-loop', title: 'Nuxt Starter', tech: 'Nuxt', url: 'github.com/adydetra/nuxt-starter' },
     { icon: 'line-md:github-loop', title: 'Ensik Archieve', tech: 'Nuxt', url: 'github.com/ose-id/ensik-archieve' },
-    { icon: 'line-md:github-loop', title: 'D-Notes', tech: 'Nuxt', url: 'github.com/adydetra/d-notes' },
+    { icon: 'line-md:external-link', title: 'D-Notes', tech: 'Nuxt', url: 'd-notes-adydetra.vercel.app' },
     { icon: 'line-md:github-loop', title: 'OSE', tech: 'Astro', url: 'github.com/ose-id/ose' },
     { icon: 'line-md:external-link', title: 'Insta', tech: 'Nuxt', url: 'insta.adydetra.my.id' },
     { icon: 'line-md:github-loop', title: 'Nunko', tech: 'Nuxt', url: 'github.com/adydetra/nunko' },
     { icon: 'line-md:external-link', title: 'Blog', tech: 'Nuxt', url: 'blog.adydetra.my.id' },
-    { icon: 'line-md:external-link', title: 'D-Notes', tech: 'Nuxt', url: 'd-notes-adydetra.vercel.app' },
   ];
   return works;
 }
