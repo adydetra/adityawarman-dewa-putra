@@ -22,7 +22,7 @@ const icon = 'w-3.5 h-3.5 md:w-4 md:h-4 2xl:w-5 2xl:h-5';
       </h2>
       <ul :class="list">
         <li v-for="(data, index) in operatings" :key="index">
-          <NuxtLink :to="data.url" target="_blank" :title="data.title" :class="link">
+          <NuxtLink :to="`https://${data.url}`" target="_blank" :title="data.title" :class="link">
             <Icon :name="data.icon" :class="icon" />
           </NuxtLink>
         </li>
@@ -37,7 +37,7 @@ const icon = 'w-3.5 h-3.5 md:w-4 md:h-4 2xl:w-5 2xl:h-5';
       </h2>
       <ul :class="list">
         <li v-for="(data, index) in workstations" :key="index">
-          <NuxtLink :to="data.url" target="_blank" :title="data.title" :class="link">
+          <NuxtLink :to="`https://${data.url}`" target="_blank" :title="data.title" :class="link">
             <Icon :name="data.icon" :class="icon" />
           </NuxtLink>
         </li>
@@ -52,7 +52,7 @@ const icon = 'w-3.5 h-3.5 md:w-4 md:h-4 2xl:w-5 2xl:h-5';
       </h2>
       <ul :class="list">
         <li v-for="(data, index) in databases" :key="index">
-          <NuxtLink :to="data.url" target="_blank" :title="data.title" :class="link">
+          <NuxtLink :to="`https://${data.url}`" target="_blank" :title="data.title" :class="link">
             <Icon :name="data.icon" :class="icon" />
           </NuxtLink>
         </li>
@@ -67,7 +67,7 @@ const icon = 'w-3.5 h-3.5 md:w-4 md:h-4 2xl:w-5 2xl:h-5';
       </h2>
       <ul :class="list">
         <li v-for="(data, index) in packages" :key="index">
-          <NuxtLink :to="data.url" target="_blank" :title="data.title" :class="link">
+          <NuxtLink :to="`https://${data.url}`" target="_blank" :title="data.title" :class="link">
             <Icon :name="data.icon" :class="icon" />
           </NuxtLink>
         </li>
@@ -82,7 +82,7 @@ const icon = 'w-3.5 h-3.5 md:w-4 md:h-4 2xl:w-5 2xl:h-5';
       </h2>
       <ul :class="list">
         <li v-for="(data, index) in techstacks" :key="index">
-          <NuxtLink :to="data.url" target="_blank" :title="data.title" :class="link">
+          <NuxtLink :to="`https://${data.url}`" target="_blank" :title="data.title" :class="link">
             <Icon :name="data.icon" :class="icon" />
           </NuxtLink>
         </li>
@@ -97,7 +97,7 @@ const icon = 'w-3.5 h-3.5 md:w-4 md:h-4 2xl:w-5 2xl:h-5';
       </h2>
       <ul :class="list" class="lg:gap-10">
         <li v-for="(data, index) in developments" :key="index">
-          <NuxtLink :to="data.url" target="_blank" :title="data.title" :class="link">
+          <NuxtLink :to="`https://${data.url}`" target="_blank" :title="data.title" :class="link">
             <Icon :name="data.icon" :class="icon" />
           </NuxtLink>
         </li>
