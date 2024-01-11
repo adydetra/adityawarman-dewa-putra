@@ -66,7 +66,7 @@ onMounted(async () => {
           alt="Photo"
           placeholder
           loading="lazy"
-          class="object-contain"
+          class="w-full"
         />
       </div>
     </div>
