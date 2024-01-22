@@ -9,37 +9,24 @@ export default defineNuxtConfig({
     },
   },
 
+  srcDir: 'src/',
+
   runtimeConfig: {
     public: {
       MASTODON_URL: import.meta.env.MASTODON_URL,
     },
   },
 
-  devtools: { enabled: false },
-
-  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/google-fonts', '@nuxt/image', '@nuxtjs/color-mode', 'nuxt-icon', 'nuxt-delay-hydration', 'nuxt-simple-sitemap'],
-
-  site: {
-    url: 'https://www.adydetra.my.id',
-  },
-
-  sitemap: {
-    xsl: false,
-    exclude: ['/closing'],
-  },
-
-  image: {
-    quality: 30,
-    format: ['webp'],
-  },
-
-  tailwindcss: {
-    viewer: false,
-  },
-
-  delayHydration: {
-    mode: 'mount',
-  },
+  modules: [
+    '@nuxt/image',
+    '@nuxtjs/color-mode',
+    '@nuxtjs/fontaine',
+    '@nuxtjs/google-fonts',
+    '@nuxtjs/tailwindcss',
+    'nuxt-icon',
+    'nuxt-delay-hydration',
+    'nuxt-simple-sitemap',
+  ],
 
   googleFonts: {
     families: {
@@ -53,5 +40,35 @@ export default defineNuxtConfig({
   colorMode: {
     classSuffix: '',
     preference: 'dark',
+  },
+
+  sitemap: {
+    xsl: false,
+    exclude: ['/closing'],
+  },
+
+  image: {
+    quality: 30,
+    format: ['webp'],
+  },
+
+  site: {
+    url: 'https://www.adydetra.my.id',
+  },
+
+  fontMetrics: {
+    fonts: ['Poppins'],
+  },
+
+  delayHydration: {
+    mode: 'mount',
+  },
+
+  devtools: {
+    enabled: false,
+  },
+
+  tailwindcss: {
+    viewer: false,
   },
 });
