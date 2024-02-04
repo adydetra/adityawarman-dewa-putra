@@ -17,7 +17,7 @@ export function useWorks(): Works[] {
     { icon: 'line-md:external-link', title: 'Wangyland', tech: 'Nuxt', ui: 'TailwindCSS', url: 'wangyland.vercel.app' },
     { icon: 'line-md:github-loop', title: 'MP3 / MP4 Downloader', tech: 'Next', ui: 'TailwindCSS', url: 'github.com/adydetra/mp3-mp4-downloader' },
     { icon: 'line-md:github-loop', title: 'E-Commerce LSP', tech: 'PHP', ui: 'Bootstrap', url: 'github.com/adydetra/e-commerce-lsp' },
-    { icon: 'line-md:external-link', title: 'Averroes Unipessoal. Lda', tech: 'HTML', ui: 'Bootstrap', url: 'github.com/adydetra/averroes' },
+    { icon: 'line-md:github-loop', title: 'Averroes Unipessoal. Lda', tech: 'HTML', ui: 'Bootstrap', url: 'github.com/adydetra/averroes' },
     { icon: 'line-md:external-link', title: 'List Web', tech: 'Nuxt', ui: 'TailwindCSS', url: 'list-web.adydetra.my.id' },
     { icon: 'line-md:external-link', title: 'TPI Admin', tech: 'Vue', ui: 'TailwindCSS', url: 'tpi-admin.vercel.app' },
     { icon: 'line-md:external-link', title: 'Protem', tech: 'Vue', ui: 'TailwindCSS', url: 'tpi-protem.vercel.app' },
