@@ -22,10 +22,10 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@nuxtjs/fontaine',
     '@nuxtjs/google-fonts',
+    '@nuxtjs/sitemap',
     '@nuxtjs/tailwindcss',
     'nuxt-icon',
     'nuxt-delay-hydration',
-    'nuxt-simple-sitemap',
   ],
 
   googleFonts: {
