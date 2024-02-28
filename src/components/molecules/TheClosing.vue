@@ -1,25 +1,23 @@
 <script lang="ts" setup>
 const games = useGame();
-const link = 'text-gray-600 dark:text-gray-300 pb-0.5 border-b-2 border-gray-200/50 dark:border-gray-700/40 dark:hover:!border-yellow-200/50 hover:!border-yellow-200 transition-colors ease-in-out duration-500';
 </script>
 
 <template>
   <section class="text-gray-400 !leading-[2.5rem] text-center">
     <h2 class="mb-4">
-      Study at <NuxtLink to="https://www.ut.ac.id/" title="Terbuka University" :class="link">
-        Terbuka University.
-      </NuxtLink>
+      Study at
+      <AtomsLink to="www.ut.ac.id" title="Terbuka University." />
     </h2>
     <p>
-      Outside of programming, I enjoy playing games & looking at minimalist photos on
-      <NuxtLink to="https://pinterest.com/adydetra" title="Pinterest" aria-label="Pinterest" :class="link">
-        Pinterest
-      </NuxtLink>. If you happen to be in<br>
+      Outside of programming, I listening music on
+      <AtomsLink to="open.spotify.com/user/31ayzku5aj7g7grortm6lca74ufq?si=f308a6ee6a2f4710" title="Spotify" />
+      & looking minimalist photos on
+      <AtomsLink to="pinterest.com/adydetra" title="Pinterest" />
+      . If you happen to be in<br>
       the same city as where I live (in Jakarta), maybe<br>
-      we could hang out and talk about tech or <br>join <NuxtLink to="https://discord.gg/9z6APrYMAq" title="Discord" aria-label="Discord" :class="link">
-        Discord
-      </NuxtLink> to
-      play games together.
+      we could hang out and talk about tech or <br>join
+      <AtomsLink to="discord.gg/9z6APrYMAq" title="Discord" />
+      to play games together.
     </p>
     <div class="my-12 flex flex-wrap justify-center gap-10">
       <div v-for="game in games" :key="game.title">
@@ -37,9 +35,7 @@ const link = 'text-gray-600 dark:text-gray-300 pb-0.5 border-b-2 border-gray-200
     <AtomsSocialMedia class="justify-center gap-8 md:gap-7 mt-2" />
     <p class="mt-8">
       If you enjoy my works, consider sponsoring<br>me on
-      <NuxtLink to="https://github.com/sponsors/adydetra" title="GitHub Sponsor" :class="link">
-        GitHub Sponsor 🖤
-      </NuxtLink>
+      <AtomsLink to="github.com/sponsors/adydetra" title="GitHub Sponsor 🖤" />
     </p>
     <AtomsFooter />
   </section>
