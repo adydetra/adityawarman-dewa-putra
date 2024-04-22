@@ -29,6 +29,8 @@ export function useWorks(): Works[] {
     { icon: 'line-md:github-loop', title: 'Nunko', tech: 'Nuxt', ui: 'TailwindCSS', url: 'github.com/adydetra/nunko' },
     { icon: 'line-md:external-link', title: 'Blog', tech: 'Nuxt', ui: 'UnoCSS', url: 'blog.adydetra.my.id' },
     { icon: 'line-md:external-link', title: 'Numon', tech: 'Nuxt', ui: 'UnoCSS', url: 'numon.vercel.app' },
+    { icon: 'line-md:external-link', title: 'Mie Ayam Ummi', tech: 'Nuxt', ui: 'UnoCSS', url: 'mie-ayam-ummi.vercel.app' },
+    { icon: 'line-md:external-link', title: 'Legoas', tech: 'Vue', ui: 'PrimeVue', url: 'legoas.vercel.app' },
   ];
   return works;
 }
