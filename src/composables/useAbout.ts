@@ -23,7 +23,7 @@ export function useGame(): Game[] {
 
 export function useSocial(): Social[] {
   const socials: Social[] = [
-    { icon: 'line-md:twitter-x', title: 'Twitter', url: 'twitter.com/adydetra' },
+    { icon: 'line-md:twitter-x', title: 'Twitter', url: 'x.com/adydetra' },
     { icon: 'line-md:mastodon', title: 'Mastodon', url: 'elk.zone/mastodon.social/@adityawarman' },
     { icon: 'line-md:instagram', title: 'Instagram', url: 'www.instagram.com/adydetra' },
     { icon: 'line-md:github-loop', title: 'GitHub', url: 'github.com/adydetra' },
