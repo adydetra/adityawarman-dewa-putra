@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const layout = 'hidden lg:flex flex-wrap justify-center items-center xl:w-40 2xl:w-52 py-6 mx-auto h-screen bg-white dark:bg-gray-950 fixed top-0 transition-colors ease-in-out duration-500';
+const layout = 'hidden lg:flex flex-wrap justify-center items-center xl:w-36 2xl:w-52 py-6 mx-auto h-screen bg-white dark:bg-gray-950 fixed top-0 transition-colors ease-in-out duration-500';
 const link = 'text-xs text-gray-400 hover:text-yellow-400 dark:hover:text-yellow-200 text-center w-full transition-colors ease-in-out duration-500';
 const icon = 'size-4 lg:size-6';
 const box = 'w-full flex justify-center my-8';

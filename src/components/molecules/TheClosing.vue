@@ -3,7 +3,7 @@ const games = useGame();
 </script>
 
 <template>
-  <section class="text-gray-400 !leading-[2.5rem] text-center">
+  <section class="text-gray-400 !leading-[2.5rem] text-center text-base xl:text-[0.95rem] 2xl:text-base">
     <h2 class="mb-4">
       Study at
       <AtomsLink to="www.ut.ac.id" title="Terbuka University." />

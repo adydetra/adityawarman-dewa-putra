@@ -16,7 +16,7 @@ const works = useWorks();
         <span class="text-xs 2xl:text-base font-light tracking-wider">{{ work.title }}</span>
       </div>
       <div class="flex justify-between items-center w-full">
-        <span class="text-[11px] 2xl:text-xs font-extralight tracking-widest space-x-2.5">
+        <span class="text-[11px] xl:text-[9.5px] 2xl:text-xs font-extralight tracking-widest space-x-2.5">
           <span class="bg-gray-100 dark:bg-slate-900 rounded py-0.5 px-1.5 transition-colors ease-in-out duration-500">{{ work.tech }}</span>
           <span class="bg-gray-100 dark:bg-slate-900 rounded py-0.5 px-1.5 transition-colors ease-in-out duration-500">{{ work.ui }}</span>
         </span>

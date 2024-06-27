@@ -9,8 +9,8 @@ const sections = ref([
 ]);
 
 const classes = {
-  card: 'flex justify-center pt-6 pb-8 bg-gray-200/30 dark:bg-gray-500/5 rounded-md text-gray-400 transition-colors ease-in-out duration-500',
-  h2: 'text-sm md:text-md 2xl:text-lg font-light mb-6 lg:mb-8 text-center',
+  card: 'flex justify-center pt-6 pb-8 xl:pt-4 xl:pb-6 2xl:pt-6 2xl:pb-8 bg-gray-200/30 dark:bg-gray-500/5 rounded-md text-gray-400 transition-colors ease-in-out duration-500',
+  h2: 'text-sm md:text-base 2xl:text-lg font-light mb-6 lg:mb-8 text-center',
   list: 'flex flex-wrap justify-center px-16 md:!px-0 gap-8 md:gap-12',
   link: 'cursor-pointer transition-colors ease-in-out duration-300 dark:text-gray-600 hover:text-yellow-400 dark:hover:text-yellow-200',
   icon: 'size-3.5 md:size-4 2xl:size-5',

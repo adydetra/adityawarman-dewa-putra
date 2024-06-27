@@ -11,13 +11,13 @@ const socials = useSocial();
         <p class="text-gray-500 dark:text-gray-300 xl:text-4xl 2xl:text-5xl font-bold lg:!leading-relaxed max-w-xl 2xl:max-w-7xl">
           <span class="text-yellow-300 dark:text-yellow-200">Front End Developer</span>, big fan open-source, enjoying life.
         </p>
-        <p class="text-gray-400 xl:text-md 2xl:text-lg">
+        <p class="text-gray-400 xl:text-sm 2xl:text-lg">
           ~ I’m Adityawarman <span class="px-1 rounded-md bg-gray-200/50 dark:bg-gray-900">Dewa</span> Putra. Live in Jakarta, Indonesia <Icon name="twemoji:flag-indonesia" class="size-4" />
         </p>
         <ul class="flex gap-8 md:gap-7 mt-2">
           <li v-for="(data, index) in socials" :key="index">
             <NuxtLink :to="`https://${data.url}`" :title="data.title" target="_blank" class="transition-colors ease-in-out duration-300 text-gray-500 dark:text-gray-400 hover:text-yellow-400 dark:hover:text-yellow-200">
-              <Icon :name="data.icon" class="size-6 md:size-7" />
+              <Icon :name="data.icon" class="size-6 md:size-5 2xl:size-7" />
             </NuxtLink>
           </li>
         </ul>
