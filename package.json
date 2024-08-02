@@ -12,21 +12,29 @@
     "lint:fix": "eslint . --fix"
   },
   "dependencies": {
-    "@nuxt/image": "1.5.0"
+    "@nuxt/image": "1.7.0"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.18.1",
-    "@nuxt/devtools": "^1.3.1",
-    "@nuxtjs/color-mode": "^3.4.1",
-    "@nuxtjs/fontaine": "^0.4.2",
+    "@antfu/eslint-config": "^2.24.1",
+    "@iconify-json/ci": "^1.1.13",
+    "@iconify-json/icon-park-outline": "^1.1.15",
+    "@iconify-json/line-md": "^1.1.38",
+    "@iconify-json/majesticons": "^1.1.11",
+    "@iconify-json/meteocons": "^1.1.5",
+    "@iconify-json/mingcute": "^1.1.18",
+    "@iconify-json/tdesign": "^1.1.7",
+    "@iconify-json/twemoji": "^1.1.15",
+    "@nuxt/devtools": "^1.3.9",
+    "@nuxt/icon": "^1.4.4",
+    "@nuxtjs/color-mode": "^3.4.2",
+    "@nuxtjs/fontaine": "^0.4.3",
     "@nuxtjs/google-fonts": "^3.2.0",
-    "@nuxtjs/sitemap": "^5.1.5",
-    "@nuxtjs/tailwindcss": "^6.12.0",
-    "eslint": "^9.3.0",
-    "nuxt": "^3.11.2",
-    "nuxt-delay-hydration": "^1.3.3",
-    "nuxt-icon": "^0.6.10",
-    "vue": "^3.4.27",
-    "vue-router": "^4.3.2"
+    "@nuxtjs/sitemap": "^6.0.0-beta.1",
+    "@nuxtjs/tailwindcss": "^6.12.1",
+    "eslint": "^9.8.0",
+    "nuxt": "^3.12.4",
+    "nuxt-delay-hydration": "^1.3.5",
+    "vue": "^3.4.35",
+    "vue-router": "^4.4.2"
   }
 }

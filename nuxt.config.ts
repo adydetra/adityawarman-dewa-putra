@@ -18,13 +18,13 @@ export default defineNuxtConfig({
   },
 
   modules: [
+    '@nuxt/icon',
     '@nuxt/image',
     '@nuxtjs/color-mode',
     '@nuxtjs/fontaine',
     '@nuxtjs/google-fonts',
     '@nuxtjs/sitemap',
     '@nuxtjs/tailwindcss',
-    'nuxt-icon',
     'nuxt-delay-hydration',
   ],
 
@@ -71,4 +71,6 @@ export default defineNuxtConfig({
   tailwindcss: {
     viewer: false,
   },
+
+  compatibilityDate: '2024-08-02',
 });
