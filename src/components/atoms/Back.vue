@@ -6,7 +6,7 @@ function goToPrev() {
 </script>
 
 <template>
-  <button class="fixed top-4 left-4" @click="goToPrev()">
+  <button class="flex items-center fixed top-4 left-4" @click="goToPrev()">
     <Icon name="line-md:arrow-left-circle" class="text-black dark:text-white size-4 lg:size-6 transition-colors ease-in-out duration-500" />
   </button>
 </template>

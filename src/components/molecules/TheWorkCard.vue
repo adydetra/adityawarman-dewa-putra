@@ -20,10 +20,12 @@ const works = useWorks();
           <span class="bg-gray-100 dark:bg-slate-900 rounded py-0.5 px-1.5 transition-colors ease-in-out duration-500">{{ work.tech }}</span>
           <span class="bg-gray-100 dark:bg-slate-900 rounded py-0.5 px-1.5 transition-colors ease-in-out duration-500">{{ work.ui }}</span>
         </span>
-        <Icon
-          :name="work.icon"
-          class="absolute right-6 size-6 2xl:size-7 rounded-full p-1.5 shadow-sm bg-gray-100 dark:bg-zinc-800 border border-gray-400/50 dark:border-zinc-700/50 ring-0 transition-colors ease-in-out duration-500"
-        />
+        <div class="absolute flex items-center right-6 p-1.5 shadow-sm bg-gray-100 dark:bg-zinc-800 rounded-full border border-gray-400/50 dark:border-zinc-700/50 ring-0 transition-colors ease-in-out duration-500">
+          <Icon
+            :name="work.icon"
+            class="size-3 2xl:size-4"
+          />
+        </div>
       </div>
     </div>
   </NuxtLink>
