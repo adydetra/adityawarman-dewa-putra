@@ -57,5 +57,6 @@ export function useDevelopments(): Uses[] {
     { icon: 'simple-icons:postman', title: 'Postman', url: 'www.postman.com' },
     { icon: 'simple-icons:firefoxbrowser', title: 'Firefox Developer Edition', url: 'www.mozilla.org/id/firefox/developer' },
     { icon: 'NuxtIcon', title: 'Arc', url: 'arc.net' },
+    { icon: 'devicon-plain:putty', title: 'PuTTY', url: 'www.putty.org' },
   ];
 }
