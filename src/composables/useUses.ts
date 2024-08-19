@@ -38,13 +38,13 @@ export function usePackages(): Uses[] {
 
 export function useTechstacks(): Uses[] {
   return [
+    { icon: 'devicon-plain:typescript', title: 'TypeScript (Language)', url: 'www.typescriptlang.org' },
+    { icon: 'simple-icons:python', title: 'Python (Language)', url: 'python.org' },
+    { icon: 'simple-icons:react', title: 'React (JS Library)', url: 'react.dev' },
+    { icon: 'simple-icons:nuxtdotjs', title: 'Nuxt (Vue Framework)', url: 'nuxt.com' },
+    { icon: 'tabler:brand-threejs', title: 'Threejs (3D, JS Based)', url: 'threejs.org' },
     { icon: 'simple-icons:tailwindcss', title: 'TailwindCSS (UI)', url: 'tailwindcss.com' },
     { icon: 'simple-icons:unocss', title: 'UnoCSS (UI)', url: 'unocss.dev' },
-    { icon: 'simple-icons:vuedotjs', title: 'Vue (JS Framework)', url: 'vuejs.org' },
-    { icon: 'simple-icons:nuxtdotjs', title: 'Nuxt (Vue Framework)', url: 'nuxt.com' },
-    { icon: 'file-icons:vite', title: 'Vite (Frontend Tooling)', url: 'vitejs.dev' },
-    { icon: 'devicon-plain:vitest', title: 'Vitest (Testing)', url: 'vitest.dev' },
-    { icon: 'devicon-plain:typescript', title: 'TypeScript (Language)', url: 'www.typescriptlang.org' },
   ];
 }
 
@@ -56,7 +56,7 @@ export function useDevelopments(): Uses[] {
     { icon: 'simple-icons:alacritty', title: 'Alacritty', url: 'alacritty.org' },
     { icon: 'simple-icons:postman', title: 'Postman', url: 'www.postman.com' },
     { icon: 'simple-icons:firefoxbrowser', title: 'Firefox Developer Edition', url: 'www.mozilla.org/id/firefox/developer' },
-    { icon: 'NuxtIcon', title: 'Arc', url: 'arc.net' },
+    { icon: 'simple-icons:arc', title: 'Arc', url: 'arc.net' },
     { icon: 'devicon-plain:putty', title: 'PuTTY', url: 'www.putty.org' },
   ];
 }
