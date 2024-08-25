@@ -5,7 +5,7 @@
   <div class="mt-6 text-gray-400 text-sm lg:text-base !leading-8">
     <div class="space-y-4">
       <p>
-        ~ Hello, I am Adityawarman <span class="px-1 rounded-md bg-gray-200/50 dark:bg-gray-900 transition-colors ease-in-out duration-500">Dewa</span> Putra. Front End Developer, big fan open-source, enjoying life.
+        ~ Hello, I am Adityawarman <span class="px-1 rounded-md bg-gray-200/50 dark:bg-gray-900 transition-colors ease-in-out duration-500">Dewa</span> Putra. Full Stack Developer, big fan open-source, enjoying life.
       </p>
       <p>
         Study at

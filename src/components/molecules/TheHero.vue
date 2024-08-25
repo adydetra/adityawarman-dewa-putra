@@ -9,7 +9,7 @@ const socials = useSocial();
     >
       <div class="xl:space-y-6 2xl:space-y-8">
         <p class="text-gray-500 dark:text-gray-300 xl:text-4xl 2xl:text-5xl font-bold lg:!leading-relaxed max-w-xl 2xl:max-w-7xl">
-          <span class="text-yellow-300 dark:text-yellow-200">Front End Developer</span>, big fan open-source, enjoying life.
+          <span class="text-yellow-300 dark:text-yellow-200">Full Stack Developer</span>, big fan open-source, enjoying life.
         </p>
         <p class="text-gray-400 xl:text-sm 2xl:text-lg">
           ~ I’m Adityawarman <span class="px-1 rounded-md bg-gray-200/50 dark:bg-gray-900">Dewa</span> Putra. Live in Jakarta, Indonesia <Icon name="twemoji:flag-indonesia" class="size-4" />
