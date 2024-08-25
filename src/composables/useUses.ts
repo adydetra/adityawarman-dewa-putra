@@ -30,7 +30,6 @@ export function useDatabases(): Uses[] {
 export function usePackages(): Uses[] {
   return [
     { icon: 'simple-icons:npm', title: 'NPM', url: 'www.npmjs.com' },
-    { icon: 'akar-icons:yarn-fill', title: 'Yarn', url: 'yarnpkg.com' },
     { icon: 'file-icons:pnpm', title: 'PNPM', url: 'pnpm.io' },
     { icon: 'simple-icons:bun', title: 'Bun', url: 'bun.sh' },
   ];
