@@ -15,6 +15,7 @@ export function useWorkstations(): Uses[] {
   return [
     { icon: 'ic:round-smartphone', title: 'Xiaomi Redmi Note 7 Pro', url: 'www.gsmarena.com/xiaomi_redmi_note_7-9513.php' },
     { icon: 'solar:laptop-outline', title: 'Asus A412DA Ryzen 3', url: 'www.google.com/search?sca_esv=1a19a9bccf6da8da&sxsrf=ADLYWIKTqWm5IzISfS7Kl8PTl4XbpH_-1Q:1725216826704&q=Asus+A412DA+Ryzen+3&udm=2&fbs=AEQNm0CvspUPonaF8UH5s_LBD3JPX4RSeMPt9v8oIaeGMh2T2PRrsfVPlQRxSTpQ4UUI6wdh60Bm53mxaBz4ng0b7PV-YGWOXPAK2E9Fu6maaEHunHtoSjVk3b-j4DUpo16Oa_LVdETsNu_VGLBMmFaNxor7f38b2SzeEgh2In7gbY1o1jZb0CIcwnVDOcoRa1v5_LKsm1fEDd6pfd2A3dGDUASPo0aaxA&sa=X&ved=2ahUKEwj73_bAtaKIAxXsT2cHHQ68KXAQtKgLegQICxAB&biw=1904&bih=1000&dpr=1' },
+    { icon: 'ic:baseline-monitor', title: 'Lenovo L24i-30', url: 'psref.lenovo.com/syspool/Sys/PDF/Lenovo_Monitors/Lenovo_L24i_30/Lenovo_L24i_30_Spec.pdf' },
     { icon: 'tabler:rectangle', title: 'Paradox Tarot', url: 'paradoxgaming.id/produk/fox-mask-tarot' },
     { icon: 'streamline:entertainment-earpods-airpods-audio-earpods-music-earbuds-true-wireless', title: 'HUAWEI FreeBuds SE', url: 'consumer.huawei.com/en/headphones/freebuds-se' },
   ];
