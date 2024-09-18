@@ -15,7 +15,7 @@ const { data, error, pending } = useAsyncData('statuses', () => $fetch(MASTODON_
 });
 
 const isLoading = computed(() => pending.value && !statuses.value.length);
-const filteredStatuses = computed(() => statuses.value.filter(status => !hasVideoAttachment(status)));
+const filteredStatuses = computed(() => statuses.value.filter((status: any) => !hasVideoAttachment(status)));
 
 watchEffect(() => {
   if (data.value && Array.isArray(data.value))
