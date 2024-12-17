@@ -25,13 +25,13 @@ export function useWorks(): Works[] {
     { icon: 'line-md:github-loop', title: 'Ensik Archieve', tech: 'Nuxt', ui: 'TailwindCSS', url: 'github.com/ose-id/ensik-archieve' },
     { icon: 'line-md:external-link', title: 'D-Notes', tech: 'Nuxt', ui: 'UnoCSS', url: 'd-notes-adydetra.vercel.app' },
     { icon: 'line-md:github-loop', title: 'OSE', tech: 'Nuxt', ui: 'UnoCSS', url: 'github.com/ose-id/ose' },
-    { icon: 'line-md:external-link', title: 'Insta', tech: 'Nuxt', ui: 'UnoCSS', url: 'insta.adydetra.my.id' },
+    { icon: 'line-md:external-link', title: 'Insta', tech: 'Nuxt', ui: 'UnoCSS', url: 'insta-adydetra.vercel.app' },
     { icon: 'line-md:github-loop', title: 'Nunko', tech: 'Nuxt', ui: 'TailwindCSS', url: 'github.com/adydetra/nunko' },
     { icon: 'line-md:external-link', title: 'Blog', tech: 'Nuxt', ui: 'UnoCSS', url: 'blog.adydetra.my.id' },
     { icon: 'line-md:external-link', title: 'Numon', tech: 'Nuxt', ui: 'UnoCSS', url: 'numon.vercel.app' },
     { icon: 'line-md:external-link', title: 'Mie Ayam Ummi', tech: 'Nuxt', ui: 'UnoCSS', url: 'mie-ayam-ummi.vercel.app' },
     { icon: 'line-md:external-link', title: 'Legoas', tech: 'Vue', ui: 'PrimeVue', url: 'legoas.vercel.app' },
-    { icon: 'line-md:external-link', title: 'iKnowYourPain', tech: 'Nuxt', ui: 'UnoCSS', url: 'iknowyourpain.adydetra.my.id' },
+    { icon: 'line-md:external-link', title: 'iKnowYourPain', tech: 'Nuxt', ui: 'UnoCSS', url: 'iknowyourpain.vercel.app' },
   ];
   return works;
 }
