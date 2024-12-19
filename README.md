@@ -2,7 +2,7 @@
 
 ![Static Badge](https://img.shields.io/badge/license-MIT-brightgreen?label=LICENSE)
 
-**[www.adydetra.my.id](https://www.adydetra.my.id)**
+**[adityawarman.vercel.app](https://adityawarman.vercel.app)**
 
 This is the code and content for my personal website, built in [Nuxt](https://nuxt.com/).
 
