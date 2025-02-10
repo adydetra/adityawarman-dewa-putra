@@ -22,7 +22,7 @@ export function useWorks(): Works[] {
     { icon: 'line-md:external-link', title: 'TPI Admin', tech: 'Vue', ui: 'TailwindCSS', url: 'tpi-admin.vercel.app' },
     { icon: 'line-md:external-link', title: 'Protem', tech: 'Vue', ui: 'TailwindCSS', url: 'tpi-protem.vercel.app' },
     { icon: 'line-md:github-loop', title: 'Nuxt Starter', tech: 'Nuxt', ui: 'TailwindCSS', url: 'github.com/adydetra/nuxt-starter' },
-    { icon: 'line-md:github-loop', title: 'Ensik Archieve', tech: 'Nuxt', ui: 'TailwindCSS', url: 'github.com/ose-id/ensik-archieve' },
+    { icon: 'line-md:external-link', title: 'Ensik Archieve', tech: 'Nuxt', ui: 'UnoCSS', url: 'ensik-archieve.vercel.app' },
     { icon: 'line-md:external-link', title: 'D-Notes', tech: 'Nuxt', ui: 'UnoCSS', url: 'd-notes-adydetra.vercel.app' },
     { icon: 'line-md:github-loop', title: 'OSE', tech: 'Nuxt', ui: 'UnoCSS', url: 'github.com/ose-id/ose' },
     { icon: 'line-md:external-link', title: 'Insta', tech: 'Nuxt', ui: 'UnoCSS', url: 'insta-adydetra.vercel.app' },
