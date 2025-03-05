@@ -7,7 +7,7 @@ export default defineNuxtConfig({
         lang: 'en',
       },
       meta: [
-        { name: 'keywords', content: 'Adityawarman, Dewa, Putra, SMKN 1 Jakarta, Frontend Developer, Aptrocode' },
+        { name: 'keywords', content: 'adydetra, Adityawarman, Dewa, Putra, SMKN 1 Jakarta, Frontend Developer, Aptrocode' },
         { name: 'author', content: 'Adityawarman Dewa Putra' },
       ],
     },
