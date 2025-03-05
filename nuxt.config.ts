@@ -57,7 +57,7 @@ export default defineNuxtConfig({
   },
 
   site: {
-    url: 'https://adityawarman.vercel.app',
+    url: 'https://adydetra.my.id',
   },
 
   fontMetrics: {
