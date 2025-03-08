@@ -7,7 +7,7 @@ useHead(() => ({
   link: [
     {
       rel: 'canonical',
-      href: `https://adityawarman.vercel.app${route.path}`,
+      href: `https://www.adydetra.my.id${route.path}`,
     },
   ],
 }));
