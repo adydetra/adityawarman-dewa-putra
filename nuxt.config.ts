@@ -52,7 +52,6 @@ export default defineNuxtConfig({
   },
 
   image: {
-    quality: 30,
     format: ['webp'],
   },
 
