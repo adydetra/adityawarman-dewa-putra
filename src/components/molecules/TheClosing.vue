@@ -4,11 +4,11 @@ const games = useGame();
 
 <template>
   <section class="text-gray-400 !leading-[2.5rem] text-center text-base xl:text-[0.95rem] 2xl:text-base">
-    <h1 class="mb-4">
+    <h1 class="mb-2">
       Study at
       <AtomsLink to="www.ut.ac.id" title="Terbuka University." />
     </h1>
-    <h2 class="mb-4">
+    <h2 class="mb-2">
       Working at <AtomsLink to="www.aptronim.com" title="Aptronim" />, As a member of the <AtomsLink to="www.aptronim.com/aptrocode" title="Aptrocode" /> team
     </h2>
     <p>
