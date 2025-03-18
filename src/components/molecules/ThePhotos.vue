@@ -1,42 +1,13 @@
 <script setup lang="ts">
-const photos = ref<Array<{ id: number; src: string; alt: string }>>([]);
+const totalPhotos = 16;
 
-async function imageExists(url: string): Promise<boolean> {
-  try {
-    const response = await fetch(url, { method: 'HEAD' });
-    return response.ok;
-  }
-  catch {
-    return false;
-  }
-}
-
-async function loadPhotos() {
-  const foundPhotos = [];
-  let photoNum = 1;
-  let consecutiveFailures = 0;
-
-  while (consecutiveFailures < 3) {
-    const photoPath = `/images/capture/photo${photoNum}.jpg`;
-
-    if (await imageExists(photoPath)) {
-      foundPhotos.push({
-        id: photoNum,
-        src: photoPath,
-        alt: `Photo ${photoNum}`,
-      });
-      consecutiveFailures = 0;
-    }
-    else {
-      consecutiveFailures++;
-    }
-    photoNum++;
-  }
-  photos.value = foundPhotos;
-}
-
-onMounted(() => {
-  loadPhotos();
+const photos = Array.from({ length: totalPhotos }, (_, i) => {
+  const photoNum = i + 1;
+  return {
+    id: photoNum,
+    src: `/images/capture/photo${photoNum}.jpg`,
+    alt: `Photo ${photoNum}`,
+  };
 });
 </script>
 
