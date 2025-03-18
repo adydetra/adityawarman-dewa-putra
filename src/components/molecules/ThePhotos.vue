@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const totalPhotos = 32;
+const totalPhotos = 36;
 
 const photos = Array.from({ length: totalPhotos }, (_, i) => {
   const photoNum = i + 1;
