@@ -4,13 +4,16 @@
   </p>
   <div class="mt-6 text-gray-400 text-sm lg:text-base !leading-8">
     <div class="space-y-4">
-      <p>
+      <h1>
         ~ Hello, I am Adityawarman <span class="px-1 rounded-md bg-gray-200/50 dark:bg-gray-900 transition-colors ease-in-out duration-500">Dewa</span> Putra. Full Stack Developer, big fan open-source, enjoying life.
-      </p>
-      <p>
+      </h1>
+      <h2>
         Study at
         <AtomsLink to="www.ut.ac.id/" title="Terbuka University." />
-      </p>
+      </h2>
+      <h3 class="mb-4">
+        Working at <AtomsLink to="www.aptronim.com" title="Aptronim" />, As a member of the <AtomsLink to="www.aptronim.com/aptrocode" title="Aptrocode" /> team
+      </h3>
     </div>
     <p class="mt-4">
       Outside of programming, I like listening music on
