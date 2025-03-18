@@ -4,13 +4,13 @@ const games = useGame();
 
 <template>
   <section class="text-gray-400 !leading-[2.5rem] text-center text-base xl:text-[0.95rem] 2xl:text-base">
-    <h1 class="mb-2">
+    <h2 class="mb-2">
       Study at
       <AtomsLink to="www.ut.ac.id" title="Terbuka University." />
-    </h1>
-    <h2 class="mb-2">
-      Working at <AtomsLink to="www.aptronim.com" title="Aptronim" />, As a member of the <AtomsLink to="www.aptronim.com/aptrocode" title="Aptrocode" /> team
     </h2>
+    <h3 class="mb-2">
+      Working at <AtomsLink to="www.aptronim.com" title="Aptronim" />, As a member of the <AtomsLink to="www.aptronim.com/aptrocode" title="Aptrocode" /> team
+    </h3>
     <p>
       Outside of programming, I listening music on
       <AtomsLink to="open.spotify.com/user/31ayzku5aj7g7grortm6lca74ufq?si=f308a6ee6a2f4710" title="Spotify" />
