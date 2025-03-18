@@ -9,17 +9,38 @@ const routeMap: Record<string, number> = {
   '/': 1,
   '/uses': 2,
   '/work': 3,
-  '/closing': 4,
+  '/photos': 4,
+  '/closing': 5,
 };
 const currentNumber = routeMap[route.path] || 0;
 
 const showLeftContent = currentNumber !== 1;
-const leftLink = showLeftContent ? (currentNumber === 2 ? '/' : currentNumber === 3 ? 'uses' : currentNumber === 4 ? 'work' : '#') : '#';
-const leftIconName = showLeftContent ? (currentNumber === 2 ? 'ci:chevron-left-duo' : 'ci:chevron-left-duo') : '#';
+const leftLink = showLeftContent
+  ? (currentNumber === 2
+      ? '/'
+      : currentNumber === 3
+        ? '/uses'
+        : currentNumber === 4
+          ? '/work'
+          : currentNumber === 5
+            ? '/photos'
+            : '#')
+  : '#';
+const leftIconName = showLeftContent ? 'ci:chevron-left-duo' : '#';
 
-const showRightContent = currentNumber !== 4;
-const rightLink = showRightContent ? (currentNumber === 1 ? 'uses' : currentNumber === 2 ? 'work' : currentNumber === 3 ? 'closing' : '#') : '#';
-const rightIconName = showRightContent ? (currentNumber === 1 ? 'ci:chevron-right-duo' : 'ci:chevron-right-duo') : '#';
+const showRightContent = currentNumber !== 5;
+const rightLink = showRightContent
+  ? (currentNumber === 1
+      ? '/uses'
+      : currentNumber === 2
+        ? '/work'
+        : currentNumber === 3
+          ? '/photos'
+          : currentNumber === 4
+            ? '/closing'
+            : '#')
+  : '#';
+const rightIconName = showRightContent ? 'ci:chevron-right-duo' : '#';
 
 const activeLeft = showLeftContent
   ? 'cursor-pointer hover:text-yellow-400 dark:hover:text-yellow-200'
