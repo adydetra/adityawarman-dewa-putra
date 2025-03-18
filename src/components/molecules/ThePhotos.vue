@@ -23,5 +23,6 @@ const photos = Array.from({ length: totalPhotos }, (_, i) => {
         />
       </div>
     </div>
+    <AtomsFooter class="!text-center" />
   </section>
 </template>
