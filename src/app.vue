@@ -13,7 +13,7 @@ useHead(() => ({
 }));
 
 useSeoMeta({
-  description: '~ Hello, I am Adityawarman Dewa Putra, big fan open-source, study at Terbuka University.',
+  description: '~ Hello, I am Adityawarman Dewa Putra, big fan open-source, study at Universitas Terbuka. Working at Aptronim, As a member of the Aptrocode team.',
   twitterCard: 'summary_large_image',
 });
 </script>

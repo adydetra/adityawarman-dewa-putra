@@ -9,10 +9,10 @@
       </h1>
       <h2>
         Study at
-        <AtomsLink to="www.ut.ac.id/" title="Terbuka University." />
+        <AtomsLink to="www.ut.ac.id/" title="Universitas Terbuka." />
       </h2>
       <h3 class="mb-4">
-        Working at <AtomsLink to="www.aptronim.com" title="Aptronim" />, As a member of the <AtomsLink to="www.aptronim.com/aptrocode" title="Aptrocode" /> team
+        Working at <AtomsLink to="www.aptronim.com" title="Aptronim" />, As a member of the <AtomsLink to="www.aptronim.com/aptrocode" title="Aptrocode" /> team.
       </h3>
     </div>
     <p class="mt-4">
