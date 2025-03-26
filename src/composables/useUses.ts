@@ -30,8 +30,8 @@ export function useDatabases(): Uses[] {
 
 export function usePackages(): Uses[] {
   return [
-    { icon: 'simple-icons:npm', title: 'NPM', url: 'www.npmjs.com' },
-    { icon: 'file-icons:pnpm', title: 'PNPM', url: 'pnpm.io' },
+    { icon: 'simple-icons:npm', title: 'npm', url: 'www.npmjs.com' },
+    { icon: 'file-icons:pnpm', title: 'pnpm', url: 'pnpm.io' },
     { icon: 'simple-icons:bun', title: 'Bun', url: 'bun.sh' },
   ];
 }
