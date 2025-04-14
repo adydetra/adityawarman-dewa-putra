@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const totalPhotos = 60;
+const totalPhotos = 95;
 
 const photos = Array.from({ length: totalPhotos }, (_, i) => {
   const photoNum = i + 1;
@@ -8,7 +8,7 @@ const photos = Array.from({ length: totalPhotos }, (_, i) => {
     src: `/images/capture/photo${photoNum}.jpg`,
     alt: `Photo ${photoNum}`,
   };
-});
+}).reverse();
 
 const selectedPhoto = ref<null | { id: number; src: string; alt: string }>(null);
 
