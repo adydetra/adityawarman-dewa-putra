@@ -6,7 +6,7 @@ export interface Uses {
 
 export function useOperatings(): Uses[] {
   return [
-    { icon: 'uim:windows', title: 'Windows', url: 'www.microsoft.com/en-us/windows' },
+    { icon: 'mage:microsoft-windows', title: 'Windows', url: 'www.microsoft.com/en-us/windows' },
     { icon: 'cib:arch-linux', title: 'Arch Linux', url: 'archlinux.org' },
   ];
 }
