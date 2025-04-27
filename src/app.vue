@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import Lenis from 'lenis';
+
 const route = useRoute();
 
 useHead(() => ({
@@ -15,6 +17,21 @@ useHead(() => ({
 useSeoMeta({
   description: '~ Hello, I am Adityawarman Dewa Putra, big fan open-source, study at Universitas Terbuka. Working at Aptronim, As a member of the Aptrocode team.',
   twitterCard: 'summary_large_image',
+});
+
+onMounted(() => {
+  const lenis = new Lenis({
+    duration: 1.4,
+    smoothWheel: true,
+    orientation: 'vertical',
+    gestureOrientation: 'vertical',
+  });
+
+  function raf(time: number) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+  requestAnimationFrame(raf);
 });
 </script>
 
