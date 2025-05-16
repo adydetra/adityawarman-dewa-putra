@@ -1,8 +1,8 @@
 <template>
-  <p class="text-black dark:text-gray-300 text-2xl font-bold transition-colors ease-in-out duration-500">
+  <p class="text-black dark:text-gray-300 text-2xl md:text-4xl font-bold transition-colors ease-in-out duration-500">
     A.<span class="text-4xl">Dewa</span> Putra
   </p>
-  <div class="mt-6 text-gray-400 text-sm lg:text-base !leading-8">
+  <div class="mt-6 text-gray-400 text-sm md:text-base !leading-8">
     <div class="space-y-4">
       <h1>
         ~ Hello, I am Adityawarman <span class="px-1 rounded-md bg-gray-200/50 dark:bg-gray-900 transition-colors ease-in-out duration-500">Dewa</span> Putra. Full Stack Developer, big fan open-source, enjoying life.

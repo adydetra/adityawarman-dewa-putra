@@ -1,10 +1,10 @@
 <script setup lang="ts">
 const sections = ref([
-  { title: 'OS', data: useOperatings(), colSpan: 'lg:col-span-2' },
-  { title: 'Workstation', data: useWorkstations(), colSpan: 'lg:col-span-4' },
-  { title: 'Database', data: useDatabases(), colSpan: 'lg:col-span-2' },
-  { title: 'Package Manager', data: usePackages(), colSpan: 'lg:col-span-4' },
-  { title: 'Tech Stack', data: useTechstacks(), colSpan: 'lg:col-span-4' },
+  { title: 'OS', data: useOperatings(), colSpan: 'xl:col-span-2' },
+  { title: 'Workstation', data: useWorkstations(), colSpan: 'xl:col-span-4' },
+  { title: 'Database', data: useDatabases(), colSpan: 'xl:col-span-2' },
+  { title: 'Package Manager', data: usePackages(), colSpan: 'xl:col-span-4' },
+  { title: 'Tech Stack', data: useTechstacks(), colSpan: 'xl:col-span-4' },
   { title: 'Development tools', data: useDevelopments(), colSpan: 'col-span-8' },
 ]);
 
