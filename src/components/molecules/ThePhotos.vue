@@ -39,10 +39,10 @@ function closePopup() {
           :alt="photo.alt"
           loading="lazy"
         >
-          <div class="relative w-full h-full">
+          <div class="relative size-full">
             <img
               v-bind="imgAttrs"
-              class="object-cover w-full h-full transition-opacity duration-300"
+              class="object-cover size-full transition-opacity duration-300"
             >
             <div
               v-if="!isLoaded"
@@ -63,17 +63,17 @@ function closePopup() {
       class="fixed inset-0 flex items-center justify-center z-50 bg-black/50 backdrop-blur-md"
       @click="closePopup"
     >
-      <div class="max-w-[90%] max-h-[90%]" @click.stop>
+      <div class="xl:h-[80vh]" @click.stop>
         <NuxtImg
           v-slot="{ imgAttrs, isLoaded }"
           custom
           :src="selectedPhoto.src"
           :alt="selectedPhoto.alt"
         >
-          <div class="relative w-full h-full">
+          <div class="relative size-full">
             <img
               v-bind="imgAttrs"
-              class="object-contain w-full h-full transition-opacity duration-300"
+              class="object-contain size-full transition-opacity duration-300"
             >
             <div
               v-if="!isLoaded"
