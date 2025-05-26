@@ -20,7 +20,7 @@ definePageMeta({ title: 'Work' });
             Work
           </div>
         </h1>
-        <div class="grid grid-cols-8 xl:grid-cols-9 gap-6 md:gap-8 lg:gap-12 2xl:gap-20">
+        <div class="grid grid-cols-8 3xl:grid-cols-9 gap-6 md:gap-8 lg:gap-12 3xl:gap-20 2xl:px-32 3xl:px-0">
           <MoleculesTheWorkCard />
         </div>
       </div>
