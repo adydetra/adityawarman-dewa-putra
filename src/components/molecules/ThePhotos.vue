@@ -25,7 +25,7 @@ function closePopup() {
 
 <template>
   <section>
-    <div class="grid grid-cols-2 md:grid-cols-3 3xl:grid-cols-4 gap-4 mb-8 lg:px-20 xl:px-60 3xl:px-0">
+    <div class="grid grid-cols-2 md:grid-cols-3 3xl:grid-cols-4 gap-4 mb-8 lg:px-20 xl:px-60 3xl:px-8">
       <div
         v-for="photo in photos"
         :key="photo.id"
