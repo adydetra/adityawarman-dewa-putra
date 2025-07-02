@@ -9,6 +9,7 @@ const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 const isSubmitting = ref(false);
 const loading = ref(true);
 const posts = ref([]);
+const visibleCards = ref(new Set());
 
 const postsByYear = computed(() => {
   const grouped = {};
@@ -33,6 +34,8 @@ const form = ref({
 
 const message = ref({ text: '', type: '' });
 const captcha = ref({ question: '', answer: 0 });
+
+let observer = null;
 
 function generateCaptcha() {
   const num1 = Math.floor(Math.random() * 10) + 1;
@@ -118,7 +121,33 @@ async function submitPost() {
 onMounted(() => {
   generateCaptcha();
   loadPosts();
+  setupObserver();
 });
+
+onUnmounted(() => {
+  if (observer) {
+    observer.disconnect();
+  }
+});
+
+function setupObserver() {
+  observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const cardId = entry.target.dataset.cardId;
+          if (cardId) {
+            visibleCards.value.add(cardId);
+          }
+        }
+      });
+    },
+    {
+      threshold: 0.1,
+      rootMargin: '50px 0px -50px 0px',
+    },
+  );
+}
 </script>
 
 <template>
@@ -192,9 +221,12 @@ onMounted(() => {
         </h3>
         <div class="space-y-6">
           <div
-            v-for="post in group.posts"
+            v-for="(post) in group.posts"
             :key="post.id"
-            class="border-double border-8 border-slate-300 dark:border-slate-700 bg-gray-300/30 dark:bg-slate-900/50 rounded-lg shadow-sm p-4"
+            :ref="(el) => { if (el) observer?.observe(el) }"
+            :data-card-id="post.id"
+            class="message-card border-double border-8 border-slate-300 dark:border-slate-700 bg-gray-300/30 dark:bg-slate-900/50 rounded-lg shadow-sm p-4"
+            :class="{ 'is-visible': visibleCards.has(post.id.toString()) }"
           >
             <p class="text-sm md:text-base mb-2">
               {{ post.message }}
@@ -215,3 +247,38 @@ onMounted(() => {
     </div>
   </div>
 </template>
+
+<style scoped>
+.message-card {
+  opacity: 0;
+  transform: translateY(30px) scale(0.95);
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.message-card.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.message-card:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.message-card.is-visible:hover {
+  transform: translateY(-2px) scale(1.02);
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.loading-skeleton {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+</style>
