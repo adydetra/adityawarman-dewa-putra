@@ -4,6 +4,7 @@ const links = ref([
   { to: '/uses', title: 'Uses', icon: 'majesticons:heart-line' },
   { to: '/work', title: 'Work', icon: 'majesticons:cpu-line' },
   { to: '/photos', title: 'Photos', icon: 'majesticons:camera-line' },
+  { to: '/secreto', title: 'Secreto', icon: 'majesticons:message-line' },
   { to: '/demo', title: 'Demo', icon: 'tdesign:play-demo' },
   { to: '/feed', title: 'Feed', icon: 'majesticons:user-box-line' },
 ]);

@@ -18,6 +18,8 @@ export default defineNuxtConfig({
   runtimeConfig: {
     public: {
       MASTODON_URL: import.meta.env.MASTODON_URL,
+      SUPABASE_URL: import.meta.env.SUPABASE_URL,
+      SUPABASE_KEY: import.meta.env.SUPABASE_KEY,
     },
   },
 

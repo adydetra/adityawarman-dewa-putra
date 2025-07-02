@@ -40,7 +40,7 @@ export function useTechstacks(): Uses[] {
   return [
     { icon: 'devicon-plain:typescript', title: 'TypeScript (Language)', url: 'www.typescriptlang.org' },
     { icon: 'simple-icons:python', title: 'Python (Language)', url: 'python.org' },
-    { icon: 'simple-icons:react', title: 'React (JS Library)', url: 'react.dev' },
+    { icon: 'simple-icons:php', title: 'PHP (Language)', url: 'www.php.net' },
     { icon: 'simple-icons:nuxtdotjs', title: 'Nuxt (Vue Framework)', url: 'nuxt.com' },
     { icon: 'tabler:brand-threejs', title: 'Threejs (3D, JS Based)', url: 'threejs.org' },
     { icon: 'simple-icons:tailwindcss', title: 'TailwindCSS (UI)', url: 'tailwindcss.com' },
@@ -57,6 +57,6 @@ export function useDevelopments(): Uses[] {
     { icon: 'simple-icons:postman', title: 'Postman', url: 'www.postman.com' },
     { icon: 'ArcIcon', title: 'Arc', url: 'arc.net' },
     { icon: 'ZenIcon', title: 'Zen Browser', url: 'www.zen-browser.app' },
-    { icon: 'devicon-plain:putty', title: 'PuTTY', url: 'www.putty.org' },
+    { icon: 'simple-icons:laragon', title: 'Laragon', url: 'laragon.org' },
   ];
 }

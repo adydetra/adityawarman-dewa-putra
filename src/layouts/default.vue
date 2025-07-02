@@ -10,7 +10,8 @@ const routeMap: Record<string, number> = {
   '/uses': 2,
   '/work': 3,
   '/photos': 4,
-  '/closing': 5,
+  '/secreto': 5,
+  '/closing': 6,
 };
 const currentNumber = routeMap[route.path] || 0;
 
@@ -24,11 +25,13 @@ const leftLink = showLeftContent
           ? '/work'
           : currentNumber === 5
             ? '/photos'
-            : '#')
+            : currentNumber === 6
+              ? '/secreto'
+              : '#')
   : '#';
 const leftIconName = showLeftContent ? 'ci:chevron-left-duo' : '#';
 
-const showRightContent = currentNumber !== 5;
+const showRightContent = currentNumber !== 6;
 const rightLink = showRightContent
   ? (currentNumber === 1
       ? '/uses'
@@ -37,8 +40,10 @@ const rightLink = showRightContent
         : currentNumber === 3
           ? '/photos'
           : currentNumber === 4
-            ? '/closing'
-            : '#')
+            ? '/secreto'
+            : currentNumber === 5
+              ? '/closing'
+              : '#')
   : '#';
 const rightIconName = showRightContent ? 'ci:chevron-right-duo' : '#';
 
