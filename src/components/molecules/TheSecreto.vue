@@ -98,7 +98,7 @@ async function submitPost() {
       .from('posts')
       .insert([{
         message: form.value.message.trim(),
-        author_name: form.value.name.trim() || 'Anonim',
+        author_name: form.value.name.trim() || 'Anonymous',
         created_at: new Date().toISOString(),
       }]);
 
