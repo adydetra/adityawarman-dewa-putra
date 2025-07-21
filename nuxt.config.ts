@@ -13,8 +13,6 @@ export default defineNuxtConfig({
     },
   },
 
-  srcDir: 'src/',
-
   runtimeConfig: {
     public: {
       MASTODON_URL: import.meta.env.MASTODON_URL,
