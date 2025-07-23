@@ -32,6 +32,18 @@ export default defineNuxtConfig({
     'nuxt-delay-hydration',
   ],
 
+  routeRules: {
+    '/': {
+      prerender: true,
+    },
+    '/feed': {
+      isr: 3600,
+    },
+    '/demo': {
+      isr: 3600,
+    },
+  },
+
   googleFonts: {
     families: {
       Poppins: [200, 300, 400, 500, 600, 700],
