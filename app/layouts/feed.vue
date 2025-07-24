@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const button = 'top-4 p-3 rounded-md';
+const button = 'top-4 p-3 rounded-md !bg-gray-200/80 dark:!bg-gray-800/80 transition-colors ease-in-out duration-500';
 </script>
 
 <template>
@@ -11,9 +11,7 @@ const button = 'top-4 p-3 rounded-md';
           <AtomsColorMode class="fixed right-4" :class="button" />
         </div>
         <div class="mb-16 lg:hidden">
-          <AtomsColorMode
-            class="fixed z-10 flex items-center top-4 right-4 p-2 rounded-md bg-gray-200 dark:bg-white/10 dark:lg:bg-transparent ring-1 ring-gray-400 dark:ring-0 transition-colors ease-in-out duration-500"
-          />
+          <AtomsColorMode class="fixed z-10 flex items-center top-4 right-4 p-2 rounded-md bg-gray-200 dark:bg-white/10 dark:lg:bg-transparent ring-1 ring-gray-400 dark:ring-0 transition-colors ease-in-out duration-500" />
           <AtomsNav />
         </div>
         <slot />
