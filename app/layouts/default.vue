@@ -5,6 +5,7 @@ const icon = 'size-4 lg:size-6';
 const box = 'w-full flex justify-center my-8';
 
 const route = useRoute();
+const router = useRouter();
 const routeMap: Record<string, number> = {
   '/': 1,
   '/uses': 2,
@@ -53,6 +54,23 @@ const activeLeft = showLeftContent
 const activeRight = showRightContent
   ? 'cursor-pointer hover:text-yellow-400 dark:hover:text-yellow-200'
   : 'cursor-not-allowed hover:text-red-400';
+
+function handleKeydown(event: KeyboardEvent) {
+  if (event.key === 'ArrowLeft' && showLeftContent && leftLink !== '#') {
+    router.push(leftLink);
+  }
+  else if (event.key === 'ArrowRight' && showRightContent && rightLink !== '#') {
+    router.push(rightLink);
+  }
+}
+
+onMounted(() => {
+  document.addEventListener('keydown', handleKeydown);
+});
+
+onUnmounted(() => {
+  document.removeEventListener('keydown', handleKeydown);
+});
 </script>
 
 <template>
