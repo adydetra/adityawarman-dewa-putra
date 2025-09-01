@@ -86,7 +86,7 @@ onUnmounted(() => {
           :class="`transition-colors ease-in-out duration-300 text-slate-400 ${activeLeft}`"
           aria-label="slide"
         >
-          <Icon v-if="showLeftContent" :name="leftIconName" :class="`${icon} animate-pulse`" />
+          <Icon v-if="showLeftContent" :name="leftIconName" :class="`${icon} animate-pulse animate-slide-left`" />
           <Icon v-else name="mingcute:dot-grid-line" :class="icon" />
         </NuxtLink>
       </div>
@@ -110,7 +110,7 @@ onUnmounted(() => {
           :class="`transition-colors ease-in-out duration-300 text-slate-400 ${activeRight}`"
           aria-label="slide"
         >
-          <Icon v-if="showRightContent" :name="rightIconName" :class="`${icon} animate-pulse`" />
+          <Icon v-if="showRightContent" :name="rightIconName" :class="`${icon} animate-pulse animate-slide-right`" />
           <Icon v-else name="mingcute:dot-grid-line" :class="icon" />
         </NuxtLink>
       </div>
@@ -122,3 +122,31 @@ onUnmounted(() => {
     </div>
   </section>
 </template>
+
+<style scoped>
+@keyframes slide-left {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-6px);
+  }
+}
+
+@keyframes slide-right {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(6px);
+  }
+}
+
+.animate-slide-left {
+  animation: slide-left 2s ease-in-out infinite;
+}
+
+.animate-slide-right {
+  animation: slide-right 2s ease-in-out infinite;
+}
+</style>
