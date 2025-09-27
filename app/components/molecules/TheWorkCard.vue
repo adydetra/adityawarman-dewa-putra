@@ -30,6 +30,10 @@ interface GroupedWork {
   link?: string;
 }
 
+function hasUiLabel(work: WorkItem) {
+  return Boolean(work.ui && work.ui.toLowerCase() !== 'none');
+}
+
 function normalizeCategory(tech: string) {
   return tech === 'Laravel' || tech === 'Laravel Blade' ? 'Laravel' : tech;
 }
@@ -110,7 +114,10 @@ const groupedWorks = computed(() => {
             <div class="flex justify-between items-center w-full">
               <span class="text-[11px] lg:text-[9.5px] 2xl:text-xs font-extralight tracking-widest space-x-2.5">
                 <span class="bg-neutral-100 dark:bg-neutral-900 rounded py-0.5 px-1.5 transition-colors ease-in-out duration-500">{{ work.tech }}</span>
-                <span class="bg-neutral-100 dark:bg-neutral-900 rounded py-0.5 px-1.5 transition-colors ease-in-out duration-500">{{ work.ui }}</span>
+                <span
+                  v-if="hasUiLabel(work)"
+                  class="bg-neutral-100 dark:bg-neutral-900 rounded py-0.5 px-1.5 transition-colors ease-in-out duration-500"
+                >{{ work.ui }}</span>
               </span>
               <div class="absolute flex items-center right-6 p-1.5 shadow-sm bg-neutral-100 dark:bg-zinc-800 rounded-full border border-neutral-400/50 dark:border-zinc-700/50 ring-0 transition-colors ease-in-out duration-500">
                 <Icon
