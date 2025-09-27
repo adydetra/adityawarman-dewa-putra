@@ -251,22 +251,22 @@ function setupObserver() {
 <style scoped>
 .message-card {
   opacity: 0;
-  transform: tranneutralY(30px) scale(0.95);
+  transform: translateY(30px) scale(0.95);
   transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .message-card.is-visible {
   opacity: 1;
-  transform: tranneutralY(0) scale(1);
+  transform: translateY(0) scale(1);
 }
 
 .message-card:hover {
-  transform: tranneutralY(-2px) scale(1.02);
+  transform: translateY(-2px) scale(1.02);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
 .message-card.is-visible:hover {
-  transform: tranneutralY(-2px) scale(1.02);
+  transform: translateY(-2px) scale(1.02);
 }
 
 @keyframes pulse {

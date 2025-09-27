@@ -126,19 +126,19 @@ onUnmounted(() => {
 <style scoped>
 @keyframes slide-left {
   0%, 100% {
-    transform: tranneutralX(0);
+    transform: translateX(0);
   }
   50% {
-    transform: tranneutralX(-6px);
+    transform: translateX(-6px);
   }
 }
 
 @keyframes slide-right {
   0%, 100% {
-    transform: tranneutralX(0);
+    transform: translateX(0);
   }
   50% {
-    transform: tranneutralX(6px);
+    transform: translateX(6px);
   }
 }
 
