@@ -55,8 +55,8 @@ export function useDevelopments(): Uses[] {
     { icon: 'bi:git', title: 'Git', url: 'git-scm.com' },
     { icon: 'simple-icons:alacritty', title: 'Alacritty', url: 'alacritty.org' },
     { icon: 'simple-icons:postman', title: 'Postman', url: 'www.postman.com' },
-    { icon: 'ArcIcon', title: 'Arc', url: 'arc.net' },
-    { icon: 'ZenIcon', title: 'Zen Browser', url: 'www.zen-browser.app' },
+    { icon: 'simple-icons:windsurf', title: 'Windsurf', url: 'windsurf.com' },
+    { icon: 'simple-icons:zenbrowser', title: 'Zen Browser', url: 'www.zen-browser.app' },
     { icon: 'simple-icons:laragon', title: 'Laragon', url: 'laragon.org' },
   ];
 }
