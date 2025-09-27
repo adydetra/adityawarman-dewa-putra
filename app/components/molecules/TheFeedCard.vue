@@ -2,7 +2,7 @@
 const formatDate = useDateFeed();
 const statuses = ref<any[]>([]);
 const widths = ['1/2', '3/4', '2/3', '4/5'];
-const cardStyle = 'flex space-x-4 bg-gray-300/30 first-letter:dark:bg-slate-800 p-4 text-gray-600 dark:text-gray-300 transition-colors ease-in-out duration-500';
+const cardStyle = 'flex space-x-4 bg-neutral-300/30 first-letter:dark:bg-neutral-800 p-4 text-neutral-600 dark:text-neutral-300 transition-colors ease-in-out duration-500';
 
 function hasVideoAttachment(statusItem: any) {
   return statusItem.media_attachments && statusItem.media_attachments.length > 0 && statusItem.media_attachments[0].type === 'video';
@@ -30,10 +30,10 @@ watchEffect(() => {
   <div v-if="isLoading" class="space-y-5 w-72 md:w-96 lg:w-full">
     <div v-for="index in 4" :key="index" :class="cardStyle">
       <div>
-        <div class="flex justify-center items-center size-8 md:size-12 bg-gray-400/40 rounded-full" />
+        <div class="flex justify-center items-center size-8 md:size-12 bg-neutral-400/40 rounded-full" />
       </div>
       <div class="w-full space-y-4">
-        <div v-for="width in widths" :key="width" :class="`bg-gray-400/40 h-3 w-${width}`" />
+        <div v-for="width in widths" :key="width" :class="`bg-neutral-400/40 h-3 w-${width}`" />
       </div>
     </div>
   </div>

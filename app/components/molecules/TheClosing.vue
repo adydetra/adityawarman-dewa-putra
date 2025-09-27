@@ -3,7 +3,7 @@ const games = useGame();
 </script>
 
 <template>
-  <section class="text-gray-400 !leading-[2.5rem] text-center text-base xl:text-[0.95rem] 2xl:text-base">
+  <section class="text-neutral-400 !leading-[2.5rem] text-center text-base xl:text-[0.95rem] 2xl:text-base">
     <h2 class="mb-2">
       Study at
       <AtomsLink to="www.ut.ac.id" title="Universitas Terbuka." />
@@ -30,7 +30,7 @@ const games = useGame();
           loading="lazy"
           alt=""
           placeholder
-          class="w-8 grayscale hover:grayscale-0 opacity-30 hover:opacity-100 transition ease-in-out"
+          class="w-8 neutralscale hover:neutralscale-0 opacity-30 hover:opacity-100 transition ease-in-out"
         />
       </div>
     </div>

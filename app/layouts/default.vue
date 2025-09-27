@@ -1,6 +1,6 @@
 <script setup lang="ts">
-const layout = 'hidden lg:flex flex-wrap justify-center items-center xl:w-36 2xl:w-52 py-6 mx-auto h-screen bg-white dark:bg-gray-950 fixed top-0 transition-colors ease-in-out duration-500';
-const link = 'text-xs text-gray-400 hover:text-yellow-400 dark:hover:text-yellow-200 text-center w-full transition-colors ease-in-out duration-500';
+const layout = 'hidden lg:flex flex-wrap justify-center items-center xl:w-36 2xl:w-52 py-6 mx-auto h-screen bg-white dark:bg-neutral-950 fixed top-0 transition-colors ease-in-out duration-500';
+const link = 'text-xs text-neutral-400 hover:text-yellow-400 dark:hover:text-yellow-200 text-center w-full transition-colors ease-in-out duration-500';
 const icon = 'size-4 lg:size-6';
 const box = 'w-full flex justify-center my-8';
 
@@ -74,7 +74,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <section class="dark:bg-gray-950 transition-colors ease-in-out duration-500 tracking-wide min-h-screen w-screen flex flex-col justify-center select-none">
+  <section class="dark:bg-neutral-950 transition-colors ease-in-out duration-500 tracking-wide min-h-screen w-screen flex flex-col justify-center select-none">
     <div class="fixed top-0 left-0" :class="layout">
       <AtomsLine>
         <AtomsNumber :number="currentNumber" />
@@ -83,7 +83,7 @@ onUnmounted(() => {
         <NuxtLink
           :to="leftLink"
           :title="currentNumber === 1 ? '' : currentNumber === 2 ? 'Home' : currentNumber === 3 ? 'Uses' : 'Work'"
-          :class="`transition-colors ease-in-out duration-300 text-slate-400 ${activeLeft}`"
+          :class="`transition-colors ease-in-out duration-300 text-neutral-400 ${activeLeft}`"
           aria-label="slide"
         >
           <Icon v-if="showLeftContent" :name="leftIconName" :class="`${icon} animate-pulse animate-slide-left`" />
@@ -107,7 +107,7 @@ onUnmounted(() => {
         <NuxtLink
           :to="rightLink"
           :title="currentNumber === 1 ? 'Uses' : currentNumber === 2 ? 'Work' : currentNumber === 3 ? 'Closing' : ''"
-          :class="`transition-colors ease-in-out duration-300 text-slate-400 ${activeRight}`"
+          :class="`transition-colors ease-in-out duration-300 text-neutral-400 ${activeRight}`"
           aria-label="slide"
         >
           <Icon v-if="showRightContent" :name="rightIconName" :class="`${icon} animate-pulse animate-slide-right`" />
@@ -126,19 +126,19 @@ onUnmounted(() => {
 <style scoped>
 @keyframes slide-left {
   0%, 100% {
-    transform: translateX(0);
+    transform: tranneutralX(0);
   }
   50% {
-    transform: translateX(-6px);
+    transform: tranneutralX(-6px);
   }
 }
 
 @keyframes slide-right {
   0%, 100% {
-    transform: translateX(0);
+    transform: tranneutralX(0);
   }
   50% {
-    transform: translateX(6px);
+    transform: tranneutralX(6px);
   }
 }
 

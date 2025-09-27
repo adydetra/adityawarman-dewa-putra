@@ -48,8 +48,8 @@ function closePopup() {
         <NuxtImg v-slot="{ imgAttrs, isLoaded }" custom :src="photo.src" :alt="photo.alt" loading="lazy">
           <div class="relative size-full">
             <img v-bind="imgAttrs" class="object-cover size-full transition-opacity duration-300">
-            <div v-if="!isLoaded" class="absolute inset-0 flex items-center justify-center bg-gray-100 dark:bg-gray-800">
-              <Icon name="line-md:loading-twotone-loop" class="size-4 lg:size-6 animate-spin dark:text-gray-300" />
+            <div v-if="!isLoaded" class="absolute inset-0 flex items-center justify-center bg-neutral-100 dark:bg-neutral-800">
+              <Icon name="line-md:loading-twotone-loop" class="size-4 lg:size-6 animate-spin dark:text-neutral-300" />
             </div>
           </div>
         </NuxtImg>
@@ -62,7 +62,7 @@ function closePopup() {
           <div class="relative size-full">
             <img v-bind="imgAttrs" class="object-contain size-full transition-opacity duration-300" @load="popupImageLoaded = true">
             <div v-if="!popupImageLoaded" class="absolute inset-0 flex items-center justify-center bg-black">
-              <Icon name="line-md:loading-twotone-loop" class="size-6 animate-spin dark:text-gray-300" />
+              <Icon name="line-md:loading-twotone-loop" class="size-6 animate-spin dark:text-neutral-300" />
             </div>
           </div>
         </NuxtImg>

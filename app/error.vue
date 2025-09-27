@@ -17,10 +17,10 @@ function handleError() {
   >
     <div class="max-w-md w-full space-y-8 text-center">
       <div class="space-y-6">
-        <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-100">
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-neutral-100">
           {{ error?.statusCode === 404 ? 'Page Not Found' : 'Something Went Wrong' }}
         </h2>
-        <p class="text-sm text-gray-500">
+        <p class="text-sm text-neutral-500">
           {{ error?.message }}
         </p>
       </div>
@@ -58,7 +58,7 @@ function handleError() {
 
       <div>
         <button
-          class="group relative mx-auto flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-gray-600 hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
+          class="group relative mx-auto flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-neutral-600 hover:bg-neutral-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-neutral-500"
           @click="handleError"
         >
           Back to Home

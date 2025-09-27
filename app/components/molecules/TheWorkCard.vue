@@ -37,7 +37,7 @@ const groupedWorks = computed(() => {
       :key="group.label"
       class="flex flex-col gap-6"
     >
-      <h2 class="text-xl lg:text-2xl font-semibold text-gray-600 dark:text-gray-200 tracking-wide uppercase">
+      <h2 class="text-xl lg:text-2xl font-semibold text-neutral-600 dark:text-neutral-200 tracking-wide uppercase">
         {{ group.label }}
       </h2>
       <div class="grid grid-cols-8 3xl:grid-cols-9 gap-6 md:gap-8 lg:gap-12 3xl:gap-20">
@@ -47,7 +47,7 @@ const groupedWorks = computed(() => {
           :to="`https://${work.url}`"
           :title="work.title"
           target="_blank"
-          class="relative flex justify-center col-span-8 md:col-span-4 3xl:col-span-3 pt-4 pb-6 2xl:pb-7 text-gray-500 dark:text-gray-400 transition-colors ease-in-out duration-500 cursor-pointer hover:backdrop-saturate-200 border-2 border-dashed border-gray-400 dark:border-gray-800 hover:border-yellow-500 dark:hover:border-gray-100"
+          class="relative flex justify-center col-span-8 md:col-span-4 3xl:col-span-3 pt-4 pb-6 2xl:pb-7 text-neutral-500 dark:text-neutral-400 transition-colors ease-in-out duration-500 cursor-pointer hover:backdrop-saturate-200 border-2 border-dashed border-neutral-400 dark:border-neutral-800 hover:border-yellow-500 dark:hover:border-neutral-100"
         >
           <div class="flex flex-col gap-4 2xl:gap-6 w-full px-6">
             <div class="flex items-center">
@@ -55,10 +55,10 @@ const groupedWorks = computed(() => {
             </div>
             <div class="flex justify-between items-center w-full">
               <span class="text-[11px] lg:text-[9.5px] 2xl:text-xs font-extralight tracking-widest space-x-2.5">
-                <span class="bg-gray-100 dark:bg-slate-900 rounded py-0.5 px-1.5 transition-colors ease-in-out duration-500">{{ work.tech }}</span>
-                <span class="bg-gray-100 dark:bg-slate-900 rounded py-0.5 px-1.5 transition-colors ease-in-out duration-500">{{ work.ui }}</span>
+                <span class="bg-neutral-100 dark:bg-neutral-900 rounded py-0.5 px-1.5 transition-colors ease-in-out duration-500">{{ work.tech }}</span>
+                <span class="bg-neutral-100 dark:bg-neutral-900 rounded py-0.5 px-1.5 transition-colors ease-in-out duration-500">{{ work.ui }}</span>
               </span>
-              <div class="absolute flex items-center right-6 p-1.5 shadow-sm bg-gray-100 dark:bg-zinc-800 rounded-full border border-gray-400/50 dark:border-zinc-700/50 ring-0 transition-colors ease-in-out duration-500">
+              <div class="absolute flex items-center right-6 p-1.5 shadow-sm bg-neutral-100 dark:bg-zinc-800 rounded-full border border-neutral-400/50 dark:border-zinc-700/50 ring-0 transition-colors ease-in-out duration-500">
                 <Icon
                   :name="work.icon"
                   class="size-3 2xl:size-4"
