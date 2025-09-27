@@ -95,7 +95,7 @@ const groupedWorks = computed(() => {
           :name="group.icon"
           class="size-4 md:size-5 2xl:size-6 text-neutral-500 dark:text-neutral-400 category-icon"
         />
-        <span>{{ group.label }}</span>
+        <span class="group-title-text">{{ group.label }}</span>
         <span class="flex-1 h-px bg-neutral-300 dark:bg-neutral-700" />
       </h2>
       <div class="grid grid-cols-8 3xl:grid-cols-9 gap-6 md:gap-8 lg:gap-12 3xl:gap-20">
@@ -136,6 +136,13 @@ const groupedWorks = computed(() => {
 <style scoped>
 .category-icon {
   animation: category-icon-float 3s ease-in-out infinite;
+}
+
+.group-title-text {
+  color: inherit;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 0.3px;
+  -webkit-text-stroke-color: currentColor;
 }
 
 @keyframes category-icon-float {
