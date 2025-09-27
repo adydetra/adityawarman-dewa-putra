@@ -1,24 +1,57 @@
 <script setup lang="ts">
 const works = useWorks();
 
+interface GroupMeta {
+  icon: string;
+  link: string;
+}
+
+const GROUP_META: Record<string, GroupMeta> = {
+  'Nuxt': { icon: 'simple-icons:nuxtdotjs', link: 'nuxt.com' },
+  'Laravel': { icon: 'simple-icons:laravel', link: 'laravel.com' },
+  'HTML': { icon: 'simple-icons:html5', link: 'developer.mozilla.org/docs/Web/HTML' },
+  'Next': { icon: 'simple-icons:nextdotjs', link: 'nextjs.org' },
+  'PHP': { icon: 'simple-icons:php', link: 'www.php.net' },
+  'Vue': { icon: 'simple-icons:vuedotjs', link: 'vuejs.org' },
+  'Three.js': { icon: 'simple-icons:threedotjs', link: 'threejs.org' },
+  'Python': { icon: 'simple-icons:python', link: 'www.python.org' },
+};
+
+function getGroupMeta(label: string) {
+  return GROUP_META[label];
+}
+
 type WorkItem = ReturnType<typeof useWorks>[number];
+
+interface GroupedWork {
+  label: string;
+  items: WorkItem[];
+  icon?: string;
+  link?: string;
+}
 
 function normalizeCategory(tech: string) {
   return tech === 'Laravel' || tech === 'Laravel Blade' ? 'Laravel' : tech;
 }
 
 const groupedWorks = computed(() => {
-  const map = new Map<string, { label: string; items: WorkItem[] }>();
+  const map = new Map<string, GroupedWork>();
 
   works.forEach((work) => {
     const label = normalizeCategory(work.tech);
     const entry = map.get(label);
+    const meta = getGroupMeta(label);
 
     if (entry) {
       entry.items.push(work);
     }
     else {
-      map.set(label, { label, items: [work] });
+      map.set(label, {
+        label,
+        items: [work],
+        icon: meta?.icon,
+        link: meta?.link,
+      });
     }
   });
 
@@ -33,12 +66,33 @@ const groupedWorks = computed(() => {
 <template>
   <div class="flex flex-col gap-12 w-full">
     <section
-      v-for="group in groupedWorks"
+      v-for="(group, index) in groupedWorks"
       :key="group.label"
       class="flex flex-col gap-6"
+      :class="{ 'xl:mb-20': index !== groupedWorks.length - 1 }"
     >
-      <h2 class="text-xl lg:text-2xl font-semibold text-neutral-600 dark:text-neutral-200 tracking-wide uppercase">
-        {{ group.label }}
+      <h2 class="flex items-center gap-4 text-xl md:text-2xl 2xl:text-3xl font-semibold text-neutral-600 dark:text-neutral-200 tracking-wide uppercase">
+        <NuxtLink
+          v-if="group.icon && group.link"
+          :to="`https://${group.link}`"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex"
+          :title="`${group.label} official website`"
+          :aria-label="group.label"
+        >
+          <Icon
+            :name="group.icon"
+            class="size-4 md:size-5 2xl:size-6 text-neutral-500 dark:text-neutral-400 category-icon"
+          />
+        </NuxtLink>
+        <Icon
+          v-else-if="group.icon"
+          :name="group.icon"
+          class="size-4 md:size-5 2xl:size-6 text-neutral-500 dark:text-neutral-400 category-icon"
+        />
+        <span>{{ group.label }}</span>
+        <span class="flex-1 h-px bg-neutral-300 dark:bg-neutral-700" />
       </h2>
       <div class="grid grid-cols-8 3xl:grid-cols-9 gap-6 md:gap-8 lg:gap-12 3xl:gap-20">
         <NuxtLink
@@ -71,3 +125,22 @@ const groupedWorks = computed(() => {
     </section>
   </div>
 </template>
+
+<style scoped>
+.category-icon {
+  animation: category-icon-float 3s ease-in-out infinite;
+}
+
+@keyframes category-icon-float {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.85;
+  }
+
+  50% {
+    transform: translateY(-3px);
+    opacity: 1;
+  }
+}
+</style>
