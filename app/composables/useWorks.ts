@@ -34,6 +34,7 @@ export function useWorks(): Works[] {
     { icon: 'line-md:external-link', title: 'iKnowYourPain', tech: 'Nuxt', ui: 'UnoCSS', url: 'iknowyourpain.vercel.app' },
     { icon: 'line-md:external-link', title: 'Games', tech: 'Nuxt', ui: 'UnoCSS', url: 'games-adydetra.vercel.app' },
     { icon: 'line-md:external-link', title: 'Pong Game', tech: 'Three.js', ui: 'CSS', url: 'pong-game-dewa.vercel.app' },
+    { icon: 'line-md:external-link', title: 'Bang CV', tech: 'Vue', ui: 'UnoCSS', url: 'bang-cv.vercel.app' },
     { icon: 'line-md:github-loop', title: 'Image Generator', tech: 'Python', ui: 'None', url: 'github.com/adydetra/image-generator' },
   ];
   return works;
