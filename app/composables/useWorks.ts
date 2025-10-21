@@ -37,6 +37,7 @@ export function useWorks(): Works[] {
     { icon: 'line-md:external-link', title: 'Bang CV', tech: 'Vue', ui: 'UnoCSS', url: 'bang-cv.vercel.app' },
     { icon: 'line-md:github-loop', title: 'Image Generator', tech: 'Python', ui: 'None', url: 'github.com/adydetra/image-generator' },
     { icon: 'line-md:external-link', title: 'GLB GLTF Viewer', tech: 'Three.js', ui: 'CSS', url: 'glb-gltf-viewer-adydetra.vercel.app' },
+    { icon: 'line-md:external-link', title: 'Fingertune', tech: 'Three.js', ui: 'CSS', url: 'fingertune.vercel.app' },
   ];
   return works;
 }
