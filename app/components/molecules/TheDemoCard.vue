@@ -1,28 +1,27 @@
 <script setup lang="ts">
 const formatDate = useDateDemo();
-const statuses = ref<any[]>([]);
-const filteredStatuses = ref<any[]>([]);
-const isLoading = ref<boolean>(true);
+const config = useRuntimeConfig();
 
-function hasVideoAttachment(status: any) {
-  return status.media_attachments?.length > 0 && status.media_attachments[0].type === 'video';
-}
+const { data: filteredStatuses, pending: isLoading, error } = useFetch(
+  config.public.MASTODON_URL,
+  {
+    server: false,
+    lazy: true,
+    transform: (data: any[]) => {
+      return data.filter(status =>
+        status.media_attachments?.length > 0
+        && status.media_attachments[0].type === 'video',
+      );
+    },
+    onResponseError({ response }) {
+      console.error('Response error:', response.status, response.statusText);
+    },
+  },
+);
 
-onMounted(async () => {
-  try {
-    const response = await fetch(useRuntimeConfig().public.MASTODON_URL);
-    if (response.ok) {
-      const data = await response.json();
-      statuses.value = data;
-      filteredStatuses.value = data.filter((status: any) => hasVideoAttachment(status));
-      isLoading.value = false;
-    }
-    else {
-      console.error('Failed to fetch data from Mastodon API');
-    }
-  }
-  catch (error) {
-    console.error('An error occurred:', error);
+watch(error, (newError) => {
+  if (newError) {
+    console.error('Failed to fetch data from Mastodon API:', newError);
   }
 });
 </script>
@@ -45,7 +44,7 @@ onMounted(async () => {
 
   <!-- Post -->
   <div v-else class="space-y-4">
-    <div v-for="status in filteredStatuses" :key="status.id" class="flex space-x-4">
+    <div v-for="status in filteredStatuses || []" :key="status.id" class="flex space-x-4">
       <div class="w-full overflow-hidden space-y-4 border border-neutral-200 dark:border-neutral-800 rounded-xl transition-colors ease-in-out duration-500">
         <div class="bg-white dark:bg-black/10 transition-colors ease-in-out duration-500">
           <a :href="status.uri" target="_blank" rel="noopener noreferrer">
