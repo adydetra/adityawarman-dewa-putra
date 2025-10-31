@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { Analytics } from '@vercel/analytics/nuxt';
+
 import Lenis from 'lenis';
 
 const route = useRoute();
@@ -38,6 +40,7 @@ onMounted(() => {
 <template>
   <main class="overflow-x-hidden">
     <NuxtLoadingIndicator color="repeating-linear-gradient(to right,#FAF6C7 0%,#ECC223 50%,#7E4D15 100%)" />
+    <Analytics />
     <NuxtPage />
   </main>
 </template>
