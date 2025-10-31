@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { Analytics } from '@vercel/analytics/nuxt';
-
 import Lenis from 'lenis';
 
 const route = useRoute();
