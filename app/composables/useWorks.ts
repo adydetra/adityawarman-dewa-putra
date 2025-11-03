@@ -38,6 +38,7 @@ export function useWorks(): Works[] {
     { icon: 'line-md:github-loop', title: 'Image Generator', tech: 'Python', ui: 'None', url: 'github.com/adydetra/image-generator' },
     { icon: 'line-md:external-link', title: 'GLB GLTF Viewer', tech: 'Three.js', ui: 'CSS', url: 'glb-gltf-viewer-adydetra.vercel.app' },
     { icon: 'line-md:external-link', title: 'Fingertune', tech: 'Three.js', ui: 'CSS', url: 'fingertune.vercel.app' },
+    { icon: 'line-md:external-link', title: 'Black Hole ASCII', tech: 'Svelte', ui: 'CSS', url: 'black-hole-ascii.vercel.app' },
   ];
   return works;
 }
