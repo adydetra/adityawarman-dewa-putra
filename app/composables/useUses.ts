@@ -45,6 +45,7 @@ export function useTechstacks(): Uses[] {
     { icon: 'tabler:brand-threejs', title: 'Threejs (3D, JS Based)', url: 'threejs.org' },
     { icon: 'simple-icons:tailwindcss', title: 'TailwindCSS (UI)', url: 'tailwindcss.com' },
     { icon: 'simple-icons:unocss', title: 'UnoCSS (UI)', url: 'unocss.dev' },
+    { icon: 'simple-icons:react', title: 'React Native (Mobile)', url: 'reactnative.dev' },
   ];
 }
 
@@ -54,7 +55,7 @@ export function useDevelopments(): Uses[] {
     { icon: 'cib:figma', title: 'FIGMA', url: 'www.figma.com' },
     { icon: 'bi:git', title: 'Git', url: 'git-scm.com' },
     { icon: 'simple-icons:alacritty', title: 'Alacritty', url: 'alacritty.org' },
-    { icon: 'simple-icons:postman', title: 'Postman', url: 'www.postman.com' },
+    { icon: 'simple-icons:androidstudio', title: 'Android Studio', url: 'developer.android.com/studio' },
     { icon: 'simple-icons:windsurf', title: 'Windsurf', url: 'windsurf.com' },
     { icon: 'simple-icons:zenbrowser', title: 'Zen Browser', url: 'www.zen-browser.app' },
     { icon: 'simple-icons:laragon', title: 'Laragon', url: 'laragon.org' },
