@@ -13,14 +13,10 @@ const games = useGame();
     </h3>
     <p>
       Outside of programming, I listening music on
-      <AtomsLink to="open.spotify.com/user/31ayzku5aj7g7grortm6lca74ufq?si=f308a6ee6a2f4710" title="Spotify" />
-      & looking minimalist photos on
-      <AtomsLink to="pinterest.com/adydetra" title="Pinterest" />
-      . If you happen to be in<br>
-      the same city as where I live (in Jakarta), maybe<br>
-      we could hang out and talk about tech or <br>join
-      <AtomsLink to="discord.gg/9z6APrYMAq" title="Discord" />
-      to play games together.
+      <AtomsLink to="open.spotify.com/user/31ayzku5aj7g7grortm6lca74ufq?si=f308a6ee6a2f4710" title="Spotify" />, looking <br>
+      minimalist photos on <AtomsLink to="pinterest.com/adydetra" title="Pinterest" />,
+      and <AtomsLink to="www.google.com/search?q=aquascaping" title="aquascaping" />.<br>
+      Join <AtomsLink to="discord.gg/9z6APrYMAq" title="Discord" /> to play games together.
     </p>
     <div class="my-12 flex flex-wrap justify-center gap-10">
       <div v-for="game in games" :key="game.title">

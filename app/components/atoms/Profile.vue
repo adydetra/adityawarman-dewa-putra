@@ -17,12 +17,13 @@
     </div>
     <p class="mt-4">
       Outside of programming, I like listening music on
-      <AtomsLink to="open.spotify.com/user/31ayzku5aj7g7grortm6lca74ufq?si=f308a6ee6a2f4710" title="Spotify" />
-      & looking cool or minimalist photos on
-      <AtomsLink to="pinterest.com/adydetra" title="Pinterest" />.
+      <AtomsLink to="open.spotify.com/user/31ayzku5aj7g7grortm6lca74ufq?si=f308a6ee6a2f4710" title="Spotify" />,
+      looking cool or minimalist photos on
+      <AtomsLink to="pinterest.com/adydetra" title="Pinterest" />,
+      and <AtomsLink to="www.google.com/search?q=aquascaping" title="aquascaping" />.
     </p>
     <p class="mt-4">
-      If you happen to be in the same city as where I live (in Jakarta), maybe we could hang out and talk about tech or join
+      Join
       <AtomsLink to="discord.gg/9z6APrYMAq" title="Discord" />
       to play games together.
     </p>
