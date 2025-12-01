@@ -45,7 +45,7 @@ export function useTechstacks(): Uses[] {
     { icon: 'tabler:brand-threejs', title: 'Threejs (3D, JS Based)', url: 'threejs.org' },
     { icon: 'simple-icons:tailwindcss', title: 'TailwindCSS (UI)', url: 'tailwindcss.com' },
     { icon: 'simple-icons:unocss', title: 'UnoCSS (UI)', url: 'unocss.dev' },
-    { icon: 'simple-icons:react', title: 'React Native (Mobile)', url: 'reactnative.dev' },
+    { icon: 'simple-icons:react', title: 'React (Library)', url: 'react.dev' },
   ];
 }
 

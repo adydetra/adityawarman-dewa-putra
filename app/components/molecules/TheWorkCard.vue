@@ -7,15 +7,15 @@ interface GroupMeta {
 }
 
 const GROUP_META: Record<string, GroupMeta> = {
-  'Nuxt': { icon: 'simple-icons:nuxtdotjs', link: 'nuxt.com' },
-  'Laravel': { icon: 'simple-icons:laravel', link: 'laravel.com' },
-  'HTML': { icon: 'simple-icons:html5', link: 'developer.mozilla.org/docs/Web/HTML' },
-  'Next': { icon: 'simple-icons:nextdotjs', link: 'nextjs.org' },
-  'PHP': { icon: 'simple-icons:php', link: 'www.php.net' },
-  'Vue': { icon: 'simple-icons:vuedotjs', link: 'vuejs.org' },
-  'Three.js': { icon: 'simple-icons:threedotjs', link: 'threejs.org' },
-  'Python': { icon: 'simple-icons:python', link: 'www.python.org' },
-  'Svelte': { icon: 'simple-icons:svelte', link: 'svelte.dev' },
+  Nuxt: { icon: 'simple-icons:nuxtdotjs', link: 'nuxt.com' },
+  Laravel: { icon: 'simple-icons:laravel', link: 'laravel.com' },
+  HTML: { icon: 'simple-icons:html5', link: 'developer.mozilla.org/docs/Web/HTML' },
+  Next: { icon: 'simple-icons:nextdotjs', link: 'nextjs.org' },
+  PHP: { icon: 'simple-icons:php', link: 'www.php.net' },
+  Vue: { icon: 'simple-icons:vuedotjs', link: 'vuejs.org' },
+  React: { icon: 'simple-icons:react', link: 'react.dev' },
+  Python: { icon: 'simple-icons:python', link: 'www.python.org' },
+  Svelte: { icon: 'simple-icons:svelte', link: 'svelte.dev' },
 };
 
 function getGroupMeta(label: string) {
