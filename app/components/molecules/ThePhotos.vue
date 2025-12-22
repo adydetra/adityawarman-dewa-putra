@@ -5,7 +5,7 @@ interface Photo {
   alt: string;
 }
 
-const totalPhotos = 130;
+const totalPhotos = 131;
 const photos = Array.from({ length: totalPhotos }, (_, i) => ({
   id: i + 1,
   src: `/images/capture/photo${i + 1}.jpg`,
