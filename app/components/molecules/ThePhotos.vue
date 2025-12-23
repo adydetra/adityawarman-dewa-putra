@@ -15,6 +15,17 @@ const photos = Array.from({ length: totalPhotos }, (_, i) => ({
 const selectedPhoto = ref<Photo | null>(null);
 const popupImageLoaded = ref(false);
 
+const loadedPhotos = ref<Set<number>>(new Set());
+
+function onImageLoad(photoId: number) {
+  loadedPhotos.value.add(photoId);
+  loadedPhotos.value = new Set(loadedPhotos.value);
+}
+
+function isPhotoLoaded(photoId: number): boolean {
+  return loadedPhotos.value.has(photoId);
+}
+
 function openPopup(photo: Photo) {
   selectedPhoto.value = photo;
 
@@ -47,8 +58,13 @@ function closePopup() {
       <div v-for="photo in photos" :key="photo.id" class="aspect-square overflow-hidden cursor-pointer mx-auto" @click="openPopup(photo)">
         <NuxtImg v-slot="{ imgAttrs, isLoaded }" custom :src="photo.src" :alt="photo.alt" loading="lazy">
           <div class="relative size-full">
-            <img v-bind="imgAttrs" class="object-cover size-full transition-opacity duration-300" :class="isLoaded ? 'opacity-100' : 'opacity-0'">
-            <div v-show="!isLoaded" class="absolute inset-0 flex items-center justify-center bg-neutral-100 dark:bg-neutral-800">
+            <img
+              v-bind="imgAttrs"
+              class="object-cover size-full transition-opacity duration-300"
+              :class="(isLoaded || isPhotoLoaded(photo.id)) ? 'opacity-100' : 'opacity-0'"
+              @load="onImageLoad(photo.id)"
+            >
+            <div v-show="!isLoaded && !isPhotoLoaded(photo.id)" class="absolute inset-0 flex items-center justify-center bg-neutral-100 dark:bg-neutral-800">
               <Icon name="line-md:loading-twotone-loop" class="size-4 lg:size-6 animate-spin dark:text-neutral-300" />
             </div>
           </div>
