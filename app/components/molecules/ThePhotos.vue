@@ -26,6 +26,12 @@ function isPhotoLoaded(photoId: number): boolean {
   return loadedPhotos.value.has(photoId);
 }
 
+function checkLoad(el: Element | ComponentPublicInstance | null, photoId: number) {
+  if (el instanceof HTMLImageElement && el.complete) {
+    onImageLoad(photoId);
+  }
+}
+
 function openPopup(photo: Photo) {
   selectedPhoto.value = photo;
 
@@ -60,9 +66,11 @@ function closePopup() {
           <div class="relative size-full">
             <img
               v-bind="imgAttrs"
+              :ref="(el) => checkLoad(el, photo.id)"
               class="object-cover size-full transition-opacity duration-300"
               :class="(isLoaded || isPhotoLoaded(photo.id)) ? 'opacity-100' : 'opacity-0'"
               @load="onImageLoad(photo.id)"
+              @error="onImageLoad(photo.id)"
             >
             <div v-show="!isLoaded && !isPhotoLoaded(photo.id)" class="absolute inset-0 flex items-center justify-center bg-neutral-100 dark:bg-neutral-800">
               <Icon name="line-md:loading-twotone-loop" class="size-4 lg:size-6 animate-spin dark:text-neutral-300" />
