@@ -15,18 +15,21 @@ const photos = Array.from({ length: totalPhotos }, (_, i) => ({
 const selectedPhoto = ref<Photo | null>(null);
 const popupImageLoaded = ref(false);
 
-const loadedPhotos = ref<Set<number>>(new Set());
+const loadedPhotos = reactive(new Set<number>());
 
 function onImageLoad(photoId: number) {
-  loadedPhotos.value.add(photoId);
-  loadedPhotos.value = new Set(loadedPhotos.value);
+  if (loadedPhotos.has(photoId))
+    return;
+  loadedPhotos.add(photoId);
 }
 
 function isPhotoLoaded(photoId: number): boolean {
-  return loadedPhotos.value.has(photoId);
+  return loadedPhotos.has(photoId);
 }
 
 function checkLoad(el: Element | ComponentPublicInstance | null, photoId: number) {
+  if (isPhotoLoaded(photoId))
+    return;
   if (el instanceof HTMLImageElement && el.complete) {
     onImageLoad(photoId);
   }
