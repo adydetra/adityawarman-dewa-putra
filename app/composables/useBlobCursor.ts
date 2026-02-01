@@ -5,18 +5,33 @@ export function useBlobCursor(target?: Ref<HTMLElement | null>) {
   const isHovering = ref(false);
 
   const blobRadius = 60;
-  const currentBlobRadius = computed(() => (isHovering.value ? blobRadius : 0));
+  const currentBlobRadius = ref(0);
+  const targetRadius = computed(() => (isHovering.value ? blobRadius : 0));
   const trails = ref<{ x: number; y: number; size: number; opacity: number; id: number }[]>([]);
   let trailIdCounter = 0;
 
   let animationFrameId: number;
+  let isAnimating = false;
 
   const LERP_FACTOR = 0.1;
+  const RADIUS_LERP_FACTOR = 0.08; // Smooth fade for radius
   const TRAIL_THRESHOLD = 5;
   const TRAIL_SHRINK_RATE = 2;
 
   function updateLoop() {
-    if (!isHovering.value) {
+    // Animate radius smoothly
+    const radiusDiff = targetRadius.value - currentBlobRadius.value;
+    if (Math.abs(radiusDiff) > 0.5) {
+      currentBlobRadius.value += radiusDiff * RADIUS_LERP_FACTOR;
+    }
+    else {
+      currentBlobRadius.value = targetRadius.value;
+    }
+
+    // Stop animation when not hovering and animation is complete
+    if (!isHovering.value && currentBlobRadius.value < 0.5) {
+      currentBlobRadius.value = 0;
+      isAnimating = false;
       return;
     }
 
@@ -69,14 +84,17 @@ export function useBlobCursor(target?: Ref<HTMLElement | null>) {
 
   function onMouseEnter() {
     isHovering.value = true;
-    updateLoop();
+    if (!isAnimating) {
+      isAnimating = true;
+      updateLoop();
+    }
   }
 
   function onMouseLeave() {
     isHovering.value = false;
     trails.value = [];
-    if (animationFrameId)
-      cancelAnimationFrame(animationFrameId);
+    // Don't cancel animation - let it fade out smoothly
+    // Animation will stop itself when radius reaches 0
   }
 
   onUnmounted(() => {
