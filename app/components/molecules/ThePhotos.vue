@@ -18,8 +18,6 @@ const popupImageLoaded = ref(false);
 const loadedPhotos = reactive(new Set<number>());
 
 function onImageLoad(photoId: number) {
-  if (loadedPhotos.has(photoId))
-    return;
   loadedPhotos.add(photoId);
 }
 
@@ -30,7 +28,7 @@ function isPhotoLoaded(photoId: number): boolean {
 function checkLoad(el: Element | ComponentPublicInstance | null, photoId: number) {
   if (isPhotoLoaded(photoId))
     return;
-  if (el instanceof HTMLImageElement && el.complete) {
+  if (el instanceof HTMLImageElement && el.complete && el.naturalWidth > 0) {
     onImageLoad(photoId);
   }
 }
@@ -65,17 +63,17 @@ function closePopup() {
   <section>
     <div class="grid grid-cols-2 md:grid-cols-3 3xl:grid-cols-4 gap-4 mb-8 lg:px-20 xl:px-60 3xl:px-8">
       <div v-for="photo in photos" :key="photo.id" class="aspect-square overflow-hidden cursor-pointer mx-auto" @click="openPopup(photo)">
-        <NuxtImg v-slot="{ imgAttrs, isLoaded }" custom :src="photo.src" :alt="photo.alt" loading="lazy">
+        <NuxtImg v-slot="{ imgAttrs }" custom :src="photo.src" :alt="photo.alt" loading="lazy">
           <div class="relative size-full">
             <img
               v-bind="imgAttrs"
               :ref="(el) => checkLoad(el, photo.id)"
               class="object-cover size-full transition-opacity duration-300"
-              :class="(isLoaded || isPhotoLoaded(photo.id)) ? 'opacity-100' : 'opacity-0'"
+              :class="isPhotoLoaded(photo.id) ? 'opacity-100' : 'opacity-0'"
               @load="onImageLoad(photo.id)"
               @error="onImageLoad(photo.id)"
             >
-            <div v-show="!isLoaded && !isPhotoLoaded(photo.id)" class="absolute inset-0 flex items-center justify-center bg-neutral-100 dark:bg-neutral-800">
+            <div v-if="!isPhotoLoaded(photo.id)" class="absolute inset-0 flex items-center justify-center bg-neutral-100 dark:bg-neutral-800">
               <Icon name="line-md:loading-twotone-loop" class="size-4 lg:size-6 animate-spin dark:text-neutral-300" />
             </div>
           </div>
