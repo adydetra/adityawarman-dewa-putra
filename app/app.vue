@@ -70,4 +70,46 @@ html.dark ::-webkit-scrollbar-thumb:active {
 html.dark ::-webkit-scrollbar {
   background-color: #050505;
 }
+
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+html.dark::view-transition-old(root) {
+  z-index: 1;
+}
+
+html.dark::view-transition-new(root) {
+  z-index: 9999;
+  animation: reveal-circle 0.5s ease-out forwards;
+}
+
+html:not(.dark)::view-transition-old(root) {
+  z-index: 9999;
+  animation: reveal-circle-reverse 0.5s ease-out forwards;
+}
+
+html:not(.dark)::view-transition-new(root) {
+  z-index: 1;
+}
+
+@keyframes reveal-circle {
+  from {
+    clip-path: circle(0% at var(--reveal-x, 50%) var(--reveal-y, 50%));
+  }
+  to {
+    clip-path: circle(var(--reveal-radius, 100%) at var(--reveal-x, 50%) var(--reveal-y, 50%));
+  }
+}
+
+@keyframes reveal-circle-reverse {
+  from {
+    clip-path: circle(var(--reveal-radius, 100%) at var(--reveal-x, 50%) var(--reveal-y, 50%));
+  }
+  to {
+    clip-path: circle(0% at var(--reveal-x, 50%) var(--reveal-y, 50%));
+  }
+}
 </style>
