@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const layout = 'hidden lg:flex flex-wrap justify-center items-center xl:w-36 2xl:w-52 py-6 mx-auto h-screen bg-white dark:bg-neutral-950 fixed top-0 transition-colors ease-in-out duration-500';
 const link = 'text-xs text-neutral-400 hover:text-yellow-400 dark:hover:text-yellow-200 text-center w-full transition-colors ease-in-out duration-500';
-const icon = 'size-4 lg:size-6';
+const icon = 'text-base lg:text-2xl';
 const box = 'w-full flex justify-center my-8';
 
 const route = useRoute();

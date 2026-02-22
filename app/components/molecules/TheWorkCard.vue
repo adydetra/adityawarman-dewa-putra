@@ -89,13 +89,13 @@ const groupedWorks = computed(() => {
         >
           <Icon
             :name="group.icon"
-            class="size-4 md:size-5 2xl:size-6 text-neutral-500 dark:text-neutral-400 category-icon"
+            class="text-base md:text-xl 2xl:text-2xl text-neutral-500 dark:text-neutral-400 category-icon"
           />
         </NuxtLink>
         <Icon
           v-else-if="group.icon"
           :name="group.icon"
-          class="size-4 md:size-5 2xl:size-6 text-neutral-500 dark:text-neutral-400 category-icon"
+          class="text-base md:text-xl 2xl:text-2xl text-neutral-500 dark:text-neutral-400 category-icon"
         />
         <span class="group-title-text">{{ group.label }}</span>
         <span class="flex-1 h-px bg-neutral-300 dark:bg-neutral-700" />
@@ -124,7 +124,7 @@ const groupedWorks = computed(() => {
               <div class="absolute flex items-center right-6 p-1.5 shadow-sm bg-neutral-100 dark:bg-zinc-800 rounded-full border border-neutral-400/50 dark:border-zinc-700/50 ring-0 transition-colors ease-in-out duration-500">
                 <Icon
                   :name="work.icon"
-                  class="size-3 2xl:size-4"
+                  class="text-xs 2xl:text-base"
                 />
               </div>
             </div>

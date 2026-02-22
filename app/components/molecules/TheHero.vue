@@ -12,7 +12,7 @@ const { blobPos, currentBlobRadius, trails, onMouseMove, onMouseEnter, onMouseLe
           <span class="text-yellow-300 dark:text-yellow-200">Full Stack Developer</span>, big fan open-source, enjoying life.
         </p>
         <p class="text-neutral-400 xl:text-sm 3xl:text-lg">
-          ~ I’m Adityawarman <span class="px-1 rounded-md bg-neutral-200/50 dark:bg-neutral-900">Dewa</span> Putra. Live in Jakarta, Indonesia <Icon name="twemoji:flag-indonesia" class="size-4" />
+          ~ I’m Adityawarman <span class="px-1 rounded-md bg-neutral-200/50 dark:bg-neutral-900">Dewa</span> Putra. Live in Jakarta, Indonesia <Icon name="twemoji:flag-indonesia" class="text-base" />
         </p>
         <ul class="flex gap-8 md:gap-7 mt-2">
           <li v-for="(data, index) in socials" :key="index">
@@ -22,7 +22,7 @@ const { blobPos, currentBlobRadius, trails, onMouseMove, onMouseEnter, onMouseLe
               target="_blank"
               class="transition-colors ease-in-out duration-300 text-neutral-500 dark:text-neutral-400 hover:text-yellow-400 dark:hover:text-yellow-200"
             >
-              <Icon :name="data.icon" class="size-6 md:size-5 2xl:size-7" />
+              <Icon :name="data.icon" class="text-2xl md:text-xl 2xl:text-[28px]" />
             </NuxtLink>
           </li>
         </ul>

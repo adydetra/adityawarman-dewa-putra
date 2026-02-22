@@ -1,3 +1,5 @@
+import tailwindcss from "@tailwindcss/vite";
+
 export default defineNuxtConfig({
   app: {
     head: {
@@ -22,16 +24,27 @@ export default defineNuxtConfig({
   },
 
   modules: [
+    '@nuxt/fonts',
     '@nuxt/icon',
     '@nuxt/image',
     '@nuxtjs/color-mode',
-    '@nuxtjs/fontaine',
-    '@nuxtjs/google-fonts',
     '@nuxtjs/sitemap',
-    '@nuxtjs/tailwindcss',
-    'nuxt-delay-hydration',
   ],
 
+  fonts: {
+    families: [
+      { name: 'Poppins', provider: 'bunny', weights: ['200', '300', '400', '500', '600', '700', '800', '900'] },
+    ],
+  },
+
+  css: ['./app/assets/css/main.css'],
+
+  vite: {
+    plugins: [
+      tailwindcss() as any,
+    ],
+  },
+  
   routeRules: {
     '/': {
       prerender: true,
@@ -42,15 +55,6 @@ export default defineNuxtConfig({
     '/demo': {
       isr: 3600,
     },
-  },
-
-  googleFonts: {
-    families: {
-      Poppins: [200, 300, 400, 500, 600, 700],
-    },
-    display: 'swap',
-    prefetch: true,
-    preconnect: true,
   },
 
   colorMode: {
@@ -71,20 +75,8 @@ export default defineNuxtConfig({
     url: 'https://adydetra.my.id',
   },
 
-  fontMetrics: {
-    fonts: ['Poppins'],
-  },
-
-  delayHydration: {
-    mode: 'mount',
-  },
-
   devtools: {
     enabled: false,
-  },
-
-  tailwindcss: {
-    viewer: false,
   },
 
   compatibilityDate: '2024-08-02',

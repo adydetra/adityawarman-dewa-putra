@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Poppins", sans-serif;
+  --breakpoint-3xl: 100rem;
+}
+
+html, body {
+  font-family: var(--font-sans);
+}

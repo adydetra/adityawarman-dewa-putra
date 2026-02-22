@@ -197,10 +197,10 @@ function setupObserver() {
           class="w-full bg-neutral-500 hover:bg-neutral-600 disabled:bg-neutral-400 text-white font-medium py-3 px-4 rounded-lg transition-colors flex items-center justify-center gap-2"
         >
           <div v-if="isSubmitting" class="flex items-center">
-            Sending... <Icon name="majesticons:send-line" class="ml-2 size-5" />
+            Sending... <Icon name="majesticons:send-line" class="ml-2 text-xl" />
           </div>
           <div v-else class="flex items-center">
-            Send <Icon name="majesticons:cursor-click-line" class="-mt-0.5 ml-2 size-5" />
+            Send <Icon name="majesticons:cursor-click-line" class="-mt-0.5 ml-2 text-xl" />
           </div>
         </button>
       </form>
@@ -216,7 +216,7 @@ function setupObserver() {
 
       <div v-for="group in postsByYear" :key="group.year" class="my-12">
         <h3 class="flex items-center text-lg font-semibold mb-4">
-          <Icon name="majesticons:cursor-click" class="-mt-0.5 mr-2 size-5" /> {{ group.year }}
+          <Icon name="majesticons:cursor-click" class="-mt-0.5 mr-2 text-xl" /> {{ group.year }}
           <div class="ring-[0.5px] ring-neutral-300 dark:ring-neutral-500 w-full ml-4" />
         </h3>
         <div class="space-y-6">

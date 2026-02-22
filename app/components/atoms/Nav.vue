@@ -25,7 +25,7 @@ function isActive(to: string) {
           :title="link.title"
           :class="{ 'border-b border-neutral-400 dark:border-neutral-100/50 pb-1 transition-colors ease-in-out duration-500': isActive(link.to) }"
         >
-          <Icon :name="link.icon" class="size-4 md:size-6" />
+          <Icon :name="link.icon" class="text-base md:text-2xl" />
         </NuxtLink>
       </li>
     </ul>

@@ -28,8 +28,8 @@ async function toggleColorMode(event: MouseEvent) {
 </script>
 
 <template>
-  <button aria-label="Color Mode" class="flex items-center" @click="toggleColorMode">
-    <Icon v-if="$colorMode.value === 'dark'" name="line-md:moon-filled-alt-loop" class="text-black dark:text-white size-4 md:size-6" />
-    <Icon v-else name="line-md:sunny-outline-loop" class="dark:text-black size-4 md:size-6" />
+  <button aria-label="Color Mode" class="flex items-center cursor-pointer" @click="toggleColorMode">
+    <Icon v-if="$colorMode.value === 'dark'" name="line-md:moon-filled-alt-loop" class="text-black dark:text-white text-base md:text-2xl" />
+    <Icon v-else name="line-md:sunny-outline-loop" class="dark:text-black text-base md:text-2xl" />
   </button>
 </template>
