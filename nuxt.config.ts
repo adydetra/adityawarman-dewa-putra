@@ -72,7 +72,7 @@ export default defineNuxtConfig({
   },
 
   site: {
-    url: 'https://adydetra.my.id',
+    url: 'https://www.adydetra.my.id/',
   },
 
   devtools: {
