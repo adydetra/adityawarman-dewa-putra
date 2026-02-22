@@ -29,6 +29,7 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxtjs/color-mode',
     '@nuxtjs/sitemap',
+    '@nuxtjs/critters',
   ],
 
   fonts: {
@@ -38,10 +39,6 @@ export default defineNuxtConfig({
   },
 
   css: ['./app/assets/css/main.css'],
-
-  features: {
-    inlineStyles: true,
-  },
 
   vite: {
     plugins: [

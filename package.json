@@ -45,6 +45,7 @@
     "@nuxt/devtools": "^3.2.1",
     "@nuxt/icon": "^2.2.1",
     "@nuxtjs/color-mode": "^4.0.0",
+    "@nuxtjs/critters": "^0.9.0",
     "@nuxtjs/sitemap": "^7.6.0",
     "eslint": "^10.0.1",
     "nuxt": "^4.3.1",
