@@ -17,6 +17,7 @@ const GROUP_META: Record<string, GroupMeta> = {
   Python: { icon: 'simple-icons:python', link: 'www.python.org' },
   Svelte: { icon: 'simple-icons:svelte', link: 'svelte.dev' },
   Electron: { icon: 'simple-icons:electron', link: 'electronjs.org' },
+  Astro: { icon: 'simple-icons:astro', link: 'astro.build' },
 };
 
 function getGroupMeta(label: string) {

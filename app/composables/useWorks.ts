@@ -25,6 +25,7 @@ export function useWorks(): Works[] {
     { icon: 'line-md:github-loop', title: 'React Starter', tech: 'React', ui: 'TailwindCSS', url: 'github.com/adydetra/react-starter' },
     { icon: 'line-md:github-loop', title: 'Vue Starter', tech: 'Vue', ui: 'TailwindCSS', url: 'github.com/adydetra/vue-starter' },
     { icon: 'line-md:github-loop', title: 'Electron Starter', tech: 'Electron', ui: 'TailwindCSS', url: 'github.com/adydetra/electron-starter' },
+    { icon: 'line-md:github-loop', title: 'Astro Starter', tech: 'Astro', ui: 'TailwindCSS', url: 'github.com/adydetra/astro-starter' },
     { icon: 'line-md:external-link', title: 'Ensik Archieve', tech: 'Nuxt', ui: 'UnoCSS', url: 'ensik-archieve.ose.web.id' },
     { icon: 'line-md:external-link', title: 'D-Notes', tech: 'Nuxt', ui: 'UnoCSS', url: 'd-notes-adydetra.vercel.app' },
     { icon: 'line-md:external-link', title: 'OSE', tech: 'Nuxt', ui: 'TailwindCSS', url: 'www.ose.web.id' },
