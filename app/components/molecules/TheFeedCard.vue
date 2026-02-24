@@ -1,32 +1,36 @@
 <script setup lang="ts">
+import type { MastodonStatus } from '~/types/mastodon';
+
 const formatDate = useDateFeed();
-const statuses = ref<any[]>([]);
 const widths = ['1/2', '3/4', '2/3', '4/5'];
 const cardStyle = 'flex space-x-4 bg-neutral-300/30 first-letter:dark:bg-neutral-800 p-4 text-neutral-600 dark:text-neutral-300 transition-colors ease-in-out duration-500';
 
-function hasVideoAttachment(statusItem: any) {
-  return statusItem.media_attachments && statusItem.media_attachments.length > 0 && statusItem.media_attachments[0].type === 'video';
+const config = useRuntimeConfig();
+
+function hasVideoAttachment(statusItem: MastodonStatus): boolean {
+  return !!(statusItem.media_attachments && statusItem.media_attachments.length > 0 && statusItem.media_attachments[0]?.type === 'video');
 }
 
-const { public: { MASTODON_URL } } = useRuntimeConfig();
+const { data: statuses, error, status: fetchStatus } = useFetch<MastodonStatus[]>(
+  () => config.public.MASTODON_URL,
+  {
+    key: 'mastodon-feed-statuses',
+    server: false,
+    lazy: true,
+  },
+);
 
-const { data, error, status: fetchStatus } = useAsyncData('statuses', () => $fetch(MASTODON_URL), {
-  server: false,
-});
+const isLoading = computed(() => fetchStatus.value === 'pending');
+const filteredStatuses = computed(() => (statuses.value || []).filter((statusItem: MastodonStatus) => !hasVideoAttachment(statusItem)));
 
-const isLoading = computed(() => fetchStatus.value && !statuses.value.length);
-const filteredStatuses = computed(() => statuses.value.filter((statusItem: any) => !hasVideoAttachment(statusItem)));
-
-watchEffect(() => {
-  if (data.value && Array.isArray(data.value))
-    statuses.value = data.value;
-  if (error.value)
-    console.error('An error occurred:', error.value);
-});
+watch(error, (newError) => {
+  if (newError) {
+    console.error('An error occurred fetching Mastodon feed:', newError);
+  }
+}, { immediate: true });
 </script>
 
 <template>
-  <!-- Skeleton -->
   <div v-if="isLoading" class="space-y-5 w-72 md:w-96 lg:w-full">
     <div v-for="index in 4" :key="index" :class="cardStyle">
       <div>
@@ -38,7 +42,6 @@ watchEffect(() => {
     </div>
   </div>
 
-  <!-- Post -->
   <div v-else class="space-y-5">
     <div v-for="statusItem in filteredStatuses" :key="statusItem.id" :class="cardStyle">
       <div>

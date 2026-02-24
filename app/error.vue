@@ -1,8 +1,7 @@
 <script setup lang="ts">
 import type { NuxtError } from '#app';
 
-// eslint-disable-next-line unused-imports/no-unused-vars
-const props = defineProps({
+const _props = defineProps({
   error: Object as () => NuxtError,
 });
 

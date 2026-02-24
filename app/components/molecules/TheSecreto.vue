@@ -1,18 +1,21 @@
-<script setup>
-import { createClient } from '@supabase/supabase-js';
+<script setup lang="ts">
+interface SecretoPost {
+  id: number;
+  message: string;
+  author_name: string;
+  created_at: string;
+}
 
-const { public: { SUPABASE_URL, SUPABASE_KEY } } = useRuntimeConfig();
-const formatDate = useDateDemo();
-
-const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
+const { $supabase } = useNuxtApp();
+const formatDate = useDateSecreto();
 
 const isSubmitting = ref(false);
 const loading = ref(true);
-const posts = ref([]);
-const visibleCards = ref(new Set());
+const posts = ref<SecretoPost[]>([]);
+const visibleCards = ref(new Set<string>());
 
 const postsByYear = computed(() => {
-  const grouped = {};
+  const grouped: Record<number, SecretoPost[]> = {};
   posts.value.forEach((post) => {
     const year = new Date(post.created_at).getFullYear();
     if (!grouped[year])
@@ -32,10 +35,10 @@ const form = ref({
   agreeTerms: false,
 });
 
-const message = ref({ text: '', type: '' });
-const captcha = ref({ question: '', answer: 0 });
+const message = ref<{ text: string; type: string }>({ text: '', type: '' });
+const captcha = ref<{ question: string; answer: number }>({ question: '', answer: 0 });
 
-let observer = null;
+let observer: IntersectionObserver | null = null;
 
 function generateCaptcha() {
   const num1 = Math.floor(Math.random() * 10) + 1;
@@ -58,15 +61,18 @@ function generateCaptcha() {
       answer = num1 * num2;
       question = `${num1} × ${num2} = ?`;
       break;
+    default:
+      answer = num1 + num2;
+      question = `${num1} + ${num2} = ?`;
   }
 
-  captcha.value = { question, answer };
+  captcha.value = { question, answer: answer! };
 }
 
 async function loadPosts() {
   try {
     loading.value = true;
-    const { data, error } = await supabase
+    const { data, error } = await $supabase
       .from('posts')
       .select('*')
       .order('created_at', { ascending: false })
@@ -74,7 +80,7 @@ async function loadPosts() {
 
     if (error)
       throw error;
-    posts.value = data || [];
+    posts.value = (data as SecretoPost[]) || [];
   }
   catch (error) {
     console.error('Error loading posts:', error);
@@ -94,7 +100,7 @@ async function submitPost() {
     isSubmitting.value = true;
     message.value = { text: '', type: '' };
 
-    const { error } = await supabase
+    const { error } = await $supabase
       .from('posts')
       .insert([{
         message: form.value.message.trim(),
@@ -118,6 +124,17 @@ async function submitPost() {
   }
 }
 
+const cardElements = ref<HTMLElement[]>([]);
+
+function setCardRef(el: unknown, index: number) {
+  if (el instanceof HTMLElement) {
+    cardElements.value[index] = el;
+    if (observer) {
+      observer.observe(el);
+    }
+  }
+}
+
 onMounted(() => {
   generateCaptcha();
   loadPosts();
@@ -135,7 +152,7 @@ function setupObserver() {
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          const cardId = entry.target.dataset.cardId;
+          const cardId = (entry.target as HTMLElement).dataset.cardId;
           if (cardId) {
             visibleCards.value.add(cardId);
           }
@@ -221,9 +238,9 @@ function setupObserver() {
         </h3>
         <div class="space-y-6">
           <div
-            v-for="(post) in group.posts"
+            v-for="(post, index) in group.posts"
             :key="post.id"
-            :ref="(el) => { if (el) observer?.observe(el) }"
+            :ref="el => setCardRef(el, index)"
             :data-card-id="post.id"
             class="message-card border-double border-8 border-neutral-300 dark:border-neutral-700 bg-neutral-300/30 dark:bg-neutral-900/50 rounded-lg shadow-sm p-4"
             :class="{ 'is-visible': visibleCards.has(post.id.toString()) }"

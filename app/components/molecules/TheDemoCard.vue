@@ -1,20 +1,19 @@
 <script setup lang="ts">
+import type { MastodonStatus } from '~/types/mastodon';
+
 const formatDate = useDateDemo();
 const config = useRuntimeConfig();
 
-const { data: filteredStatuses, pending: isLoading, error } = useFetch(
-  config.public.MASTODON_URL,
+const { data: filteredStatuses, pending: isLoading, error } = useFetch<MastodonStatus[]>(
+  () => config.public.MASTODON_URL,
   {
+    key: 'mastodon-demo-statuses',
     server: false,
     lazy: true,
-    transform: (data: any[]) => {
-      return data.filter(status =>
-        status.media_attachments?.length > 0
-        && status.media_attachments[0].type === 'video',
+    transform: (data: MastodonStatus[]) => {
+      return data.filter((status: MastodonStatus) =>
+        status.media_attachments?.[0]?.type === 'video',
       );
-    },
-    onResponseError({ response }) {
-      console.error('Response error:', response.status, response.statusText);
     },
   },
 );
@@ -23,11 +22,10 @@ watch(error, (newError) => {
   if (newError) {
     console.error('Failed to fetch data from Mastodon API:', newError);
   }
-});
+}, { immediate: true });
 </script>
 
 <template>
-  <!-- Skeleton -->
   <div v-if="isLoading" class="space-y-4">
     <div v-for="index in 9" :key="index" class="flex space-x-4 bg-neutral-300/30 p-4 rounded-xl">
       <div class="w-full overflow-hidden space-y-4 border border-neutral-200 dark:border-neutral-800">
@@ -42,13 +40,12 @@ watch(error, (newError) => {
     </div>
   </div>
 
-  <!-- Post -->
   <div v-else class="space-y-4">
     <div v-for="status in filteredStatuses || []" :key="status.id" class="flex space-x-4">
       <div class="w-full overflow-hidden space-y-4 border border-neutral-200 dark:border-neutral-800 rounded-xl transition-colors ease-in-out duration-500">
         <div class="bg-white dark:bg-black/10 transition-colors ease-in-out duration-500">
           <a :href="status.uri" target="_blank" rel="noopener noreferrer">
-            <video class="w-full" :src="status.media_attachments[0]?.url" autoplay muted loop />
+            <video class="w-full" :src="status.media_attachments?.[0]?.url" autoplay muted loop />
           </a>
           <div class="p-5 pt-3! border-t border-neutral-200 dark:border-neutral-800 transition-colors ease-in-out duration-500">
             <p class="text-xs md:text-[16px] text-neutral-500 leading-loose md:leading-[2.7rem]" v-html="status.content" />

@@ -14,12 +14,11 @@ export function useBlobCursor(target?: Ref<HTMLElement | null>) {
   let isAnimating = false;
 
   const LERP_FACTOR = 0.1;
-  const RADIUS_LERP_FACTOR = 0.08; // Smooth fade for radius
+  const RADIUS_LERP_FACTOR = 0.08;
   const TRAIL_THRESHOLD = 5;
   const TRAIL_SHRINK_RATE = 2;
 
   function updateLoop() {
-    // Animate radius smoothly
     const radiusDiff = targetRadius.value - currentBlobRadius.value;
     if (Math.abs(radiusDiff) > 0.5) {
       currentBlobRadius.value += radiusDiff * RADIUS_LERP_FACTOR;
@@ -28,7 +27,6 @@ export function useBlobCursor(target?: Ref<HTMLElement | null>) {
       currentBlobRadius.value = targetRadius.value;
     }
 
-    // Stop animation when not hovering and animation is complete
     if (!isHovering.value && currentBlobRadius.value < 0.5) {
       currentBlobRadius.value = 0;
       isAnimating = false;
@@ -93,8 +91,6 @@ export function useBlobCursor(target?: Ref<HTMLElement | null>) {
   function onMouseLeave() {
     isHovering.value = false;
     trails.value = [];
-    // Don't cancel animation - let it fade out smoothly
-    // Animation will stop itself when radius reaches 0
   }
 
   onUnmounted(() => {

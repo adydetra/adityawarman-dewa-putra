@@ -1,6 +1,10 @@
 import tailwindcss from '@tailwindcss/vite';
 
 export default defineNuxtConfig({
+  future: {
+    compatibilityVersion: 4,
+  },
+
   app: {
     head: {
       charset: 'utf-8',
