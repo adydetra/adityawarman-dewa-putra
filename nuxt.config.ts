@@ -1,4 +1,4 @@
-import tailwindcss from "@tailwindcss/vite";
+import tailwindcss from '@tailwindcss/vite';
 
 export default defineNuxtConfig({
   app: {
@@ -45,7 +45,7 @@ export default defineNuxtConfig({
       tailwindcss() as any,
     ],
   },
-  
+
   routeRules: {
     '/': {
       prerender: true,
