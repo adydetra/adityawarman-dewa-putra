@@ -15,13 +15,13 @@
     "@nuxt/fonts": "^0.14.0",
     "@nuxt/image": "2.0.0",
     "@supabase/supabase-js": "^2.97.0",
-    "@tailwindcss/vite": "^4.2.0",
+    "@tailwindcss/vite": "^4.2.1",
     "@vercel/analytics": "^1.6.1",
     "lenis": "^1.3.17",
-    "tailwindcss": "^4.2.0"
+    "tailwindcss": "^4.2.1"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^7.4.3",
+    "@antfu/eslint-config": "^7.5.0",
     "@iconify-json/akar-icons": "^1.2.7",
     "@iconify-json/bi": "^1.2.7",
     "@iconify-json/ci": "^1.2.2",
@@ -47,9 +47,9 @@
     "@nuxtjs/color-mode": "^4.0.0",
     "@nuxtjs/critters": "^0.9.0",
     "@nuxtjs/sitemap": "^7.6.0",
-    "eslint": "^10.0.1",
+    "eslint": "^10.0.2",
     "nuxt": "^4.3.1",
-    "vue": "^3.5.28",
+    "vue": "^3.5.29",
     "vue-router": "^5.0.3"
   }
 }
