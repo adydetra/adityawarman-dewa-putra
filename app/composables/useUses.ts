@@ -31,21 +31,19 @@ export function useDatabases(): Uses[] {
 export function usePackages(): Uses[] {
   return [
     { icon: 'simple-icons:npm', title: 'npm', url: 'www.npmjs.com' },
-    { icon: 'file-icons:pnpm', title: 'pnpm', url: 'pnpm.io' },
     { icon: 'simple-icons:bun', title: 'Bun', url: 'bun.sh' },
   ];
 }
 
 export function useTechstacks(): Uses[] {
   return [
-    { icon: 'devicon-plain:typescript', title: 'TypeScript (Language)', url: 'www.typescriptlang.org' },
-    { icon: 'simple-icons:python', title: 'Python (Language)', url: 'python.org' },
-    { icon: 'simple-icons:php', title: 'PHP (Language)', url: 'www.php.net' },
     { icon: 'simple-icons:nuxtdotjs', title: 'Nuxt (Vue Framework)', url: 'nuxt.com' },
-    { icon: 'tabler:brand-threejs', title: 'Threejs (3D, JS Based)', url: 'threejs.org' },
-    { icon: 'simple-icons:tailwindcss', title: 'TailwindCSS (UI)', url: 'tailwindcss.com' },
-    { icon: 'simple-icons:unocss', title: 'UnoCSS (UI)', url: 'unocss.dev' },
+    { icon: 'simple-icons:vuedotjs', title: 'Vue (Framework)', url: 'vuejs.org' },
     { icon: 'simple-icons:react', title: 'React (Library)', url: 'react.dev' },
+    { icon: 'simple-icons:electron', title: 'Electron (Desktop)', url: 'electronjs.org' },
+    { icon: 'simple-icons:python', title: 'Python (Language)', url: 'python.org' },
+    { icon: 'simple-icons:tailwindcss', title: 'TailwindCSS (UI)', url: 'tailwindcss.com' },
+    { icon: 'simple-icons:astro', title: 'Astro (Framework for content-driven)', url: 'astro.build' },
   ];
 }
 
