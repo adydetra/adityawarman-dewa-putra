@@ -76,6 +76,12 @@ export default defineNuxtConfig({
     url: 'https://www.adydetra.my.id/',
   },
 
+  icon: {
+    clientBundle: {
+      scan: true,
+    },
+  },
+
   devtools: {
     enabled: false,
   },
