@@ -8,7 +8,7 @@ const { blobPos, currentBlobRadius, trails, onMouseMove, onMouseEnter, onMouseLe
   <section class="grid grid-cols-8 h-screen lg:px-36 2xl:px-52">
     <div class="col-span-5 flex items-center py-40 pl-5 2xl:pl-10 pr-16 2xl:px-24 bg-[url('/images/pattern-hero-left.png')] dark:bg-[url('/images/pattern-hero-left-dark.png')] bg-contain bg-center">
       <div class="xl:space-y-6 2xl:space-y-8">
-        <p class="text-neutral-500 dark:text-neutral-300 xl:text-3xl 2xl:text-4xl 3xl:text-5xl font-bold lg:!leading-relaxed max-w-xl 2xl:max-w-7xl">
+        <p class="text-neutral-500 dark:text-neutral-300 xl:text-3xl 2xl:text-4xl 3xl:text-5xl font-bold lg:leading-relaxed! max-w-xl 2xl:max-w-7xl">
           <span class="text-yellow-300 dark:text-yellow-200">Full Stack Developer</span>, big fan open-source, enjoying life.
         </p>
         <p class="text-neutral-400 xl:text-sm 3xl:text-lg">
@@ -34,7 +34,7 @@ const { blobPos, currentBlobRadius, trails, onMouseMove, onMouseEnter, onMouseLe
           <Icon size="30" name="meteocons:star-fill" />
         </div>
 
-        <div ref="container" class="relative size-full rounded-[2rem] overflow-hidden rotate-2" @mousemove="onMouseMove" @mouseleave="onMouseLeave" @mouseenter="onMouseEnter">
+        <div ref="container" class="relative size-full rounded-4xl overflow-hidden rotate-2" @mousemove="onMouseMove" @mouseleave="onMouseLeave" @mouseenter="onMouseEnter">
           <NuxtImg src="/images/hero-1.webp" alt="" placeholder loading="lazy" class="absolute inset-0 size-full object-cover" />
 
           <NuxtImg src="/images/hero.webp" alt="" placeholder loading="lazy" class="absolute inset-0 size-full object-cover mask-layer" />

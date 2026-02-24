@@ -33,7 +33,7 @@ watch(error, (newError) => {
       <div class="w-full overflow-hidden space-y-4 border border-neutral-200 dark:border-neutral-800">
         <div class="bg-white dark:bg-black/10">
           <div class="w-full h-64 bg-neutral-400/40 animate-pulse" />
-          <div class="p-5 !pt-3 border-t border-neutral-200 dark:border-neutral-800">
+          <div class="p-5 pt-3! border-t border-neutral-200 dark:border-neutral-800">
             <div class="bg-neutral-400/40 h-4 w-3/4 animate-pulse" />
             <div class="bg-neutral-400/40 h-4 w-1/2 mt-2 animate-pulse" />
           </div>
@@ -50,7 +50,7 @@ watch(error, (newError) => {
           <a :href="status.uri" target="_blank" rel="noopener noreferrer">
             <video class="w-full" :src="status.media_attachments[0]?.url" autoplay muted loop />
           </a>
-          <div class="p-5 !pt-3 border-t border-neutral-200 dark:border-neutral-800 transition-colors ease-in-out duration-500">
+          <div class="p-5 pt-3! border-t border-neutral-200 dark:border-neutral-800 transition-colors ease-in-out duration-500">
             <p class="text-xs md:text-[16px] text-neutral-500 leading-loose md:leading-[2.7rem]" v-html="status.content" />
             <p class="text-xs md:text-sm text-neutral-400 mt-2 flex items-center">
               <Icon name="line-md:calendar" class="mr-1" />
