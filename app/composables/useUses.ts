@@ -28,33 +28,27 @@ export function useDatabases(): Uses[] {
   ];
 }
 
-export function usePackages(): Uses[] {
-  return [
-    { icon: 'simple-icons:npm', title: 'npm', url: 'www.npmjs.com' },
-    { icon: 'simple-icons:bun', title: 'Bun', url: 'bun.sh' },
-  ];
-}
-
 export function useTechstacks(): Uses[] {
   return [
-    { icon: 'simple-icons:nuxtdotjs', title: 'Nuxt (Vue Framework)', url: 'nuxt.com' },
-    { icon: 'simple-icons:vuedotjs', title: 'Vue (Framework)', url: 'vuejs.org' },
-    { icon: 'simple-icons:react', title: 'React (Library)', url: 'react.dev' },
-    { icon: 'simple-icons:electron', title: 'Electron (Desktop)', url: 'electronjs.org' },
-    { icon: 'simple-icons:python', title: 'Python (Language)', url: 'python.org' },
-    { icon: 'simple-icons:tailwindcss', title: 'TailwindCSS (UI)', url: 'tailwindcss.com' },
-    { icon: 'simple-icons:astro', title: 'Astro (Framework for content-driven)', url: 'astro.build' },
+    { icon: 'simple-icons:nuxtdotjs', title: 'Nuxt', url: 'nuxt.com' },
+    { icon: 'simple-icons:vuedotjs', title: 'Vue', url: 'vuejs.org' },
+    { icon: 'simple-icons:react', title: 'React', url: 'react.dev' },
+    { icon: 'file-icons:electron', title: 'Electron', url: 'electronjs.org' },
+    { icon: 'simple-icons:astro', title: 'Astro', url: 'astro.build' },
+    { icon: 'simple-icons:python', title: 'Python', url: 'python.org' },
+    { icon: 'simple-icons:tailwindcss', title: 'TailwindCSS', url: 'tailwindcss.com' },
+    { icon: 'simple-icons:hono', title: 'Hono', url: 'hono.dev' },
+    { icon: 'simple-icons:bun', title: 'Bun', url: 'bun.sh' },
   ];
 }
 
 export function useDevelopments(): Uses[] {
   return [
-    { icon: 'akar-icons:vscode-fill', title: 'VS Code', url: 'code.visualstudio.com' },
+    { icon: 'material-symbols:antigravity', title: 'Antigravity', url: 'antigravity.google' },
     { icon: 'cib:figma', title: 'FIGMA', url: 'www.figma.com' },
     { icon: 'bi:git', title: 'Git', url: 'git-scm.com' },
     { icon: 'simple-icons:alacritty', title: 'Alacritty', url: 'alacritty.org' },
     { icon: 'simple-icons:androidstudio', title: 'Android Studio', url: 'developer.android.com/studio' },
-    { icon: 'simple-icons:windsurf', title: 'Windsurf', url: 'windsurf.com' },
     { icon: 'simple-icons:zenbrowser', title: 'Zen Browser', url: 'www.zen-browser.app' },
     { icon: 'simple-icons:laragon', title: 'Laragon', url: 'laragon.org' },
   ];

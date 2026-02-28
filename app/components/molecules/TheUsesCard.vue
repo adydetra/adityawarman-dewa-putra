@@ -3,9 +3,8 @@ const sections = ref([
   { title: 'OS', data: useOperatings(), colSpan: '3xl:col-span-2' },
   { title: 'Workstation', data: useWorkstations(), colSpan: '3xl:col-span-4' },
   { title: 'Database', data: useDatabases(), colSpan: '3xl:col-span-2' },
-  { title: 'Package Manager', data: usePackages(), colSpan: '3xl:col-span-4' },
-  { title: 'Tech Stack', data: useTechstacks(), colSpan: '3xl:col-span-4' },
   { title: 'Development tools', data: useDevelopments(), colSpan: 'col-span-8' },
+  { title: 'Tech Stack', data: useTechstacks(), colSpan: '3xl:col-span-8' },
 ]);
 
 const classes = {
