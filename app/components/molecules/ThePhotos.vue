@@ -63,7 +63,7 @@ function closePopup() {
   <section>
     <div class="grid grid-cols-2 md:grid-cols-3 3xl:grid-cols-4 gap-4 mb-8 lg:px-20 xl:px-60 3xl:px-8">
       <div v-for="photo in photos" :key="photo.id" class="aspect-square overflow-hidden cursor-pointer mx-auto" @click="openPopup(photo)">
-        <NuxtImg v-slot="{ imgAttrs }" custom :src="photo.src" :alt="photo.alt" loading="lazy">
+        <NuxtImg v-slot="{ imgAttrs }" custom :src="photo.src">
           <div class="relative size-full">
             <img
               v-bind="imgAttrs"
@@ -83,7 +83,7 @@ function closePopup() {
 
     <div v-if="selectedPhoto" class="fixed inset-0 flex items-center justify-center z-50 bg-black/50 backdrop-blur-md" @click="closePopup">
       <div class="xl:h-[80vh]" @click.stop>
-        <NuxtImg v-slot="{ imgAttrs }" custom :src="selectedPhoto.src" :alt="selectedPhoto.alt">
+        <NuxtImg v-slot="{ imgAttrs }" custom :src="selectedPhoto.src">
           <div class="relative size-full">
             <img v-bind="imgAttrs" class="object-contain size-full transition-opacity duration-300" @load="popupImageLoaded = true">
             <div v-if="!popupImageLoaded" class="absolute inset-0 flex items-center justify-center bg-black">
@@ -94,6 +94,6 @@ function closePopup() {
       </div>
     </div>
 
-    <AtomsFooter class="!text-center" />
+    <AtomsFooter class="text-center!" />
   </section>
 </template>

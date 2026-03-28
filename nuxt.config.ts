@@ -34,6 +34,7 @@ export default defineNuxtConfig({
     '@nuxtjs/color-mode',
     '@nuxtjs/sitemap',
     '@nuxtjs/critters',
+    '@vercel/analytics',
   ],
 
   fonts: {
@@ -48,6 +49,12 @@ export default defineNuxtConfig({
     plugins: [
       tailwindcss() as any,
     ],
+    optimizeDeps: {
+      include: [
+        '@supabase/supabase-js',
+        'lenis',
+      ]
+    }
   },
 
   routeRules: {
