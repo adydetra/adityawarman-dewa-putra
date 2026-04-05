@@ -21,21 +21,36 @@ const classes = {
     <div class="w-full max-w-xs mx-auto md:max-w-2xl lg:max-w-none">
       <h2 :class="classes.h2">
         {{ section.title }}
+        <div v-if="section.title === 'Workstation'" class="text-[10px] md:text-xs opacity-30 mt-1 font-extralight tracking-widest uppercase">
+          Personal
+        </div>
       </h2>
       <div class="flex flex-col items-start lg:items-center">
         <ul class="flex flex-col lg:flex-row lg:flex-wrap lg:justify-center gap-4 lg:gap-8 lg:gap-12 w-full lg:w-auto px-4 md:px-6 lg:px-0">
           <li v-for="(data, idx) in section.data" :key="idx" class="w-full sm:w-auto text-left lg:text-center">
-            <NuxtLink :to="`https://${data.url}`" target="_blank" :title="data.title" :class="[classes.link, 'block py-1 lg:py-0']">
+            <NuxtLink :to="`https://${data.url}`" target="_blank" :title="data.title" class="block py-1 lg:py-0" :class="[classes.link]">
               <span class="hidden lg:block">
                 <Icon :name="data.icon" :class="classes.icon" />
               </span>
-              
+
               <div class="flex lg:hidden items-start gap-4 text-left w-full">
                 <Icon :name="data.icon" class="text-xl md:text-2xl shrink-0 mt-1" />
                 <div>
-                  <div class="text-sm md:text-base font-medium">{{ data.title }}</div>
+                  <div class="text-sm md:text-base font-medium">
+                    {{ data.title }}
+                  </div>
                   <div v-if="data.description" class="text-xs md:text-sm text-neutral-500 dark:text-neutral-400 mt-0.5">
-                    {{ data.description }}
+                    <template v-if="Array.isArray(data.description)">
+                      <ul class="flex flex-col gap-1 mt-1.5">
+                        <li v-for="(spec, i) in data.description" :key="i" class="flex gap-2 items-center">
+                          <span class="shrink-0">•</span>
+                          <span>{{ spec }}</span>
+                        </li>
+                      </ul>
+                    </template>
+                    <template v-else>
+                      {{ data.description }}
+                    </template>
                   </div>
                 </div>
               </div>
