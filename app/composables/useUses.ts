@@ -22,7 +22,7 @@ export function useWorkstations(): Uses[] {
       description: [
         'Intel Core i7-12700H',
         'NVIDIA GeForce RTX 3050',
-        '32GB RAM',
+        '32GB RAM DDR4 3200 MHz',
         '1TB NVMe Gen 4 XPG S70 Blade',
       ],
     },
@@ -33,7 +33,7 @@ export function useWorkstations(): Uses[] {
       description: [
         'AMD Ryzen 3 3200U',
         'Radeon Vega 3',
-        '12GB RAM',
+        '12GB RAM DDR4 2400 MHz',
         '256GB NVMe Gen 3 + 1TB HDD',
       ],
     },
