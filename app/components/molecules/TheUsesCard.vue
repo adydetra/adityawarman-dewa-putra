@@ -28,9 +28,16 @@ const classes = {
       <div class="flex flex-col items-start lg:items-center">
         <ul class="flex flex-col lg:flex-row lg:flex-wrap lg:justify-center gap-4 lg:gap-8 lg:gap-12 w-full lg:w-auto px-4 md:px-6 lg:px-0">
           <li v-for="(data, idx) in section.data" :key="idx" class="w-full sm:w-auto text-left lg:text-center">
-            <NuxtLink :to="`https://${data.url}`" target="_blank" :title="data.title" class="block py-1 lg:py-0" :class="[classes.link]">
+            <NuxtLink
+              :to="`https://${data.url}`"
+              target="_blank"
+              class="block py-1 lg:py-0"
+              :class="classes.link"
+            >
               <span class="hidden lg:block">
-                <Icon :name="data.icon" :class="classes.icon" />
+                <AtomsTheTooltip :title="data.title" :description="data.description">
+                  <Icon :name="data.icon" :class="classes.icon" />
+                </AtomsTheTooltip>
               </span>
 
               <div class="flex lg:hidden items-start gap-4 text-left w-full">
